@@ -1,0 +1,8 @@
+# MANIFEST stub — cdss-compiler (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-compiler
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [per README — nothing emitted yet]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_written: [per annex bindings]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"

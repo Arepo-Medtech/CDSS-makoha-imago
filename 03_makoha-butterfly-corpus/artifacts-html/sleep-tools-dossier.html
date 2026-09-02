@@ -1,0 +1,348 @@
+<title>Sleep Tools Dossier</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9;
+    --panel: #ffffff;
+    --panel-2: #eef0f4;
+    --ink: #1c2330;
+    --ink-2: #4a5468;
+    --ink-3: #8791a3;
+    --accent: #35477d;
+    --accent-soft: #dfe4f0;
+    --amber: #a0752f;
+    --amber-soft: #f2e8d5;
+    --line: #d9dde5;
+    --good: #2e6b4f;
+    --warn: #9a5b2d;
+  }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f;
+      --panel: #1b212b;
+      --panel-2: #222a37;
+      --ink: #e6e9f0;
+      --ink-2: #aab3c5;
+      --ink-3: #77819a;
+      --accent: #a3b3e3;
+      --accent-soft: #2a3450;
+      --amber: #d3a55c;
+      --amber-soft: #3a3122;
+      --line: #323a49;
+      --good: #7fc2a3;
+      --warn: #d3a06b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f;
+    --panel: #1b212b;
+    --panel-2: #222a37;
+    --ink: #e6e9f0;
+    --ink-2: #aab3c5;
+    --ink-3: #77819a;
+    --accent: #a3b3e3;
+    --accent-soft: #2a3450;
+    --amber: #d3a55c;
+    --amber-soft: #3a3122;
+    --line: #323a49;
+    --good: #7fc2a3;
+    --warn: #d3a06b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 8px; border-bottom: 3px solid var(--accent); margin-bottom: 8px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--amber); margin: 0 0 14px;
+  }
+  h1 {
+    font-family: Spectral, Georgia, serif;
+    font-weight: 700; font-size: clamp(34px, 6vw, 46px);
+    line-height: 1.12; margin: 0 0 10px; text-wrap: balance;
+  }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 0 28px; max-width: 62ch; }
+  h2 {
+    font-family: Spectral, Georgia, serif; font-weight: 600;
+    font-size: 27px; line-height: 1.2; margin: 56px 0 6px; text-wrap: balance;
+  }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: 0.12em; margin-bottom: 6px; }
+  h3 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 20px; margin: 30px 0 6px; }
+  p { max-width: 68ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  .verdict {
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber);
+    padding: 18px 22px; margin: 30px 0; border-radius: 4px;
+  }
+  .verdict p { margin: 8px 0; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); }
+
+  /* timeline */
+  .timeline { border-left: 2px solid var(--line); margin: 28px 0 10px 8px; padding-left: 26px; display: flex; flex-direction: column; gap: 26px; }
+  .t-item { position: relative; }
+  .t-item::before {
+    content: ""; position: absolute; left: -33px; top: 7px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--accent); border: 2px solid var(--ground);
+  }
+  .t-item.milestone::before { background: var(--amber); }
+  .t-year { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--amber); letter-spacing: 0.08em; }
+  .t-title { font-weight: 700; font-size: 17px; margin: 2px 0; }
+  .t-meta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); margin: 2px 0 6px; }
+  .t-item p { margin: 6px 0 0; font-size: 16px; color: var(--ink-2); max-width: 64ch; }
+
+  /* architecture stack */
+  .arch { margin: 26px 0; display: flex; flex-direction: column; gap: 6px; }
+  .arch .layer {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 4px; padding: 10px 16px; text-align: center;
+  }
+  .arch .layer strong { display: block; font-size: 15.5px; }
+  .arch .layer span { font-size: 13.5px; color: var(--ink-2); }
+  .arch .layer.actors { background: var(--accent-soft); border-color: var(--accent); }
+  .arch .layer.core { background: var(--amber-soft); border-color: var(--amber); }
+  .arch .conn { text-align: center; color: var(--ink-3); font-size: 13px; line-height: 1; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 15.5px; }
+  .tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: 4px; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  th, td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  thead tr { background: var(--panel-2); }
+  tbody tr { background: var(--panel); }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+
+  ul { padding-left: 22px; max-width: 66ch; }
+  li { margin: 7px 0; }
+  .pill { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.06em; padding: 1px 9px; border-radius: 100px; border: 1px solid var(--line); color: var(--ink-2); background: var(--panel-2); margin-right: 6px; }
+  .pill.good { color: var(--good); border-color: var(--good); background: transparent; }
+  .pill.warn { color: var(--warn); border-color: var(--warn); background: transparent; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 22px 0; }
+  @media (max-width: 640px) { .split { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 16px 20px; }
+  .card h4 { margin: 0 0 8px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+  .card.strong h4 { color: var(--good); }
+  .card.weak h4 { color: var(--warn); }
+  .card ul { padding-left: 18px; margin: 0; }
+  .card li { font-size: 15px; color: var(--ink-2); }
+
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  .foot { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+  blockquote {
+    margin: 20px 0; padding: 4px 20px; border-left: 3px solid var(--accent);
+    color: var(--ink-2); font-style: italic; font-family: Spectral, Georgia, serif; font-size: 17.5px;
+  }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Research dossier · compiled 29 Aug 2026</p>
+  <h1>Sleep Tools Dossier</h1>
+  <p class="dek">Everything findable about the project behind Miah, Blake &amp; Kerr (2020) — the sleep-disorder CDSS built at the Prince Charles Hospital Sleep Investigation Unit, its fourteen-year publication trail, its intellectual scaffolding, and what it is actually worth to a triple-facing, meta-rational CDSS design.</p>
+</header>
+
+<div class="verdict">
+  <p class="lbl">The short version</p>
+  <p>The 2020 AJIS paper is the <em>theoretical capstone</em> of a real, decade-long artefact project: Jacqueline Blake's PhD at the University of the Sunshine Coast (supervised by Don Kerr), which built and evaluated a working web application — patient sleep diary, online sleep-history questionnaire, rule-based diagnostic DSS with Toulmin-style argument-tree explanations, and report generator — for a Brisbane public hospital sleep clinic. The artefact was genuinely tri-stakeholder (patient / physician / administration), genuinely ontology-grounded (ICSD), and genuinely explanation-first. It was also small: evaluated with two physicians and 267 lay users, never trialled for clinical outcomes, and apparently never sustained in practice. Its value to your project is architectural and rhetorical, not empirical.</p>
+</div>
+
+<h2><span class="sec">01</span>What was actually built</h2>
+<p>The artefact — called the <strong>sleep tools web application</strong>, later theorized as a <strong>knowledge-based CDSS (KB-CDSS)</strong> — was developed for and with the Sleep Investigation Unit at the Prince Charles Hospital, Brisbane, from roughly 2006 onward. The design team formalized in the artefact-design phase was the researcher (Blake) plus two sleep physicians and a sleep psychologist, working participatively; requirements came from convergent interviews, direct observation of patient–physician consultations, and three one-hour interviews with the Unit's director.</p>
+<p>Four sub-applications made up the system:</p>
+<ul>
+  <li><strong>Online sleep diary</strong> — 14 nights of bed/wake times, sleep latency, awakenings, morning mood, caffeine/alcohol/exercise factors; auto-computed sleep efficiency, total sleep time, and onset latency; a colour-coded horizontal bar graph, midnight centred on the x-axis, that builds as the patient completes entries. Patients see their own patterns build in real time; physicians see statistics and graphs on login.</li>
+  <li><strong>Online patient-history questionnaire</strong> — the instrument labelled <em>Q-SHOQ</em> in the 2020 architecture diagram (the expansion is never spelled out in the published record; it is the project's sleep-history online questionnaire). Captures lifestyle, medical history, and disorder-specific responses, validated at point of entry, completed at home before the first consultation — deliberately moving routine history-taking out of the consultation.</li>
+  <li><strong>The decision support system proper</strong> — each sleep disorder recognized in the <em>International Classification of Sleep Disorders</em> (ICSD, 2nd ed. 2005), with its individual criteria, yielded <strong>28 natural decision points</strong>, each implemented as a small yes/no rule-based system. Patient data flows through a series of small <strong>argument trees</strong> — the explicit design lineage is Stranieri, Zeleznikow, Gawler &amp; Lewis (1999), who used Toulmin (1958) argument structures for discretionary judicial decision-making in Australian family law (the Split-Up system) — structured using Marriott et al.'s (2011) hi-trees. The argument trees put a plain-language justification of <em>why each criterion was met</em> onto the physician's report.</li>
+  <li><strong>Report generator and evidence base</strong> — physician reports (emailed as PDF), diary graphs and statistics, three levels of appointment urgency for triage, and de-identified XML export building an aggregated research database the paper-based clinic previously could not have.</li>
+</ul>
+<p>The stated operational payoffs: high-risk apnoea patients could be sent straight to polysomnography <em>before</em> their first consultation (cutting one consultation from the pathway against Australian averages of 9 weeks to first consult and a further 21 weeks to sleep study); consultations shift from form-driven interrogation to patient-driven discussion of treatment; and shared vocabulary between patient-facing and physician-facing outputs supports patient education and shared decision-making.</p>
+
+<h2><span class="sec">02</span>The architecture the 2020 paper generalizes</h2>
+<p>Figure 3 of the 2020 paper abstracts the sleep case into a generic layered CDSS architecture. Note what it is: three user classes over one shared reasoning core over one swappable classification layer.</p>
+<div class="arch" role="img" aria-label="Layered architecture: three user classes over a browser GUI, sleep tools, argument tree explanation model, expert knowledge base, and the ICSD classification at the base">
+  <div class="layer actors"><strong>Patient · Administration Officer · Physician</strong><span>three interfaces, role-dependent landing pages</span></div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer"><strong>Browser-based GUI</strong></div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer"><strong>Sleep Tools</strong><span>Sleep Diary · Q-SHOQ (patient-history questionnaire)</span></div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer core"><strong>Argument Tree Explanation Model</strong><span>Toulmin-structured justification at each of 28 decision points (Stranieri et al. 1999; Marriott et al. 2011 hi-trees)</span></div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer"><strong>Psychologist &amp; Sleep Physician Knowledge Base</strong><span>expert rules elicited participatively</span></div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer"><strong>International Sleep Disorder Classification (ICSD)</strong><span>the ontology layer — "can be replaced by other formal ontologies in different CDSS"</span></div>
+</div>
+<p>The paper is explicit that the middle layers are pluggable: the classification layer "provides a defined ontology for the knowledge categories, and… can be replaced by other formal ontologies," and the reasoning layer "is agnostic" — rule bases, statistical models, Bayesian or likelihood-ratio models could substitute. The administrative third face exists because "stakeholders other than the two principals may require read access for management or technical monitoring, or to support epidemiological or other studies."</p>
+
+<h3>The six design principles (Table 2 of the 2020 paper)</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Principle</th><th>Substance</th></tr></thead>
+  <tbody>
+    <tr><td>1 · All stakeholders</td><td>The CDSS should provide a direct benefit to all stakeholders (patient, physician, health-record administration) to allow functional decision-making — interface options designed per role and need.</td></tr>
+    <tr><td>2 · Shared ontology</td><td>An established vocabulary and shared ontology, so explanation and records stay consistent between patient and physician and compatible with central health records.</td></tr>
+    <tr><td>3 · Collaborative</td><td>Conceptualised and developed collaboratively — domain experts supply not just knowledge but "the nuances of judgment around the information available."</td></tr>
+    <tr><td>4 · Workflow fit</td><td>Fits within users' workflows rather than sitting as an overhead; acceptance follows workflow efficiency.</td></tr>
+    <tr><td>5 · Practice-sensitive</td><td>Practice-sensitive, good-quality information for all users — justified analysis and reports in stakeholder terms.</td></tr>
+    <tr><td>6 · Scientifically trustworthy</td><td>Physician acceptance requires transparent science and reasoning; an explanation facility aids patient and other user acceptance.</td></tr>
+  </tbody>
+</table></div>
+
+<h2><span class="sec">03</span>The publication trail, 2007–2022</h2>
+<div class="timeline">
+  <div class="t-item">
+    <span class="t-year">2007</span>
+    <div class="t-title">World Sleep 07, Cairns</div>
+    <div class="t-meta">Blake &amp; Kerr · conference presentation</div>
+    <p>"Implementing an online sleep diary to better manage sleep disorder diagnosis." The project's first public output — presented to the sleep-medicine community, not the IS community.</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2010</span>
+    <div class="t-title">Development of an Online Sleep Diary for Physician and Patient Use</div>
+    <div class="t-meta">Blake &amp; Kerr · Knowledge Management &amp; E-Learning 2(2) · e-Health special issue</div>
+    <p>The diary sub-artefact: convergent interviews with the sleep clinic director, paper prototype, non-functional HTML/JS prototype reviewed by an international panel of sleep specialists, production version built by an external software house from UML specs. Accessibility-first interface for older, low-computer-literacy users.</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2010</span>
+    <div class="t-title">Development of knowledge management support for the sleep disorder diagnosis process</div>
+    <div class="t-meta">Blake, Kerr &amp; Gururajan · ACIS 2010, Brisbane</div>
+    <p>Work-in-progress paper framing the whole system (data-gathering + DSS) as knowledge management, flagging the participatory approach — physicians and a psychologist — as the acceptance strategy.</p>
+  </div>
+  <div class="t-item milestone">
+    <span class="t-year">~2013</span>
+    <div class="t-title">Blake's PhD, University of the Sunshine Coast</div>
+    <div class="t-meta">Doctorate by design: "a web-application which would support the diagnosis by physicians of sleep disorders"</div>
+    <p>The whole program is Blake's doctoral project under Kerr's supervision. Methodological spine: critical realism, Klein &amp; Myers' hermeneutic principles, Healy &amp; Perry's quality criteria for realism research, Hevner et al.'s seven DSR guidelines.</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2014</span>
+    <div class="t-title">Sleep disorder diagnosis: the design and implications of online tools</div>
+    <div class="t-meta">Blake &amp; Kerr · Decision Analytics 1:7 · open access</div>
+    <p>The fullest empirical account. Evaluation: two sleep physicians reviewed system outputs for ten randomly chosen real patients (14-day diaries plus questionnaires); <strong>267 end users</strong> completed the tools and a TAM-based usability questionnaire; a software engineer did a technical/heuristic pass. Physicians: usable, useful, assimilable, no workflow disruption, outputs within expected ranges of international criteria. Also the honest gaps note — e.g. no OSA screening instrument exists tuned to women's symptom presentation.</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2014–16</span>
+    <div class="t-title">Sleep disorder diagnosis: an analytical approach</div>
+    <div class="t-meta">Blake &amp; Kerr · IGI Global book chapter</div>
+    <p>Chapter-length restatement for a decision-analytics audience: the consultation-time argument (physicians spend most of the consult on routine questions the patient could answer at home).</p>
+  </div>
+  <div class="t-item milestone">
+    <span class="t-year">2016</span>
+    <div class="t-title">Streamlining patient consultations for sleep disorders with a knowledge-based CDSS</div>
+    <div class="t-meta">Blake, Kerr &amp; Gammack · Information Systems 56, 109–119 · doi 10.1016/j.is.2015.08.003 · ~15 citations</div>
+    <p>The flagship. Gammack (Zayed University) joins. The argument-tree explanation model is front and centre: "an argument tree approach was used to produce diagnostic explanations and an evidence-based report for the physician using medically correct and shared terminology." Physicians found clear applications "in triage and diagnostic decision-making, and in patient education."</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2016</span>
+    <div class="t-title">Development of a DSS and Online Tools to Support Sleep Disorder Consultations using Design Science</div>
+    <div class="t-meta">Blake, Kerr &amp; Gammack · AJIS 20 · doi 10.3127/ajis.v20i0.1303 · open access</div>
+    <p>Methodology companion, in AJIS's "Design Research for DSS Development" special section — which also carried Miah, McGrath &amp; Kerr's DSR-publication-trends survey and Miah &amp; Genemo's DSR methodology for expert systems. This co-location is almost certainly where the Miah–Blake–Kerr collaboration crystallized.</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2019</span>
+    <div class="t-title">A Metadesign Theory for Tailorable Decision Support</div>
+    <div class="t-meta">Miah, Gammack &amp; McKay · JAIS 20(5), 570–603 · doi 10.17705/1jais.00544</div>
+    <p>Miah's parallel program reaches its own capstone: a metadesign theory (general solution concept + five design principles for end-user tailorable DSS), distilled from an agricultural DSS and validated by re-instantiation in forestry. This is the template the 2020 CDSS paper follows — Miah's line runs from his 2008 Griffith PhD (ontology-based design environment for rural DSS) through Miah, Kerr, Gammack &amp; Cowan 2008 (Knowledge-Based Systems) and Miah &amp; Gammack 2014 (AJIS, ensemble artifact design).</p>
+  </div>
+  <div class="t-item milestone">
+    <span class="t-year">2020</span>
+    <div class="t-title">Meta-design knowledge for Clinical Decision Support Systems</div>
+    <div class="t-meta">Miah, Blake &amp; Kerr · AJIS 24 · doi 10.3127/ajis.v24i0.2049 · ~8–11 citations</div>
+    <p>The paper you have. Explicitly Iivari's "Strategy 2": build for a specific context first, distil general design knowledge afterwards. Output = the generic architecture + six principles, offered as prescriptive design theory (Gregor &amp; Hevner) for the whole problem class of diagnostic-and-treatment-recommending CDSS — with diabetes, arthritis and obesity management named as the natural next instantiations.</p>
+  </div>
+  <div class="t-item">
+    <span class="t-year">2020–23</span>
+    <div class="t-title">The program disperses</div>
+    <div class="t-meta">Aljarboa &amp; Miah · CDSS adoption studies · Blake → assistive robotics</div>
+    <p>Miah's students carry the CDSS thread into adoption research (Aljarboa &amp; Miah: GP acceptance of CDSS in Saudi primary care, Information Development 2023 and related arXiv papers); Miah co-edits a PAJAIS mobile-healthcare design special issue (2021). Blake pivots to robotics for older adults (two well-cited reviews with Shishehgar &amp; Kerr, 2018–2019). No evidence anywhere of the sleep tools being commercialized, deployed at scale, or maintained.</p>
+  </div>
+</div>
+
+<h2><span class="sec">04</span>The intellectual scaffolding</h2>
+<p>Three lineages meet in this project, and the joints matter for what you want to do with it.</p>
+<h3>Toulmin → Split-Up → argument trees</h3>
+<p>The explanation model descends from legal informatics, not medical informatics. Stranieri, Zeleznikow, Gawler &amp; Lewis (1999) built Split-Up, which predicted property division in Australian family law by decomposing <em>discretionary</em> judicial reasoning into Toulmin argument structures (data → warrant → claim), with small inference units at each node. Blake's insight was that differential diagnosis in a discretionary clinical domain has the same shape: decompose the ICSD criteria into 28 decision points, argue each one explicitly, and the system's output becomes a <em>defensible justification</em> rather than a score. The 2020 paper cites Toulmin directly: a diagnosis is "an assertion… defended with the foundation for the assertion." Marriott et al.'s hi-trees (IEEE TVCG, 2011) supplied the formal layout structure for the argument hierarchies. Fittingly, Governatori et al.'s "Thirty Years of AI and Law" retrospective (2022) cites the 2020 CDSS paper — the legal-reasoning community recognizes it as part of its own diaspora.</p>
+<h3>Design science research</h3>
+<p>The DSR spine is orthodox and thorough: Hevner et al. (2004) seven guidelines; Walls, Widmeyer &amp; El Sawy (1992) design-theory components (kernel theory, meta-requirements, meta-design, testable hypotheses); Gregor &amp; Hevner (2013) three levels of design knowledge — Level 1 situated instantiation (the sleep tools), Level 2 principles and architecture (the 2020 paper's claim), Level 3 well-developed design theory (aspirational); Iivari (2015) Strategy 2; evaluation framing after Venable, Pries-Heje &amp; Baskerville's FEDS. The "meta-design" term itself is taken from Fischer et al. (2004) — design that supports future designers — via Walls et al.'s meta-artefact usage.</p>
+<h3>The clinical-epistemology hedge</h3>
+<p>The 2020 paper contains a small but important epistemological move: it pairs the formal diagnostic algorithm ("established logic models… applied from first principles") with Croskerry (2009) — clinical judgment as "the most critical of a doctor's skills" — and Seising (2006) on the impossibility of sharp symptom–disease boundaries. The system was designed to give "an objective second opinion," never to close the judgment gap. That's a bounded, honest scope: it computerizes the criteria, not the discretion.</p>
+
+<h2><span class="sec">05</span>Reception and afterlife</h2>
+<p>Modest but telling. The 2016 Information Systems paper (~15 citations) is catalogued in Gholamzadeh et al.'s 2023 systematic review of knowledge-based CDSS for chronic disease (classified: web-based, rule-based logic, iterative approach, serving physicians <em>and</em> patients — one of the few in the corpus serving both) and in the 2025 <em>Sleep Medicine Reviews</em> scoping review of AI in sleep medicine. More interestingly, it's cited by the explanation-research literature: Nunes &amp; Jannach's canonical taxonomy of explanations in decision support (2017) and Naiseh et al. on explainable recommendation delivery (2020) — i.e., the argument-tree approach registered as an explanation-design datapoint, exactly the thread you care about. The 2020 AJIS paper's ~8–11 citations are mostly other DSR artefact papers (referral DSS in Ethiopia, fuzzy risk DSS, REST-API metadesign, fish quarantine DSS) plus the AI &amp; Law retrospective. Nobody has yet picked up the six principles and run a serious new clinical instantiation — the generalization the paper invites remains unclaimed.</p>
+
+<h2><span class="sec">06</span>The people</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Who</th><th>Role &amp; trajectory</th></tr></thead>
+  <tbody>
+    <tr><td>Jacqueline Blake</td><td>The artefact's builder; PhD at USC on this project; MIT (USQ), background in timber-industry B2B supply chains. Now Senior Lecturer in ICT at UniSC; research since pivoted to assistive technology and robotics for seniors, eHealth, ontologies.</td></tr>
+    <tr><td>Don Kerr</td><td>Blake's supervisor; Professor, USC Business School; long DSS pedigree (rural/dairy decision support with Miah &amp; Gammack going back to 2008's Knowledge-Based Systems paper). The continuity link between the rural-DSS line and the sleep line.</td></tr>
+    <tr><td>John Gammack</td><td>College of Technological Innovation, Zayed University (formerly Griffith). Joins for the 2016 papers and the 2019 JAIS metadesign theory; the theoretician of the ensemble-artefact view.</td></tr>
+    <tr><td>Shah Jahan Miah</td><td>Lead theorist of the 2020 paper. PhD Griffith 2008 (ontology-based design environment for rural DSS); then Victoria University; now Professor of Business Analytics and discipline head at Newcastle Business School, University of Newcastle. Prolific DSR-for-DSS program; supervised Aljarboa's CDSS-adoption PhD work.</td></tr>
+  </tbody>
+</table></div>
+<p>Note the shape: <strong>Miah was not part of the sleep project's build</strong>. The 2020 paper is the metadesign theorist joining the artefact builders to abstract their case — his fourth such abstraction exercise (rural, education, forestry, then clinical). The reference to the CDSS project appears as "(reference removed)" in the anonymized text and resolves to Blake, Kerr &amp; Gammack 2016.</p>
+
+<h2><span class="sec">07</span>Honest assessment</h2>
+<div class="split">
+  <div class="card strong">
+    <h4>What holds up</h4>
+    <ul>
+      <li>A real artefact, built participatively over ~8 years with the clinicians who used it — not a paper prototype.</li>
+      <li>Explanation as justification (Toulmin argument trees), fifteen years before "XAI" made feature attribution the default. Still ahead of SHAP/Grad-CAM on the dimension that matters to clinicians and auditors.</li>
+      <li>Genuinely tri-stakeholder architecture with role-specific interfaces and a shared ontology — rare then, still rare (Bayor et al. 2025: 37/40 CDSS clinician-only).</li>
+      <li>Swappable ontology layer and reasoning-model agnosticism stated as explicit architectural commitments.</li>
+      <li>Workflow-first design: triage before consult, history-taking moved to the home, reports in assimilable form — the circumrational interface taken seriously.</li>
+    </ul>
+  </div>
+  <div class="card weak">
+    <h4>What doesn't</h4>
+    <ul>
+      <li>Physician evaluation n = 2 — and they were the co-designers. Usability study (n = 267) covers lay users only. No RCT, no clinical-outcome or time-saved measurement, ever.</li>
+      <li>No deployment evidence after ~2016; no trace of sustained use, maintenance, or commercialization. Blake moved fields.</li>
+      <li>Ontology frozen at ICSD-2 (2005); ICSD-3-TR has since restructured the nosology — the "swappable" claim was never exercised.</li>
+      <li>The third face is thin: the "administration officer" gets <em>read access</em> for management, monitoring, and epidemiology. It is a viewer, not an auditor — no justification log, no deviation reasoning, no compliance reframing.</li>
+      <li>The 28 decision points assume the guideline fits; there is no machinery for the meta-rational case where a clinician justifiably departs from ICSD criteria. Deviation is simply outside the system.</li>
+      <li>Single-case generalization: the 2020 "design theory" was abstracted from one artefact and validated by argument, not by re-instantiation (unlike the 2019 JAIS theory, which was tested in a second domain).</li>
+      <li>Modest venue and uptake; the invitation to instantiate the principles in a new clinical domain is still open.</li>
+    </ul>
+  </div>
+</div>
+
+<h2><span class="sec">08</span>What this gives your project</h2>
+<p>Three usable assets and one clearly marked gap.</p>
+<p><strong>Asset 1 — a citable architecture.</strong> The layered generic architecture (role interfaces → shared tools → argument-tree explanation → knowledge base → swappable ontology) is published, peer-reviewed, and explicitly offered for reuse in "similar problem domains." A triple-facing meta-rational CDSS can present itself as an <em>extension</em> of an established design theory rather than an invention — replacing the read-only administration face with an active auditor face, and adding a context/values capture layer beside Q-SHOQ.</p>
+<p><strong>Asset 2 — justification-style explanation with a legal pedigree.</strong> The Toulmin/Stranieri lineage is precisely the explanation form an auditor can assess: claim, grounds, warrant, rebuttal. It descends from a system built to model <em>discretionary</em> legal reasoning — which is what justified clinical deviation is. The argument-tree layer is the natural place to log not just "criterion met" but "criterion overridden, because…" — the paper's own machinery, pointed at the one case it never handled.</p>
+<p><strong>Asset 3 — the DSR legitimation kit.</strong> Gregor &amp; Hevner levels, Iivari Strategy 2, the six principles as meta-requirements: ready-made academic framing if the project is ever written up. The 2020 paper even names the next domains it expects (chronic conditions requiring lifestyle change and shared decision-making) — a meta-rational CDSS for multimorbidity sits squarely in the invited space.</p>
+<p><strong>The gap it marks.</strong> Nothing in this program handles conflicting guidelines, patient value trade-offs, justified deviation, or audit reframing — the entire meta-rational layer. The project computerized rationality carefully and honestly stopped at its edge; Croskerry-style judgment is acknowledged and left outside the system. That boundary line, drawn by sympathetic authors doing everything right within the rational frame, is the best available evidence of exactly where your contribution would begin.</p>
+
+<h2><span class="sec">09</span>Sources</h2>
+<ul class="srcs">
+  <li>Miah, Blake &amp; Kerr (2020), <a href="https://ajis.aaisnet.org/index.php/ajis/article/view/2049">Meta-design knowledge for Clinical Decision Support Systems</a>, AJIS 24. (Uploaded PDF, read in full.)</li>
+  <li>Blake, Kerr &amp; Gammack (2016), <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306437915001593">Streamlining patient consultations for sleep disorders with a knowledge-based CDSS</a>, Information Systems 56, 109–119.</li>
+  <li>Blake, Kerr &amp; Gammack (2016), <a href="https://ajis.aaisnet.org/index.php/ajis/article/view/1303">Development of a DSS and Online Tools to Support Sleep Disorder Consultations using Design Science</a>, AJIS 20. (Open access, read in full.)</li>
+  <li>Blake &amp; Kerr (2014), <a href="https://link.springer.com/article/10.1186/2193-8636-1-7">Sleep disorder diagnosis: the design and implications of online tools</a>, Decision Analytics 1:7.</li>
+  <li>Blake &amp; Kerr (2010), <a href="https://doi.org/10.34105/j.kmel.2010.02.014">Development of an Online Sleep Diary for Physician and Patient Use</a>, KM&amp;EL 2(2).</li>
+  <li>Blake, Kerr &amp; Gururajan (2010), <a href="https://aisel.aisnet.org/acis2010/98/">Development of knowledge management support for the sleep disorder diagnosis process</a>, ACIS 2010.</li>
+  <li>Miah, Gammack &amp; McKay (2019), <a href="https://aisel.aisnet.org/jais/vol20/iss5/4/">A Metadesign Theory for Tailorable Decision Support</a>, JAIS 20(5).</li>
+  <li><a href="https://ajis.aaisnet.org/index.php/ajis/issue/view/44">AJIS Vol 20 (2016)</a> — the "Design Research for DSS Development" special section.</li>
+  <li><a href="https://www.unisc.edu.au/staff/dr-jacqueline-blake">Dr Jacqueline Blake — UniSC staff profile</a>; <a href="https://www.newcastle.edu.au/profile/shah-miah">Prof Shah J Miah — University of Newcastle profile</a>.</li>
+  <li>Gholamzadeh et al. (2023), <a href="https://doi.org/10.1155/2023/8550905">Knowledge-based CDSS for chronic disease — systematic review</a> (catalogues the Blake et al. system).</li>
+  <li>Nunes &amp; Jannach (2017), <a href="https://dl.acm.org/doi/10.1007/s11257-017-9195-0">A systematic review and taxonomy of explanations in decision support and recommender systems</a> (cites Blake et al. 2016).</li>
+  <li>Aljarboa &amp; Miah (2023), <a href="https://journals.sagepub.com/doi/abs/10.1177/02666669211025076">Acceptance of clinical decision support systems in Saudi healthcare organisations</a>; <a href="https://arxiv.org/abs/2207.11713">Adoption barriers of CDSS in primary health care</a> (2022).</li>
+  <li>Citation data: Semantic Scholar Graph API (citations of doi 10.1016/j.is.2015.08.003 and 10.3127/ajis.v24i0.2049), retrieved 29 Aug 2026.</li>
+</ul>
+
+<p class="foot">Compiled from full-text reads of four project papers, publisher and repository records, and citation-graph queries. Where the public record is silent — the Q-SHOQ expansion, the exact PhD conferral year, any post-2016 deployment — the dossier says so rather than guessing.</p>
+</div>

@@ -1,0 +1,37 @@
+{
+ "rows": 176,
+ "class_counts": {
+  "DANGLING-REF": 3,
+  "CONTRADICTION": 5,
+  "PRESENT-CONFORMANT": 101,
+  "QUALITY-BELOW-BAR": 17,
+  "ABSENT-CHAIN-LINK": 15,
+  "ABSENT-LEDGER-ROW": 3,
+  "ABSENT-SECTION": 5,
+  "ABSENT-WORKLIST-TASK": 3,
+  "DECISION-PENDING": 10,
+  "TACIT-KNOWLEDGE-REQUIRED": 1,
+  "STALE-COUNT": 2,
+  "ABSENT-ITEM": 5,
+  "UNDEFINED-OWNER": 1,
+  "PROPOSED-ADDITION": 4,
+  "PLACEHOLDER-UNREGISTERED": 1
+ },
+ "weight_counts": {
+  "3": 21,
+  "2": 20,
+  "0": 101,
+  "4": 14,
+  "5": 7,
+  "1": 13
+ },
+ "queue": 42,
+ "queue_exec": {
+  "EXECUTABLE-AFTER-DECISION": 5,
+  "CLAUDE-CODE-EXECUTABLE-NOW": 27,
+  "HUMAN-ONLY": 10
+ },
+ "missing_paths": [
+  "05_registers-and-contracts/REG-R29_hardening_coverage_ledger.schema.md"
+ ]
+}

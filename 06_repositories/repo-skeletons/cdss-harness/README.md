@@ -1,0 +1,4 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-harness (Existing — Harness/H-1; annexes §10)
+Coder learners, checker, cascade tooling; **EVAL-refusing loaders proven here**. Posture-neutral by design (feeds whichever channel R19 records). FZ-6 note: fuzzy inference namespaces join the *GPP build's* prohibited-namespace manifest if DEC-05 ratifies — a GPP constraint, not a harness one; offline FZ-5 suite generation stays lawful under K discipline.
+Layout: `learners/` (coder training) · `checker/` (reviewer-assist; never releases) · `cascade/` (LF spec + linker gold protocol per Annex §8; provenance fields flow to grounds) · `loaders/` (EVAL/DEV tag refusal proofs) · `manifests/` (artifact manifest discipline).

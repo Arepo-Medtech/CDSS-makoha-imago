@@ -1,0 +1,5 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-llm-lattice (Existing — K/L; annexes K10/L10)
+Prompt registry, orchestration, L capability services; **prompt changes are I events**. Additions this pass: compiler-assist candidate points (ArgEval/ArgTumour pattern, Class 2–3, proposer-with-verifier) · fuzzy-frontier watch point (dormant) · GPP exclusion (no K point ships inside the J-3 artifact). L services: narration is a register renderer bound by SPINE-3 (invariance test applies verbatim); patient-face intake doubly gated (staging + ASSUME-REG-003 -> Blocked).
+Layout: `prompts/` (registry -> R22 at L4) · `points/` (K point specs + cards) · `l-services/` (per-capability realisation contracts per L8; each a separable dossier line-item) · `injection/` (rulebook rows feeding G).
+Substrate: per DEC-03 (Bedrock ⟷ Baseten — ESCALATED).

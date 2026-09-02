@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CDSS Architecture Diagrams</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<style>
+ body{font-family:Georgia,serif;max-width:1100px;margin:0 auto;padding:24px;background:#faf9f5;color:#1a1a18}
+ h1{border-bottom:3px solid #c96442;padding-bottom:8px} h2{color:#c96442;margin-top:48px;border-bottom:1px solid #ddd;padding-bottom:6px}
+ h3{color:#555;font-weight:normal;font-style:italic}
+ .mermaid{background:#fff;border:1px solid #e0ddd4;border-radius:8px;padding:16px;margin:16px 0;overflow-x:auto}
+ nav{background:#fff;border:1px solid #e0ddd4;border-radius:8px;padding:16px 24px;margin:16px 0}
+ nav a{display:block;color:#c96442;text-decoration:none;padding:2px 0}
+ .doctrine{background:#fdf3ee;border-left:4px solid #c96442;padding:12px 16px;font-style:italic}
+</style></head><body>
+<h1>CDSS Architecture &amp; Component Diagrams</h1>
+<p class="doctrine">Read Primer 0 first. Spine: ML proposes and tests; only arithmetic releases. Build Execution Extension: Ecosystem v2.0 grafted at Arch §13 and every §-9 block.</p>
+<nav><strong>Contents</strong>
+<a href="#s0">Primer 0 (1)</a>
+<a href="#s1">ARCHITECTURE &amp; INTEGRATION PLAN (8)</a>
+<a href="#s2">BAYESIAN DIFFERENTIAL ENGINE (1)</a>
+<a href="#s3">EVIDENCE LIBRARY (E1/E2/E3) (1)</a>
+<a href="#s4">CASEBUNDLE EVALUATION CORPUS (FIREWALLED (1)</a>
+<a href="#s5">CONTENT REGISTRY (SIGNED, VERSIONED FRAG (1)</a>
+<a href="#s6">GRAPH RAG (1)</a>
+<a href="#s7">CONFORMAL PREDICTION WRAPPER (1)</a>
+<a href="#s8">CORRUPTION ENGINE (1)</a>
+<a href="#s9">LUMOS VALIDATION PATHWAY (1)</a>
+<a href="#s10">LIVING EVALUATION STACK (1)</a>
+<a href="#s11">MODEL GOVERNANCE &amp; THE ML CONTRACT (1)</a>
+<a href="#s12">ADDENDUM J-1: DETERMINISTIC CODER (EXEMP (1)</a>
+<a href="#s13">ADDENDUM J-2: ML CODER AT RUNTIME (SaMD  (1)</a>
+<a href="#s14">LLM AUGMENTATION LATTICE (CLASSES 1–3) (1)</a>
+<a href="#s15">RUNTIME LLM EXTENSIONS (CLASS 4+) (1)</a>
+<a href="#s16">HARNESS ML PRIMER (1)</a>
+<a href="#s17">ANNEX H-1: GROUNDING &amp; WEAK-SUPERVISION  (1)</a>
+</nav>
+<h2 id="s0">Primer 0</h2>
+<h3>10. The whole system in one picture</h3>
+<pre class="mermaid">
+flowchart TD
+  PT[&quot;Patient&#x27;s story&quot;] --&gt; CODE[&quot;Coder: words to&lt;br/&gt;medical concepts&lt;br/&gt;(the fork lives here)&quot;]
+  CODE --&gt; ENG[&quot;Engine: transparent&lt;br/&gt;probability arithmetic&lt;br/&gt;over the evidence library&quot;]
+  ENG --&gt; SAFE[&quot;Safety layer:&lt;br/&gt;can&#x27;t-miss checks&lt;br/&gt;outrank everything&quot;]
+  SAFE --&gt; SET[&quot;Conformal set:&lt;br/&gt;guaranteed-coverage&lt;br/&gt;diagnosis list&quot;]
+  SET --&gt; MAP[&quot;Graph: walks to treatments,&lt;br/&gt;prunes contraindications&quot;]
+  MAP --&gt; GATE[&quot;Five arithmetic gates:&lt;br/&gt;authentic, sourced, current,&lt;br/&gt;in-range, appropriate&quot;]
+  GATE --&gt; SCREEN[&quot;Clinician&#x27;s screen:&lt;br/&gt;verbatim, cited guidance -&lt;br/&gt;clinician decides&quot;]
+  SAB[&quot;Saboteur (corruption engine)&lt;br/&gt;attacks everything, every release&quot;] -.-&gt; GATE
+  EXAM[&quot;Firewalled exam corpus +&lt;br/&gt;Lumos real-world outcomes&quot;] -.-&gt; SCREEN
+  BOOKS[&quot;24 registers:&lt;br/&gt;if it is not in a register,&lt;br/&gt;it did not happen&quot;] -.-&gt; SCREEN
+</pre>
+<h2 id="s1">ARCHITECTURE &amp; INTEGRATION PLAN</h2>
+<h3>2. System architecture diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  subgraph PROP[&quot;PROPOSES - probabilistic side&quot;]
+    CODER[&quot;Concept coder (Annex H-1)&lt;br/&gt;single runtime ML crossover&quot;]
+    ENGINE[&quot;Bayesian engine (A)&quot;]
+    GRAPH[&quot;Graph RAG selector (E)&quot;]
+    CONF[&quot;Conformal wrapper (F)&lt;br/&gt;honesty guarantee&quot;]
+  end
+  subgraph SPINE[&quot;SPINE - arithmetic releases&quot;]
+    REG[(&quot;Signed content registry (D)&quot;)]
+    GATES[&quot;Deterministic gate chain:&lt;br/&gt;hash, tier, currency, range, context&quot;]
+  end
+  subgraph TEST[&quot;TESTS - offline + production lattice&quot;]
+    STACK[&quot;Living evaluation stack (I):&lt;br/&gt;1 properties, 2 self-consistency,&lt;br/&gt;3 differential, 4 distributional,&lt;br/&gt;5 contracts, 6 shadow&quot;]
+    HARNESS[&quot;Harness ML (5 components)&lt;br/&gt;builds what I operates&quot;]
+    CORR[&quot;Corruption engine (G)&lt;br/&gt;proves gates hold&quot;]
+    CORPUS[&quot;Casebundle corpus (C)&lt;br/&gt;firewalled examiner&quot;]
+    LUMOS[&quot;Lumos pathway (H)&lt;br/&gt;tracks reality&quot;]
+    GOV[&quot;Model governance (J):&lt;br/&gt;census, cards, independence,&lt;br/&gt;releases-role = empty&quot;]
+  end
+  LIB[&quot;Evidence library (B)&lt;br/&gt;E1/E2/E3 tiered numbers&quot;] --&gt; ENGINE
+  PT[&quot;Patient encounter text&quot;] --&gt; CODER
+  CODER --&gt; ENGINE
+  ENGINE --&gt; CONF
+  CONF --&gt; GRAPH
+  CODER --&gt; GRAPH
+  GRAPH -- &quot;pointers only&quot; --&gt; GATES
+  REG --&gt; GATES
+  GATES -- &quot;all pass&quot; --&gt; SCREEN[&quot;Clinician screen:&lt;br/&gt;verbatim authoritative content&quot;]
+  GATES -- &quot;any fail&quot; --&gt; BLOCKF[&quot;Block / degrade + log&quot;]
+  STACK -- &quot;binds every change class&lt;br/&gt;to its release mechanisms&quot; --&gt; PROP
+  STACK -- &quot;schedules + enforces&quot; --&gt; CORR
+  CORR -. &quot;attacks&quot; .-&gt; GATES
+  CORR -. &quot;attacks&quot; .-&gt; ENGINE
+  CORR -. &quot;attacks&quot; .-&gt; GRAPH
+  HARNESS -. &quot;artifacts&quot; .-&gt; STACK
+  GOV -- &quot;admissibility gate:&lt;br/&gt;no card, no promotion&quot; --&gt; STACK
+  GOV -. &quot;governs every learned&lt;br/&gt;artifact in&quot; .-&gt; PROP
+  CORPUS -. &quot;examines assembled system&lt;br/&gt;at checkpoints only - never in I&quot; .-&gt; SCREEN
+  LUMOS -. &quot;validates posteriors + coverage&lt;br/&gt;vs linked outcomes&quot; .-&gt; CONF
+  LUMOS -- &quot;Stage 1: Australian priors&quot; --&gt; LIB
+</pre>
+<h3>3. Runtime release path (per encounter)</h3>
+<pre class="mermaid">
+flowchart TD
+  T[&quot;Free text + structured inputs&quot;] --&gt; C[&quot;Coder: SNOMED-coded findings&lt;br/&gt;(fail-safe: uncoded = most restrictive)&quot;]
+  C --&gt; E[&quot;Engine: priors + sequential LRs&lt;br/&gt;= posterior differential + trace&quot;]
+  E --&gt; O{&quot;Red-flag / SnNout&lt;br/&gt;override?&quot;}
+  O -- &quot;yes&quot; --&gt; F1[&quot;Safety tier forced&lt;br/&gt;(deterministic outranks all)&quot;]
+  O -- &quot;no&quot; --&gt; W[&quot;Conformal set at guaranteed coverage (F)&quot;]
+  F1 --&gt; W
+  W --&gt; G[&quot;Graph traversal: recommendations&lt;br/&gt;pruned vs coded context (E)&quot;]
+  G --&gt; P[&quot;Fragment pointers&quot;]
+  P --&gt; CH[&quot;Registry gate chain (D):&lt;br/&gt;hash / tier / currency / range / context&quot;]
+  CH --&gt; RC[&quot;Runtime contracts (I, mechanism 5):&lt;br/&gt;per-encounter invariant assertions&quot;]
+  RC -- &quot;pass&quot; --&gt; R[&quot;Render verbatim + decision log&lt;br/&gt;+ acceptance telemetry&quot;]
+  RC -- &quot;violation&quot; --&gt; B[&quot;Block / degrade to most-restrictive&lt;br/&gt;+ escalate + alarm&quot;]
+  SH[&quot;Shadow candidates (I, mechanism 6)&lt;br/&gt;run silently on same traffic&quot;] -. &quot;never rendered&quot; .-&gt; T
+  R --&gt; TEL[&quot;Telemetry to stack (I) + correction pipeline&quot;]
+</pre>
+<h3>4. The living evaluation stack (per change, per release)</h3>
+<pre class="mermaid">
+flowchart TD
+  CHANGE[&quot;Any change: library row, fragment,&lt;br/&gt;engine, prompt, model, graph&quot;] --&gt; VREG[&quot;Version registry stamp&quot;]
+  VREG --&gt; MAP[&quot;Primer I lifecycle mapping:&lt;br/&gt;change class to binding mechanisms&quot;]
+  subgraph PRE[&quot;Pre-release gates - regenerated fresh&quot;]
+    M1[&quot;1 Properties: clinical invariants&lt;br/&gt;on freshly generated cases&quot;]
+    M2[&quot;2 Library self-consistency:&lt;br/&gt;engine reproduces library entailments&quot;]
+    GC[&quot;Corruption suite (G):&lt;br/&gt;100% safety-class catch&quot;]
+  end
+  MAP --&gt; PRE
+  PRE --&gt; M3[&quot;3 Differential testing:&lt;br/&gt;only disagreements to expert&lt;br/&gt;adjudication = change-control record&quot;]
+  M3 --&gt; M4{&quot;4 Distributional gates:&lt;br/&gt;Brier/ECE bounds, conformal coverage (F),&lt;br/&gt;red-flag sensitivity floors, stability&quot;}
+  M4 -- &quot;fail&quot; --&gt; FIX[&quot;Blocked with adjudication record&quot;]
+  M4 -- &quot;pass&quot; --&gt; M6[&quot;6 Shadow vs live traffic:&lt;br/&gt;agreement + telemetry criteria&quot;]
+  M6 --&gt; PROMOTE[&quot;Promote&quot;]
+  PROMOTE --&gt; M5[&quot;5 Runtime contracts live&lt;br/&gt;on every encounter&quot;]
+  M5 --&gt; TEL[&quot;Acceptance telemetry&quot;]
+  TEL --&gt; INC[&quot;Incident ledger: one-way door,&lt;br/&gt;real adjudicated failures only,&lt;br/&gt;each paired with a perturbation (G)&quot;]
+  INC --&gt; PRE
+  TEL --&gt; RECAL[&quot;Drift / version-triggered&lt;br/&gt;recalibration (F)&quot;]
+</pre>
+<h3>5. Governance &amp; evidence loops</h3>
+<pre class="mermaid">
+flowchart TD
+  PRQ[&quot;PR gateways: library rows, registry&lt;br/&gt;fragments, graph edges&lt;br/&gt;(pharmacist + clinician CODEOWNERS)&quot;] --&gt; SIGNED[&quot;Signed, versioned assets&quot;]
+  SIGNED --&gt; RUNTIME[&quot;Runtime system&lt;br/&gt;(behind contracts, I-5)&quot;]
+  RUNTIME --&gt; TELE[&quot;Acceptance telemetry (#6)&quot;]
+  TELE --&gt; CORRPIPE[&quot;Correction pipeline (#12):&lt;br/&gt;overrides trace to rows / fragments / edges&quot;]
+  CORRPIPE --&gt; PRQ
+  FRESH[&quot;Freshness monitor (#8)&quot;] --&gt; PRQ
+  STACKREP[&quot;Stack outputs (I): property passes,&lt;br/&gt;differential adjudication logs,&lt;br/&gt;distributional reports, contract logs&quot;] --&gt; DOSS[&quot;Evidence base&quot;]
+  CKPT[&quot;Casebundle checkpoint evals (C)&quot;] --&gt; DOSS
+  CSUITE[&quot;Corruption catch-rate reports (G)&quot;] --&gt; DOSS
+  COVREP[&quot;Conformal coverage reports (F)&quot;] --&gt; DOSS
+  LSTUDY[&quot;Lumos linkage study (H)&quot;] --&gt; DOSS
+  DOSS --&gt; TGA[&quot;TGA dossier / ACSQHC principles /&lt;br/&gt;jurisdiction frameworks (NSW AI Framework)&quot;]
+</pre>
+<h3>6. Document map</h3>
+<pre class="mermaid">
+flowchart TD
+  ARCH[&quot;Architecture &amp; Integration Plan&quot;] --&gt; HP[&quot;Harness ML Primer&quot;]
+  HP --&gt; H1[&quot;Annex H-1: Grounding +&lt;br/&gt;Weak-Supervision Cascade&quot;]
+  ARCH --&gt; PA[&quot;A: Bayesian Engine&quot;]
+  ARCH --&gt; PB[&quot;B: Evidence Library&quot;]
+  ARCH --&gt; PC[&quot;C: Casebundle Corpus&quot;]
+  ARCH --&gt; PD[&quot;D: Content Registry&quot;]
+  ARCH --&gt; PE[&quot;E: Graph RAG&quot;]
+  ARCH --&gt; PF[&quot;F: Conformal Wrapper&quot;]
+  ARCH --&gt; PG[&quot;G: Corruption Engine&quot;]
+  ARCH --&gt; PH[&quot;H: Lumos Pathway&quot;]
+  ARCH --&gt; PI[&quot;I: Living Evaluation Stack&quot;]
+  ARCH --&gt; PJ[&quot;J: Model Governance&quot;]
+  PJ --&gt; V1[&quot;Addendum J-1: Deterministic coder&lt;br/&gt;(exemption posture)&quot;]
+  PJ --&gt; V2[&quot;Addendum J-2: ML coder runtime&lt;br/&gt;(SaMD posture)&quot;]
+  P0[&quot;Primer 0: Ecosystem Explainer&lt;br/&gt;(the front door - read first)&quot;] --&gt; ARCH
+  ARCH --&gt; PK[&quot;K: LLM Augmentation&lt;br/&gt;(Classes 1-3, offline/review)&quot;]
+  ARCH --&gt; PL[&quot;L: Runtime LLM Extensions&lt;br/&gt;(Class 4+, SaMD only)&quot;]
+  PL -. &quot;requires posture of&quot; .-&gt; V2
+  PK -. &quot;prompt-cards under&quot; .-&gt; PJ
+  PL -. &quot;prompt-cards under&quot; .-&gt; PJ
+  PL -. &quot;gates supplied by&quot; .-&gt; PF
+  V1 -. &quot;alternative census row in&quot; .-&gt; PJ
+  V2 -. &quot;alternative census row in&quot; .-&gt; PJ
+  PF -. &quot;attaches to&quot; .-&gt; PA
+  PG -. &quot;adversary of&quot; .-&gt; PD
+  PG -. &quot;adversary of&quot; .-&gt; PB
+  PG -. &quot;adversary of&quot; .-&gt; PE
+  PG -. &quot;red-teams loaders of&quot; .-&gt; PC
+  PH -. &quot;priors into&quot; .-&gt; PB
+  PH -. &quot;recalibrates&quot; .-&gt; PF
+  H1 -. &quot;runtime crossover feeds&quot; .-&gt; PD
+  H1 -. &quot;context pruning feeds&quot; .-&gt; PE
+  PI -. &quot;binds release of&quot; .-&gt; PA
+  PI -. &quot;binds release of&quot; .-&gt; PB
+  PI -. &quot;binds release of&quot; .-&gt; PD
+  PI -. &quot;binds release of&quot; .-&gt; PE
+  PI -. &quot;operates artifacts from&quot; .-&gt; HP
+  PI -. &quot;schedules&quot; .-&gt; PG
+  PJ -. &quot;cards required by&quot; .-&gt; PI
+  PJ -. &quot;governs models in&quot; .-&gt; HP
+  PJ -. &quot;governs models in&quot; .-&gt; H1
+  PJ -. &quot;mandates adversarial evidence from&quot; .-&gt; PG
+</pre>
+<h3>10. Repository topology</h3>
+<pre class="mermaid">
+flowchart TD
+  SPINE[&quot;cdss-spine:&lt;br/&gt;contracts + templates + tolerances&lt;br/&gt;(versioned, never duplicated)&quot;] --&gt; ENG[&quot;cdss-engine&quot;]
+  SPINE --&gt; LIB[&quot;cdss-library&quot;]
+  SPINE --&gt; REG[&quot;cdss-registry&quot;]
+  SPINE --&gt; GRAPH[&quot;cdss-graph&quot;]
+  SPINE --&gt; CODR[&quot;cdss-coder&lt;br/&gt;(J-1 dict or J-2 model channel)&quot;]
+  SPINE --&gt; HARN[&quot;cdss-harness&quot;]
+  SPINE --&gt; LLML[&quot;cdss-llm-lattice&quot;]
+  GOV[&quot;cdss-governance:&lt;br/&gt;admissibility validator&lt;br/&gt;as shared CI action&quot;] -. &quot;runs in every CI&quot; .-&gt; ENG
+  GOV -. &quot; &quot; .-&gt; LIB
+  GOV -. &quot; &quot; .-&gt; CODR
+  CORR[&quot;cdss-corruption: suites&quot;] -. &quot;attack in every CI&quot; .-&gt; ENG
+  CORR -. &quot; &quot; .-&gt; REG
+  CORR -. &quot; &quot; .-&gt; GRAPH
+  ENG -- &quot;manifested artifact&quot; --&gt; LOCK[&quot;Integration lockfile:&lt;br/&gt;one pinned version per repo&lt;br/&gt;= version-registry stamp&lt;br/&gt;= trace provenance&lt;br/&gt;= change-control record&quot;]
+  LIB -- &quot; &quot; --&gt; LOCK
+  REG -- &quot; &quot; --&gt; LOCK
+  GRAPH -- &quot; &quot; --&gt; LOCK
+  CODR -- &quot; &quot; --&gt; LOCK
+  LOCK --&gt; GAUNTLET[&quot;Cross-component gauntlet:&lt;br/&gt;I binding table + G suites +&lt;br/&gt;property registry on the assembly&quot;]
+  GAUNTLET --&gt; DEPLOY[&quot;Deployable assembly&quot;]
+  CORPUS[&quot;cdss-corpus&lt;br/&gt;(restricted credentials)&quot;] -. &quot;examines assembly at&lt;br/&gt;checkpoints only; dev CI&lt;br/&gt;holds no credential&quot; .-&gt; DEPLOY
+  EVS[&quot;cdss-evalstack:&lt;br/&gt;pipelines imported by all&quot;] --&gt; GAUNTLET
+</pre>
+<h3>11.5 Production topology diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  subgraph LEVELS[&quot;Maturity levels - each end-to-end demoable&quot;]
+    L1[&quot;L1 Glass-Box Core:&lt;br/&gt;picker + engine + trace&lt;br/&gt;+ 1-domain library&quot;]
+    L2[&quot;L2 Signed Content Loop:&lt;br/&gt;+ registry, gates, signing,&lt;br/&gt;telemetry v0&quot;]
+    L3[&quot;L3 Honest Uncertainty:&lt;br/&gt;+ conformal, det-coder,&lt;br/&gt;graph v0, full I stack&quot;]
+    L4[&quot;L4 Full Lattices:&lt;br/&gt;+ multi-domain, harness, K,&lt;br/&gt;J enforced, checkpoint 1,&lt;br/&gt;posture decision&quot;]
+    L5[&quot;L5 Target State:&lt;br/&gt;+ L capabilities staged,&lt;br/&gt;Lumos 2-3, dossier, GA&quot;]
+    L1 --&gt; L2 --&gt; L3 --&gt; L4 --&gt; L5
+  end
+  subgraph TIERS[&quot;Tier pipeline - every release, never relaxed&quot;]
+    T12[&quot;T1+2 Sprint &amp; Component:&lt;br/&gt;Q Developer, git-secrets,&lt;br/&gt;CodeBuild + Trivy, ECR sign,&lt;br/&gt;signed SBOM&quot;]
+    T3[&quot;T3 Integration staging:&lt;br/&gt;lockfile deploy, cfn-guard,&lt;br/&gt;WAF, segregated accounts,&lt;br/&gt;cross-component gauntlet&quot;]
+    T4[&quot;T4 Hardening:&lt;br/&gt;Inspector, Access Analyzer,&lt;br/&gt;fail-safe fault injection,&lt;br/&gt;Essential Eight ML2+&quot;]
+    T5[&quot;T5 Production:&lt;br/&gt;GuardDuty, Security Hub,&lt;br/&gt;Config auto-remediate +&lt;br/&gt;decision logs, contracts,&lt;br/&gt;clinical monitoring&quot;]
+    T12 --&gt; T3 --&gt; T4 --&gt; T5
+  end
+  L1 -. &quot;ceiling&quot; .-&gt; T12
+  L2 -. &quot;ceiling&quot; .-&gt; T3
+  L3 -. &quot;ceiling&quot; .-&gt; T4
+  L4 -. &quot;limited release&quot; .-&gt; T5
+  L5 -. &quot;GA&quot; .-&gt; T5
+</pre>
+<h3>12.4 Register topology diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  ROR[&quot;Register of Registers (spine):&lt;br/&gt;one row per register - owner,&lt;br/&gt;schema, opening level, mutability&quot;]
+  subgraph BUILD[&quot;Build &amp; supply chain&quot;]
+    R1[&quot;1 Version Registry&quot;]
+    R2[&quot;2 Manifests&quot;]
+    R3[&quot;3 SBOMs&quot;]
+    R14[&quot;14 Lockfile deploys&quot;]
+  end
+  subgraph CONTENT[&quot;Content &amp; knowledge&quot;]
+    R6[&quot;6 Source Registry&quot;]
+    R10[&quot;10 Freshness Ledger&quot;]
+    R17[&quot;17 Dictionary Register&quot;]
+  end
+  subgraph EVAL[&quot;Evaluation &amp; adversary&quot;]
+    R7[&quot;7 Property Registry&quot;]
+    R8[&quot;8 Corruption Rulebook&quot;]
+    R9[&quot;9 Coverage Map&quot;]
+    R12[&quot;12 Adjudication Log&quot;]
+    R20[&quot;20 Incident Ledger&quot;]
+    R21[&quot;21 Exposure Ledger&lt;br/&gt;(corpus account)&quot;]
+  end
+  subgraph RUNTIME[&quot;Runtime evidence&quot;]
+    R11[&quot;11 Decision Log&quot;]
+    R13[&quot;13 Acceptance Telemetry&quot;]
+    R18[&quot;18 Contract Violations&quot;]
+  end
+  subgraph GOV[&quot;Governance &amp; regulatory&quot;]
+    R4[&quot;4 Model Census + Cards&quot;]
+    R5[&quot;5 Data Ruling Table&quot;]
+    R15[&quot;15/16 Consumption Ledgers&quot;]
+    R19[&quot;19 Posture + Reversal Triggers&quot;]
+    R22[&quot;22 Prompt Registry&quot;]
+    R23[&quot;23 Dossier Evidence Register&quot;]
+  end
+  ROR --&gt; BUILD
+  ROR --&gt; CONTENT
+  ROR --&gt; EVAL
+  ROR --&gt; RUNTIME
+  ROR --&gt; GOV
+  KEY[&quot;Universal join key:&lt;br/&gt;version stamp = lockfile pin-set&quot;] -. &quot;in every entry&lt;br/&gt;of every register&quot; .-&gt; ROR
+  R23 --&gt; TGA[&quot;Regulatory submission =&lt;br/&gt;a join over registers,&lt;br/&gt;not archaeology&quot;]
+  AUDIT[&quot;Scheduled negative audit:&lt;br/&gt;zero unregistered artifacts,&lt;br/&gt;models, prompts, decisions&quot;] --&gt; ROR
+</pre>
+<h2 id="s2">BAYESIAN DIFFERENTIAL ENGINE</h2>
+<h3>A7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  IN[&quot;Coded findings from coding service&lt;br/&gt;(present / absent / uncertain)&quot;] --&gt; PRIOR[&quot;Select priors by demographics + context&lt;br/&gt;(library rows, Australian priors via H)&quot;]
+  PRIOR --&gt; LR[&quot;Sequential LR updates per finding&lt;br/&gt;(library rows only - engine owns no numbers)&quot;]
+  LR --&gt; POST[&quot;Posterior ranked differential&quot;]
+  POST --&gt; OV{&quot;Red-flag / SnNout&lt;br/&gt;override fires?&quot;}
+  OV -- &quot;yes&quot; --&gt; FORCE[&quot;Deterministic layer outranks:&lt;br/&gt;forced tier / rule-out&quot;]
+  OV -- &quot;no&quot; --&gt; CONF[&quot;Conformal wrapper (Primer F):&lt;br/&gt;guaranteed-coverage set&quot;]
+  FORCE --&gt; CONF
+  CONF --&gt; OUT[&quot;Differential + set + safety tier&quot;]
+  OUT --&gt; TRACE[&quot;Reasoning trace: prior, each LR step,&lt;br/&gt;posterior + version stamps&quot;]
+  TRACE --&gt; AUDIT[&quot;Audit store / case export&quot;]
+  OUT --&gt; GRAPH[&quot;Hand-off to Graph RAG (Primer E)&quot;]
+</pre>
+<h2 id="s3">EVIDENCE LIBRARY (E1/E2/E3)</h2>
+<h3>B7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  GEN[&quot;Batch authoring&lt;br/&gt;(v3.4 contract skills)&quot;] --&gt; VAL[&quot;stdlib validator:&lt;br/&gt;invariants + LR arithmetic&quot;]
+  VAL -- &quot;fail&quot; --&gt; GEN
+  VAL -- &quot;pass&quot; --&gt; SRC[&quot;Evidence table sourcing&lt;br/&gt;(guidelines, reviews, PIs)&quot;]
+  SRC --&gt; VTIER[&quot;V-tier citation verification&lt;br/&gt;(V1/V2/V3 via connectors)&quot;]
+  VTIER --&gt; ETIER[&quot;E-tier assignment&lt;br/&gt;(E1/E2/E3 per datapoint)&quot;]
+  ETIER --&gt; PR[&quot;PR review: clinician sign-off&quot;]
+  PR --&gt; DIFF[&quot;Differential testing:&lt;br/&gt;version delta through engine,&lt;br/&gt;only disagreements adjudicated&quot;]
+  DIFF --&gt; MERGE[&quot;Merge + row-level version history&quot;]
+  MERGE --&gt; ENGINE[&quot;Consumed by engine (A)&lt;br/&gt;and as labelling functions (H-1)&quot;]
+  MERGE --&gt; FRESH[&quot;Freshness monitor:&lt;br/&gt;stale sources + E3 rows queue&quot;]
+  FRESH --&gt; PR
+  TEL[&quot;Telemetry: overrides trace&lt;br/&gt;to driving rows&quot;] --&gt; PR
+  LUMOS[&quot;Lumos / BEACH / AIHW&lt;br/&gt;published stats (Primer H)&quot;] --&gt; SRC
+</pre>
+<h2 id="s4">CASEBUNDLE EVALUATION CORPUS (FIREWALLED</h2>
+<h3>C7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  AUTH[&quot;Authoring pipeline:&lt;br/&gt;transform / orchestrate / fill / xrefs&quot;] --&gt; CRIT[&quot;Critic pass (review skill):&lt;br/&gt;tier agreement, floors, traps&quot;]
+  CRIT --&gt; TAG[&quot;EVAL provenance tag&lt;br/&gt;(machine-readable, every file)&quot;]
+  TAG --&gt; STORE[&quot;Scoring-store partition&lt;br/&gt;(restricted, logged access)&quot;]
+  STORE --&gt; CKPT[&quot;Formal checkpoint:&lt;br/&gt;frozen system vs corpus slice&quot;]
+  CKPT --&gt; AGG[&quot;Aggregate metrics +&lt;br/&gt;adjudicated failure themes out&quot;]
+  AGG --&gt; LEDGER[&quot;Exposure ledger:&lt;br/&gt;slice, evaluation, audience, granularity&quot;]
+  CKPT --&gt; RETIRE[&quot;Failing case formally retired?&lt;br/&gt;one-way door to incident ledger&quot;]
+  DEV[&quot;Dev-side loaders / CI / training&quot;] -. &quot;refuse EVAL tags&lt;br/&gt;(loader-enforced)&quot; .-&gt; STORE
+  RED[&quot;Corruption engine red-team (G):&lt;br/&gt;attempts EVAL load = sev-1 if it works&quot;] --&gt; DEV
+  COV[&quot;Coverage map vs intended-use mix&lt;br/&gt;+ reserve stock threshold&quot;] --&gt; AUTH
+</pre>
+<h2 id="s5">CONTENT REGISTRY (SIGNED, VERSIONED FRAG</h2>
+<h3>D7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  SRCIN[&quot;Licensed source ingestion&lt;br/&gt;(eTG / PI / PBS class)&quot;] --&gt; FRAG[&quot;Fragmentation: statement-level&lt;br/&gt;+ machine-readable dose bounds + AMT codes&quot;]
+  FRAG --&gt; REV[&quot;PR approval gateway:&lt;br/&gt;pharmacist + clinician CODEOWNERS,&lt;br/&gt;three-way statement verdicts&quot;]
+  REV --&gt; CI[&quot;CI gates: schema validation,&lt;br/&gt;corruption suite (G), hash manifest&quot;]
+  CI -- &quot;fail&quot; --&gt; REV
+  CI -- &quot;pass&quot; --&gt; SIGN[&quot;Sign fragments (KMS / sigstore)&lt;br/&gt;+ version + effective dates&quot;]
+  SIGN --&gt; REG[(&quot;Signed registry&quot;)]
+  SEL[&quot;Selection request&lt;br/&gt;(Graph RAG / engine)&quot;] --&gt; GATES[&quot;Runtime gate chain (arithmetic):&lt;br/&gt;1 hash match. 2 tier policy.&lt;br/&gt;3 currency dates. 4 dose-in-range.&lt;br/&gt;5 context policy (OPA)&quot;]
+  REG --&gt; GATES
+  GATES -- &quot;all pass&quot; --&gt; RENDER[&quot;Render verbatim + decision log&quot;]
+  GATES -- &quot;any fail&quot; --&gt; BLOCK[&quot;Block / degrade + flag + log&quot;]
+  UPD[&quot;Source version delta&quot;] --&gt; DIFFT[&quot;Differential testing:&lt;br/&gt;old vs new rendered output,&lt;br/&gt;deltas to human sign-off&quot;]
+  DIFFT --&gt; REV
+  TEL[&quot;Override / dismiss telemetry&lt;br/&gt;per fragment&quot;] --&gt; REV
+</pre>
+<h2 id="s6">GRAPH RAG</h2>
+<h3>E7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  REG[(&quot;Signed registry (Primer D)&lt;br/&gt;single source of truth&quot;)] --&gt; BUILD[&quot;Deterministic graph build:&lt;br/&gt;same registry version in,&lt;br/&gt;identical graph out (hashable)&quot;]
+  TERM[&quot;AMT + SNOMED CT-AU hierarchies&lt;br/&gt;+ licensed interaction data&quot;] --&gt; BUILD
+  EDGES[&quot;Recommendation-logic edges:&lt;br/&gt;statement-level, PR-reviewed,&lt;br/&gt;every edge cites asserting fragment&quot;] --&gt; BUILD
+  BUILD --&gt; GRAPH[(&quot;Versioned knowledge graph&quot;)]
+  Q[&quot;Query: differential (A) +&lt;br/&gt;coded patient context (H-1)&quot;] --&gt; TRAV[&quot;Traversal: condition to recommendation,&lt;br/&gt;prune contraindication / interaction edges&lt;br/&gt;against context&quot;]
+  GRAPH --&gt; TRAV
+  HYB[&quot;Hybrid: embedding search&lt;br/&gt;over fragment text, fused&quot;] --&gt; TRAV
+  TRAV --&gt; PTRS[&quot;Result: pointers to fragments only&quot;]
+  PTRS --&gt; VERIFY[&quot;Registry gate chain re-verifies&lt;br/&gt;every pointer (D) - graph never releases&quot;]
+  TRAV -- &quot;context unprunable&quot; --&gt; SAFE[&quot;Fail-safe: most-restrictive&lt;br/&gt;set + flag&quot;]
+  UPDATE[&quot;Registry delta&quot;] --&gt; PATCH[&quot;Graph patch + supersession edges&lt;br/&gt;+ selection-delta adjudication&quot;]
+  PATCH --&gt; GRAPH
+  TEL[&quot;Override telemetry traces&lt;br/&gt;to selecting edges&quot;] --&gt; EDGES
+</pre>
+<h2 id="s7">CONFORMAL PREDICTION WRAPPER</h2>
+<h3>F7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  CAL[&quot;Held-out calibration slice&lt;br/&gt;(version-tracked, never trained on)&quot;] --&gt; Q[&quot;Compute nonconformity quantiles&lt;br/&gt;per stratum (Mondrian)&quot;]
+  ENG[&quot;Bayesian engine posteriors&lt;br/&gt;(Primer A)&quot;] --&gt; NC[&quot;Score nonconformity&lt;br/&gt;for each candidate diagnosis&quot;]
+  Q --&gt; SET[&quot;Assemble prediction set&lt;br/&gt;at target coverage&quot;]
+  NC --&gt; SET
+  SET --&gt; OV{&quot;Deterministic override&lt;br/&gt;layer fired?&quot;}
+  OV -- &quot;yes&quot; --&gt; MERGE[&quot;Override outranks:&lt;br/&gt;forced inclusions / tier&quot;]
+  OV -- &quot;no&quot; --&gt; OUT[&quot;Prediction set + guarantee&lt;br/&gt;statement to display&quot;]
+  MERGE --&gt; OUT
+  OUT --&gt; MON[&quot;Coverage + set-size telemetry&quot;]
+  MON --&gt; DRIFT{&quot;Version change or&lt;br/&gt;drift alert?&quot;}
+  DRIFT -- &quot;yes&quot; --&gt; RECAL[&quot;Recalibrate on fresh slice&quot;]
+  RECAL --&gt; Q
+  DRIFT -- &quot;no&quot; --&gt; MON
+</pre>
+<h2 id="s8">CORRUPTION ENGINE</h2>
+<h3>G7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  RB[&quot;Meaning-boundary rulebook&lt;br/&gt;(clinician-authored, versioned)&quot;] --&gt; PF[&quot;Perturbation function library&lt;br/&gt;per content class&quot;]
+  GOOD[&quot;Known-good substrate:&lt;br/&gt;fragments, pairs, rows, edges&quot;] --&gt; GEN[&quot;Suite generator&lt;br/&gt;(fresh per run, seeded)&quot;]
+  PF --&gt; GEN
+  GEN --&gt; SAFE[&quot;Safety-class corruptions&lt;br/&gt;(label: violation, by construction)&quot;]
+  GEN --&gt; NEAR[&quot;Near-miss class&lt;br/&gt;(label: equivalent, by construction)&quot;]
+  SAFE --&gt; ATTACK[&quot;Attack target gate stacks:&lt;br/&gt;registry / library / engine / graph / loaders&quot;]
+  NEAR --&gt; ATTACK
+  ATTACK --&gt; REPORT[&quot;Catch-rate report per stack&quot;]
+  REPORT --&gt; GATE{&quot;100% safety-class catch?&quot;}
+  GATE -- &quot;yes&quot; --&gt; PASS[&quot;Release gate passes&quot;]
+  GATE -- &quot;no&quot; --&gt; BLOCK[&quot;Release blocked +&lt;br/&gt;defect ticket&quot;]
+  SAFE --&gt; TRAIN[&quot;Hard negatives to&lt;br/&gt;entailment checker (Annex H-1)&quot;]
+  NEAR --&gt; TRAIN
+  INC[&quot;Incident ledger entries&quot;] --&gt; RB
+</pre>
+<h2 id="s9">LUMOS VALIDATION PATHWAY</h2>
+<h3>H7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  subgraph S1[&quot;Stage 1 — now&quot;]
+    PUB[&quot;Published Lumos / BEACH / AIHW outputs&quot;] --&gt; EXTRACT[&quot;Extract priors + utilisation stats&quot;]
+    EXTRACT --&gt; TIER[&quot;Tier E1/E2 + source registry&quot;]
+    TIER --&gt; LIB[&quot;Evidence library rows (Primer B)&quot;]
+  end
+  subgraph S2[&quot;Stage 2 — product exists&quot;]
+    PROTO[&quot;Study protocol + analysis plan&lt;br/&gt;(pre-registered endpoints, versioned)&quot;] --&gt; GOV[&quot;Ethics + NSW Health governance&quot;]
+    PROTO --&gt; REQ[&quot;Endpoint definitions become&lt;br/&gt;telemetry requirements&quot;]
+  end
+  subgraph S3[&quot;Stage 3 — flagship evidence&quot;]
+    FREEZE[&quot;Frozen, named system version&quot;] --&gt; STUDY[&quot;Linkage study inside governed&lt;br/&gt;environment (data never leaves)&quot;]
+    GOV --&gt; STUDY
+    STUDY --&gt; RESULTS[&quot;Calibration / coverage / red-flag&lt;br/&gt;sensitivity vs linked outcomes&quot;]
+  end
+  LIB --&gt; ENGINE[&quot;Engine priors&quot;]
+  RESULTS --&gt; RECAL[&quot;Conformal recalibration review (Primer F)&quot;]
+  RESULTS --&gt; DOSSIER[&quot;TGA dossier + published claim&quot;]
+  RESULTS -. &quot;never&quot; .-&gt; TUNE[&quot;Training / tuning loops&quot;]
+</pre>
+<h2 id="s10">LIVING EVALUATION STACK</h2>
+<h3>I7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  CHANGE[&quot;Change: library row / fragment /&lt;br/&gt;engine / prompt / graph&quot;] --&gt; CLASS[&quot;Classify change to&lt;br/&gt;binding mechanisms&quot;]
+  subgraph PRE[&quot;Pre-release (regenerated fresh per run)&quot;]
+    P1[&quot;1 Property tests:&lt;br/&gt;clinical invariants on fresh cases&quot;]
+    P2[&quot;2 Library self-consistency:&lt;br/&gt;engine reproduces library entailments&quot;]
+    G7[&quot;Corruption suite (Primer G):&lt;br/&gt;100% safety-class catch&quot;]
+  end
+  CLASS --&gt; PRE
+  PRE --&gt; P3[&quot;3 Differential testing:&lt;br/&gt;old vs new on sampled stream,&lt;br/&gt;only deltas to expert adjudication&quot;]
+  P3 --&gt; P4{&quot;4 Distributional gates:&lt;br/&gt;Brier/ECE, coverage,&lt;br/&gt;red-flag floors, stability&quot;}
+  P4 -- &quot;fail&quot; --&gt; BLOCK[&quot;Blocked + adjudication record&lt;br/&gt;= change-control evidence&quot;]
+  P4 -- &quot;pass&quot; --&gt; P6[&quot;6 Shadow mode vs live traffic:&lt;br/&gt;agreement + telemetry criteria&quot;]
+  P6 --&gt; PROMOTE[&quot;Promote&quot;]
+  PROMOTE --&gt; P5[&quot;5 Runtime contracts:&lt;br/&gt;per-encounter invariant assertions,&lt;br/&gt;fail-safe block/degrade/escalate&quot;]
+  P5 --&gt; TEL[&quot;Acceptance telemetry&quot;]
+  TEL --&gt; ADJ[&quot;Adjudicated real failure?&quot;]
+  ADJ -- &quot;yes&quot; --&gt; LEDGER[&quot;Incident ledger (one-way door)&lt;br/&gt;+ paired perturbation (G)&quot;]
+  LEDGER --&gt; PRE
+  EVAL[&quot;Casebundle corpus (C)&quot;] -. &quot;never enters the stack -&lt;br/&gt;independent examiner only&quot; .-&gt; PRE
+</pre>
+<h2 id="s11">MODEL GOVERNANCE &amp; THE ML CONTRACT</h2>
+<h3>J8. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  NEW[&quot;New or changed learned artifact&quot;] --&gt; CENSUS[&quot;Census registration:&lt;br/&gt;roles per object (proposes / tests),&lt;br/&gt;releases-role forbidden&quot;]
+  CENSUS --&gt; DATA[&quot;Training-data governance check:&lt;br/&gt;licence class per source,&lt;br/&gt;EVAL-tag refusal, DEV-tags,&lt;br/&gt;Lumos never-trains&quot;]
+  DATA -- &quot;violation&quot; --&gt; REJ1[&quot;Refused before training runs&quot;]
+  DATA -- &quot;clean&quot; --&gt; TRAIN[&quot;Train / fine-tune&lt;br/&gt;(manifest recorded)&quot;]
+  TRAIN --&gt; CARD[&quot;Model card assembly:&lt;br/&gt;pinned identity + scorecard +&lt;br/&gt;intended use + fail-safe +&lt;br/&gt;refresh law + I-bindings&quot;]
+  GADV[&quot;Corruption-engine material (G):&lt;br/&gt;mandatory adversarial evidence&quot;] --&gt; CARD
+  INDEP[&quot;Independence check per claim:&lt;br/&gt;construction-true / human-true /&lt;br/&gt;independent-model; lineage audited&lt;br/&gt;(no self-verification, incl. via data)&quot;] --&gt; CARD
+  CARD --&gt; VALID{&quot;Admissibility validator:&lt;br/&gt;card complete + rules hold?&quot;}
+  VALID -- &quot;no&quot; --&gt; REJ2[&quot;Inadmissible: cannot promote&quot;]
+  VALID -- &quot;yes&quot; --&gt; GAUNTLET[&quot;Primer I promotion mechanisms&lt;br/&gt;(properties / differential /&lt;br/&gt;distributional / shadow as bound)&quot;]
+  GAUNTLET --&gt; SIGN[&quot;Signed, census-listed artifact&quot;]
+  SIGN --&gt; RT{&quot;Runtime role?&quot;}
+  RT -- &quot;proposes&quot; --&gt; LIVE[&quot;Deploy: selector/describer only,&lt;br/&gt;output consumed by deterministic&lt;br/&gt;check, abstention wired, budgets held&quot;]
+  RT -- &quot;tests&quot; --&gt; HARN[&quot;Harness / stack duty&quot;]
+  LIVE --&gt; TELE[&quot;Telemetry + drift triggers&quot;]
+  TELE --&gt; REFRESH[&quot;Version-keyed re-validation&lt;br/&gt;(never calendar)&quot;]
+  REFRESH --&gt; CARD
+</pre>
+<h2 id="s12">ADDENDUM J-1: DETERMINISTIC CODER (EXEMP</h2>
+<h3>7. Runtime diagram (Variant 1b)</h3>
+<pre class="mermaid">
+flowchart TD
+  T[&quot;Free text&quot;] --&gt; DC[&quot;det-coder: dictionary match +&lt;br/&gt;rule-based negation/context&lt;br/&gt;(deterministic, versioned)&quot;]
+  DC -- &quot;resolved&quot; --&gt; F[&quot;Coded findings&quot;]
+  DC -- &quot;abstention&quot; --&gt; PICK[&quot;Clinician SNOMED picker&lt;br/&gt;(one-tap fallback)&quot;]
+  PICK --&gt; F
+  F --&gt; E[&quot;Bayesian engine + overrides&quot;]
+  E --&gt; CW[&quot;Conformal set (F)&quot;]
+  CW --&gt; GR[&quot;Graph traversal (E)&quot;]
+  GR --&gt; GC[&quot;Registry gate chain (D) +&lt;br/&gt;runtime contracts (I-5)&quot;]
+  GC --&gt; R[&quot;Verbatim render + trace&quot;]
+  subgraph OFFLINE[&quot;Offline (between releases)&quot;]
+    ML[&quot;MedCAT/MetaCAT learner:&lt;br/&gt;mines production text&quot;] --&gt; PROP[&quot;Proposed synonyms /&lt;br/&gt;rules / disambiguation contexts&quot;]
+    PROP --&gt; PR[&quot;Clinician PR review&quot;]
+    PR --&gt; IREL[&quot;Primer I dictionary-release gates:&lt;br/&gt;G suite + coding differential&quot;]
+  end
+  IREL --&gt; DC
+  R -- &quot;de-identified text +&lt;br/&gt;abstention clusters&quot; --&gt; ML
+</pre>
+<h2 id="s13">ADDENDUM J-2: ML CODER AT RUNTIME (SaMD </h2>
+<h3>6. Runtime diagram (Variant 2)</h3>
+<pre class="mermaid">
+flowchart TD
+  T[&quot;Free text&quot;] --&gt; MC[&quot;ml-coder: MedCAT + MetaCAT&lt;br/&gt;(frozen weights, calibrated confidence)&quot;]
+  MC -- &quot;coded spans&quot; --&gt; CONF[&quot;Clinician confirmation step:&lt;br/&gt;finding chips accepted / corrected&quot;]
+  MC -- &quot;abstention / low confidence&quot; --&gt; PICK[&quot;SNOMED picker fallback&quot;]
+  MC -- &quot;error / timeout&quot; --&gt; STRUCT[&quot;Degrade to structured entry&lt;br/&gt;(1b UI retained as fallback mode)&quot;]
+  PICK --&gt; CONF
+  STRUCT --&gt; CONF
+  CONF --&gt; F[&quot;Confirmed coded findings&quot;]
+  F --&gt; E[&quot;Bayesian engine + overrides&quot;]
+  E --&gt; CW[&quot;Conformal set (F)&quot;]
+  CW --&gt; GR[&quot;Graph traversal (E)&quot;]
+  GR --&gt; GC[&quot;Registry gate chain (D) +&lt;br/&gt;runtime contracts (I-5)&quot;]
+  GC --&gt; R[&quot;Verbatim render + trace&quot;]
+  CONF -- &quot;corrections&quot; --&gt; TRAINER[&quot;MedCATtrainer fine-tune queue&lt;br/&gt;(offline; promotes via Primer I)&quot;]
+  R -- &quot;telemetry: correction rate,&lt;br/&gt;drift, contract logs&quot; --&gt; MON[&quot;In-clinic monitoring plan&lt;br/&gt;(dossier obligation)&quot;]
+</pre>
+<h2 id="s14">LLM AUGMENTATION LATTICE (CLASSES 1–3)</h2>
+<h3>K7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  SRC[&quot;Untrusted inputs: papers, PIs,&lt;br/&gt;guidelines, production text&quot;] --&gt; LLM[&quot;LLM proposer&lt;br/&gt;(prompt-card versioned, J-carded)&quot;]
+  INJ[&quot;G injection family:&lt;br/&gt;seeded adversarial instructions&quot;] -. &quot;must show 100%&lt;br/&gt;non-compliance&quot; .-&gt; LLM
+  LLM --&gt; PROP[&quot;Proposals: rows, spans, pairs,&lt;br/&gt;corruptions, fragments, bounds,&lt;br/&gt;edges, verdicts, drafts&quot;]
+  PROP --&gt; VER{&quot;Named verifier&quot;}
+  VER -- &quot;deterministic&quot; --&gt; DCHK[&quot;Boundary-check / validator /&lt;br/&gt;schema check certifies&quot;]
+  VER -- &quot;human&quot; --&gt; HREV[&quot;Clinician / pharmacist /&lt;br/&gt;evaluator adjudicates&quot;]
+  DCHK --&gt; OUT[&quot;Governed artifact with&lt;br/&gt;assisted_by provenance&quot;]
+  HREV --&gt; OUT
+  OUT --&gt; HOST[&quot;Existing host pipeline gates:&lt;br/&gt;B validator, D PR flow, G suite,&lt;br/&gt;I mechanisms, C protocol&quot;]
+  MEAS[&quot;Benefit measurement vs&lt;br/&gt;human-only baseline&quot;] --&gt; RETIRE{&quot;Pass-rate / ROI holds?&quot;}
+  HOST --&gt; MEAS
+  RETIRE -- &quot;no&quot; --&gt; DROP[&quot;Point retired&quot;]
+  RETIRE -- &quot;yes&quot; --&gt; CONT[&quot;Continues; prompt changes&lt;br/&gt;via Primer I differential&quot;]
+</pre>
+<h2 id="s15">RUNTIME LLM EXTENSIONS (CLASS 4+)</h2>
+<h3>L7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  subgraph ENC[&quot;Encounter (Class 4+ runtime)&quot;]
+    PAT[&quot;Patient / clinician dialogue&quot;] --&gt; ELIC[&quot;L2/L8 elicitation:&lt;br/&gt;engine VOI selects question,&lt;br/&gt;LLM realises surface only&quot;]
+    ELIC --&gt; CODE[&quot;L1 LLM-class coding&quot;]
+    CODE --&gt; CHIPS[&quot;Confirmation chips&lt;br/&gt;(clinician authority)&quot;]
+    CHIPS --&gt; ENG[&quot;Bayesian engine + overrides&lt;br/&gt;+ conformal (arithmetic)&quot;]
+    SENT[&quot;L5 contradiction sentinel&lt;br/&gt;(typed flag pairs only)&quot;] -. &quot;watches&quot; .-&gt; PAT
+    SENT --&gt; CHIPS
+    ENG --&gt; CRIT[&quot;L6 premature-closure critic:&lt;br/&gt;one challenge, row-cited only&quot;]
+    ENG --&gt; GRAPH[&quot;Graph + registry gate chain&lt;br/&gt;(unchanged, deterministic)&quot;]
+    GRAPH --&gt; RENDER[&quot;Verbatim render&quot;]
+    ENG --&gt; NARR[&quot;L3 narration + L9 what-if:&lt;br/&gt;every sentence entailment-gated&lt;br/&gt;vs trace, strict mode&quot;]
+    RENDER --&gt; COMP[&quot;L7 composer: letters/sheets&lt;br/&gt;from trace + fragments only,&lt;br/&gt;novelty gate, clinician-signed&quot;]
+  end
+  GFAM[&quot;G runtime-LLM corruption family&lt;br/&gt;(rows 26-30)&quot;] -. &quot;attacks all gates,&lt;br/&gt;100% catch required&quot; .-&gt; ENC
+  TEL[&quot;Telemetry: strike rates, false flags,&lt;br/&gt;dismissals, edit distance&quot;] --&gt; REV[&quot;Pre-registered reversal triggers&lt;br/&gt;per capability&quot;]
+</pre>
+<h2 id="s16">HARNESS ML PRIMER</h2>
+<h3>7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  subgraph SILO[&quot;Harness silo (offline)&quot;]
+    CODER[&quot;1 Concept coding service&lt;br/&gt;(MedCAT + context layer)&quot;]
+    CHK[&quot;2 Entailment checker&lt;br/&gt;(three-way, statement-level)&quot;]
+    CORR[&quot;3 Corruption engine&lt;br/&gt;(now Primer G)&quot;]
+    WS[&quot;4 Weak-supervision cascade&lt;br/&gt;(Annex H-1)&quot;]
+    INSTR[&quot;5 Evaluation instrumentation&lt;br/&gt;(properties, differential, calibration)&quot;]
+  end
+  RULES[&quot;Library rules as data (B)&quot;] --&gt; WS
+  TEXT[&quot;Unlabelled text: MedMCQA slice,&lt;br/&gt;PMC extractions, DEV-tagged synthetic&quot;] --&gt; CODER
+  CODER --&gt; WS
+  WS --&gt; CHK
+  CORR --&gt; CHK
+  CODER --&gt; ART[&quot;Versioned artifacts out:&lt;br/&gt;containers, models + scorecards,&lt;br/&gt;suites, harnesses&quot;]
+  CHK --&gt; ART
+  CORR --&gt; ART
+  INSTR --&gt; ART
+  ART --&gt; CI[&quot;Stage 1: parent CI gates&quot;]
+  ART --&gt; ASSIST[&quot;Stage 2: reviewer assistance&quot;]
+  ART --&gt; DIFFT[&quot;Stage 3: differential change gateway&quot;]
+  ART --&gt; RT[&quot;Stage 4: single runtime crossover&lt;br/&gt;(context coding, fail-safe)&quot;]
+  TELE[&quot;Stage 5: production telemetry&quot;] --&gt; SILO
+  EVAL[&quot;Casebundle corpus (C)&quot;] -. &quot;loader-refused,&lt;br/&gt;never an input&quot; .-&gt; SILO
+</pre>
+<h2 id="s17">ANNEX H-1: GROUNDING &amp; WEAK-SUPERVISION </h2>
+<h3>7. Internal operations diagram</h3>
+<pre class="mermaid">
+flowchart TD
+  RAW[&quot;Raw case text&lt;br/&gt;(vignettes, DEV-tagged synthetic,&lt;br/&gt;PMC extractions)&quot;] --&gt; PRE[&quot;Preprocess: clean, split, tokenise&quot;]
+  PRE --&gt; NER[&quot;NER: find clinical spans (MedCAT)&quot;]
+  NER --&gt; GROUND[&quot;Grounding: span to SNOMED/UMLS CUI&quot;]
+  GROUND --&gt; CTX[&quot;Context: negation, experiencer,&lt;br/&gt;temporality (MetaCAT)&quot;]
+  CTX --&gt; FIND[&quot;Coded findings:&lt;br/&gt;concept + present/absent/uncertain&quot;]
+  FIND --&gt; LF[&quot;Labelling functions fire:&lt;br/&gt;LR tables, pathognomonic, SnNout&quot;]
+  LF --&gt; NOISY[&quot;Noisy labels&quot;]
+  NOISY --&gt; AGG[&quot;Snorkel-style aggregation&quot;]
+  AGG --&gt; TRAIN[&quot;Training sets&lt;br/&gt;(checker, coder fine-tune)&quot;]
+  TRAIN --&gt; LOOP[&quot;Fine-tune NER on GP vernacular&quot;]
+  LOOP --&gt; NER
+  GOLD[&quot;Linker gold standard (300-500 spans)&lt;br/&gt;+ ER-Reason CUI check&quot;] --&gt; GROUND
+  KEY[&quot;MedMCQA answer keys:&lt;br/&gt;measure LF accuracy free&quot;] --&gt; LF
+  CORRECT[&quot;MedCATtrainer clinician&lt;br/&gt;corrections (production)&quot;] --&gt; LOOP
+  FIND --&gt; RUNTIME[&quot;Runtime crossover: coded patient&lt;br/&gt;context to gates (D) + graph pruning (E)&quot;]
+</pre>
+<script>mermaid.initialize({startOnLoad:true, theme:"neutral", flowchart:{useMaxWidth:true}});</script>
+</body></html>
+<!-- MET-1 APPEND (additive, non-rendering): this page is a derived artifact of the pre-metamorphosis stack. A renderable successor covering the merged (imago) architecture ships at 09_diagrams/cdss_diagrams_v2.html; the mermaid sources live beside it. This original is preserved unedited per the append-only law. -->

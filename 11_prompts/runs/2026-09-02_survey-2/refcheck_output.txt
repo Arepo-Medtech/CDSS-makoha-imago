@@ -1,0 +1,22 @@
+{"path_refs_checked": 19, "anchor_refs_checked": 129, "unresolved_paths": 15, "resolved_by_basename_only": 1, "unresolved_anchors": 2}
+== unresolved_paths
+  04_hardening/HARDEN-1_coverage_ledger_seed.md:32 06_repositories/** | **Amendment A-001 (2026-09-01, appended):** the 06_ skeleton set expanded to ~91 files (14 existing-repo skele
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:61 docs/agents.md | **All 4 agent personas** — `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` — c
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:61 references/orchestration-patterns.md | **All 4 agent personas** — `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` — c
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 definition-of-done.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 testing-patterns.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 security-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 performance-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 accessibility-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 observability-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 orchestration-patterns.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:102 references/definition-of-done.md | - Clear the `references/definition-of-done.md` standing bar in addition to the artifact's own acceptance crite
+  04_hardening/HARDEN-2_hardening_spec.md:13 references/definition-of-done.md | An artifact is HARDENED only when, with captured evidence: (1) explicit triggers; (2) deterministic, ordered, 
+  04_hardening/HARDEN-2_hardening_spec.md:18 validate_build_plan.py | | CC-1 Primers + execution layers | Primer 0, A–L, variants, harness, annex, + their new §-10/§-11 annexes | t
+  10_regulatory-execution/FOLD-1_antennae_fold_worklist.md:17 antennae-corpus_v1.1.md | Produce `antennae-corpus_v1.1.md` as a new file: wrapper Parts 0–4 carried, Annex 1
+  10_regulatory-execution/REG-POSTURE_v1.1.md:572 observer_adjudication.md | evidence. Any clause added to `observer_adjudication.md` should be
+== resolved_by_basename
+  06_repositories/REPO-MAP_v2.md:30 GPP-CHANNEL.md -> ['06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md']
+== unresolved_anchors
+  09_diagrams/register_topology_v2.mermaid:17 MT2 §7.4 | R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7.4)"]:::prop
+  09_diagrams/cdss_diagrams_v2.html:96 MT2 §7.4 | R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7.4)"]:::prop

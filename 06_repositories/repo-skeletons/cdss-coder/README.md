@@ -1,0 +1,4 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-coder (Existing — J-1/J-2; relabel notices in their annexes)
+det-coder + dictionary, or ml-coder container — **the fork is this repo's release channel choice**, recorded in R19 with pre-registered reversal triggers. Labels per C-01: lower-class included (J-1) / higher-class included (J-2), Needs confirmation pending ASSUME-REG-002. Downstream identity of the two systems is the reversibility guarantee.
+Layout: `api/` (coder API per Harness §8 — one contract, two implementations) · `channels/det/` (dictionary + rules; offline ML improves the dictionary via harness) · `channels/ml/` (frozen runtime model + clinician-confirmation step per J-2 §2) · `tests/` (abstention fail-closed; per-channel acceptance).

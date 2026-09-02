@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CDSS Diagrams v2 — Imago (Metamorphosis successor to cdss_diagrams.html)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<style>
+ body{font-family:Georgia,serif;max-width:1200px;margin:2rem auto;padding:0 1rem;color:#1a1a1a}
+ h1{border-bottom:3px solid #7c3aed}h2{color:#7c3aed;margin-top:3rem}
+ .status{background:#fef3c7;border-left:4px solid #d97706;padding:.5rem 1rem;font-size:.9rem}
+ .mermaid{background:#fafafa;border:1px solid #ddd;border-radius:8px;padding:1rem;margin:1rem 0}
+ footer{margin-top:4rem;font-size:.85rem;color:#666;border-top:1px solid #ddd;padding-top:1rem}
+</style>
+</head>
+<body>
+<h1>CDSS Diagrams v2 — the Imago</h1>
+<p class="status"><strong>Status: Proposed.</strong> Successor to <code>cdss_diagrams.html</code> (preserved unedited in <code>02_cdss-stack-augmented/</code>). Every element here is traceable: dashed = Proposed/awaiting a DEC row; solid = Existing/Retained mechanism. Editable sources live beside this file as <code>.mermaid</code>. Nothing in these pictures claims deployment.</p>
+
+<h2>1. Merged architecture — the fabric wraps the release spine</h2>
+<p>The Toulmin mapping of MET-1 §5.1: grounds←coder, warrant←engine/GenericArguments, backing←library, qualifier←conformal, rebuttal←prunes+corruption, claim←evaluator-released content. The one rule is unchanged: <em>ML proposes and tests; only arithmetic releases</em> (SPINE-7 restates it verbatim).</p>
+<pre class="mermaid">
+flowchart TD
+  subgraph KNOW["Knowledge plane (versioned, ratified)"]
+    LIB["Evidence library B<br/>E1/E2/E3 = BACKING"]
+    REGY["Content registry D<br/>signed fragments"]
+    COMP["Guideline Compiler EN-3 (Proposed)<br/>CQL/FHIR-CPG/WHO-SMART → GenericArguments"]
+    GA["GenericArgument store<br/>warrants + thresholds + lineage"]
+    COMP --> GA
+  end
+  subgraph RUN["Runtime (per encounter)"]
+    CODE["Coder (fork lives here)<br/>findings = GROUNDS + provenance"]
+    ENG["Bayesian engine A<br/>LR chains = WARRANT instantiation"]
+    SAFE["Red-flag overrides<br/>safety-class claims"]
+    CONF["Conformal wrapper F<br/>= QUALIFIER (mandatory, SPINE-2)"]
+    GRAPH["Graph RAG E<br/>prunes = REBUTTALS; conflicts = DetectedIssue (SPINE-6)"]
+    EVAL["Deterministic evaluator<br/>five gates + argument-tree checks<br/>(SPINE-7: only arithmetic releases)"]
+    ARG["ActualArgument<br/>claim·grounds·warrant·backing·qualifier·rebuttal<br/>append-only, hash-chained (SPINE-4), pinned (SPINE-5)"]
+  end
+  subgraph FACES["Register renderers (SPINE-3: compress/reorder only)"]
+    HDC["Clinician face MAK-HDC<br/>+ Labial-Palps UI"]
+    TXC["Patient face MAK-TXC<br/>+ Proboscis UI (scope per DEC-07)"]
+    ABC["Auditor face MAK-ABC<br/>projections (SPINE-9)"]
+  end
+  CODE --> ENG --> SAFE --> CONF --> GRAPH --> EVAL --> ARG
+  LIB --> ENG
+  GA --> ENG
+  REGY --> EVAL
+  ARG --> HDC & TXC & ABC
+  DEV["Deviation objects (SPINE-8)<br/>structured, first-class"] --> ARG
+  SAB["Corruption engine G<br/>+ ARG-class suites<br/>findings published as REBUTTALS"] -.-> EVAL
+  CORPUS["Firewalled corpus C<br/>own account · checkpoints only"] -.-> ARG
+  GPP["GPP channel (J-3, Proposed)<br/>guideline prompts only — no differential"] -.-> REGY
+</pre>
+
+<h2>2. One consultation under the fabric</h2>
+<pre class="mermaid">
+sequenceDiagram
+  participant P as Patient + Clinician
+  participant C as Coder
+  participant A as Engine A
+  participant F as Conformal F
+  participant E as Graph E
+  participant V as Evaluator + gates
+  participant G as Fabric ledger
+  participant U as Faces x3
+  P->>C: free text
+  C->>A: coded findings = grounds, with provenance
+  A->>A: priors + LR chain (warrant) + red-flag overrides
+  A->>F: posteriors + trace
+  F->>E: conformal set = qualifier (SPINE-2)
+  E->>V: fragment pointers + prune rebuttals + DetectedIssues
+  V->>V: hash, tier, currency, range, context + argument checks
+  Note over V: SPINE-2 refusals — no qualifier: refuse.<br/>Empty rebuttal slot while findings exist: refuse.
+  V->>G: ActualArgument appended — hash-chained (SPINE-4), pinned (SPINE-5)
+  G->>U: one argument, three registers (SPINE-3 invariance)
+  P->>G: accept or override — Deviation object (SPINE-8)
+</pre>
+
+<h2>3. Register topology v2 — R1–R28 + proposed R29/R30</h2>
+<pre class="mermaid">
+flowchart LR
+  subgraph BUILD["Build & governance"]
+    R1["R1 version registry"]; R4["R4 model census/cards"]; R7["R7 property registry"]; R19["R19 posture + triggers"]; R23["R23 dossier evidence"]
+    R25["R25 property runs"]; R26["R26 build work"]; R27["R27 drift & adjudication"]
+    R29["R29 hardening coverage<br/>(MT2 ledger — append-only,<br/>written by the pass only)"]:::prop
+    R30["R30 regulatory posture<br/>(external attestations only)"]:::prop
+  end
+  subgraph RUNTIME["Runtime ledgers"]
+    R11["R11 gate decision log"]; R13["R13 telemetry"]; R18["R18 contract violations"]; R20["R20 incidents"]
+  end
+  subgraph CORPUS["Corpus side (own account)"]
+    R9["R9 coverage map<br/>(+HeyDoc seed provenance)"]; R21["R21 exposure ledger"]; R28["R28 aggregate mirror"]
+  end
+  FAB["Fabric ledger (DEC-04):<br/>one physical hash-chain;<br/>R11/R13/R18 become views"]:::prop
+  FAB -.-> R11 & R13 & R18
+  R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7.4)"]:::prop
+  R30 --> R19 & R23
+  R28 --> OBS["Observer (adjudicates from<br/>registers only, never corpus content)"]
+  classDef prop stroke-dasharray: 5 5
+</pre>
+
+<h2>4. The three ladders — hardening × regulatory gates × maturity levels</h2>
+<pre class="mermaid">
+flowchart TD
+  H0["MT2 row zero: install pack + inventory<br/>(BLOCKED — no evidence yet)"] --> HP["Hardening pass W0→W11<br/>100% ledger or escalated"]
+  G0["GATE-000: counsel opinion +<br/>intended-purpose + positioning + patient-surface<br/>(BLOCKS regulated tooling)"] --> G1["GATE-001: Ketryx/Jira + ISO 14971 risk file<br/>+ substrate decision (DEC-03)"]
+  G1 --> G2["GATE-002: identifiable-data line<br/>(controls before any non-synthetic input)"]
+  G2 --> G3["GATE-003: clinical evidence + pen-test<br/>+ post-market + tier decision"]
+  G3 --> G4["GATE-004: conformity route → ARTG inclusion<br/>= first lawful clinical supply"]
+  L1["L1 glass-box core (synthetic)<br/>+ fabric-v0 schema"] --> L2["L2 signed content loop<br/>+ clinician face v0"]
+  L2 --> L3["L3 honest uncertainty + coded intake<br/>+ compiler v0 + auditor read model<br/>(fork evidence accrues)"]
+  L3 --> L4["L4 full lattices: posture decision<br/>(lower- vs higher-class included),<br/>first checkpoint, pilot, GPP if DEC-06"]
+  L4 --> L5["L5 target state + Lumos study<br/>+ negative audits scheduled"]
+  G0 -.parallel.- L1
+  G2 -.line before.- L3
+  G3 -.evidence from.- L4
+  G4 -.beside.- L5
+  HP -.standing ratchet.- L1 & L5
+</pre>
+
+<footer>MET-1 pass, 2026-09-01. Sources: Arch §2/§11/§12 (Existing), MAK-FFC Parts 2–6, MAK-ANT §7, MT2, DEPLOY-1. Regeneration: edit the .mermaid sources, re-inline, bump this page's date. This page carries an R29 row (CC-6) — PENDING, not HARDENED.</footer>
+<script>mermaid.initialize({startOnLoad:true,theme:'neutral'});</script>
+</body>
+</html>

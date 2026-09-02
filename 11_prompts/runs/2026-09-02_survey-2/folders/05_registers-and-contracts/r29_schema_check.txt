@@ -1,0 +1,8 @@
+REG-R29.schema.json: check_schema OK (Draft 2020-12)
+required: ['row_id', 'artifact_path', 'artifact_class', 'skills_deployed', 'mechanical_check_outputs', 'doubt_pass_record', 'state', 'evidence_refs', 'version_stamp']
+properties: ['artifact_class', 'artifact_path', 'blocker', 'defects', 'doubt_pass_record', 'evidence_refs', 'mechanical_check_outputs', 'non_applicability_notes', 'row_id', 'sibling_consistency_set', 'skills_deployed', 'state', 'version_stamp']
+md twin fields: ['artifact_class', 'artifact_path', 'defects', 'doubt_pass_record', 'evidence_refs', 'mechanical_check_outputs', 'non_applicability_notes', 'row_id', 'sibling_consistency_set', 'skills_deployed', 'state', 'version_stamp']
+json-only: ['blocker'] | md-only: []
+example instance (row 0 as ESCALATED) valid: True
+seed's PENDING state valid under schema: False → ["'PENDING' is not one of ['HARDENED', 'ESCALATED']"]
+examples key present in schema: False

@@ -1,0 +1,140 @@
+{
+ "files": 90,
+ "conformant": 77,
+ "findings": 13,
+ "trees": {
+  "cdss-coder": {
+   "files": 3,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-compiler": {
+   "files": 9,
+   "has_ci": true,
+   "has_codeowners": true,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-conformal": {
+   "files": 3,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-corpus": {
+   "files": 2,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-corruption": {
+   "files": 4,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-engine": {
+   "files": 6,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-evalstack": {
+   "files": 3,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-fabric": {
+   "files": 8,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-governance": {
+   "files": 2,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-graph": {
+   "files": 4,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-harness": {
+   "files": 2,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-integration": {
+   "files": 4,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-library": {
+   "files": 6,
+   "has_ci": true,
+   "has_codeowners": true,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-llm-lattice": {
+   "files": 2,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-lumos": {
+   "files": 2,
+   "has_ci": false,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-registry": {
+   "files": 5,
+   "has_ci": true,
+   "has_codeowners": true,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-spine": {
+   "files": 11,
+   "has_ci": true,
+   "has_codeowners": true,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-ui-clinician": {
+   "files": 7,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  },
+  "cdss-ui-patient": {
+   "files": 7,
+   "has_ci": true,
+   "has_codeowners": false,
+   "has_manifest": true,
+   "has_readme": true
+  }
+ }
+}

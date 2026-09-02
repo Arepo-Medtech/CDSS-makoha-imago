@@ -1,0 +1,1 @@
+BSQ.schema.json: check_schema OK (Draft 2020-12, jsonschema 4.26.0 in ./.venv)

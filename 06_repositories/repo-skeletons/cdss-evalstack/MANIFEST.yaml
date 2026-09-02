@@ -1,0 +1,8 @@
+# MANIFEST stub — cdss-evalstack (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-evalstack
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [pipeline/CI definitions]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_written: [R7 property registry, R12 adjudications, R18 contract violations, R20 incidents]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"

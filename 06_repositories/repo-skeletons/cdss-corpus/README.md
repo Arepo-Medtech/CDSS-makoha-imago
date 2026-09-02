@@ -1,0 +1,5 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-corpus (Existing — Primer C; annex C10) — FIREWALL BANNER
+**This skeleton is intentionally minimal and must be instantiated only inside the corpus's own AWS account.** The firewall is a permission boundary: separate repo + restricted credentials; dev-side CI holds no credential for it (Arch §10, verbatim). The MT2 pass enumerates corpus artifacts by path/class only; hardening executes in-account by the evaluation-role holder; evidence exports as aggregates via R28 (HARDEN-1 row 72 = ESCALATED-placeholder until DEC-12).
+No case content, schema, or structure is stubbed here — even layout details stay behind the boundary. Seed-intake procedure for HeyDoc material (SPEC-CARD-04-00001 + schemas): C10 annex; authoring role only; provenance to R9.
+Emits: **checkpoint results (aggregate) only.**

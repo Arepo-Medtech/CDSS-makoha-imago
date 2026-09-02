@@ -1,0 +1,18 @@
+# HALT_LOG — temptations noticed, and what was done instead
+
+| # | When | Temptation | What I did instead |
+|---|---|---|---|
+| H-01 | Phase 0 step 1d | "MET-1 is 64 KB and its content is restated in MET-1.1/MET-2/MET-3/MET-4 — skip it." | Read frontmatter, full heading tree, §9.1–9.5 and §16 heading; recorded in ORIENTATION §1 that MET-1 was read by headings + §9, not in full — it is a *reference* file (never judged), so the partial read is disclosed, not hidden |
+| H-02 | Phase 0 step 2 | "Write the parity standard from what good docs look like; the evidence quotes can be added later." | Grepped the reference files for each line first (frontmatter keys, Contents/Appendix headings, Rationale-trace counts) and wrote the P-line only with the quotes in hand |
+| H-03 | Phase 1 step 4 | "I know the chain gaps already from authoring the prompt — write CHAIN.md from the seeds." | Ran the greps first (07_ field grep, HARDEN-1/3 grep for 10_, artifacts-html ls, 06_ mermaid grep, registers/README byte count) and corrected two seeded numbers (93→91 files; 413→314 B) before writing |
+| H-04 | Phase 2 06_ | "91 skeleton files are the same three stubs repeated — spot-check five trees." | Wrote tools/skeleton_check.py and ran it over all 90 files; 90 per-file rows; then manually re-read the 7 READMEs and 13 unbannered files the script flagged before deciding which checks were real |
+| H-05 | Phase 2 06_ | "The 'cites owning primer' regex found 36 defects — file them." | Read the flagged files: 7 were false positives (they cite MAK/primer IDs the regex missed) → the check was withdrawn and recorded in ASSESSMENT §4 rather than filed as findings |
+| H-06 | Phase 2 10_ | "REG-POSTURE is 60 KB and already has a census + self-audit — skip reading its §0.4/§0.7 and infer the R30 enum from R30." | Read §0.4 and §0.7 in full; that is what showed the seed's 'standing'/'not started' statuses have no crosswalk value — a finding that would otherwise have been mis-filed as a simple enum violation |
+| H-07 | Phase 2 10_ | "Treat the seven 10_ files as one class since they share ADVISORY_ONLY." | Seven separate P-line columns and seven PRESENT rows; the differences (EXEC-1/REG-POSTURE have census+self-audit, the other five do not) are the finding |
+| H-08 | Phase 2 | "Weight every INDEX at 3 by rule without re-deriving." | Re-derived each: criticality 2 (manifest-class) + radius 1 (blocks a wave's per-file enumeration) — the same answer in all seven folders, stated per row with the addends |
+| H-09 | Device link dropped mid-Phase-2 (06_) | "Continue from memory and re-create the outputs later." | Waited, re-checked which files had landed (skeleton_check.py had not), re-ran that single step; nothing was written from memory |
+| H-10 | Phase 3 | "The queue has 42 rows — summarise the executable ones into a paragraph instead of 27 full build specs." | Generated all 27 build specs in full (BUILD_SPEC_QUEUE.md §c.1, ~70 KB) from the validated rows; the naive-executor test applies to this run's own output |
+| H-11 | Phase 3 coverage check | "117/118 files covered is close enough." | Filed BSQ-0211 for the one uncovered path (REG-R29 md twin) and re-validated 177/177 |
+
+## Final section — every temptation logged, and what was done instead
+Eleven entries (H-01..H-11) above. Pattern across them: three were sampling temptations (H-04, H-07, H-10), three were "write from memory / from the seeds" temptations (H-02, H-03, H-09), two were skip-the-read temptations (H-01, H-06), one was accepting a false-positive batch (H-05), one was rule-by-fiat weighting (H-08), one was accepting incomplete coverage (H-11). In every case the full step was done and the evidence is on disk. No temptation was acted on.

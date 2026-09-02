@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "makoha-imago-v1.2/11_prompts/runs/survey-2/BSQ.schema.json",
+  "title": "BSQ — Build-Spec Queue row (Proposed; feeds the MT2 operator, the P0 queue and 11_ launch prompts; is not R29)",
+  "type": "object",
+  "required": ["row_id","folder","artifact_path","label","finding_class","parity_lines","statement","evidence","weight","criticality","radius","parity_gap","blocks","executability","owner","state"],
+  "properties": {
+    "row_id": {"type":"string","pattern":"^BSQ-[0-9]{4}$"},
+    "folder": {"enum":["04","05","06","07","08","09","10","CHAIN"]},
+    "artifact_path": {"type":"string","minLength":1,"description":"repo-relative path, or the path that SHOULD exist for ABSENT-* classes"},
+    "label": {"type":"array","minItems":1,"items":{"type":"string"}},
+    "finding_class": {"enum":["PRESENT-CONFORMANT","ABSENT-ITEM","ABSENT-SECTION","ABSENT-CHAIN-LINK","ABSENT-WORKLIST-TASK","ABSENT-LEDGER-ROW","ABSENT-INDEX-ROW","INVENTORY-DRIFT","STALE-COUNT","DANGLING-REF","ORPHAN-ID","CONTRADICTION","DECISION-PENDING","PLACEHOLDER-UNREGISTERED","TACIT-KNOWLEDGE-REQUIRED","UNDEFINED-OWNER","QUALITY-BELOW-BAR","UNCLASSIFIED-ITEM","TOOL-UNAVAILABLE","PROPOSED-ADDITION"]},
+    "parity_lines": {"type":"array","items":{"type":"string","pattern":"^P-[DF]-[0-9]{2}$"},"description":"P-lines judged; may be [] only for PRESENT-CONFORMANT, INVENTORY-DRIFT, TOOL-UNAVAILABLE"},
+    "contract_line": {"type":"string"},
+    "statement": {"type":"string","minLength":20},
+    "evidence": {"type":"string","minLength":1,"description":"verbatim command + output, or quoted lines with path:line; a bare assertion is a violation (MT2 §5)"},
+    "sibling_positions": {"type":"array","items":{"type":"object","required":["path","quote"],"properties":{"path":{"type":"string"},"quote":{"type":"string"}}}},
+    "weight": {"type":"integer","minimum":0,"maximum":5},
+    "criticality": {"type":"integer","minimum":0,"maximum":2},
+    "radius": {"type":"integer","minimum":0,"maximum":3},
+    "parity_gap": {"type":"integer","minimum":0},
+    "blocks": {"type":"array","items":{"type":"string"}},
+    "executability": {"enum":["CLAUDE-CODE-EXECUTABLE-NOW","EXECUTABLE-AFTER-DECISION","HUMAN-ONLY","CORPUS-OWNER","EXTERNAL-PARTY","NONE"]},
+    "build_spec": {"type":"object","required":["target_path","class_and_plines","mandatory_sections","inputs","laws","evidence_to_capture","acceptance_test","closes_rows","harden_linkage","ratifying_owner","depends_on"],"properties":{"target_path":{"type":"string","minLength":1},"class_and_plines":{"type":"string","minLength":1},"mandatory_sections":{"type":"array","minItems":1,"items":{"type":"string"}},"inputs":{"type":"array","minItems":1,"items":{"type":"string"}},"laws":{"type":"array","minItems":1,"items":{"type":"string"}},"evidence_to_capture":{"type":"string","minLength":1},"acceptance_test":{"type":"string","minLength":1},"closes_rows":{"type":"array","minItems":1,"items":{"type":"string"}},"harden_linkage":{"type":"string","minLength":1},"ratifying_owner":{"type":"string","minLength":1},"depends_on":{"type":"array","items":{"type":"string"}}}},
+    "decision_ref": {"type":"string"},
+    "survey1_ref": {"type":"array","items":{"type":"string","pattern":"^SL-[0-9]{4}$"}},
+    "owner": {"type":"string","description":"named role/owner, or [NEEDS DEFINITION] with the DEC that would define it"},
+    "phase_found": {"enum":["1","2"]},
+    "state": {"enum":["OPEN","DISMISSED-NOT-BLOCKING","ESCALATED"]},
+    "dismissal_reason": {"type":"string"},
+    "blocker": {"type":"string"}
+  },
+  "allOf": [
+    {"if":{"properties":{"finding_class":{"const":"CONTRADICTION"}}},"then":{"required":["sibling_positions"]}},
+    {"if":{"properties":{"executability":{"const":"CLAUDE-CODE-EXECUTABLE-NOW"}},"required":["executability"]},"then":{"required":["build_spec"]}},
+    {"if":{"properties":{"executability":{"enum":["EXECUTABLE-AFTER-DECISION","HUMAN-ONLY"]}},"required":["executability"]},"then":{"required":["decision_ref"]}},
+    {"if":{"properties":{"finding_class":{"const":"DECISION-PENDING"}}},"then":{"required":["decision_ref"]}},
+    {"if":{"properties":{"state":{"const":"DISMISSED-NOT-BLOCKING"}}},"then":{"required":["dismissal_reason"]}},
+    {"if":{"properties":{"state":{"const":"ESCALATED"}}},"then":{"required":["blocker"]}}
+  ]
+}

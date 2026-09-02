@@ -1,0 +1,191 @@
+<title>Execution Layer Sourcing Map</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9; --panel: #ffffff; --panel-2: #eef0f4;
+    --ink: #1c2330; --ink-2: #4a5468; --ink-3: #8791a3;
+    --accent: #35477d; --accent-soft: #dfe4f0;
+    --amber: #a0752f; --amber-soft: #f2e8d5;
+    --line: #d9dde5; --good: #2e6b4f; --warn: #9a5b2d; --crit: #8c3b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+      --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+      --accent: #a3b3e3; --accent-soft: #2a3450;
+      --amber: #d3a55c; --amber-soft: #3a3122;
+      --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+    --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+    --accent: #a3b3e3; --accent-soft: #2a3450;
+    --amber: #d3a55c; --amber-soft: #3a3122;
+    --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--ink); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 17px; line-height: 1.6; margin: 0; padding: 0 20px 90px; }
+  .wrap { max-width: 820px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 10px; border-bottom: 3px solid var(--accent); margin-bottom: 8px; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+  h1 { font-family: Spectral, Georgia, serif; font-weight: 700; font-size: clamp(34px, 6vw, 46px); line-height: 1.12; margin: 0 0 10px; text-wrap: balance; }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 0 26px; max-width: 64ch; }
+  h2 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 27px; line-height: 1.2; margin: 58px 0 8px; text-wrap: balance; }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: .12em; margin-bottom: 6px; }
+  h3 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 20px; margin: 30px 0 6px; }
+  p { max-width: 70ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  ul { padding-left: 22px; max-width: 68ch; }
+  li { margin: 7px 0; }
+  .verdict { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber); padding: 18px 22px; margin: 30px 0; border-radius: 4px; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  .verdict p { margin: 8px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+  .tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: 4px; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  th, td { padding: 10px 13px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  thead tr { background: var(--panel-2); }
+  tbody tr { background: var(--panel); }
+  .mono { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+  .pill { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .06em; padding: 1px 9px; border-radius: 100px; border: 1px solid var(--line); white-space: nowrap; }
+  .pill.adopt { color: var(--good); border-color: var(--good); }
+  .pill.adapt { color: var(--warn); border-color: var(--warn); }
+  .pill.build { color: var(--crit); border-color: var(--crit); }
+  .pill.watch { color: var(--ink-3); }
+  .anti { border-left: 4px solid var(--crit); background: var(--panel); border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 4px; padding: 14px 20px; margin: 22px 0; }
+  .anti h5 { margin: 0 0 6px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--crit); font-weight: 500; }
+  .anti ul { margin: 0; padding-left: 18px; }
+  .anti li { font-size: 15px; color: var(--ink-2); }
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  .foot { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Research dossier · compiled 29 Aug 2026 · fourth volume in the Mākoha research series</p>
+  <h1>Execution Layer Sourcing Map</h1>
+  <p class="dek">What actually runs: worked examples, demos, and production code on GitHub for every Four Faces Corpus subsystem — verified repo by repo — and, where no code exists, the 2025+ RAG and ML research that fits the niche. Verdicts: <span class="pill adopt">ADOPT</span> <span class="pill adapt">ADAPT</span> <span class="pill build">BUILD</span> per component.</p>
+</header>
+
+<div class="verdict">
+  <p class="lbl">The short version</p>
+  <p>The corpus splits cleanly into three sourcing tiers. <strong>Tier 1 — adopt:</strong> the guideline-execution plane is production-grade open source today (HL7's CQL compiler/runtime, the clinical-reasoning operations library, Google's Android FHIR Workflow, and OpenSRP FHIR Core — which literally ships "WHO SMART Guidelines on Android" for LMIC community health, your low-resource profile as a maintained product). Conformal prediction is commodity (MAPIE), adversarial/robustness tooling exists (Giskard, ART), and tamper-evident storage has mature primitives (immudb, Merkle patterns) — with one landmine: AWS retired QLDB in July 2025, so the obvious AWS-native ledger is gone. <strong>Tier 2 — adapt:</strong> formal argumentation has real engines (TweetyProject actively maintained with ASPIC+/ABA/Dung semantics; Carneades dormant but complete), and the 2024–26 argumentation-LLM cluster (ArgLLMs, ArgMed-Agents, ArgEval/ArgTumour) has public code that mines guidelines into argument structures — the guideline-compiler assist, prototyped. <strong>Tier 3 — build:</strong> no GAAM implementation, no justification fabric, no deviation ledger, no compliance projector exists anywhere in public code. That absence is the moat: everything around your differentiator is buyable; the differentiator itself is not.</p>
+</div>
+
+<h2><span class="sec">01</span>Guideline execution plane — EN-2, EN-3, PF-7, XC-3</h2>
+<p>This is the strongest tier: the "narrative → computable → executable" pipeline the corpus mandates (EN-3) exists as maintained, Apache-licensed infrastructure, and the low-resource deployment profile (XC-3) has an entire product line built on it.</p>
+<div class="tablewrap"><table>
+  <thead><tr><th>Repo / artifact</th><th>What it gives you</th><th>Status (verified)</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/cqframework/clinical_quality_language">cqframework/clinical_quality_language</a></td><td>The HL7 CQL reference stack: CQL→ELM compiler, ELM runtime, FHIR integration — the executable form your Guideline Compiler emits</td><td class="mono">320★ · Apache-2.0 · Kotlin/Java · active</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/cqframework/clinical-reasoning">cqframework/clinical-reasoning</a></td><td>FHIR Clinical Reasoning operations as a library: PlanDefinition processing, measure evaluation, CDS — the $apply machinery behind GenericArgument execution</td><td class="mono">47★ · Apache-2.0 · v4.7.0 May 2026 · active (Smile Digital Health)</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/cqframework/cqf-ruler">cqframework/cqf-ruler</a></td><td>Reference CDS server (HAPI plugin, CDS Hooks)</td><td class="mono">71★ · Apache-2.0 · functionality migrating upstream to hapi-fhir-jpaserver-starter — treat as reference, deploy the upstream</td><td><span class="pill watch">LEGACY</span></td></tr>
+    <tr><td><a href="https://github.com/google/android-fhir">google/android-fhir</a></td><td>Open Health Stack SDK: offline-first FHIR Engine, Structured Data Capture (your PF-1 intake instruments), and a Workflow library for on-device clinical logic</td><td class="mono">599★ · Apache-2.0 · Kotlin · active</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/opensrp/fhircore">opensrp/fhircore</a></td><td>"Offline-capable, mobile-first healthcare… using FHIR and WHO SMART Guidelines on Android" — a running, deployed instance of the corpus's low-resource profile, community-health-worker-first</td><td class="mono">68★ · Apache-2.0 · v2.2.2 Nov 2025 · 136 releases · active (Ona)</td><td><span class="pill adopt">ADOPT / STUDY</span></td></tr>
+    <tr><td><a href="https://smart.who.int/index.html">WHO SMART Guidelines IGs</a> (WorldHealthOrganization GitHub org)</td><td>Published machine-readable guideline content (ANC, immunizations, HIV…) — GenericArgument source material for LMIC jurisdictions</td><td class="mono">FHIR IGs · CC/Apache mix · active program</td><td><span class="pill adopt">ADOPT</span></td></tr>
+  </tbody>
+</table></div>
+<p><strong>Integration note.</strong> The corpus's Guideline Compiler (EN-3) becomes a thinner build than it looked: consume WHO SMART / CPG-on-FHIR artifacts where they exist, compile CQL via the reference translator, and add the one layer nobody ships — the lift from PlanDefinition/CQL into GenericArgument templates with per-warrant evidence-tier backing. The delta is the argument annotation, not the execution machinery.</p>
+
+<h2><span class="sec">02</span>Argumentation and the justification fabric — SPINE-1..3, AF-2, EN-1</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Repo / artifact</th><th>What it gives you</th><th>Status (verified)</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/TweetyProjectTeam/TweetyProject">TweetyProjectTeam/TweetyProject</a></td><td>The maintained formal-argumentation workhorse: Dung semantics solvers, ASPIC+, assumption-based argumentation, probabilistic argumentation — candidate backend for the Deterministic Evaluator's conflict semantics</td><td class="mono">41★ · LGPL-3.0 · Java · v1.31 Jul 2026 · active since 2010</td><td><span class="pill adapt">ADAPT</span></td></tr>
+    <tr><td><a href="https://github.com/carneades/carneades-4">carneades/carneades-4</a></td><td>Complete structured-argument evaluator (CAES): schemes, weighing functions, cyclic graphs, AIF/LKIF import, visual export — the closest ancestor to an argument-fabric evaluator ever shipped</td><td class="mono">61★ · MPL-2.0 · Go · dormant since 2017 — mine for design, don't depend</td><td><span class="pill adapt">ADAPT / STUDY</span></td></tr>
+    <tr><td><a href="https://github.com/CLArg-group/argumentative-llms">CLArg-group/argumentative-llms</a></td><td>Official code for Argumentative LLMs (Imperial CLArg, AAAI 2025): LLMs construct argumentation frameworks; formal semantics do the deciding — a running instance of "LLM proposes, formal layer releases"</td><td class="mono">Python · public · paper code, research-grade</td><td><span class="pill adapt">ADAPT</span></td></tr>
+    <tr><td>GAAM (Generic/Actual Argument Model) implementation</td><td>The corpus's chosen formalism for GenericArgument/ActualArgument/Deviation</td><td class="mono">No public implementation found — Stranieri-era tooling (ArgumentDeveloper, JustSys) never open-sourced</td><td><span class="pill build">BUILD</span></td></tr>
+    <tr><td>Justification fabric / deviation ledger / compliance projector (SPINE-4/8, AF-1..7)</td><td>The corpus's differentiator</td><td class="mono">No precedent found in public code, any language, any domain</td><td><span class="pill build">BUILD</span></td></tr>
+  </tbody>
+</table></div>
+<p><strong>Build note.</strong> The GAAM data structures are small (typed nodes, warrant references, version pins); the hard part was never the schema but the semantics of evaluation and deviation — and TweetyProject's solvers plus Carneades's CAES design document both, under compatible licenses. Budget the fabric as a from-scratch service with two studied ancestors, not a greenfield guess. Direct collaboration with Stranieri on the GAAM formalization remains the highest-leverage de-risking move (see The Stranieri File).</p>
+
+<h2><span class="sec">03</span>Engine plane: inference, uncertainty, adversary — EN-4..8</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Repo / artifact</th><th>What it gives you</th><th>Status (verified)</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/scikit-learn-contrib/MAPIE">scikit-learn-contrib/MAPIE</a></td><td>Conformal prediction sets and risk control for classification/regression/time-series; 2026 releases add LLM-as-judge and adaptive conformal — EN-4's qualifier discipline, off the shelf</td><td class="mono">1.6k★ · BSD-3 · v1 API 2025 · very active</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/babylonhealth/counterfactual-diagnosis">babylonhealth/counterfactual-diagnosis</a></td><td>Reference code for counterfactual (causal) diagnosis over noisy-OR networks (Richens et al., Nat. Comms 2020) — the strongest public Bayesian-DDx baseline for your differential engine's evaluation harness</td><td class="mono">66★ · GPL-3.0 · Python · dormant · algorithm under patent application — study, never ship</td><td><span class="pill adapt">STUDY ONLY</span></td></tr>
+    <tr><td>pgmpy / general PGM stacks</td><td>Bayesian network construction and inference primitives for the differential engine's internals</td><td class="mono">Mature, MIT, active</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/Giskard-AI/giskard">Giskard-AI/giskard</a></td><td>Automated ML/LLM testing: metamorphic tests, performance and drift scanning, RAG evaluation — scaffolding for the corruption engine's harness (EN-5) and theater-detector experiments (AF-4)</td><td class="mono">Open source · active · framework-agnostic</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td>Trusted-AI/adversarial-robustness-toolbox</td><td>Adversarial example generation and robustness evaluation — corruption-engine ammunition for perturbation classes</td><td class="mono">~5k★ · MIT · active (LF AI)</td><td><span class="pill adopt">ADOPT</span></td></tr>
+  </tbody>
+</table></div>
+<p><strong>Gap note.</strong> There is no open-source, production Bayesian differential-diagnosis engine — the commercial ones (Infermedica, Isabel, Ada) are closed, and Babylon's public code is patent-encumbered reference material. Your differential engine remains a build; what changed is that its <em>evaluation</em> (firewalled harness, adversarial suites, conformal wrapping) is assembled from maintained parts.</p>
+
+<h2><span class="sec">04</span>Ledger, data plane, patient custody — SPINE-4, PF-4, AF-1</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Repo / artifact</th><th>What it gives you</th><th>Status (verified)</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/codenotary/immudb">codenotary/immudb</a></td><td>Immutable KV/document/SQL store with cryptographic commit log + Merkle tree, client-side verification — SPINE-4's tamper evidence as a database</td><td class="mono">9k★ · Business Source License 1.1 (not OSI — check redistribution terms for SaMD) · active</td><td><span class="pill adapt">ADAPT</span></td></tr>
+    <tr><td>AWS QLDB</td><td>The obvious AWS-native ledger for your Amplify/Bedrock stack</td><td class="mono">RETIRED — end of support 31 Jul 2025; AWS's own guidance: migrate to Aurora PostgreSQL with verification patterns</td><td><span class="pill watch">AVOID</span></td></tr>
+    <tr><td>Aurora PostgreSQL + hash-chain/Merkle pattern (or google/trillian, sigstore/rekor designs)</td><td>The post-QLDB AWS-native answer: application-level hash chaining with periodic external anchoring; transparency-log designs are the studied precedent</td><td class="mono">Patterns + Apache-2.0 reference implementations · active</td><td><span class="pill adopt">ADOPT PATTERN</span></td></tr>
+    <tr><td>HAPI FHIR (jpaserver-starter)</td><td>Production FHIR server with Provenance/AuditEvent/Consent support; now absorbing the clinical-reasoning module — one deployable for data plane + guideline ops</td><td class="mono">Very active · Apache-2.0</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/fastenhealth/fasten-onprem">fastenhealth/fasten-onprem</a></td><td>Self-hosted personal health record aggregating FHIR from providers — the nearest built thing to PF-4's Personal Data Agent</td><td class="mono">2.8k★ · GPL-3.0 · ARCHIVED Jul 2026 — cautionary tale and design mine, not a dependency</td><td><span class="pill watch">STUDY</span></td></tr>
+  </tbody>
+</table></div>
+
+<h2><span class="sec">05</span>The 2025+ research plane: RAG and ML for the niche</h2>
+<p>Where code is thin, the literature since 2025 is not — and it is converging on exactly the corpus's carve-out from two directions.</p>
+<h3>Guideline-grounded RAG (the compiler-assist and evidence-retrieval layer)</h3>
+<ul>
+  <li><strong>The effect is real and quantified:</strong> a JAMIA systematic review and meta-analysis of biomedical RAG found a pooled OR of 1.35 (95% CI 1.19–1.53) over baseline LLMs, and ships clinical development guidelines — the field's Cockburn analogue, and the evidentiary floor for any EN-6 authoring-time use.</li>
+  <li><strong>Guideline-corpus RAG works when the corpus is curated:</strong> the npj Digital Medicine preoperative-fitness study (10 LLMs, 58 guidelines, 3,234 responses) reports GPT-4+RAG at 96.4% vs 86.6% human accuracy with no observed hallucinations; a 2026 ESUR radiology-guideline RAG shows factual accuracy 0.89 vs 0.68 over baseline; a 2026 pediatric-myopia study (41 guidelines) eliminated high-risk recommendations (0% vs 6–14% baseline). Pattern across all three: tight, versioned guideline corpora — precisely a knowledge-plane discipline, not open-web retrieval.</li>
+  <li><strong>Graph-structured medical RAG</strong> (MedGraphRAG, ACL 2025; code public at <a href="https://github.com/SuperMedIntel/Medical-Graph-RAG">SuperMedIntel/Medical-Graph-RAG</a>, MIT, 825★) grounds generation through a three-layer graph — clinical records → literature → UMLS — a credibility hierarchy that rhymes with the tiered evidence library; <a href="https://github.com/Teddy-XiongGZ/MedRAG">Teddy-XiongGZ/MedRAG</a> (ACL 2024, 590★) supplies the benchmark harness (MIRAGE, 7,663 questions) for evaluating any retrieval component you adopt.</li>
+</ul>
+<h3>Argumentation × LLMs (the fabric's research frontier)</h3>
+<ul>
+  <li><strong>ArgMed-Agents</strong> (2024): LLM agents conduct self-argumentation via clinical argumentation schemes; a symbolic solver — not the LLM — identifies the coherent argument set. The corpus's SPINE-7 doctrine, independently discovered.</li>
+  <li><strong>Argumentative LLMs</strong> (Imperial CLArg, AAAI 2025, code public): LLMs construct argumentation frameworks; formal reasoning makes the decision — explainable and, critically, <em>contestable</em>.</li>
+  <li><strong>ArgEval / ArgTumour</strong> (2025–26, same group): LLMs mine NICE glioblastoma guidelines into structured pro/con arguments per treatment option (159 arguments, 77% faithfulness-verified, NICE-supported options scored 73% vs 0% for unsupported), with <em>global contestability</em> — modifying the shared argumentation framework rather than one case. That is the corpus's Guideline Compiler assist (EN-3/EN-6) plus the guideline feedback loop (AF-5), running as a research prototype against a real guideline corpus.</li>
+  <li><strong>Cautionary evidence:</strong> mARC-QA (Sci. Reports 2025) shows frontier LLMs failing flexible clinical reasoning with overconfident uncertainty estimates — the empirical case for why the fabric's deterministic evaluator, not the LLM, must hold the release key; and an npj Digital Medicine 2026 randomized study (N=2,020 radiologist assessments) finds reasoning-style explanations improve clinician accuracy (+12.2%) where bare outputs and even differential lists do not — direct evidence for argument-shaped explanation over naked scores (SPINE-1).</li>
+</ul>
+<h3>Conformal methods for LLM outputs (the qualifier discipline, extended)</h3>
+<ul>
+  <li>2026 arXiv work is actively extending conformal guarantees to generation: conformal risk control for selective prediction in language models (hierarchical group-conditional, Jul 2026), bounds and impossibility results for certifying structured LLM outputs (Jun 2026), uncertainty-calibrated multimodal RAG with abstention (FinAbstain, Jul 2026), and budgeted conformal evidence acquisition before abstaining (Jun 2026). For EN-6 Class-4+ ambitions, this is the literature that decides whether an LLM output can ever carry a valid qualifier — track it; do not ship ahead of it.</li>
+</ul>
+
+<h2><span class="sec">06</span>Build-vs-adopt summary</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Corpus subsystem</th><th>Verdict</th><th>Sourcing</th></tr></thead>
+  <tbody>
+    <tr><td>Guideline execution (EN-3, PF-7)</td><td><span class="pill adopt">ADOPT</span></td><td>CQL stack + clinical-reasoning + WHO SMART content; build only the GenericArgument annotation lift</td></tr>
+    <tr><td>Low-resource profile (XC-3)</td><td><span class="pill adopt">ADOPT / STUDY</span></td><td>Android FHIR SDK + OpenSRP FHIR Core — a maintained, deployed embodiment; study before building anything</td></tr>
+    <tr><td>Conformal qualifiers (EN-4)</td><td><span class="pill adopt">ADOPT</span></td><td>MAPIE (BSD-3), active into 2026</td></tr>
+    <tr><td>Corruption/adversary harness (EN-5, AF-4)</td><td><span class="pill adopt">ADOPT + BUILD</span></td><td>Giskard + ART for machinery; the clinical perturbation classes and theater heuristics are yours</td></tr>
+    <tr><td>Data plane + FHIR ops</td><td><span class="pill adopt">ADOPT</span></td><td>HAPI FHIR (absorbing clinical-reasoning)</td></tr>
+    <tr><td>Tamper-evident ledger (SPINE-4)</td><td><span class="pill adapt">ADAPT</span></td><td>Aurora PostgreSQL + transparency-log pattern (QLDB is retired); immudb if BUSL terms clear legal review</td></tr>
+    <tr><td>Formal argumentation semantics</td><td><span class="pill adapt">ADAPT</span></td><td>TweetyProject (LGPL) as solver; Carneades as design document; ArgLLMs code as LLM-bridge reference</td></tr>
+    <tr><td>Bayesian differential engine</td><td><span class="pill build">BUILD</span></td><td>pgmpy primitives; Babylon counterfactual code as patent-encumbered study material; no adoptable engine exists</td></tr>
+    <tr><td>Justification fabric, GAAM service, Deviation Composer, Compliance Projector, Dispute Mode</td><td><span class="pill build">BUILD</span></td><td>No precedent in public code — the moat; de-risk via Stranieri collaboration and the ArgEval/ArgTumour pattern</td></tr>
+  </tbody>
+</table></div>
+
+<div class="anti">
+  <h5>Landmines logged this pass</h5>
+  <ul>
+    <li>AWS QLDB retired 31 July 2025 — do not let older Mākoha docs assume it; AWS's own migration target is Aurora PostgreSQL with verification.</li>
+    <li>immudb is Business Source License 1.1, not OSI open source — fine to run, but redistribution/embedding in a commercial SaMD needs legal reading.</li>
+    <li>cqf-ruler is a legacy shell; deploy hapi-fhir-jpaserver-starter and the clinical-reasoning library instead.</li>
+    <li>fasten-onprem (nearest PHR precedent) was archived July 2026 — the patient-custody space has no maintained OSS champion; PF-4 is more build than it looks.</li>
+    <li>Babylon's counterfactual-diagnosis algorithm is under patent application and GPL-3.0 — evaluation baseline only.</li>
+    <li>Carneades is nine years dormant; treat as literature with a compiler, not a dependency.</li>
+  </ul>
+</div>
+
+<h2><span class="sec">07</span>Sources</h2>
+<ul class="srcs">
+  <li>GitHub repositories verified individually 29 Aug 2026 (stars/licenses/activity as fetched): cqframework/clinical_quality_language, cqframework/clinical-reasoning, cqframework/cqf-ruler, google/android-fhir, opensrp/fhircore, TweetyProjectTeam/TweetyProject, carneades/carneades-4, CLArg-group/argumentative-llms, scikit-learn-contrib/MAPIE, codenotary/immudb, Giskard-AI/giskard, babylonhealth/counterfactual-diagnosis, fastenhealth/fasten-onprem, Teddy-XiongGZ/MedRAG, SuperMedIntel/Medical-Graph-RAG.</li>
+  <li>RAG evidence (2025–26): Liu et al., JAMIA systematic review &amp; meta-analysis (RAG OR 1.35); Ke et al., npj Digital Medicine (preoperative guideline RAG, 96.4%); Komenda et al., J. Imaging Informatics in Medicine (ESUR radiology-guideline RAG); Kang et al., Scientific Reports (pediatric myopia, high-risk elimination); Gargari et al., Digital Health (narrative review); Song et al., Cancer Research &amp; Treatment (multimodal KG-RAG, pediatric leukemia); Wu et al., MedGraphRAG (ACL 2025, arXiv:2408.04187); Xiong et al., MedRAG/MIRAGE (ACL 2024 Findings).</li>
+  <li>Argumentation × LLM (2024–26): Hong et al., <a href="https://arxiv.org/abs/2403.06294">ArgMed-Agents (arXiv:2403.06294)</a>; Freedman et al., Argumentative LLMs (AAAI 2025); Dejl et al., ArgEval (arXiv 2026) and ArgTumour (Neuro-Oncology 2025); Kim et al., mARC-QA (Sci. Reports 2025); Spitzer et al., explanation formats RCT (npj Digital Medicine 2026); Ayoub et al., structured clinical framework (Communications Medicine 2026).</li>
+  <li>Conformal for LLMs (arXiv, 2026): hierarchical group-conditional conformal risk control for selective prediction (2607.24562); conformal risk control certification bounds for structured generation (2606.29054); FinAbstain uncertainty-calibrated RAG abstention (2607.24875); budgeted conformal evidence acquisition (2606.16667).</li>
+  <li>QLDB retirement: AWS end-of-support 31 Jul 2025; AWS migration guidance to Aurora PostgreSQL (aws.amazon.com blogs; InfoQ, Jul 2024 announcement coverage).</li>
+  <li>Companion volumes: <em>The Four Faces Corpus</em> (requirement IDs referenced throughout), <em>Sleep Tools Dossier</em>, <em>The Stranieri File</em>.</li>
+</ul>
+
+<p class="foot">Execution Layer Sourcing Map v1.0 · every repo row reflects a direct fetch of the repository page on 29 Aug 2026, not training-data memory; statuses (archived, migrated, dormant, retired) are the load-bearing finding. GitHub's search API was unavailable from this environment, so coverage is curated-and-verified rather than exhaustive — absence claims ("no GAAM implementation found") are based on targeted searching and may be falsified by private or obscure code.</p>
+</div>

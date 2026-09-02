@@ -1,0 +1,8 @@
+# MANIFEST stub — cdss-corruption (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-corruption
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [suites as data + rulebook]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_written: [R8 rulebook, R20 incident pairing, catch-rate reports to R23 dossier feed]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"

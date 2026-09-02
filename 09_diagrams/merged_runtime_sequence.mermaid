@@ -1,0 +1,22 @@
+%% IMAGO-2 — One consultation under the fabric (Primer 0 §4 successor). Status: Proposed
+%% Grammar note: sequenceDiagram treats ";" in message text as a statement terminator — none used below.
+sequenceDiagram
+  participant P as Patient + Clinician
+  participant C as Coder
+  participant A as Engine A
+  participant F as Conformal F
+  participant E as Graph E
+  participant V as Evaluator + gates
+  participant G as Fabric ledger
+  participant U as Faces x3
+  P->>C: free text
+  C->>A: coded findings = grounds, with provenance
+  A->>A: priors + LR chain (warrant) + red-flag overrides
+  A->>F: posteriors + trace
+  F->>E: conformal set = qualifier (SPINE-2)
+  E->>V: fragment pointers + prune rebuttals + DetectedIssues
+  V->>V: hash, tier, currency, range, context + argument checks
+  Note over V: SPINE-2 refusals — no qualifier: refuse.<br/>Empty rebuttal slot while findings exist: refuse.
+  V->>G: ActualArgument appended — hash-chained (SPINE-4), pinned (SPINE-5)
+  G->>U: one argument, three registers (SPINE-3 invariance)
+  P->>G: accept or override — Deviation object (SPINE-8)

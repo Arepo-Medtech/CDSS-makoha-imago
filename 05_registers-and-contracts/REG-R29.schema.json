@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdss-spine/registers/r29-hardening-coverage-row.schema.json",
+  "title": "R29 Hardening Coverage Ledger row (Proposed, DEC-02)",
+  "type": "object",
+  "required": ["row_id","artifact_path","artifact_class","skills_deployed","mechanical_check_outputs","doubt_pass_record","state","evidence_refs","version_stamp"],
+  "properties": {
+    "row_id": {"type":"integer","minimum":0},
+    "artifact_path": {"type":"string","minLength":1},
+    "artifact_class": {"enum":["CC-1","CC-2","CC-3","CC-4","CC-5","CC-6","CC-7","CC-8","engine","corpus","external"]},
+    "skills_deployed": {"type":"array","items":{"type":"string"}},
+    "non_applicability_notes": {"type":"array","items":{"type":"object","required":["skill","reason"],"properties":{"skill":{"type":"string"},"reason":{"type":"string","minLength":10}}}},
+    "mechanical_check_outputs": {"type":"string","minLength":1,"description":"verbatim captured output; a bare claim of passing is a directive violation (MT2 §5)"},
+    "doubt_pass_record": {"type":"object","required":["claim","extract","doubt","reconcile","stop"],"properties":{"claim":{"type":"string"},"extract":{"type":"string"},"doubt":{"type":"string"},"reconcile":{"type":"string"},"stop":{"type":"string"}}},
+    "sibling_consistency_set": {"type":"array","items":{"type":"string"}},
+    "defects": {"type":"array","items":{"type":"object","required":["found"],"properties":{"found":{"type":"string"},"fix":{"type":"string"},"escalation":{"type":"string"}}}},
+    "state": {"enum":["HARDENED","ESCALATED"],"description":"terminal states only; no third state exists (MT2 §3)"},
+    "blocker": {"type":"string","description":"required when state=ESCALATED"},
+    "evidence_refs": {"type":"array","items":{"type":"string"},"minItems":1},
+    "version_stamp": {"type":"string","description":"lockfile pin-set — universal join key, register law §12.1(4)"}
+  },
+  "allOf": [{"if":{"properties":{"state":{"const":"ESCALATED"}}},"then":{"required":["blocker"]}}]
+}

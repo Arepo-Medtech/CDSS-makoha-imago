@@ -1,0 +1,8 @@
+# MANIFEST stub — cdss-graph (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-graph
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [deterministic graph builds (hashable)]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_written: [R1 build hashes; clinician actions on surfaced DetectedIssues land as R13 acceptance-telemetry events]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"

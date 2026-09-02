@@ -1,0 +1,219 @@
+<title>Mākoha in Flight</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9; --panel: #ffffff; --panel-2: #eef0f4;
+    --ink: #1c2330; --ink-2: #4a5468; --ink-3: #8791a3;
+    --accent: #35477d; --accent-soft: #dfe4f0;
+    --amber: #a0752f; --amber-soft: #f2e8d5;
+    --line: #d9dde5; --good: #2e6b4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+      --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+      --accent: #a3b3e3; --accent-soft: #2a3450;
+      --amber: #d3a55c; --amber-soft: #3a3122;
+      --line: #323a49; --good: #7fc2a3;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+    --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+    --accent: #a3b3e3; --accent-soft: #2a3450;
+    --amber: #d3a55c; --amber-soft: #3a3122;
+    --line: #323a49; --good: #7fc2a3;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--ink); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 17px; line-height: 1.62; margin: 0; padding: 0 20px 90px; }
+  .wrap { max-width: 840px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 10px; border-bottom: 3px solid var(--accent); margin-bottom: 8px; text-align: center; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+  h1 { font-family: Spectral, Georgia, serif; font-weight: 700; font-size: clamp(36px, 6.5vw, 52px); line-height: 1.08; margin: 0 0 10px; text-wrap: balance; }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 auto 26px; max-width: 60ch; }
+  h2 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 27px; line-height: 1.2; margin: 58px 0 8px; text-wrap: balance; }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: .12em; margin-bottom: 6px; }
+  p { max-width: 70ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  blockquote { margin: 22px auto; padding: 4px 22px; border-left: 3px solid var(--accent); color: var(--ink-2); font-style: italic; font-family: Spectral, Georgia, serif; font-size: 19px; max-width: 58ch; }
+  .fig { margin: 34px 0 8px; }
+  .fig svg { width: 100%; height: auto; display: block; }
+  .figcap { text-align: center; font-size: 14px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; margin: 6px 0 0; }
+  /* wings layout */
+  .wings { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 26px 0; }
+  @media (max-width: 700px) { .wings { grid-template-columns: 1fr; } }
+  .wing { border-radius: 6px; border: 1px solid var(--line); padding: 20px 22px; }
+  .wing.left { background: var(--panel); border-top: 4px solid var(--amber); }
+  .wing.right { background: var(--panel); border-top: 4px solid var(--accent); }
+  .wing h3 { font-family: Spectral, Georgia, serif; font-size: 21px; font-weight: 600; margin: 0 0 2px; }
+  .wing .sub { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 14px; }
+  .wing.left .sub { color: var(--amber); }
+  .wing.right .sub { color: var(--accent); }
+  .colour { margin: 0 0 14px; padding: 0 0 12px; border-bottom: 1px solid var(--line); }
+  .colour:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .colour b { display: block; font-size: 16px; }
+  .colour span { font-size: 15px; color: var(--ink-2); }
+  .colour .tag { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-3); margin-top: 4px; }
+  /* flight beats */
+  .beat { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px 20px; margin: 14px 0; }
+  .beat h4 { margin: 0 0 8px; font-family: Spectral, Georgia, serif; font-size: 18.5px; font-weight: 600; }
+  .beat .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0; }
+  @media (max-width: 640px) { .beat .duo { grid-template-columns: 1fr; } }
+  .beat .l, .beat .r { font-size: 14.5px; color: var(--ink-2); padding: 8px 12px; border-radius: 4px; }
+  .beat .l { background: var(--amber-soft); }
+  .beat .r { background: var(--accent-soft); }
+  .beat .l b, .beat .r b { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; display: block; margin-bottom: 3px; }
+  .beat .l b { color: var(--amber); }
+  .beat .r b { color: var(--accent); }
+  .beat .flight { font-size: 15.5px; margin: 8px 0 0; }
+  .beat .flight b { color: var(--good); font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; margin-right: 8px; }
+  .verdict { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber); padding: 18px 22px; margin: 30px 0; border-radius: 4px; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  .verdict p { margin: 8px 0; }
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  ul { padding-left: 22px; max-width: 68ch; }
+  li { margin: 7px 0; }
+  .foot { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Research synthesis · compiled 1 Sep 2026 · sixth volume in the Mākoha research series</p>
+  <h1>Mākoha in Flight</h1>
+  <p class="dek">Two wings, one body. The living CDSS ecosystem is the thorax; meta-rationality is the right wing; fuzzy logic is the left. Neither wing is judged against the other — each is painted in its own colours, for what it is good for — and flight is the coordination.</p>
+</header>
+
+<div class="fig" role="img" aria-label="A butterfly diagram: the body is the justification fabric and living ecosystem; the left wing is fuzzy logic, the semantics of degree; the right wing is meta-rationality, the judgment of systems">
+<svg viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- left wing (fuzzy / amber) -->
+  <g>
+    <path d="M436 210 C 330 60, 150 40, 96 110 C 48 172, 120 240, 300 240 C 180 250, 100 300, 130 360 C 160 415, 330 400, 436 268 Z"
+          fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="2.5"/>
+    <text x="240" y="140" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="24" font-weight="600" fill="var(--ink)">Fuzzy Logic</text>
+    <text x="240" y="166" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="1.5" fill="var(--amber)">THE SEMANTICS OF DEGREE</text>
+    <text x="235" y="200" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13.5" fill="var(--ink-2)">gradedness · hedge terms · computing</text>
+    <text x="235" y="219" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13.5" fill="var(--ink-2)">with words · Z-numbers · type-2 bands</text>
+    <text x="242" y="345" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13.5" fill="var(--ink-2)">boundary maps · white-box arithmetic</text>
+  </g>
+  <!-- right wing (meta-rationality / indigo) -->
+  <g>
+    <path d="M464 210 C 570 60, 750 40, 804 110 C 852 172, 780 240, 600 240 C 720 250, 800 300, 770 360 C 740 415, 570 400, 464 268 Z"
+          fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5"/>
+    <text x="660" y="140" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="24" font-weight="600" fill="var(--ink)">Meta-Rationality</text>
+    <text x="660" y="166" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="1.5" fill="var(--accent)">THE JUDGMENT OF SYSTEMS</text>
+    <text x="665" y="200" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13.5" fill="var(--ink-2)">system choice · justified deviation ·</text>
+    <text x="665" y="219" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13.5" fill="var(--ink-2)">governed remodeling · trading zones</text>
+    <text x="658" y="345" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13.5" fill="var(--ink-2)">reasoning communities · purposes &amp; values</text>
+  </g>
+  <!-- body (ecosystem) -->
+  <g>
+    <path d="M450 96 C 466 96, 472 140, 472 220 C 472 320, 464 405, 450 405 C 436 405, 428 320, 428 220 C 428 140, 434 96, 450 96 Z"
+          fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5"/>
+    <circle cx="450" cy="84" r="17" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M441 70 C 425 48, 407 40, 393 44" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M459 70 C 475 48, 493 40, 507 44" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="393" cy="44" r="4" fill="var(--ink)"/>
+    <circle cx="507" cy="44" r="4" fill="var(--ink)"/>
+    <text x="450" y="180" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="1.2" fill="var(--ink-3)" transform="rotate(90 450 180)"></text>
+  </g>
+  <!-- body label -->
+  <text x="450" y="440" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600" fill="var(--ink)">The Living Ecosystem</text>
+  <text x="450" y="459" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="1.2" fill="var(--ink-3)">JUSTIFICATION FABRIC · KNOWLEDGE PLANE · LEDGER · EVALUATOR</text>
+</svg>
+<p class="figcap">fig. 1 — the body carries the argument; the wings give it flight</p>
+</div>
+
+<blockquote>Neither wing flies. Coordination flies. The body — fabric, ledger, evaluator, knowledge plane — is what both wings are anchored to and what both wings move.</blockquote>
+
+<h2><span class="sec">01</span>The body, briefly</h2>
+<p>Everything both wings touch passes through one thorax: the justification fabric (every claim an argument — SPINE-1), the versioned knowledge plane (SPINE-5/6), the deterministic evaluator ("only arithmetic releases" — SPINE-7), and the append-only ledger (SPINE-4) read by three faces in three registers (SPINE-3). The body is <em>living</em> because it metabolizes: deviations feed guideline change (AF-5), corruption findings feed rebuttals (EN-5), field evidence feeds validation (GPP-13). A wing that beats without the body moves air and nothing else; every colour below is painted onto a structure the body already carries.</p>
+
+<h2><span class="sec">02</span>The two wings, each painted for what it is good for</h2>
+<div class="wings">
+  <div class="wing left">
+    <h3>The Left Wing — Fuzzy Logic</h3>
+    <p class="sub">The semantics of degree · what it is good for</p>
+    <div class="colour"><b>Gradedness — borderline becomes a place, not an error.</b><span>Partial satisfaction of a criterion is representable: μ=0.6 "elevated" is data, not noise. The cliff between 139 and 141 mmHg dissolves into a slope the system can see.</span><span class="tag">→ grounds annotations; warrant-applicability grading (FZ-1/3)</span></div>
+    <div class="colour"><b>Hedge language, computable without distortion.</b><span>Guidelines already speak fuzzily — "consider in elderly patients," "mild," "suboptimal control." Membership functions let the Guideline Compiler carry those words into GenericArguments as themselves, instead of forcing false crispness at authoring time.</span><span class="tag">→ EN-3; IEEE 1855 FML artifacts (FZ-2)</span></div>
+    <div class="colour"><b>Computing with Words — linguistic in, linguistic out.</b><span>Zadeh's programme (from manipulating measurements to manipulating perceptions) and Mendel's Perceptual Computer give the plain register a mathematics: an encoder from words, a reasoning engine over word-models, a decoder back to words a person recognizes. The patient face's "a little high today" can be a computed object with provenance, not copywriting.</span><span class="tag">→ SPINE-3 plain register; PF-2/5</span></div>
+    <div class="colour"><b>Personalized semantics — words mean different things to different people.</b><span>Personalized-individual-semantics models calibrate what <em>this</em> patient means by "severe" or "sometimes," and 2026 work grades the credibility of a membership function itself. The patient face can learn a person's vocabulary without ever inferring their values (PF-3 stays governed).</span><span class="tag">→ patient-face intake calibration; consensus in MDT scoring</span></div>
+    <div class="colour"><b>Z-numbers — the voice note that carries its own reliability.</b><span>Zadeh's Z = (restriction, reliability): "my sleep was poor <em>(and I'm fairly sure)</em>." Patient-reported and secondhand grounds arrive as value-plus-confidence pairs — a formal container for exactly the data low-resource and virtual care run on, with a decade of medical decision-making methods behind it.</span><span class="tag">→ grounds schema for patient-reported data; RPM annotation</span></div>
+    <div class="colour"><b>Type-2 bands — disagreement about meaning, held formally.</b><span>When experts disagree where "elderly" begins, an interval type-2 set stores the band instead of forcing the point. The community's spread becomes an object the knowledge plane can hold and revisit.</span><span class="tag">→ CF-6 disagreement; SPINE-6 pluralism (deferred trigger per MAK-DOT)</span></div>
+    <div class="colour"><b>Boundary cartography — a map of where the system is fragile.</b><span>Membership supports mark precisely where cliff-effect cases live. The corruption engine gets a hunting map for free.</span><span class="tag">→ EN-5 boundary-sweep class (FZ-5)</span></div>
+    <div class="colour"><b>White-box arithmetic — transparency by construction.</b><span>Zero learned parameters; every inference a readable rule; an IEEE standard (1855-2016) for serializing the whole knowledge base. Natively SPINE-7- and J-1-compatible, and auditable to the curve.</span><span class="tag">→ deterministic evaluator; AF-7 conformity bundles</span></div>
+    <div class="colour"><b>Frontier shimmer — fuzzy predicates as the LLM's leash.</b><span>2026 neuro-symbolic work has LLMs extract fuzzy symptom patterns from clinical narrative and decode them into a symbolic fuzzy-logic knowledge base whose inference paths are auditable and physician-correctable — the newest paint on this wing, and it beats in the corpus's own rhythm: the LLM proposes, the symbolic layer verifies.</span><span class="tag">→ EN-6 authoring/extraction; SPINE-7 preserved</span></div>
+  </div>
+  <div class="wing right">
+    <h3>The Right Wing — Meta-Rationality</h3>
+    <p class="sub">The judgment of systems · what it is good for (as folded into MAK-FFC)</p>
+    <div class="colour"><b>System choice — knowing what the situation needs.</b><span>The defining meta-rational act: judging which rational system applies, when, and how far. The corpus holds plural guideline lineages side by side and refuses to auto-resolve their conflicts — choice stays a visible, human, recorded act.</span><span class="tag">→ SPINE-6; XC-4 pluralist localization</span></div>
+    <div class="colour"><b>Justified deviation — discretion given a data structure.</b><span>GAAM's generic/actual split turns wise departure from a guideline into a first-class, warrant-level, reviewable object instead of an exception outside the system. The system computerizes criteria, never discretion — and gives discretion somewhere to live.</span><span class="tag">→ SPINE-8; Deviation Composer (CF-3); AF-3 reframing</span></div>
+    <div class="colour"><b>Ontological remodeling, governed.</b><span>Categories are human artifacts that wear out (the ICSD-2 freeze). The corpus makes remodeling a ritual with evidence: deviation aggregates → change proposal → ratification → new version, old versions pinned forever.</span><span class="tag">→ AF-5; SPINE-5 replayability</span></div>
+    <div class="colour"><b>Boundary work — respect for the circumrational.</b><span>The interface where the nebulous patient meets the formal system is where CDSS live or die. Intake at home, assimilable briefs, read-and-decide consultations, no naked scores — the Blake lessons, made normative.</span><span class="tag">→ CF-1/2; PF-1/5</span></div>
+    <div class="colour"><b>Trading zones — one argument, many tongues.</b><span>Patient, clinician, and auditor speak different registers of the same argument object; renderers may translate but never reweight. The pidgin between expertise domains is engineered, not hoped for.</span><span class="tag">→ SPINE-3; anti-three-truths (SPINE-9)</span></div>
+    <div class="colour"><b>Reasoning communities — group judgment without false unanimity.</b><span>MDT decisions are multi-author arguments; who contributed which warrant is preserved, and disagreement is recorded rather than averaged (the Delphi lesson: consensus is not accuracy).</span><span class="tag">→ CF-6; Stranieri's reasoning-communities line</span></div>
+    <div class="colour"><b>Purposes and values as first-class.</b><span>The best clinical outcome is not always the best life outcome. Patient-authored priorities enter the system only through ratified, revocable mappings — meaning-change treated with the gravity it deserves.</span><span class="tag">→ PF-3; values module</span></div>
+    <div class="colour"><b>Anomaly vigilance — watching rationality for its failures.</b><span>The standing adversary that hunts the engine's failure regions, and the theater detector that hunts the ledger's boilerplate: meta-rational suspicion of one's own formal system, institutionalized and continuous.</span><span class="tag">→ EN-5 corruption engine; AF-4</span></div>
+  </div>
+</div>
+
+<h2><span class="sec">03</span>Flight — the coordination of the wings</h2>
+<p>Eight wing-beats. In each, the left wing contributes a semantics of degree, the right wing contributes a judgment of systems, and flight is what neither could do alone.</p>
+
+<div class="beat"><h4>1 · The borderline patient</h4>
+  <div class="duo"><div class="l"><b>Left</b>Grades the fit: this case satisfies the pathway's criteria to degree 0.6 — the edge is measured, not hidden.</div>
+  <div class="r"><b>Right</b>Governs the crossing: partial fit routes to judgment and the Deviation Composer, never to silent forcing into a bin.</div></div>
+  <p class="flight"><b>Flight</b>The patients guidelines were never written for — the multimorbid, the atypical, the in-between — become the system's best-served cases instead of its casualties.</p></div>
+
+<div class="beat"><h4>2 · The full translation loop</h4>
+  <div class="duo"><div class="l"><b>Left</b>Fuzzification encodes the world's vagueness into the system; Computing-with-Words decodes the system back into words a person owns.</div>
+  <div class="r"><b>Right</b>Audits what every translation loses — formalization-awareness as a standing duty, with the argument recording what the encoding could not carry.</div></div>
+  <p class="flight"><b>Flight</b>The circumrational boundary — where Bayor's 37-of-40 systems die — becomes a designed, instrumented, two-way crossing.</p></div>
+
+<div class="beat"><h4>3 · Meaning under governance</h4>
+  <div class="duo"><div class="l"><b>Left</b>Measures meaning drift: membership-credibility scoring and personalized-semantics learning detect when a curve no longer matches how the community uses the word.</div>
+  <div class="r"><b>Right</b>Decides meaning change: AF-5 ratifies new curves as versioned FML artifacts; no dial, no silent tuning; old decisions replay against old meanings.</div></div>
+  <p class="flight"><b>Flight</b>The ecosystem's vocabulary stays alive without ever becoming unaccountable — living language, audited.</p></div>
+
+<div class="beat"><h4>4 · Conflict with a metric</h4>
+  <div class="duo"><div class="l"><b>Left</b>When two guidelines both claim a patient, graded applicability shows <em>how much</em> each claims — the conflict acquires a shape.</div>
+  <div class="r"><b>Right</b>SPINE-6 surfaces the conflict unresolved; a clinician's choice between systems is recorded as the meta-rational act it is.</div></div>
+  <p class="flight"><b>Flight</b>Guideline conflict stops being an alert-storm embarrassment and becomes navigable terrain with a map.</p></div>
+
+<div class="beat"><h4>5 · Disagreement held, not averaged</h4>
+  <div class="duo"><div class="l"><b>Left</b>Type-2 bands store what the community actually has — a spread of meanings — when a single curve cannot be agreed.</div>
+  <div class="r"><b>Right</b>Reasoning-community ratification adopts the band as the honest artifact; MDT records keep each author's warrant distinct.</div></div>
+  <p class="flight"><b>Flight</b>The system can be truthful about expert disagreement all the way down to the mathematics of a single word.</p></div>
+
+<div class="beat"><h4>6 · Reliability-aware listening</h4>
+  <div class="duo"><div class="l"><b>Left</b>Z-numbers carry the patient's voice with its own stated reliability — "poor sleep, fairly sure" arrives as (restriction, confidence), not as a corrupted number.</div>
+  <div class="r"><b>Right</b>The qualifier keeps belief semantics separate and honest; nothing patient-reported is flattened into false precision or discarded as soft.</div></div>
+  <p class="flight"><b>Flight</b>The patient face — and every low-resource deployment running on self-report and cheap sensors — gets a data model equal to how people actually speak.</p></div>
+
+<div class="beat"><h4>7 · The adversary's map</h4>
+  <div class="duo"><div class="l"><b>Left</b>Membership supports chart exactly where the boundaries — and therefore the fragilities — lie.</div>
+  <div class="r"><b>Right</b>The corruption engine hunts those coordinates and publishes what it kills as rebuttals every face can see.</div></div>
+  <p class="flight"><b>Flight</b>Meta-rational vigilance stops being a temperament and becomes a scheduled, targeted, evidence-producing process.</p></div>
+
+<div class="beat"><h4>8 · The LLM on a leash</h4>
+  <div class="duo"><div class="l"><b>Left</b>2026 neuro-symbolic frameworks extract fuzzy symptom predicates from free-text narrative and hold them in a symbolic, auditable, physician-correctable knowledge base.</div>
+  <div class="r"><b>Right</b>SPINE-7 keeps the release key with the deterministic evaluator; the LLM proposes, the argument tree decides, the correction loop is governed.</div></div>
+  <p class="flight"><b>Flight</b>The frontier's most seductive capability — reading the patient's story — enters the ecosystem without ever holding the pen that signs.</p></div>
+
+<div class="verdict">
+  <p class="lbl">Why coordination, in one breath</p>
+  <p>A left wing beating alone is precision about vague things inside an ontology no one is watching — curves tuned forever toward the wrong question. A right wing beating alone is wise judgment holding cliff-edged instruments — knowing the guideline doesn't quite fit, with no way to say <em>how much</em>. Together: the left wing senses in degrees, the right wing judges in systems, and the body records every beat as an argument. That is the flight — a CDSS that can be gentle at the edges, honest about disagreement, multilingual across its three faces, and accountable to the curve and the clause alike.</p>
+</div>
+
+<h2><span class="sec">04</span>Sources</h2>
+<ul class="srcs">
+  <li><strong>Computing with Words / perceptual computing:</strong> Zadeh 1999, From computing with numbers to computing with words (1,659 cites) · Mendel &amp; Wu, Perceptual Computing (2010) and Perceptual Reasoning (IEEE T. Fuzzy Systems, 2008) · Herrera et al. 2009, CWW in decision making: foundations, trends, prospects · Martínez-López et al. 2010, CWW in decision support: models and applications · Herrera-Viedma et al. 2021, fifty-year tour (IEEE TSMC) · Li et al. 2016, personalized individual semantics (Inf. Fusion) · Romero et al. 2020, ELICIT comparative linguistic expressions (IEEE TFS) · Pei et al. 2024, credibility of membership functions (IEEE TFS).</li>
+  <li><strong>Z-numbers:</strong> Alam et al. 2023, state-of-the-art review · Wang et al. 2017, linguistic Z-numbers with a medical-application case (Cognitive Computation) · Ren et al. 2020, generalized Z-numbers for COVID-19 medicine selection · Wu et al. 2017, Z-number medical diagnosis (Applied Intelligence) · Zhao et al. 2022, Z-number soft sets for diagnosis (PLoS ONE) · Aliev et al. 2016, ranking Z-numbers · Tian et al. 2021, ZE-numbers · Ullah et al. 2025/2026, Z-Dombi and Pythagorean fuzzy Z-number methods.</li>
+  <li><strong>Fuzzy × LLM / neuro-symbolic (the frontier):</strong> Fan et al. 2026 (arXiv), uncertainty reasoning with LLMs for explainable diagnosis — fuzzy symptom predicates, symbolic verification, auditable paths · Yang 2025, CLMN concept-based language models via fuzzy neural-symbolic reasoning (IEEE SMC) · Yang et al. 2024, neuro-symbolic LLM reasoning survey · de Boer et al. 2025, design patterns for LLM neuro-symbolic systems · Calanzone et al. 2024, logically consistent LMs.</li>
+  <li><strong>The wings' prior coats:</strong> <em>Degrees of Truth</em> (MAK-DOT — fuzzy tooling, lineage, FZ-1..6) · <em>The Four Faces Corpus</em> (MAK-FFC v1.1 — every right-wing colour's requirement IDs) · <em>Sleep Tools Dossier</em> · <em>The Stranieri File</em> · Chapman's meta-rationality corpus (uploaded, this series).</li>
+</ul>
+
+<p class="foot">Mākoha in Flight v1.0 · a synthesis volume: no either/or verdicts issued; each wing painted for what it is good for; all coordination claims trace to ratified corpus requirements or named research. New research this volume: computing-with-words, Z-number, and fuzzy-neuro-symbolic literatures (searched 1 Sep 2026).</p>
+</div>

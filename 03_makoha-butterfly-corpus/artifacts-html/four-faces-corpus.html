@@ -1,0 +1,455 @@
+<title>The Four Faces Corpus</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9;
+    --panel: #ffffff;
+    --panel-2: #eef0f4;
+    --ink: #1c2330;
+    --ink-2: #4a5468;
+    --ink-3: #8791a3;
+    --accent: #35477d;
+    --accent-soft: #dfe4f0;
+    --amber: #a0752f;
+    --amber-soft: #f2e8d5;
+    --line: #d9dde5;
+    --good: #2e6b4f;
+    --warn: #9a5b2d;
+    --crit: #8c3b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+      --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+      --accent: #a3b3e3; --accent-soft: #2a3450;
+      --amber: #d3a55c; --amber-soft: #3a3122;
+      --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+    --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+    --accent: #a3b3e3; --accent-soft: #2a3450;
+    --amber: #d3a55c; --amber-soft: #3a3122;
+    --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--ink); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 17px; line-height: 1.62; margin: 0; padding: 0 20px 90px; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 10px; border-bottom: 3px solid var(--accent); margin-bottom: 8px; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+  h1 { font-family: Spectral, Georgia, serif; font-weight: 700; font-size: clamp(34px, 6vw, 48px); line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 0 24px; max-width: 64ch; }
+  .docmeta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 12px 0 22px; }
+  h2 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 28px; line-height: 1.18; margin: 64px 0 8px; text-wrap: balance; }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: .12em; margin-bottom: 6px; }
+  h3 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 21px; margin: 34px 0 6px; text-wrap: balance; }
+  h4 { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; margin: 26px 0 8px; }
+  p { max-width: 70ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  ul, ol { padding-left: 24px; max-width: 68ch; }
+  li { margin: 7px 0; }
+  strong { font-weight: 700; }
+  .verdict { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber); padding: 18px 22px; margin: 30px 0; border-radius: 4px; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  .verdict p { margin: 8px 0; }
+  blockquote { margin: 22px 0; padding: 4px 22px; border-left: 3px solid var(--accent); color: var(--ink-2); font-style: italic; font-family: Spectral, Georgia, serif; font-size: 18px; max-width: 62ch; }
+  /* requirements */
+  .req { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; margin: 14px 0; padding: 13px 18px; max-width: none; }
+  .req .rid { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600; color: var(--accent); letter-spacing: .04em; margin-right: 10px; }
+  .req .norm { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .08em; padding: 1px 8px; border-radius: 100px; margin-right: 8px; border: 1px solid var(--line); }
+  .req .norm.must { color: var(--crit); border-color: var(--crit); }
+  .req .norm.should { color: var(--warn); border-color: var(--warn); }
+  .req .norm.may { color: var(--ink-3); }
+  .req .body { display: block; margin-top: 6px; color: var(--ink); }
+  .req .why { display: block; margin-top: 6px; font-size: 14.5px; color: var(--ink-3); }
+  .req .why em { font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .05em; color: var(--amber); }
+  /* toc */
+  nav.toc { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 18px 24px; margin: 28px 0; }
+  nav.toc ol { margin: 6px 0 0; padding-left: 20px; column-gap: 40px; }
+  nav.toc li { font-size: 15.5px; margin: 5px 0; }
+  nav.toc .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  /* architecture stack */
+  .arch { margin: 26px 0; display: flex; flex-direction: column; gap: 6px; }
+  .arch .row { display: grid; gap: 6px; }
+  .arch .row.three { grid-template-columns: 1fr 1fr 1fr; }
+  .arch .row.four { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  @media (max-width: 620px) { .arch .row.three, .arch .row.four { grid-template-columns: 1fr; } }
+  .arch .layer { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 10px 14px; text-align: center; }
+  .arch .layer strong { display: block; font-size: 15px; }
+  .arch .layer span { font-size: 13px; color: var(--ink-2); }
+  .arch .layer.face { background: var(--accent-soft); border-color: var(--accent); }
+  .arch .layer.fabric { background: var(--amber-soft); border-color: var(--amber); }
+  .arch .conn { text-align: center; color: var(--ink-3); font-size: 13px; line-height: 1; }
+  /* tables */
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  .tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: 4px; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  th, td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  thead tr { background: var(--panel-2); }
+  tbody tr { background: var(--panel); }
+  td.mono, .mono { font-family: "IBM Plex Mono", monospace; font-size: 13px; }
+  /* cards */
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 22px 0; }
+  @media (max-width: 640px) { .split { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 16px 20px; }
+  .card h5 { margin: 0 0 8px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 500; color: var(--ink-3); }
+  .card.strong h5 { color: var(--good); }
+  .card.weak h5 { color: var(--warn); }
+  .card ul { padding-left: 18px; margin: 0; }
+  .card li { font-size: 15px; color: var(--ink-2); }
+  .anti { border-left: 4px solid var(--crit); background: var(--panel); border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 4px; padding: 14px 20px; margin: 22px 0; }
+  .anti h5 { margin: 0 0 6px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--crit); font-weight: 500; }
+  .anti ul { margin: 0; padding-left: 18px; }
+  .anti li { font-size: 15px; color: var(--ink-2); }
+  code { font-family: "IBM Plex Mono", monospace; font-size: 14px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 3px; padding: 1px 6px; }
+  pre { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 16px 18px; overflow-x: auto; font-family: "IBM Plex Mono", monospace; font-size: 13.5px; line-height: 1.55; color: var(--ink); }
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  .foot { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Technical corpus · v1.0 · 29 Aug 2026 · third volume in the Mākoha research series</p>
+  <h1>The Four Faces Corpus</h1>
+  <p class="dek">A translatable research primer and execution manual for the architecture of a triple-facing clinical decision support system — Clinician Face, Patient Face, Auditor Face, and the Engines beneath them — with every design commitment traced to the evidence that motivates it.</p>
+  <div class="docmeta">
+    <span>STATUS: normative draft</span>
+    <span>KEYWORDS: MUST / SHOULD / MAY per RFC 2119</span>
+    <span>REQ IDS: SPINE · CF · PF · AF · EN · XC</span>
+    <span>COMPANIONS: Sleep Tools Dossier · The Stranieri File</span>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <span class="lbl">Contents</span>
+  <ol>
+    <li><a href="#p0">How to use this document</a></li>
+    <li><a href="#p1">Theoretical foundation: the boundary thesis</a></li>
+    <li><a href="#p2">The shared spine: justification fabric &amp; reference architecture</a></li>
+    <li><a href="#p3">The Clinician Face</a></li>
+    <li><a href="#p4">The Patient Face</a></li>
+    <li><a href="#p5">The Auditor Face</a></li>
+    <li><a href="#p6">The Engines</a></li>
+    <li><a href="#p7">Cross-cutting execution: regulation, low-resource profile, phasing, risks</a></li>
+    <li><a href="#p8">Traceability matrix &amp; sources</a></li>
+  </ol>
+</nav>
+
+<div class="verdict">
+  <p class="lbl">Thesis</p>
+  <p>Thirty years of CDSS research keeps rediscovering the same failure: systems computerize the guideline and neglect the boundary where formal rules meet messy clinical reality. The evidence base assembled in this series — Chapman's account of meta-rationality, the Miah–Blake–Kerr design theory and its working sleep-clinic artefact, Stranieri's argumentation lineage from Split-Up to GAAM to deployed remote monitoring, and the 2024–25 systematic reviews of CDSS design, XAI, and maternity CDSS — converges on one architectural answer. <strong>Make justification the system's native data structure.</strong> One argument object, rendered in three registers, carries every recommendation, every override, every suppression, and every release. The three faces are not three products; they are three circumrational interfaces to a single justification fabric. The engines are not oracles; they are argument-emitting components whose claims only deterministic evaluation can release. This document turns that finding into buildable requirements.</p>
+</div>
+
+<h2 id="p0"><span class="sec">Part 0</span>How to use this document</h2>
+<p>This corpus is both a <em>primer</em> (it explains why each commitment exists, with citations) and an <em>execution manual</em> (it states requirements you can build, test, and audit against). It is designed for translation into a document ecosystem: every requirement carries a stable ID, a normative keyword, and a rationale trace, so it can be lifted verbatim into specifications, conformance checklists, validator rules, and regulatory submissions.</p>
+<ul>
+  <li><strong>Normative language.</strong> MUST = conformance-defining; violating it breaks a safety, integrity, or evidentiary property. SHOULD = strong default; departure requires a recorded justification (the corpus practices its own doctrine). MAY = permitted design freedom.</li>
+  <li><strong>Requirement IDs.</strong> <code>SPINE-n</code> cross-face architecture; <code>CF-n</code> Clinician Face; <code>PF-n</code> Patient Face; <code>AF-n</code> Auditor Face; <code>EN-n</code> Engines; <code>XC-n</code> cross-cutting execution. IDs are stable across future versions; retired IDs are never reused.</li>
+  <li><strong>Rationale traces.</strong> Each requirement cites its evidence in compressed form (e.g. <em>Bayor 2025</em>, <em>GAAM 2006</em>); Part 8 expands every trace to a full source.</li>
+  <li><strong>Scope.</strong> The corpus specifies architecture and component behaviour. It does not fix implementation technology; where the Mākoha stack (AWS Amplify/Bedrock, Bayesian differential engine, conformal wrapper, corruption engine) is referenced, it is as the reference implementation, not a constraint.</li>
+</ul>
+
+<h2 id="p1"><span class="sec">Part 1</span>Theoretical foundation: the boundary thesis</h2>
+<p>Every formal system in clinical computing has the same anatomy: an ontology that fixes what can be represented, an inference core that manipulates those representations, and a <em>circumrational boundary</em> — the human work of translating a nebulous patient into the system's terms and translating the system's outputs back into care. Chapman's analysis of rationality predicts that failures concentrate at this boundary, because the world does not conform to any fixed ontology; the practical remedies he catalogues are precisely the ones available to a system designer: widen the ontology, improve circumrational practice on both sides of the interface, improve material cognitive supports, and hold multiple rational systems side by side when one is not enough.</p>
+<p>The empirical CDSS literature confirms the prediction without possessing the vocabulary. Bayor et al.'s systematic review of CDSS design found 37 of 40 systems clinician-facing only, mostly stand-alone, with rigid recommendation structures that "restrict users from incorporating their own perspectives," pervasive alert fatigue, and even covert-surveillance anxiety — a catalogue of circumrational neglect. Cockburn et al.'s maternity meta-analysis found benefit (pooled OR 1.69) drowned in heterogeneity: what works in one context fails to transfer, which is the nebulosity thesis in epidemiological form. Abbas et al.'s XAI meta-analysis found explanation technology everywhere in the lab and almost nowhere validated for fidelity, trust, or real-world usability — explanations produced because the genre demands them. And the one artefact program that did most things right — the Blake–Kerr–Gammack sleep CDSS, theorized by Miah, Blake &amp; Kerr into a generic architecture and six design principles — honestly stopped at the judgment boundary, computerizing the ICSD criteria while citing Croskerry to leave discretion outside the system, and leaving its third face a read-only administrative viewer.</p>
+<p>Three findings from this series supply the constructive move:</p>
+<ul>
+  <li><strong>Justification is the explanation form that works for every stakeholder.</strong> The sleep CDSS's Toulmin argument trees — claim, grounds, warrant — descend from Stranieri's Split-Up, built for <em>discretionary</em> judicial reasoning, and were explicitly designed "to meet expectations of different users." Feature attribution (SHAP, Grad-CAM) answers "which inputs moved the number"; an argument answers "why is this defensible" — the question clinicians, patients, and auditors actually ask.</li>
+  <li><strong>GAAM formalizes the guideline/deviation relationship.</strong> Stranieri's Generic/Actual Argument Model separates the <em>generic argument</em> — a community-ratified template of admissible data, warrants, and claims — from the <em>actual argument</em> a specific case instantiates. A justified deviation is then not an exception outside the system but a first-class object inside it: an actual argument whose warrant departs from the generic template, with the departure recorded, reasoned, and reviewable.</li>
+  <li><strong>The auditor face is the unclaimed keystone.</strong> No system in the reviewed literature serves the compliance stakeholder as more than a viewer, yet the compliance apparatus is what punishes meta-rational practice and drives rigidity everywhere upstream. Reframing "non-compliance" as "documented rational intent" attacks the root cause; everything in this corpus is arranged so that the auditor face is a read model over evidence the system produces natively, not a bolted-on surveillance layer.</li>
+</ul>
+<blockquote>The doctrine in one sentence: the system computerizes criteria, never discretion — and gives discretion a data structure instead.</blockquote>
+
+<h2 id="p2"><span class="sec">Part 2</span>The shared spine</h2>
+<p>The spine is what makes three faces one system: a single justification fabric that every component writes to and every face reads from, in its own register. The reference architecture extends the Miah–Blake–Kerr layered design (role interfaces → shared tools → argument-tree explanation → knowledge base → swappable ontology), replacing its read-only administration face with an active auditor face and inserting the deviation and versioning machinery the original never had.</p>
+
+<div class="arch" role="img" aria-label="Reference architecture: three faces over per-face gateways, a justification fabric, an engine plane of four engine types, a knowledge plane, and a data plane">
+  <div class="row three">
+    <div class="layer face"><strong>Clinician Face</strong><span>clinical register</span></div>
+    <div class="layer face"><strong>Patient Face</strong><span>plain-language register</span></div>
+    <div class="layer face"><strong>Auditor Face</strong><span>compliance register · read model</span></div>
+  </div>
+  <div class="conn">↓ ↑ per-face gateways (authn, authz, register rendering)</div>
+  <div class="layer fabric"><strong>Justification Fabric</strong><span>GenericArgument · ActualArgument · Deviation · append-only, hash-chained, version-pinned (GAAM + Toulmin schema)</span></div>
+  <div class="conn">↓ ↑ engine contract: arguments in, arguments out</div>
+  <div class="row four">
+    <div class="layer"><strong>Guideline Compiler</strong><span>narrative → computable → GenericArgument</span></div>
+    <div class="layer"><strong>Bayesian Differential</strong><span>posteriors as qualifiers</span></div>
+    <div class="layer"><strong>Conformal Wrapper</strong><span>coverage-guaranteed uncertainty</span></div>
+    <div class="layer"><strong>Corruption Engine</strong><span>standing rebuttal generator</span></div>
+  </div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer"><strong>Knowledge Plane</strong><span>terminologies (SNOMED CT, ICD-10) · computable guidelines (FHIR CPG / CQL / WHO SMART L3) · tiered evidence library · plural, versioned, swappable</span></div>
+  <div class="conn">↓ ↑</div>
+  <div class="layer"><strong>Data Plane</strong><span>FHIR: QuestionnaireResponse · Observation · Condition · GuidanceResponse · DetectedIssue · Provenance · AuditEvent · Consent</span></div>
+</div>
+
+<h3>The canonical argument object</h3>
+<p>Every recommendation, alert, suppression, override, and release in the system is an instance of one schema, whose elements are Toulmin's — and whose element assignments are not decorative: each maps to a concrete Mākoha component.</p>
+<div class="tablewrap"><table>
+  <thead><tr><th>Toulmin element</th><th>Definition</th><th>What supplies it</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Claim</strong></td><td>The assertion released to a face (diagnosis candidate, recommendation, alert, suppression)</td><td>Deterministic evaluation of the argument tree — never an ML output directly</td></tr>
+    <tr><td><strong>Grounds</strong></td><td>The patient-specific data the claim rests on</td><td>Data plane resources, each with provenance and capture context</td></tr>
+    <tr><td><strong>Warrant</strong></td><td>The inference rule licensing grounds → claim</td><td>A GenericArgument node: guideline criterion, Bayesian likelihood structure, or ratified local rule — always versioned</td></tr>
+    <tr><td><strong>Backing</strong></td><td>Why the warrant deserves trust</td><td>The tiered evidence library entry behind the warrant (evidence tier, source, currency)</td></tr>
+    <tr><td><strong>Qualifier</strong></td><td>The strength and uncertainty of the claim</td><td>Posterior probabilities and conformal prediction sets with stated coverage — uncertainty is a first-class schema element, not a footnote</td></tr>
+    <tr><td><strong>Rebuttal</strong></td><td>Known conditions under which the claim fails</td><td>Corruption-engine findings, contraindications, DetectedIssue conflicts, and unresolved guideline disagreements</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Spine requirements</h3>
+<div class="req"><span class="rid">SPINE-1</span><span class="norm must">MUST</span><span class="body">Every claim that crosses a face boundary — recommendation, alert, alert suppression, override acknowledgment, triage decision — is represented as an ActualArgument instantiating (or explicitly deviating from) a versioned GenericArgument. No component may release a bare score, label, or unexplained alert to any face.</span><span class="why"><em>Trace:</em> GAAM 2006; Blake 2016 argument trees; Abbas 2025 (attribution ≠ justification); Nunes &amp; Jannach 2017.</span></div>
+<div class="req"><span class="rid">SPINE-2</span><span class="norm must">MUST</span><span class="body">The argument schema carries all six Toulmin elements; Qualifier and Rebuttal are mandatory, not optional. An argument without a stated qualifier (uncertainty) or with an empty rebuttal slot that the corruption engine has findings for is invalid and MUST NOT be released.</span><span class="why"><em>Trace:</em> Toulmin 1958; conformal-prediction doctrine (Mākoha); Cockburn 2024 heterogeneity (context-failure modes are rebuttals, not surprises).</span></div>
+<div class="req"><span class="rid">SPINE-3</span><span class="norm must">MUST</span><span class="body">One argument object renders in three registers — clinical, plain-language, compliance — from a shared ontology and controlled vocabulary. Register renderers may compress or re-order; they MUST NOT add, remove, or reweight argument content per audience.</span><span class="why"><em>Trace:</em> Miah–Blake–Kerr Principle 2 (shared ontology); Split-Up 1998 ("expectations of different users"); patient-education findings in Blake 2016.</span></div>
+<div class="req"><span class="rid">SPINE-4</span><span class="norm must">MUST</span><span class="body">The justification fabric is append-only and tamper-evident (hash-chained). Standard bindings: recommendations as FHIR <code>GuidanceResponse</code>, decision lineage as <code>Provenance</code>, access as <code>AuditEvent</code>, conflicts as <code>DetectedIssue</code>, permissions as <code>Consent</code>, intake as <code>QuestionnaireResponse</code>. Corrections are new entries that supersede, never edits.</span><span class="why"><em>Trace:</em> auditor-face evidentiary needs; TGA Essential Principles conformity evidence; Stranieri EHR-dispute work (contested records need untampered lineage).</span></div>
+<div class="req"><span class="rid">SPINE-5</span><span class="norm must">MUST</span><span class="body">Every argument pins the versions of everything that produced it: guideline/GenericArgument version, terminology release, evidence-library snapshot, engine model version, and engine configuration hash. Any historical decision MUST be replayable bit-for-bit from its pinned versions.</span><span class="why"><em>Trace:</em> the ICSD-2 freeze that stranded the sleep CDSS; regulatory replay obligations; drift management (EN-8).</span></div>
+<div class="req"><span class="rid">SPINE-6</span><span class="norm must">MUST</span><span class="body">The knowledge plane supports plural, co-resident guideline systems. When two applicable GenericArguments conflict, the conflict is materialized as a DetectedIssue attached to both arguments and surfaced to the clinician face; the system MUST NOT silently rank, merge, or suppress one side.</span><span class="why"><em>Trace:</em> Stranieri coalescing-medical-systems line; Chapman on alternative rational systems; the user's meta-rational design note (conflicting-guideline synthesis).</span></div>
+<div class="req"><span class="rid">SPINE-7</span><span class="norm must">MUST</span><span class="body">"ML proposes and tests; only arithmetic releases." Probabilistic and generative components may propose grounds, candidate warrants, and draft arguments; release to any face requires deterministic evaluation of the completed argument tree against its GenericArgument. The releasing evaluator is versioned, testable, and free of learned parameters.</span><span class="why"><em>Trace:</em> Mākoha core doctrine; TGA exemption criterion (c) transparency language as the design target even for classified software (XC-1).</span></div>
+<div class="req"><span class="rid">SPINE-8</span><span class="norm must">MUST</span><span class="body">Deviation machinery exists at every recommendation point. A face-side actor with clinical authority can depart from any GenericArgument; the departure produces a Deviation object (structured reason taxonomy + free text + severity tier + author identity) linked to the actual argument. The system computerizes criteria, never discretion — and never blocks a deviation except where a deterministic safety class applies.</span><span class="why"><em>Trace:</em> the gap every source leaves open — Blake/Croskerry boundary, Bayor rigidity findings, GAAM generic/actual split; auditor-face reframing (AF-3).</span></div>
+<div class="req"><span class="rid">SPINE-9</span><span class="norm should">SHOULD</span><span class="body">The fabric exposes one read API with register-scoped projections rather than per-face databases, so the three faces can never drift into three truths. Face-specific caches are derived, disposable, and rebuildable from the ledger.</span><span class="why"><em>Trace:</em> single-source-of-truth integrity; audit replay economics.</span></div>
+
+<h2 id="p3"><span class="sec">Part 3</span>The Clinician Face</h2>
+<p><strong>What the research revealed.</strong> Clinicians are not failing to use CDSS because they distrust computers; they are defending their circumrational boundary against systems that neglect it. Bayor et al. found the dominant failure modes are rigid recommendation structures, workflow mismatch ("information only several steps ahead of the operational workflow"), information overload and prompt fatigue, and trust collapse when recommendations conflict with clinical judgment and cannot be interrogated. Stranieri's ward-rounds field study shows bedside reasoning is social, narrative, and context-saturated — not a form-filling exercise — and his MDT study shows the consequential decisions are often <em>group</em> decisions. The Blake program demonstrated the successful counter-pattern: move routine data capture out of the consultation entirely, deliver pre-digested, assimilable reports, triage before the first visit, and explain every criterion hit as an argument. Croskerry's dual-process account, cited by that program as its own boundary marker, tells us what not to attempt: the system supports judgment; it does not simulate it.</p>
+
+<h3>Component inventory</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Component</th><th>Function</th><th>Research anchor</th></tr></thead>
+  <tbody>
+    <tr><td>Consult-Prep Composer</td><td>Pre-consultation synthesis of intake, monitoring, and history into one assimilable brief; triage-urgency proposal with its argument</td><td>Blake 2014/2016 (history-taking out of consult; 3-tier urgency; "patient-driven not form-driven")</td></tr>
+    <tr><td>Differential Board</td><td>Ranked diagnostic hypotheses; each row expands to its full argument tree; qualifiers always visible; conflicts (DetectedIssue) shown side-by-side, never pre-resolved</td><td>Mākoha Bayesian engine; SPINE-2/6; Bayor validity-trust findings</td></tr>
+    <tr><td>Deviation Composer</td><td>One-interaction justified departure: structured reason taxonomy + free text + severity; writes the Deviation object; confirms what the record will show</td><td>SPINE-8; GAAM; auditor reframing (AF-3)</td></tr>
+    <tr><td>Alert Governor</td><td>Context-conditional alert suppression whose suppression rules are themselves GenericArguments — ratified, versioned, argued, and audited; per-clinician suppression budget with fabric-visible spend</td><td>Bayor fatigue findings; Kesselheim 2011 (alert fatigue vs litigation risk, cited in Miah 2020); user's contextual-alerting note</td></tr>
+    <tr><td>MDT / Group Mode</td><td>Multi-author actual arguments: participants contribute grounds and warrants under their own identity; disagreement is recorded, not averaged</td><td>Stranieri MDT 2016; reasoning-communities books; Delphi accuracy-vs-consensus caution</td></tr>
+    <tr><td>Argument Renderer (clinical register)</td><td>Toulmin-structured explanation at criterion granularity; drill-down from claim to backing to evidence tier; never a naked score, never a feature-attribution heatmap as primary explanation</td><td>Blake argument trees; Abbas 2025 gaps; Nunes &amp; Jannach taxonomy</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Clinician Face requirements</h3>
+<div class="req"><span class="rid">CF-1</span><span class="norm must">MUST</span><span class="body">Workflow placement follows the Blake pattern: data capture happens before the consultation (patient-side, PF-1), synthesis happens before the encounter (Consult-Prep Composer), and in-consultation interaction is read-and-decide. The face MUST NOT demand in-consultation data entry beyond confirmation and deviation actions.</span><span class="why"><em>Trace:</em> Blake 2014 (physicians spend consult time on routine questions); Miah–Blake–Kerr Principle 4 (workflow fit).</span></div>
+<div class="req"><span class="rid">CF-2</span><span class="norm must">MUST</span><span class="body">Every displayed recommendation exposes its full argument tree within one interaction, at the granularity of individual criteria (the sleep CDSS's per-criterion decision points are the reference grain). The qualifier (posterior + conformal set) renders adjacent to every claim — no claim without its uncertainty.</span><span class="why"><em>Trace:</em> SPINE-1/2; Blake 28 decision points; TGA criterion (c) transparency language.</span></div>
+<div class="req"><span class="rid">CF-3</span><span class="norm must">MUST</span><span class="body">Deviation is always available, never punished by friction: at most one interaction to open, structured reason plus optional free text, and an explicit preview of how the deviation will appear to the auditor face. The face MUST NOT use dark patterns (nagging, repeated confirmation, delay) to discourage justified departure.</span><span class="why"><em>Trace:</em> SPINE-8; Bayor ("users may feel obligated to follow system recommendations"); rationality-theater risk (XC-6).</span></div>
+<div class="req"><span class="rid">CF-4</span><span class="norm must">MUST</span><span class="body">Hard stops are reserved for the deterministic safety class (arithmetic contraindication with ratified GenericArgument backing). Everything else is advisory. Every hard stop's firing is itself an argument in the fabric, reviewable and contestable.</span><span class="why"><em>Trace:</em> SPINE-7/8; alert-fatigue evidence; Croskerry boundary.</span></div>
+<div class="req"><span class="rid">CF-5</span><span class="norm must">MUST</span><span class="body">Alert suppression is governed, not ad hoc: a suppression rule is proposed, argued, ratified as a GenericArgument, versioned, and its firings logged. Silent, unlogged suppression is prohibited — suppression without audit converts alert fatigue into invisible risk.</span><span class="why"><em>Trace:</em> user's contextual-alerting design note, hardened against its own abuse; SPINE-4.</span></div>
+<div class="req"><span class="rid">CF-6</span><span class="norm should">SHOULD</span><span class="body">Group decisions (MDT, ward round) are captured as multi-author arguments preserving who contributed which grounds and warrants and where disagreement remained. The system SHOULD NOT present a group output as unanimous when the fabric knows otherwise.</span><span class="why"><em>Trace:</em> Stranieri MDT 2016; Delphi consensus-vs-accuracy finding (TFSC 2011).</span></div>
+<div class="req"><span class="rid">CF-7</span><span class="norm must">MUST</span><span class="body">Face evaluation uses clinicians who did not co-design the system, n materially greater than the design panel, measuring at minimum: justified-override rate, alert positive-predictive value, time-in-consult delta, and comprehension of rendered arguments. The Blake program's n=2 co-designer evaluation is the documented anti-pattern.</span><span class="why"><em>Trace:</em> Sleep Tools Dossier assessment; Cockburn 2024 (evaluation heterogeneity); XC-7 phasing gates.</span></div>
+<div class="req"><span class="rid">CF-8</span><span class="norm may">MAY</span><span class="body">Provide narrative-register summaries (a prose account of the case's argument state) for handover and referral, generated from the fabric and marked as derived content.</span><span class="why"><em>Trace:</em> ward-rounds narrative finding; SPINE-3 register discipline.</span></div>
+
+<div class="anti">
+  <h5>Clinician Face anti-requirements</h5>
+  <ul>
+    <li>Never release a bare probability, score, or ranking without its argument and qualifier (violates SPINE-1/2).</li>
+    <li>Never auto-act on a recommendation — ordering, prescribing, and referral remain human acts the system prepares but does not perform.</li>
+    <li>Never treat an unjustified override as an error state; absence of justification is a prompt, then a fabric fact — not a block.</li>
+    <li>Never surface auditor-face analytics (league tables, deviation rates) inside the clinician face; surveillance anxiety is a documented adoption killer (Bayor).</li>
+  </ul>
+</div>
+
+<h2 id="p4"><span class="sec">Part 4</span>The Patient Face</h2>
+<p><strong>What the research revealed.</strong> The patient face is where the literature's largest quantified gap sits: 37 of 40 reviewed CDSS served clinicians only, and Bayor et al. name dual-facing design as the structural opening for virtual care. The Blake program supplies the working patterns: intake instruments completed at home, validated at entry, that make the consultation patient-driven; and a self-monitoring loop (the diary's day-by-day graph) whose immediate visual feedback made patients reflect on their own patterns — evaluated usable across ages and computer literacy by 267 users. Stranieri contributes the custody doctrine: the Patient Centric Agent that mediates access, routing, and storage of the patient's own data stream (his repository-allocation ML paper is that agent's decision policy), plus patient-empowered EHR work and an open-banking data-rights analogy. The meta-rational layer adds the requirement the literature never reaches: patient values and priorities as first-class data that can legitimately reweight decisions — with the mapping from a life goal to a clinical priority treated as governed ontological remodeling, never silent inference.</p>
+
+<h3>Component inventory</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Component</th><th>Function</th><th>Research anchor</th></tr></thead>
+  <tbody>
+    <tr><td>Intake Instruments</td><td>Structured history and condition-specific questionnaires done at home, validated at entry, feeding the fabric as QuestionnaireResponse with capture context</td><td>Blake Q-SHOQ pattern; 267-user usability evidence</td></tr>
+    <tr><td>Self-Monitoring Loop</td><td>Diary/observation capture with immediate visual feedback to the patient; the same data stream feeds Consult-Prep</td><td>Blake sleep-diary graph; Anidra RPM ingestion</td></tr>
+    <tr><td>Values &amp; Priorities Module</td><td>Elicited trade-off preferences (mobility vs longevity, cost sensitivity, side-effect tolerances) stored as structured Goals; enters engine weighting only through ratified mappings</td><td>User's meta-rational note; Chapman ontological-remodeling constraint; shared-decision-making literature via Blake 2016</td></tr>
+    <tr><td>Personal Data Agent</td><td>Custody, consent ledger (FHIR Consent), access visibility ("who saw what, when, under which argument"), and repository routing policy</td><td>Stranieri PCA (IEEE Access 2018); repository allocation (HIJ 2020); patient-empowered EHR 2019</td></tr>
+    <tr><td>Argument Renderer (plain register)</td><td>The same argument tree in plain language: what we think, why, how sure, what would change it, and what you can choose — including honest rendering of clinician deviations ("your doctor departed from the standard guideline because…")</td><td>SPINE-3; user's "demystified uncertainty" note; Blake patient-education finding</td></tr>
+    <tr><td>Low-Resource Delivery Profile</td><td>Offline-first client, low-bandwidth sync, SMS/IVR fallback tier, cheap-device support, RPM device ingestion</td><td>North star; Anidra deployment reality; teledentistry cost evidence; WHO SMART Guidelines alignment</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Patient Face requirements</h3>
+<div class="req"><span class="rid">PF-1</span><span class="norm must">MUST</span><span class="body">Routine history and condition-specific data capture happens on the patient face, before the encounter, with point-of-entry validation. Instruments are versioned artifacts in the knowledge plane, with their target population and validation status recorded (the missing-instrument case — e.g. no OSA screen tuned to women — is representable, not hidden).</span><span class="why"><em>Trace:</em> Blake 2014/2016; CF-1 pairing; instrument-gap finding in Blake 2014.</span></div>
+<div class="req"><span class="rid">PF-2</span><span class="norm must">MUST</span><span class="body">Every patient-visible recommendation renders in the plain register from the same argument object the clinician saw — including qualifiers ("how sure we are") and the existence of any deviation. The patient face MUST NOT receive a sanitized or divergent version of the decision.</span><span class="why"><em>Trace:</em> SPINE-3; trust and shared-decision-making evidence; register discipline.</span></div>
+<div class="req"><span class="rid">PF-3</span><span class="norm must">MUST</span><span class="body">Patient values and priorities are captured as explicit, patient-authored structured data. A mapping from a stated life goal to a clinical weighting (e.g. mobility-over-longevity) takes effect only after ratification into the knowledge plane as a versioned mapping — never by runtime inference from free text. The patient can see and revoke every active mapping.</span><span class="why"><em>Trace:</em> Chapman (ontological remodeling cannot be done rationally, so it must be governed); user's value-alignment note; SPINE-7.</span></div>
+<div class="req"><span class="rid">PF-4</span><span class="norm must">MUST</span><span class="body">The Personal Data Agent gives the patient a complete access ledger (every read of their record, bound to the AuditEvent and the argument context it served) and consent controls that the data plane actually enforces. Repository routing decisions are policy-driven and explainable in the plain register.</span><span class="why"><em>Trace:</em> Stranieri PCA + repository allocation; AF evidentiary symmetry — the patient audits too.</span></div>
+<div class="req"><span class="rid">PF-5</span><span class="norm must">MUST</span><span class="body">Self-monitoring capture returns immediate, legible visual feedback to the patient on their own data. Feedback visualisations are the same artifacts the clinician sees (register-styled), preserving the shared vocabulary.</span><span class="why"><em>Trace:</em> Blake diary finding (feedback → reflection → engagement); Miah–Blake–Kerr Principle 2.</span></div>
+<div class="req"><span class="rid">PF-6</span><span class="norm must">MUST</span><span class="body">The accessibility floor is non-negotiable: usable at low literacy and low computer literacy, WCAG-conformant, and functional offline with deferred sync. The low-resource profile — bandwidth budget, device floor, SMS/IVR fallback for intake and reminders — is a release gate, not an aspiration.</span><span class="why"><em>Trace:</em> Blake accessibility-first design; north star; Anidra field constraints; XC-4.</span></div>
+<div class="req"><span class="rid">PF-7</span><span class="norm should">SHOULD</span><span class="body">Align patient-face computable content with WHO SMART Guidelines artifact layers (narrative → operational → machine-readable FHIR) so low-resource deployments can adopt nationally adapted guideline content without re-authoring.</span><span class="why"><em>Trace:</em> WHO SMART Guidelines program; north star; SPINE-6 pluralism.</span></div>
+<div class="req"><span class="rid">PF-8</span><span class="norm must">MUST</span><span class="body">The patient face presents recommendations and choices; it does not diagnose. Diagnostic claims render to patients only after clinician release, in the plain register, with the releasing clinician identified.</span><span class="why"><em>Trace:</em> regulatory posture (XC-1); Blake precedent (patients received diary feedback, not the physician report).</span></div>
+
+<div class="anti">
+  <h5>Patient Face anti-requirements</h5>
+  <ul>
+    <li>Never infer values, priorities, or risk tolerance from behavioural signals and apply them silently (violates PF-3).</li>
+    <li>Never render uncertainty as false confidence — a point estimate without its set is a schema violation, in the plain register as everywhere.</li>
+    <li>Never make consent a wall of text: consent objects are granular, revocable, and mirrored in the access ledger.</li>
+    <li>Never gate core function on connectivity, device class, or app-store availability in low-resource profiles.</li>
+  </ul>
+</div>
+
+<h2 id="p5"><span class="sec">Part 5</span>The Auditor Face</h2>
+<p><strong>What the research revealed.</strong> This face has no precedent to copy — that is the finding. The Miah–Blake–Kerr architecture's third interface was a read-access administrative viewer; Bayor et al.'s review stops at dual-facing; nobody in the corpus serves the compliance stakeholder as a designed-for user. Yet the compliance apparatus is the load-bearing cause of upstream rigidity: a clinician who deviates wisely is punished by machinery that can only read deviation as error, so systems are built rigid to keep audits clean. The constructive materials exist in pieces: GAAM supplies the formalism (deviation = actual argument departing from a generic template, reviewable at the warrant level); Stranieri's online-dispute-resolution work supplies the contested-record workflow; the fabric (Part 2) supplies evidence that is append-only, version-pinned, and replayable; and the corruption engine supplies the antibody against the face's own failure mode — justification theater, where templated rationales game the ledger. TGA criterion (c)'s language — recommendations whose basis a professional can independently verify, with logic and evidence clearly referenced — describes, almost verbatim, what this face's export must demonstrate.</p>
+
+<h3>Component inventory</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Component</th><th>Function</th><th>Research anchor</th></tr></thead>
+  <tbody>
+    <tr><td>Justification Ledger</td><td>The read model over the fabric: every decision, argument, deviation, suppression, and access event, queryable and exportable</td><td>SPINE-4/5; FHIR Provenance/AuditEvent</td></tr>
+    <tr><td>Deviation Review Workbench</td><td>Queues by severity, pattern, and recency; each deviation opens as the full argument pair (generic vs actual) with the departure highlighted at the warrant node</td><td>GAAM; AF-3 reframing</td></tr>
+    <tr><td>Compliance Projector</td><td>Maps argument states onto external compliance vocabularies (quality metrics, accreditation standards, billing integrity): "guideline-concordant," "documented justified deviation," "undocumented deviation," "under review"</td><td>User's quality-metric-adjustment note; reframing doctrine</td></tr>
+    <tr><td>Theater Detector</td><td>The corruption engine pointed at justifications: boilerplate similarity, copy-paste clustering, temporal anomalies (batch back-fill), reason-code/free-text mismatch — flags for human review only</td><td>XC-6 risk; Mākoha corruption engine repurposed</td></tr>
+    <tr><td>Guideline Feedback Loop</td><td>Aggregates deviation patterns into change proposals against specific GenericArgument nodes; proposals enter a governed ratification workflow and, if accepted, version the template</td><td>User's systemic-feedback note; Chapman ontological remodeling as governed process; SPINE-5 versioning</td></tr>
+    <tr><td>Dispute Mode</td><td>Structured ODR workflow for contested decisions and records: positions as arguments, mediated exchange, resolution recorded into the ledger</td><td>Stranieri ODR for medical disputes 2020; EHR disputes &amp; emotional intelligence 2020</td></tr>
+    <tr><td>Regulator Export</td><td>Conformity bundles: replayable decision sets with pinned versions, argument transparency demonstrating reviewable basis, adverse-event linkage</td><td>TGA Essential Principles; SaMD evidence posture (XC-1)</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Auditor Face requirements</h3>
+<div class="req"><span class="rid">AF-1</span><span class="norm must">MUST</span><span class="body">The auditor face is a read model. It holds no write path into clinical data, arguments, or deviations; its only writes are review states, dispute records, and guideline-change proposals — each itself an argued, attributed fabric entry.</span><span class="why"><em>Trace:</em> separation of powers; Bayor surveillance-anxiety finding; AF anti-capture.</span></div>
+<div class="req"><span class="rid">AF-2</span><span class="norm must">MUST</span><span class="body">Every reviewable item presents as an argument pair — the GenericArgument (what the ratified guideline licensed, at its pinned version) and the ActualArgument (what happened) — with departures localized to specific warrant nodes. Review verdicts attach at node granularity, not case granularity.</span><span class="why"><em>Trace:</em> GAAM 2006; Split-Up warrant-level reasoning; replayability (SPINE-5).</span></div>
+<div class="req"><span class="rid">AF-3</span><span class="norm must">MUST</span><span class="body">The compliance vocabulary distinguishes, as first-class states: guideline-concordant; documented justified deviation; documented deviation under review; undocumented deviation. External reporting maps from these states. "Documented justified deviation" is a compliant state, not a mitigated violation — this reframing is the face's reason to exist.</span><span class="why"><em>Trace:</em> the series' central gap; user's "justified personalization" doctrine; quality-metric adjustment note.</span></div>
+<div class="req"><span class="rid">AF-4</span><span class="norm must">MUST</span><span class="body">Theater detection runs continuously over the justification ledger — boilerplate similarity, duplication clusters, temporal anomalies, taxonomy/free-text divergence — and produces flags for human review. Flags MUST NOT auto-sanction, auto-downgrade compliance states, or feed individual performance management without a governed human process.</span><span class="why"><em>Trace:</em> rationality-theater risk (Chapman; XC-6); corruption-engine doctrine; procedural fairness.</span></div>
+<div class="req"><span class="rid">AF-5</span><span class="norm must">MUST</span><span class="body">Deviation aggregates feed a governed guideline-change workflow: recurring justified departures against a GenericArgument node generate a change proposal carrying its evidence; ratification produces a new template version; the old version remains pinned to its historical decisions. Ontology and template change is a human, governed act — never automatic.</span><span class="why"><em>Trace:</em> user's systemic-feedback loop; Chapman (ontological remodeling is prior to rationality); SPINE-5.</span></div>
+<div class="req"><span class="rid">AF-6</span><span class="norm should">SHOULD</span><span class="body">Dispute mode implements a structured ODR workflow — contested decision, positions entered as arguments, mediated exchange, outcome ledgered — usable for payer disputes, patient record challenges, and inter-clinician disagreement escalation.</span><span class="why"><em>Trace:</em> Stranieri Re-Consider 2008 → medical ODR 2020; BIT 2020 emotional-intelligence findings.</span></div>
+<div class="req"><span class="rid">AF-7</span><span class="norm must">MUST</span><span class="body">Regulator export produces self-contained conformity bundles: the decision set, pinned versions, replay attestation, argument transparency (basis, logic, evidence references), deviation states, and adverse-event linkage — the operational realization of "the health professional can independently verify the basis."</span><span class="why"><em>Trace:</em> TGA criterion (c) language; Essential Principles; XC-1.</span></div>
+<div class="req"><span class="rid">AF-8</span><span class="norm should">SHOULD</span><span class="body">Aggregate views default to system-level and guideline-level lenses; clinician-level lenses require a governed access grant, are logged to the fabric, and are visible to the affected clinician.</span><span class="why"><em>Trace:</em> surveillance-anxiety evidence; sustaining CF trust while preserving audit capability.</span></div>
+
+<div class="anti">
+  <h5>Auditor Face anti-requirements</h5>
+  <ul>
+    <li>Never a write path into clinical content — the auditor observes and proposes; it does not practice medicine (AF-1).</li>
+    <li>Never automatic sanction, automatic metric downgrade, or automatic clinician flagging from detector output (AF-4).</li>
+    <li>Never real-time individual surveillance dashboards; review is retrospective and governed (AF-8).</li>
+    <li>Never resolve a plural-guideline conflict by fiat in the compliance projection; conflicts project as conflicts (SPINE-6).</li>
+  </ul>
+</div>
+
+<h2 id="p6"><span class="sec">Part 6</span>The Engines</h2>
+<p><strong>What the research revealed.</strong> Three durable engineering lessons and one synthesis. Lesson one, from the Blake artefact: <em>decompose</em>. Twenty-eight small, testable, per-criterion decision units proved "flexible and easy to change in the event of additions to or changes in the diagnostic criteria" — monolithic inference is where guideline drift goes to hide. Lesson two, from the Miah–Blake–Kerr architecture: <em>engine agnosticism</em> — the reasoning layer explicitly admits rule bases, statistical models, pattern recognition, or Bayesian models behind one interface, and the ontology beneath it is swappable. Lesson three, from Abbas et al.: the XAI mainstream's post-hoc attributions do not meet any face's actual question, and unvalidated explanation is a liability, not a feature. The synthesis is this corpus's sharpest structural claim: <strong>Mākoha's engine components map one-to-one onto Toulmin's argument elements</strong> — the Bayesian differential supplies claims with posteriors, the tiered evidence library supplies backing, the conformal wrapper supplies the qualifier, and the corruption engine supplies rebuttals. The argument schema is not documentation added after inference; it is the engine plane's output contract.</p>
+
+<h3>The engine contract</h3>
+<pre>interface Engine {
+  // Everything an engine consumes is versioned and pinned
+  inputs:  Grounds[]            // FHIR-sourced, provenance-bearing
+  context: GenericArgument      // the template node(s) in scope, at pinned version
+
+  // Everything an engine produces is an argument fragment — never a released claim
+  propose(): ActualArgumentDraft {
+    claim:     Assertion         // candidate only
+    grounds:   Grounds[]         // what it actually used
+    warrant:   WarrantRef        // versioned rule/model licensing the step
+    backing:   EvidenceTierRef   // from the tiered evidence library
+    qualifier: Uncertainty       // posterior + conformal set + coverage
+    rebuttals: Defeater[]        // known failure conditions, incl. corruption findings
+    pins:      VersionSet        // model, config hash, terminology, guideline
+  }
+}
+// Release path (deterministic, learned-parameter-free):
+// evaluate(ActualArgumentDraft, GenericArgument) → released | held | conflict(DetectedIssue)</pre>
+
+<h3>Component inventory</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Component</th><th>Function</th><th>Research anchor</th></tr></thead>
+  <tbody>
+    <tr><td>Guideline Compiler</td><td>Narrative guideline → operational logic → computable artifacts (FHIR CPG / CQL; WHO SMART machine-readable layer) → GenericArgument templates with evidence-tier backing per warrant node</td><td>WHO SMART layer model; SPINE-5/6; Blake per-criterion grain</td></tr>
+    <tr><td>Bayesian Differential Service</td><td>Posterior computation over the differential; likelihood structures are warrants, posteriors are qualifier inputs; decomposed per criterion cluster, not monolithic</td><td>Mākoha core; Miah 2020 reasoning-agnostic layer ("likelihood ratios or Bayesian models")</td></tr>
+    <tr><td>Conformal Wrapper</td><td>Distribution-free prediction sets with stated coverage wrapped around every probabilistic output; the qualifier discipline that makes SPINE-2 satisfiable</td><td>Mākoha doctrine; Abbas fidelity gap (uncertainty must be validated, not asserted)</td></tr>
+    <tr><td>Corruption Engine</td><td>Standing adversary: perturbs inputs, hunts failure regions, and publishes findings as rebuttals attached to the warrants they defeat; second duty as the AF-4 theater detector</td><td>Mākoha doctrine; Cockburn heterogeneity (context failure is the expected case); Toulmin rebuttal slot</td></tr>
+    <tr><td>Deterministic Evaluator</td><td>The release gate: evaluates completed argument drafts against GenericArgument templates; versioned, exhaustively unit-tested, no learned parameters</td><td>SPINE-7 ("only arithmetic releases"); TGA criterion (c) transparency target</td></tr>
+    <tr><td>Evaluation Firewall</td><td>Sequestered corpus and harness; nothing that trained or tuned an engine may score it; replay harness re-executes historical decisions against pinned versions</td><td>Mākoha doctrine; CF-7 evaluation-incest lesson generalized</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Engine requirements</h3>
+<div class="req"><span class="rid">EN-1</span><span class="norm must">MUST</span><span class="body">Every engine — rule-based, Bayesian, ML, or LLM-assisted — implements the engine contract: consumes versioned grounds and template context, emits ActualArgument drafts with all six Toulmin elements populated, and never releases directly to a face.</span><span class="why"><em>Trace:</em> SPINE-1/2/7; Miah 2020 engine-agnostic layer, hardened into a contract.</span></div>
+<div class="req"><span class="rid">EN-2</span><span class="norm must">MUST</span><span class="body">Inference is decomposed to criterion granularity: small engines per guideline criterion or criterion cluster, independently versioned, testable, and swappable. A guideline change recompiles affected GenericArgument nodes and their engines without touching the rest of the plane.</span><span class="why"><em>Trace:</em> Blake 28 decision points ("flexible and easy to change"); ICSD-freeze failure mode; SPINE-5.</span></div>
+<div class="req"><span class="rid">EN-3</span><span class="norm must">MUST</span><span class="body">The Guideline Compiler is the only path by which clinical logic enters the engine plane: narrative → computable → GenericArgument, with authorship, evidence tier, and ratification recorded per warrant node. Hand-coded rules outside the compiler pipeline are prohibited.</span><span class="why"><em>Trace:</em> SPINE-5/6 integrity; AF-5 feedback loop needs one change surface; WHO SMART layering.</span></div>
+<div class="req"><span class="rid">EN-4</span><span class="norm must">MUST</span><span class="body">Every probabilistic claim carries a conformal qualifier: prediction set and stated coverage, computed by a wrapper that is itself validated on the firewalled corpus. A posterior without coverage semantics does not satisfy SPINE-2.</span><span class="why"><em>Trace:</em> Mākoha conformal doctrine; Abbas (explanation fidelity unvalidated across the field).</span></div>
+<div class="req"><span class="rid">EN-5</span><span class="norm must">MUST</span><span class="body">The corruption engine runs as a standing adversary against every released engine version; its confirmed findings are published as rebuttal objects bound to the defeated warrants and are face-visible wherever those warrants fire. An engine version with unacknowledged confirmed findings MUST NOT release.</span><span class="why"><em>Trace:</em> Mākoha doctrine; SPINE-2 rebuttal mandate; Cockburn transfer-failure evidence.</span></div>
+<div class="req"><span class="rid">EN-6</span><span class="norm must">MUST</span><span class="body">LLM components follow the classified posture: authoring-time and test-time uses (guideline compilation assistance, instrument drafting, corruption-case generation, register rendering drafts) are permitted as proposers under human ratification; runtime clinical inference by LLM is a classification-attracting change managed under the regulatory fork, and in every case remains subject to SPINE-7 — an LLM never releases.</span><span class="why"><em>Trace:</em> Mākoha LLM Class 1–3 vs 4+ doctrine; TGA note that AI-enabled CDSS does not meet the exemption criteria.</span></div>
+<div class="req"><span class="rid">EN-7</span><span class="norm must">MUST</span><span class="body">The evaluation firewall is absolute: corpora used for training/tuning are disjoint from scoring corpora; evaluation code is versioned; and every reported performance figure is reproducible from the firewall by a party with no write access to the engines.</span><span class="why"><em>Trace:</em> Mākoha firewalled-corpus doctrine; CF-7 (the n=2 co-designer lesson at engine scale).</span></div>
+<div class="req"><span class="rid">EN-8</span><span class="norm must">MUST</span><span class="body">Drift is managed as versioned change, never silent update: terminology releases, guideline versions, evidence-library snapshots, and model weights all pin per decision (SPINE-5); scheduled replay of a sentinel decision set across versions detects behavioural drift before it reaches a face.</span><span class="why"><em>Trace:</em> SPINE-5; regulatory change management; sentinel-replay practice.</span></div>
+<div class="req"><span class="rid">EN-9</span><span class="norm should">SHOULD</span><span class="body">Engines expose calibration and coverage telemetry to the auditor face's system lens (not the clinician face), so degradation is a governance event with an owner rather than a surprise.</span><span class="why"><em>Trace:</em> AF-8 lens discipline; EN-8.</span></div>
+
+<h2 id="p7"><span class="sec">Part 7</span>Cross-cutting execution</h2>
+
+<h3>Regulatory posture (Australia first)</h3>
+<div class="req"><span class="rid">XC-1</span><span class="norm must">MUST</span><span class="body">Classification honesty: the TGA's CDSS exemption requires all three criteria — (a) sole purpose of supporting a health professional's recommendation, (b) no direct processing of medical-device images/signals, (c) does not replace clinical judgment, with transparent, independently verifiable logic — and the TGA states plainly that an AI-enabled CDSS will not meet them. Mākoha's diagnostic engine therefore plans for ARTG inclusion and SaMD classification (the Addendum J fork), while criterion (c)'s transparency language is adopted as the design target the fabric must demonstrably meet: every recommendation's basis independently reviewable, its logic and evidence clearly referenced (AF-7).</span><span class="why"><em>Trace:</em> TGA CDSS guidance (criteria a/b/c verbatim review, Oct 2025 revision); Mākoha regulatory fork.</span></div>
+<div class="req"><span class="rid">XC-2</span><span class="norm may">MAY</span><span class="body">Ship a scoped guideline-prompt profile (recommendations from ratified guidelines, no device-signal processing, no diagnosis generation) as a separately-supplied configuration where an exempt or lower-classification posture serves deployment — provided the profile boundary is enforced in code, not policy.</span><span class="why"><em>Trace:</em> TGA exempt-CDSS scope ("prompts, alerts, reminders, and recommendations… apply evidence-based clinical guidelines"); low-resource market entry.</span></div>
+
+<h3>Low-resource deployment profile</h3>
+<div class="req"><span class="rid">XC-3</span><span class="norm must">MUST</span><span class="body">The low-resource profile is a first-class build target with its own release gate: offline-first faces with deferred sync; bandwidth and device floors stated and tested; terminology and guideline packs installable per jurisdiction (WHO SMART-aligned where available); RPM ingestion from low-cost certified devices (the Anidra class); and graceful degradation to SMS/IVR for intake, reminders, and escalation.</span><span class="why"><em>Trace:</em> north star; Anidra field reality; teledentistry cost evidence (asynchronous beats face-to-face on cost); Cockburn (44% of maternity CDSS evidence is LMIC — the demand is proven).</span></div>
+<div class="req"><span class="rid">XC-4</span><span class="norm should">SHOULD</span><span class="body">Treat guideline localization as pluralism, not forking: a jurisdiction's adaptation is a sibling GenericArgument lineage with its own ratification trail, co-resident with the source lineage under SPINE-6 — so low-resource adaptations remain first-class, comparable, and upgradeable.</span><span class="why"><em>Trace:</em> WHO SMART adaptation model; Stranieri coalescing-systems practice; SPINE-6.</span></div>
+
+<h3>Phased execution plan</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Phase</th><th>Builds</th><th>Gate to exit</th></tr></thead>
+  <tbody>
+    <tr><td class="mono">P0 · Spine</td><td>Justification fabric, argument schema, deterministic evaluator, version pinning, guideline compiler for one guideline domain</td><td>Replay attestation passes; one guideline compiled end-to-end to GenericArguments; SPINE-1..9 conformance suite green</td></tr>
+    <tr><td class="mono">P1 · Clinician MVP</td><td>Consult-Prep, Differential Board, Deviation Composer, Alert Governor on one clinical pathway</td><td>CF-7 evaluation with non-designer clinicians; justified-override and alert-PPV baselines recorded</td></tr>
+    <tr><td class="mono">P2 · Auditor read</td><td>Justification Ledger, Deviation Review Workbench, Compliance Projector; theater detector in shadow mode</td><td>An external reviewer reconstructs a month of decisions from exports alone (AF-7 dry run)</td></tr>
+    <tr><td class="mono">P3 · Patient face</td><td>Intake instruments, self-monitoring loop, plain-register renderer, Personal Data Agent, values module (elicitation only)</td><td>PF-6 accessibility floor passes; PF-2 register-fidelity audit passes</td></tr>
+    <tr><td class="mono">P4 · Loops &amp; pluralism</td><td>Values mappings ratification (PF-3 live), guideline feedback loop (AF-5), plural-guideline conflict surfacing (SPINE-6), dispute mode</td><td>First governed template version change driven by deviation evidence, replayed cleanly against both versions</td></tr>
+    <tr><td class="mono">P5 · Low-resource profile</td><td>Offline-first, device floor, SMS/IVR tier, jurisdiction packs, RPM ingestion; pilot in one low-resource site</td><td>XC-3 gate; field pilot with pre-registered evaluation protocol (not co-designer-scored)</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Risk register</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Risk</th><th>Mechanism</th><th>Standing control</th></tr></thead>
+  <tbody>
+    <tr><td>Justification theater</td><td>Templated rationales game AF-3's compliant-deviation state; the ledger fills with boilerplate</td><td>AF-4 theater detector (human-review flags only); deviation UX kept low-friction so honesty stays cheaper than gaming (CF-3)</td></tr>
+    <tr><td>Alert-governor abuse</td><td>Suppression rules accrete until the system is silent</td><td>CF-5 governance (suppression rules are ratified arguments); suppression budgets; AF system-lens telemetry</td></tr>
+    <tr><td>Ontology freeze</td><td>The ICSD-2 failure: knowledge plane fossilizes while medicine moves</td><td>EN-2/EN-3 recompilation path; SPINE-5 versioning; AF-5 feedback loop generating change pressure from practice</td></tr>
+    <tr><td>Evaluation incest</td><td>Co-designers evaluate their own artefact (the Blake n=2 pattern) at any scale</td><td>CF-7; EN-7 firewall; pre-registered pilot protocols (P5)</td></tr>
+    <tr><td>Pluralism collapse</td><td>Convenience pressure to auto-resolve guideline conflicts</td><td>SPINE-6 conflict materialization; AF anti-requirement against fiat resolution</td></tr>
+    <tr><td>Surveillance capture</td><td>Auditor face drifts into clinician performance policing, killing CF trust</td><td>AF-1 read-model boundary; AF-8 governed lenses; CF anti-requirement on league tables</td></tr>
+    <tr><td>Equity drift</td><td>High-resource features become load-bearing; low-resource profile decays into a demo</td><td>XC-3 as release gate; instrument-gap representability (PF-1); LMIC pilot in phasing</td></tr>
+    <tr><td>Regulatory misclassification</td><td>Scope creep quietly crosses exemption/classification boundaries</td><td>XC-1 honesty posture; XC-2 profile boundary enforced in code; reassessment on every intended-purpose change (TGA guidance)</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Open research agenda</h3>
+<ul>
+  <li><strong>Deviation-composer ergonomics.</strong> The literature contains no usability evidence for structured justified-departure capture at the point of care; CF-3's one-interaction bound is a hypothesis to test, not a settled fact.</li>
+  <li><strong>Auditor acceptance.</strong> AF-3's reframing requires payers and accreditors to accept "documented justified deviation" as a compliant state; this is an institutional negotiation with an evidence component (AF-7 bundles) — study design needed with a real payer.</li>
+  <li><strong>Value-mapping formalization.</strong> PF-3's ratified mappings from life goals to clinical weightings have no validated elicitation instrument; candidate ground exists in shared-decision-making and GAAM qualifier literature.</li>
+  <li><strong>Gap-closing measurement.</strong> The north star needs a metric: pre-registered comparison of decision quality and access outcomes between a high-resource and low-resource deployment of the same fabric (Cockburn's heterogeneity findings define the confounders to control).</li>
+  <li><strong>The GAAM collaboration.</strong> The formalism's author is alive, aligned, and one message away; co-developing the deviation/dispute formalization with Stranieri would anchor the auditor face academically and practically.</li>
+</ul>
+
+<h2 id="p8"><span class="sec">Part 8</span>Traceability matrix &amp; sources</h2>
+<h3>Findings → requirements</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Finding</th><th>Source</th><th>Requirements it drives</th></tr></thead>
+  <tbody>
+    <tr><td>CDSS failures concentrate at the formal/nebulous boundary; remedies are ontology-widening, circumrational care, cognitive supports, plural systems</td><td>Chapman, meta-rationality corpus (uploaded)</td><td class="mono">SPINE-6/8, PF-3, AF-5, XC-4</td></tr>
+    <tr><td>Argument trees as diagnostic explanation for multiple user classes; per-criterion micro-engines; workflow-first consultation redesign; shared ontology; swappable classification layer</td><td>Blake, Kerr &amp; Gammack 2016 (Inf. Syst.; AJIS); Blake &amp; Kerr 2010/2014; Miah, Blake &amp; Kerr 2020</td><td class="mono">SPINE-1/3, CF-1/2, PF-1/5, EN-2</td></tr>
+    <tr><td>Six design principles; three-interface generic architecture; reasoning-model agnosticism</td><td>Miah, Blake &amp; Kerr 2020 (AJIS 24)</td><td class="mono">SPINE-3/6, EN-1, Part 2 architecture</td></tr>
+    <tr><td>Generic vs actual arguments; warrant-level reasoning for discretionary domains; multi-user explanation; ODR for medical/EHR disputes; patient-centric data agent; repository allocation; coalescing medical systems; ward-round and MDT reasoning</td><td>Stranieri corpus: GAAM (DSS 2006), Split-Up (1995–99), medical ODR (2020), PCA (IEEE Access 2018), HIJ 2020, MedInfo 2010, BMC HSR 2018, JDS 2016</td><td class="mono">SPINE-1/6, CF-6, PF-4, AF-2/5/6</td></tr>
+    <tr><td>37/40 CDSS clinician-only; rigidity, fatigue, surveillance anxiety, integration failure; dual-facing + XAI + UCD as the forward agenda</td><td>Bayor et al. 2025 (JMIR 27:e63733)</td><td class="mono">CF-3/4/5, PF-1..8, AF-8, anti-requirements</td></tr>
+    <tr><td>XAI dominated by unvalidated post-hoc attribution; no fidelity/trust/usability evidence at scale</td><td>Abbas, Jeong &amp; Lee 2025 (Healthcare 13:2154)</td><td class="mono">SPINE-1/2, EN-4, CF-2</td></tr>
+    <tr><td>Benefit exists (OR 1.69) but transfer fails across contexts; heterogeneity in everything; HCD urged</td><td>Cockburn et al. 2024 (eClinicalMedicine 76:102822)</td><td class="mono">EN-5, XC-3/4, risk register (equity drift)</td></tr>
+    <tr><td>Explanations in decision support: taxonomy and evidence base</td><td>Nunes &amp; Jannach 2017 (UMUAI)</td><td class="mono">SPINE-1, CF-2</td></tr>
+    <tr><td>Exemption criteria (a)(b)(c); AI-enabled CDSS excluded from exemption; transparency and independent verifiability language</td><td>TGA, Understanding CDSS regulation (rev. Oct 2025)</td><td class="mono">XC-1/2, AF-7, SPINE-7</td></tr>
+    <tr><td>Layered computable-guideline artifacts and national adaptation model for LMIC deployment</td><td>WHO SMART Guidelines (Lancet Digit. Health 2021; smart.who.int starter kit v2)</td><td class="mono">PF-7, EN-3, XC-3/4</td></tr>
+    <tr><td>Deployed low-cost RPM in low-resource wards; alarm-signal reduction; POC devices + AI for public health</td><td>Anidra program; Balasubramanian &amp; Stranieri RPM corpus (2014–2023)</td><td class="mono">PF-6, XC-3, EN-9</td></tr>
+    <tr><td>Mākoha doctrines: Bayesian differential + tiered evidence library; conformal uncertainty; corruption engine; firewalled corpus; "ML proposes and tests; only arithmetic releases"; LLM class posture; regulatory fork</td><td>Mākoha program documents (user's corpus)</td><td class="mono">SPINE-7, EN-1..9, XC-1, Toulmin mapping</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Sources</h3>
+<ul class="srcs">
+  <li>Miah, Blake &amp; Kerr (2020). <a href="https://ajis.aaisnet.org/index.php/ajis/article/view/2049">Meta-design knowledge for Clinical Decision Support Systems</a>. AJIS 24.</li>
+  <li>Blake, Kerr &amp; Gammack (2016). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306437915001593">Streamlining patient consultations for sleep disorders with a knowledge-based CDSS</a>. Information Systems 56. · <a href="https://ajis.aaisnet.org/index.php/ajis/article/view/1303">AJIS 20 methodology companion</a> · <a href="https://link.springer.com/article/10.1186/2193-8636-1-7">Blake &amp; Kerr 2014, Decision Analytics</a>.</li>
+  <li>Stranieri corpus: <a href="https://doi.org/10.1016/j.dss.2004.07.004">GAAM (DSS 2006)</a> · <a href="https://doi.org/10.1007/BF00871852">Split-Up (AI &amp; Law 1995)</a> · <a href="https://doi.org/10.1186/s12913-018-3446-6">Ward rounds (BMC HSR 2018)</a> · <a href="https://doi.org/10.1080/12460125.2016.1187388">MDT meetings (JDS 2016)</a> · <a href="https://doi.org/10.1145/3373017.3373059">Medical ODR (2020)</a> · <a href="https://doi.org/10.1109/ACCESS.2018.2846779">Patient Centric Agent (IEEE Access 2018)</a> · <a href="https://journals.sagepub.com/doi/10.1177/1460458220957486">Repository allocation (HIJ 2020)</a> · <a href="https://doi.org/10.3233/978-1-60750-659-1-159">Coalescing medical systems (MedInfo 2010)</a>.</li>
+  <li>Bayor, Li, Yang &amp; Varnfield (2025). <a href="https://www.jmir.org/2025/1/e63733">Designing CDSS — a user-centered lens</a>. JMIR 27:e63733. (Uploaded PDF.)</li>
+  <li>Abbas, Jeong &amp; Lee (2025). <a href="https://doi.org/10.3390/healthcare13172154">Explainable AI in CDSS: methods, applications, usability</a>. Healthcare 13:2154. (Uploaded PDF.)</li>
+  <li>Cockburn et al. (2024). <a href="https://doi.org/10.1016/j.eclinm.2024.102822">CDSS for maternity care: systematic review and meta-analysis</a>. eClinicalMedicine 76. (Uploaded PDF.)</li>
+  <li>Nunes &amp; Jannach (2017). <a href="https://doi.org/10.1007/s11257-017-9195-0">A systematic review and taxonomy of explanations in decision support</a>. UMUAI.</li>
+  <li>TGA. <a href="https://www.tga.gov.au/resources/guidance/understanding-clinical-decision-support-system-software-regulation">Understanding clinical decision support system software regulation</a> (guidance PDF, rev. 7 Oct 2025 — exemption criteria (a)(b)(c) reviewed verbatim) · <a href="https://www.tga.gov.au/sites/default/files/2024-07/excluded-software.pdf">Excluded software: interpretation of exclusion criteria</a>.</li>
+  <li>WHO SMART Guidelines: <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00038-8/fulltext">Mehl et al., Lancet Digital Health 2021</a> · <a href="https://smart.who.int/index.html">smart.who.int</a> · <a href="https://smart.who.int/ig-starter-kit/v2.0.0/l2_authoring_overview.html">Starter Kit v2 authoring layers</a>.</li>
+  <li>Chapman, meta-rationality materials and the triple-facing CDSS design note (uploaded documents, this series).</li>
+  <li>Companion volumes: <em>Sleep Tools Dossier</em> and <em>The Stranieri File</em> (this series) — full provenance for every lineage claim above.</li>
+</ul>
+
+<p class="foot">The Four Faces Corpus v1.0 · requirement IDs are stable; propose changes as argued deviations — this document follows its own doctrine. Compiled from full-text reads of the uploaded papers, the two companion dossiers' primary-source research, TGA guidance retrieved 29 Aug 2026, and the Mākoha program corpus.</p>
+</div>

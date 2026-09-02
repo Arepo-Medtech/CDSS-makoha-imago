@@ -1,0 +1,8 @@
+# MANIFEST stub — cdss-conformal (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-conformal
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [wrapper library + calibration reports]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_written: [R15 calibration-slice consumption ledger]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"

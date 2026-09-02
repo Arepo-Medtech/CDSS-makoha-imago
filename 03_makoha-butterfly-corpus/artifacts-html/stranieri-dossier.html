@@ -1,0 +1,238 @@
+<title>The Stranieri File</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9;
+    --panel: #ffffff;
+    --panel-2: #eef0f4;
+    --ink: #1c2330;
+    --ink-2: #4a5468;
+    --ink-3: #8791a3;
+    --accent: #35477d;
+    --accent-soft: #dfe4f0;
+    --amber: #a0752f;
+    --amber-soft: #f2e8d5;
+    --line: #d9dde5;
+    --good: #2e6b4f;
+    --warn: #9a5b2d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f;
+      --panel: #1b212b;
+      --panel-2: #222a37;
+      --ink: #e6e9f0;
+      --ink-2: #aab3c5;
+      --ink-3: #77819a;
+      --accent: #a3b3e3;
+      --accent-soft: #2a3450;
+      --amber: #d3a55c;
+      --amber-soft: #3a3122;
+      --line: #323a49;
+      --good: #7fc2a3;
+      --warn: #d3a06b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f;
+    --panel: #1b212b;
+    --panel-2: #222a37;
+    --ink: #e6e9f0;
+    --ink-2: #aab3c5;
+    --ink-3: #77819a;
+    --accent: #a3b3e3;
+    --accent-soft: #2a3450;
+    --amber: #d3a55c;
+    --amber-soft: #3a3122;
+    --line: #323a49;
+    --good: #7fc2a3;
+    --warn: #d3a06b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground); color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    font-size: 17px; line-height: 1.6; margin: 0; padding: 0 20px 80px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 8px; border-bottom: 3px solid var(--accent); margin-bottom: 8px; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+  h1 { font-family: Spectral, Georgia, serif; font-weight: 700; font-size: clamp(34px, 6vw, 46px); line-height: 1.12; margin: 0 0 10px; text-wrap: balance; }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 0 28px; max-width: 62ch; }
+  h2 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 27px; line-height: 1.2; margin: 56px 0 6px; text-wrap: balance; }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: .12em; margin-bottom: 6px; }
+  h3 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 20px; margin: 30px 0 6px; }
+  p { max-width: 68ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  .verdict { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber); padding: 18px 22px; margin: 30px 0; border-radius: 4px; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  .verdict p { margin: 8px 0; }
+  blockquote { margin: 24px 0; padding: 6px 22px; border-left: 3px solid var(--accent); color: var(--ink-2); font-style: italic; font-family: Spectral, Georgia, serif; font-size: 19px; max-width: 60ch; }
+  blockquote cite { display: block; margin-top: 8px; font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 26px 0; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 12px 16px; }
+  .stat .n { font-family: Spectral, Georgia, serif; font-size: 26px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .stat .l { font-size: 13px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; letter-spacing: .04em; }
+  .acts { display: flex; flex-direction: column; gap: 14px; margin: 26px 0; }
+  .act { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 16px 20px; }
+  .act .period { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--amber); letter-spacing: .08em; }
+  .act h4 { margin: 3px 0 6px; font-family: Spectral, Georgia, serif; font-size: 19px; font-weight: 600; }
+  .act p { margin: 6px 0 0; font-size: 15.5px; color: var(--ink-2); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  .tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: 4px; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  th, td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  thead tr { background: var(--panel-2); }
+  tbody tr { background: var(--panel); }
+  ul { padding-left: 22px; max-width: 66ch; }
+  li { margin: 7px 0; }
+  .theme { margin: 26px 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--accent-soft); }
+  .theme h3 { margin-top: 4px; }
+  .theme p, .theme li { font-size: 16px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 22px 0; }
+  @media (max-width: 640px) { .split { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 16px 20px; }
+  .card h4 { margin: 0 0 8px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 500; }
+  .card.strong h4 { color: var(--good); }
+  .card.weak h4 { color: var(--warn); }
+  .card ul { padding-left: 18px; margin: 0; }
+  .card li { font-size: 15px; color: var(--ink-2); }
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  .foot { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Research dossier · compiled 29 Aug 2026 · companion to the Sleep Tools Dossier</p>
+  <h1>The Stranieri File</h1>
+  <p class="dek">Andrew Stranieri, in full: thirty years of publications from Split-Up to Anidra, the digital-health corpus mapped theme by theme, and a candid appraisal of what his pedigree offers a triple-facing CDSS with a low-resource north star.</p>
+</header>
+
+<blockquote>
+  "I'd like to see digital health help with the global health care crisis and reduce the gap between health care between low and high resource countries."
+  <cite>— Stranieri's own framing (LinkedIn)</cite>
+</blockquote>
+
+<div class="verdict">
+  <p class="lbl">The short version</p>
+  <p>Stranieri is not merely a citation in the Blake argument-tree lineage — he is the <em>origin</em> of it, and his career since has traversed, one by one, nearly every layer your Mākoha vision needs: formal argumentation for discretionary decisions (Split-Up, GAAM), group and deliberative reasoning (two books), pluralist medical ontologies (Ayurveda–allopathy–TCM coalescence), dispute resolution over health records (the embryonic auditor face), clinical data analytics, and — through Anidra, the company he co-founded in 2016 — actual remote patient monitoring deployed in Indian hospitals, TGA- and CE-certified, sold on the premise that inadequate monitoring kills half a million Indians a year. The gap between his stated north star and yours is close to zero. The caveats: he is now an <em>honorary</em> associate professor (the academic role is winding down, the company is where his energy goes), much of the health corpus is conference-grade rather than high-impact-journal-grade, and no single paper of his assembles the pieces the way you intend to — which is precisely the opportunity.</p>
+</div>
+
+<h2><span class="sec">01</span>Who he is</h2>
+<p>Honorary Associate Professor of Information Technology at Federation University Australia (Ballarat), where he led the Health Informatics Laboratory within the Institute of Innovation, Science and Sustainability. PhD from La Trobe University (the Split-Up work, 1990s, in the Zeleznikow orbit); Australian Research Council Postdoctoral Award (Industry); author of 200+ peer-reviewed articles and three books. Co-founder (2016) and Research Director of <strong>Anidra Tech Ventures Pty Ltd</strong> — an Australian-headquartered, bootstrapped ($250k founder-funded) digital-health company doing continuous remote vital-signs monitoring (SpO₂, temperature, respiratory rate, blood pressure, heart rate) in Indian and Australian settings, with CE 0123 and TGA certification, ward telemetry and ambulatory products, and the Indian Army (DRDO/CRPF) among its clients. His co-founder and Anidra CEO is Venki Balasubramanian, a fellow Federation academic and his co-author across the remote-monitoring corpus.</p>
+<div class="stats">
+  <div class="stat"><div class="n">251</div><div class="l">papers (Semantic Scholar; ORCID lists 179 works, Federation says 200+)</div></div>
+  <div class="stat"><div class="n">~2,960</div><div class="l">citations · h-index 24 (S2; Google Scholar runs higher)</div></div>
+  <div class="stat"><div class="n">3</div><div class="l">books (Springer 2005; IGI 2010, 2012)</div></div>
+  <div class="stat"><div class="n">1995→</div><div class="l">publishing span, law → health</div></div>
+</div>
+
+<h2><span class="sec">02</span>A career in three acts</h2>
+<div class="acts">
+  <div class="act">
+    <span class="period">Act I · 1995–2006 · Legal AI and argumentation</span>
+    <h4>Split-Up, GAAM, and reasoning that must justify itself</h4>
+    <p>Split-Up (with Zeleznikow) predicted property division in Australian divorce — a <em>discretionary</em> domain where rules alone fail — by decomposing judicial reasoning into Toulmin argument structures with small inference units (rules or neural nets) at each node. The 1998 IAAI paper's title is the tell: an argument-based representation "to meet expectations of <em>different users</em> for discretionary decision making" — multi-stakeholder explanation was the design goal from the start. The theory crystallized as the <strong>Generic/Actual Argument Model (GAAM)</strong> (Decision Support Systems, 2006): a community agrees on a <em>generic</em> argument template — the admissible data items, inference warrants, and claim structure — and each case instantiates an <em>actual</em> argument within (or deviating from) that template. Alongside: an argumentation shell for drafting legal arguments (2002), web-based legal DSS tooling (2001), evaluation methodology for legal knowledge-based systems (1999), and the Springer book <em>Knowledge Discovery from Legal Databases</em> (2005). His first health papers appear here too — KDD plus case-based reasoning for medical image diagnosis (SPIE, 1999).</p>
+  </div>
+  <div class="act">
+    <span class="period">Act II · 2005–2012 · Reasoning communities</span>
+    <h4>How groups reason, deliberate, and coalesce decisions</h4>
+    <p>Two IGI books with John Yearwood — <em>Technologies for Supporting Reasoning Communities and Collaborative Decision Making</em> (2010) and <em>Approaches for Community Decision Making and Collective Reasoning</em> (2012) — plus journal work on group-structured reasoning (Group Decision &amp; Negotiation, 2010), whether Delphi produces accuracy or mere consensus (Technological Forecasting &amp; Social Change, 2011), deliberative discourse from generic argument structures (AI &amp; Society, 2009), and ToolSHeD (2008), an argument-tree DSS for construction safety design — GAAM leaving the courtroom. This act is the theory of <em>who</em> gets to reason together and how dispersed, partial understandings coalesce — Chapman's "holder of purpose is the entire context," formalized.</p>
+  </div>
+  <div class="act">
+    <span class="period">Act III · 2008–present · Health informatics, end to end</span>
+    <h4>From data mining to deployed monitoring in low-resource wards</h4>
+    <p>Analytics (diabetes, cardiac autonomic neuropathy, medical imaging), clinical reasoning field studies, teledentistry for the underserved, pluralist medical-system informatics, blockchain health-data infrastructure, and the Anidra remote-monitoring program. Detailed below.</p>
+  </div>
+</div>
+
+<h2><span class="sec">03</span>The digital-health corpus, theme by theme</h2>
+
+<div class="theme">
+  <h3>Clinical reasoning and decision support — the direct Mākoha ancestry</h3>
+  <p>The empirical anchor is <em>Exploring reasoning mechanisms in ward rounds: a critical realist multiple case study</em> (BMC Health Services Research, 2018) — actual fieldwork on how hospital teams reason at the bedside, methodologically kin to the Blake project's critical realism. <em>Group decision making in health care: a case study of multidisciplinary meetings</em> (Journal of Decision Systems, 2016) brings the reasoning-communities lens to MDT meetings — the exact organizational form where guideline conflict and justified deviation live. Earlier CDSS analytics: Ewing-test selection for cardiac autonomic neuropathy assessment (Artificial Intelligence in Medicine, 2013), decision-tree ensembles for diabetes complications (2012–13), patient admission prediction with rule-extracting fuzzy min–max networks (Neural Computing &amp; Applications, 2015) — note the recurring insistence on <em>rule extraction</em> and insight (his AWSum "data mining for insight" line, 2008) over black-box accuracy.</p>
+</div>
+
+<div class="theme">
+  <h3>Pluralist medical ontologies — the sleeper asset</h3>
+  <p>A thread almost nobody else in CDSS has: <em>Coalescing medical systems: a challenge for health informatics in a global world</em> (MedInfo, 2010); a visual grid to record an Ayurvedic Prakriti assessment as "a first step toward integrated electronic health records" (J. Traditional &amp; Complementary Medicine, 2017); a model for parallel Ayurvedic and allopathic EHRs in Sri Lanka (2016); data mining Traditional Chinese Medicine with "lessons learnt from mining in law and allopathic medicine" (IEEE Healthcom, 2012); informatics to support patient choice between diverse medical systems (2014, 2018). Read through a Chapman lens, this is <em>ontology pluralism in production</em>: multiple formal systems over one nebulous reality, with the system designed to hold them side by side rather than declare a winner. For a meta-rational CDSS that must represent conflicting guidelines and value frames, this is the closest existing design practice. (Flag: adjacent survey work on homoeoprophylaxis attitudes (2015) sits in CAM-informatics territory that some clinical audiences will read sceptically — it is informatics <em>about</em> practice, not advocacy, but know it's there.)</p>
+</div>
+
+<div class="theme">
+  <h3>Remote patient monitoring and the Anidra program — the north-star work</h3>
+  <p>With Balasubramanian: dependability analysis of body-area wireless sensor networks (2014), the AppA assistive cloud platform for active healthcare (2015), ECG reduction for wearables (2017), real-time atrial fibrillation analysis (Computing in Cardiology, 2017), a count-data model for heart-rate-variability forecasting and PVC detection (Signal, Image &amp; Video Processing, 2017), a secured real-time IoMT edge application for isolated COVID-19 patients (IEEE TrustCom, 2021), a critical review of clinical alarm-signal reduction for RPM (2023), and <em>Emerging point-of-care devices and artificial intelligence: prospects and challenges for public health</em> (Smart Health, 2022). Plus aged-care and dementia work: the Nurses' Behavioural Assistant for managing BPSD in regional aged care (2018), semi-invasive dementia monitoring (2019), smartphone-use monitoring for cognitive impairment (2021), and a smart toothbrush installation for aged-care centres (2021). This is the engineering reality of low-resource digital health: alarm fatigue, network dependability, cost, staff scarcity — the circumrational layer of monitoring, learned by deploying.</p>
+</div>
+
+<div class="theme">
+  <h3>Health-data infrastructure and blockchain — the custody layer</h3>
+  <p>The Uddin–Stranieri–Gondal–Balasubramanian quartet produced the most-cited work of his health era: <em>Continuous patient monitoring with a patient-centric agent: a block architecture</em> (IEEE Access, 2018; ~204 citations on S2, far more on Google Scholar) — a <strong>Patient Centric Agent</strong> that mediates all custody, routing, and access decisions over a patient's streaming data. Follow-ons: a blockchain-leveraged decentralized IoT eHealth framework (Internet of Things, 2020), <em>Rapid health data repository allocation using predictive machine learning</em> (Health Informatics Journal, 2020 — your find: ML deciding, per data item, which repository (EHR, blockchain, cloud, PHR) should hold it, by sensitivity, volume, context and cost), a widely-cited survey of blockchain adoption in IoT (Blockchain: Research &amp; Applications, 2021), and a device-agent-assisted blockchain framework (IEEE Access, 2023). The lasting idea isn't the blockchain — it's the <em>agent that represents the patient's interests over their own data</em>, which is your patient face's custody doctrine with 2018 tooling.</p>
+</div>
+
+<div class="theme">
+  <h3>Teledentistry — closing the gap for the underserved</h3>
+  <p>With Rodrigo Mariño (Melbourne): a teleconsultation/telediagnosis feasibility pilot in residential aged care [10], the cost-analysis showing asynchronous tele-assessment beats face-to-face on cost per resident (J. Telemedicine &amp; Telecare, 2016) [8], and a chapter in the Springer <em>Teledentistry</em> volume (2015). The 2014 pilot's own framing: "an innovative solution towards closing the service delivery gap… to underserviced populations." The line of work seeded a research area that has since gone global [3,4,9].</p>
+</div>
+
+<div class="theme">
+  <h3>Governance, disputes, and the proto-auditor face</h3>
+  <p>The most under-appreciated thread for your purposes. <em>Towards smart online dispute resolution for medical disputes</em> (ACSW, 2020) and <em>Online dispute resolution in mediating EHR disputes: the impact of emotional intelligence</em> (Behaviour &amp; IT, 2020) carry his legal-ODR machinery (Re-Consider, 2008) into health-record conflict — adjudicating contested clinical records and decisions is the auditor face's dispute mode. Around it: patient-empowered EHRs (MedInfo, 2019), open banking as a model for EHR data rights (2021), the impact of EHR data breaches (2023), causal-loop-diagram modelling of EHR ecosystems (2023), third-party data service providers between patient and provider (Delphi study, 2022), cybersecurity self-evaluation for healthcare (2024), and a JMIR narrative review of how to <em>measure the value</em> of social media in health care (2019) with a Bakhtinian line of interpretive follow-ups. Most recently, an auto-ethnographic analysis of translational digital health research (2025) — a reflective practitioner writing honestly about the gap between research and deployment.</p>
+</div>
+
+<h2><span class="sec">04</span>The network he sits in</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Node</th><th>Relation</th></tr></thead>
+  <tbody>
+    <tr><td>John Zeleznikow</td><td>Split-Up co-creator and long-time collaborator; later Victoria University — the same institution where Shah Miah developed the meta-design line. The Australian argumentation-DSS world is one small, connected cluster.</td></tr>
+    <tr><td>John Yearwood</td><td>Co-author of the GAAM paper and both reasoning-communities books; later Deakin's head of information technology.</td></tr>
+    <tr><td>Venki Balasubramanian</td><td>Anidra co-founder/CEO; RPM engineering corpus co-author; Federation University.</td></tr>
+    <tr><td>Md Ashraf Uddin</td><td>PhD student turned blockchain-eHealth co-author (now academic in the field); the four blockchain/repository papers.</td></tr>
+    <tr><td>Rodrigo Mariño</td><td>University of Melbourne oral-health professor; teledentistry line.</td></tr>
+    <tr><td>Jelinek, Kelarev, Vamplew et al.</td><td>The diabetes/CAN analytics cluster (rural screening data, Charles Sturt/Federation).</td></tr>
+    <tr><td>Blake–Kerr–Gammack–Miah</td><td>Downstream: their sleep CDSS's argument-tree explanation model is built explicitly on Stranieri et al. (1999). Your two dossiers are one lineage.</td></tr>
+  </tbody>
+</table></div>
+
+<h2><span class="sec">05</span>Honest assessment</h2>
+<div class="split">
+  <div class="card strong">
+    <h4>Why he's fertile ground</h4>
+    <ul>
+      <li>The rare full stack: formal theory of justified discretionary reasoning (GAAM) + group deliberation theory + clinical fieldwork + deployed, certified monitoring hardware in low-resource wards. Nobody else in the two dossiers spans all four.</li>
+      <li>His north star is your north star, stated in his own words and backed by a decade of Anidra skin-in-the-game — bootstrapped, not grant-performative.</li>
+      <li>GAAM is arguably the missing formal backbone for your auditor face: generic argument = the guideline template; actual argument = this patient's instantiation; <em>justified deviation = an actual argument whose warrant departs from the generic template, with the departure recorded and reviewable</em>. That is a publishable, buildable formalization of "documented rational intent."</li>
+      <li>The ODR-for-medical-disputes line means he has already thought about the adversarial/contested end of clinical records — the place your auditor face lives.</li>
+      <li>Pluralist-ontology work (Ayurveda/allopathy/TCM) is practical experience holding multiple formal systems over one patient — Chapman's alternative-systems move, in production.</li>
+      <li>Honorary status + founder role = approachable, collaboration-hungry rather than grant-treadmill-bound; Ballarat-based, same country, same regulatory regime (TGA) as Mākoha.</li>
+    </ul>
+  </div>
+  <div class="card weak">
+    <h4>Where to keep your eyes open</h4>
+    <ul>
+      <li>Breadth over depth in places: a long tail of conference papers and book chapters; the top-cited health work (blockchain-IoT) rode a hype cycle whose specific technical bets have aged unevenly.</li>
+      <li>Citation weight (h-index ~24 on S2) is solid-senior, not field-defining; his deepest influence (Split-Up/GAAM) is 20+ years old and lives on through others.</li>
+      <li>The CAM-informatics thread (homoeoprophylaxis surveys included) is defensible as informatics but will need careful framing in clinical-credibility contexts.</li>
+      <li>Honorary = emeritus-track: university resources, students, and lab capacity around him are thinner than a full chair's; engage him for ideas, formalism, and the Anidra channel, not institutional muscle.</li>
+      <li>No single work of his integrates argumentation + CDSS + auditor + patient values; the pieces are scattered across thirty years. The synthesis is yours to claim, ideally with him rather than around him.</li>
+    </ul>
+  </div>
+</div>
+
+<h2><span class="sec">06</span>What this means for Mākoha</h2>
+<p>Map his corpus onto your three faces and the engine, and the fit is uncanny. <strong>Clinician face:</strong> ward-rounds reasoning fieldwork, MDT group decision-making, rule-extracting classifiers with insight over opacity. <strong>Patient face:</strong> the Patient Centric Agent custody doctrine, patient-empowered EHRs, patient choice between medical systems, RPM in the home. <strong>Auditor face:</strong> GAAM's generic/actual split as the formal spine of a justification log; ODR-for-medical-disputes as the contested-record workflow; EHR-breach and cybersecurity-governance work as the compliance perimeter. <strong>Engine:</strong> argument trees as the explanation layer (the same lineage Blake instantiated), pluralist ontologies as the multiple-guideline representation, and Anidra's monitoring stack as a live, certified data source in exactly the low-resource settings your north star names. The concrete openings: a conversation (he is one LinkedIn message away, and his stated mission invites it); GAAM as the cited formalism for Mākoha's deviation-justification layer; Anidra as a potential validation partner where the low-resource claim can be tested rather than asserted; and the open academic slot the 2020 Miah–Blake–Kerr paper left — a new clinical instantiation of the argument-based CDSS design theory, extended with the auditor face neither lineage built.</p>
+
+<h2><span class="sec">07</span>Sources</h2>
+<ul class="srcs">
+  <li><a href="https://federation.edu.au/institutes-and-schools/iiss/staff-profiles/staff-profiles/andrew-stranieri">Federation University staff profile — Andrew Stranieri</a> (role, bio, Anidra, ORCID).</li>
+  <li>ORCID <a href="https://orcid.org/0000-0002-4415-5771">0000-0002-4415-5771</a> — full works list (179 works), retrieved via public API, 29 Aug 2026.</li>
+  <li>Semantic Scholar author metrics (authorId 1809961: 251 papers, ~2,957 citations, h-index 24) and paper record for the 2018 IEEE Access block-architecture paper (204 citations).</li>
+  <li><a href="https://journals.sagepub.com/doi/10.1177/1460458220957486">Uddin, Stranieri, Gondal &amp; Balasubramanian (2020), Rapid health data repository allocation using predictive machine learning, Health Informatics Journal</a> — the paper you flagged.</li>
+  <li><a href="https://t-hub.co/anidra-continuous-remote-patient-monitoring-for-improved-healthcare/">T-Hub profile of Anidra</a> — products, certification, markets, funding, founders.</li>
+  <li>Key papers by DOI: GAAM (10.1016/j.dss.2004.07.004); Split-Up (10.1007/BF00871852; 10.1093/ijlit/6.2.190); ward rounds (10.1186/s12913-018-3446-6); MDT meetings (10.1080/12460125.2016.1187388); Ewing test selection (10.1016/j.artmed.2013.04.007); coalescing medical systems (10.3233/978-1-60750-659-1-159); Prakriti grid (10.1016/j.jtcme.2016.06.005); blockchain eHealth framework (10.1016/j.iot.2020.100159); blockchain-IoT survey (10.1016/j.bcra.2021.100006); POC devices &amp; AI (10.1016/j.smhl.2022.100279); medical ODR (10.1145/3373017.3373059); EHR disputes &amp; EI (10.1080/0144929x.2019.1645209); teledentistry cost-analysis (10.1177/1357633X15608991); JMIR social-media value review (10.2196/14684).</li>
+  <li>Teledentistry context via Consensus search results (Mariño et al. 2014, 2016; and the field it seeded).</li>
+</ul>
+
+<p class="foot">Compiled from his full ORCID works list, publisher records, university and company profiles, and citation-graph queries. Where the record is thin — exact PhD year, Google Scholar totals, Anidra's current deployment scale — the dossier flags rather than invents.</p>
+</div>

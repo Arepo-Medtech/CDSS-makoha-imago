@@ -1,0 +1,4 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-governance (Existing — Primer J; annex J11)
+Admissibility validator (shared CI action) + census; **runs in every repo's CI**. No card, no promotion. The fork is a trident of labels (J-1 lower-class / J-2 higher-class / J-3 reserve — all Needs confirmation until ASSUME-REG-002); mechanism unchanged; the deterministic evaluator needs no card and the census negative audit proves it.
+Layout: `validator/` (CI action) · `census/` (registration precedes first training run) · `cards/` (from spine template) · `rulings/` (dataset ruling table, R5) · `posture/` (R19 joins; R30 owner duties per REG-R30 schema).

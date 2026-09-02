@@ -1,0 +1,8 @@
+# ci/pipeline.yml — STUB (Proposed; not runnable; wired for real in cdss-evalstack imports)
+# Tier 1+2 shape per Arch §11.1; every repo imports pipeline definitions from cdss-evalstack (I).
+# stages:
+  #   - pin: consume cdss-spine@[PIN]; fail on contract drift (spine PR breaks consumers visibly)
+  #   - gauntlet per README acceptance list
+  #   - governance: admissibility validator (cdss-governance shared CI action) — no card, no promotion
+  #   - supply-chain: Trivy scan, ECR sign, signed SBOM (Syft/CycloneDX) -> R3
+  #   - r29-ratchet: row-completeness check on instruction-bearing artifacts (ACTIVATES on DEC-02 ratification; MT2 §7(4))

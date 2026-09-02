@@ -1,0 +1,3138 @@
+{
+"AN-1": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-10": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-11": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-12": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-2": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-3": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-4": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-5": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-6": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-7": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-8": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"AN-9": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+],
+"ASSUME-REG-001": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-002": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-003": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-004": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-005": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-006": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-007": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus_artifacts_briefing.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-008": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"ASSUME-REG-009": [
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)",
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"C-01": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-02": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-03": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-04": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-05": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-06": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-07": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-08": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-09": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-10": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-11": [
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-12": [
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"C-13": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+],
+"C-14": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+],
+"C-15": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+],
+"C-16": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+],
+"CC-1": [
+"03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+"03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+"04_hardening/HARDEN-2_hardening_spec.md",
+"05_registers-and-contracts/REG-R29.schema.json"
+],
+"CC-2": [
+"03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"CC-3": [
+"03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"CC-4": [
+"03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"CC-5": [
+"03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+"03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"CC-6": [
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"CC-7": [
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"CC-8": [
+"04_hardening/HARDEN-2_hardening_spec.md"
+],
+"D-1": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"D-2": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"D-3": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"D-4": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"D-5": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"DEC-01": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-02": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-03": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-04": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-05": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-06": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-07": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-08": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-09": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-10": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+"11_prompts/PROMPT-P0_primer0_launch.md (range)"
+],
+"DEC-11": [
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+"11_prompts/PROMPT-P0_primer0_launch.md (range)"
+],
+"DEC-12": [
+"01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+],
+"DEC-13": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-14": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-15": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-16": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-17": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-18": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-19": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-20": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-21": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md (range)"
+],
+"DEC-22": [
+"01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+],
+"DEF-001": [
+"00_MANIFEST.md"
+],
+"DEF-002": [
+"00_MANIFEST.md"
+],
+"ELSM-01": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-02": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-03": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-04": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-05": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-06": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-07": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-08": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-09": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-10": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-11": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-12": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-13": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-14": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-15": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-16": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-17": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-18": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-19": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-20": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-21": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-22": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"ELSM-23": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)"
+],
+"EX-1": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-10": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-2": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-3": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-4": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-5": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-6": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-7": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"EX-8": [
+"10_regulatory-execution/EXEC-1_execution_directive.md",
+"11_prompts/PROMPT-P0_primer0_launch.md"
+],
+"EX-9": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"G-01": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-02": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-03": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-04": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-05": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-06": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-07": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-08": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-09": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-10": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"G-11": [
+"01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+],
+"GAP-ABC-001": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"GAP-ABC-002": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"GAP-ABC-003": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"GAP-ABC-004": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"GAP-HDC-001": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)"
+],
+"GAP-HDC-002": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)"
+],
+"GAP-HDC-003": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)"
+],
+"GAP-HDC-004": [
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)"
+],
+"GAP-HDC-005": [
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)"
+],
+"GAP-LBP-001": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)"
+],
+"GAP-LBP-002": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)"
+],
+"GAP-LBP-003": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md (range)"
+],
+"GAP-LEG-001": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)"
+],
+"GAP-LEG-002": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)"
+],
+"GAP-LEG-003": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)"
+],
+"GAP-LEG-004": [
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)"
+],
+"GAP-PRB-001": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"GAP-PRB-002": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"GAP-PRB-003": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"GAP-PRB-004": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md (range)",
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"GAP-RWC-001": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"GAP-RWC-002": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"GAP-RWC-003": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"GAP-RWC-004": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"GATE-000": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"02_cdss-stack-augmented/architecture_and_integration.md",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"GATE-001": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"GATE-002": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"GATE-003": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"GATE-004": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"GPP-1": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-10": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-11": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-12": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-13": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-14": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-15": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-16": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-2": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-3": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-4": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-5": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-6": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-7": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-8": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"GPP-9": [
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+],
+"KTX-001": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-002": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-003": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-004": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-005": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-006": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-007": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-008": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-009": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-010": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-011": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"KTX-012": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"NDG-1": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-10": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-11": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-12": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-13": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-14": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-2": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-3": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-4": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-5": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-6": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-7": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-8": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NDG-9": [
+"10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md"
+],
+"NZ-ASSUME-001": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-ASSUME-002": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-ASSUME-003": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-ASSUME-004": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-FIND-001": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-002": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-003": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-004": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-005": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-006": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-007": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-008": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-FIND-009": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)"
+],
+"NZ-OBL-001": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-002": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-003": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-004": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-005": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-006": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-007": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-008": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-009": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-OBL-010": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-Q-001": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-Q-002": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-Q-003": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-Q-004": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"NZ-TASK-001": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-002": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-003": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-004": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-005": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-006": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-007": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-TASK-008": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md"
+],
+"NZ-WATCH-001": [
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md (range)"
+],
+"NZ-WATCH-002": [
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md (range)"
+],
+"NZ-WATCH-003": [
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md (range)"
+],
+"OBL-001": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-002": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-003": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-004": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-005": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-006": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-007": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-008": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-009": [
+"00_MANIFEST.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-010": [
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-011": [
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-012": [
+"03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"OBL-013": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"OBL-014": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-001": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-002": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-003": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-004": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-005": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-006": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-007": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-008": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-009": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"Q-REG-010": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"R0": [
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"R1": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+"06_repositories/repo-skeletons/cdss-spine/registers/README.md"
+],
+"R10": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R11": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+],
+"R12": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R13": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R14": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R15": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R16": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)"
+],
+"R17": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R18": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R19": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+],
+"R2": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"R20": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R21": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R22": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R23": [
+"02_cdss-stack-augmented/architecture_and_integration.md",
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"02_cdss-stack-augmented/cdss_complete_stack.md",
+"02_cdss-stack-augmented/cdss_diagrams.html",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+],
+"R24": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R25": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R26": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)"
+],
+"R27": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)"
+],
+"R28": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"09_diagrams/cdss_diagrams_v2.html",
+"09_diagrams/register_topology_v2.mermaid"
+],
+"R29": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"02_cdss-stack-augmented/architecture_and_integration.md",
+"02_cdss-stack-augmented/architecture_and_integration.md (§14.3)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"09_diagrams/cdss_diagrams_v2.html",
+"09_diagrams/register_topology_v2.mermaid"
+],
+"R3": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"R30": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+"02_cdss-stack-augmented/architecture_and_integration.md",
+"02_cdss-stack-augmented/architecture_and_integration.md (§14.3)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"09_diagrams/cdss_diagrams_v2.html",
+"09_diagrams/register_topology_v2.mermaid",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"R4": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"R5": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"R6": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R7": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R8": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"R9": [
+"02_cdss-stack-augmented/architecture_and_integration.md (§12.2 master table, bare-number row)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+],
+"RECON-A-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-A-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-A-003": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-ABC-001": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-ABC-002": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-ABC-003": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-ABC-004": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-ABC-005": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-ABC-006": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-ABC-007": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"RECON-B-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-B-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-B-003": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-C-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-C-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-CEC-001": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-002": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-003": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-004": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-005": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-006": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-007": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-008": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-CEC-009": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"RECON-D-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-D-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-D-003": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-E-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-E-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-E-003": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-F-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-F-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-G-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-G-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-H-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-H-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-HX-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-HX-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-HX-003": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-I-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-I-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-J-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-J-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-K-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-K-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-L-001": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-L-002": [
+"02_cdss-stack-augmented/cdss_complete_stack.md (range)",
+"02_cdss-stack-augmented/ecosystem_integration_report.md (range)"
+],
+"RECON-LWC-001": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"RECON-LWC-002": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"RECON-LWC-003": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"RECON-LWC-004": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"RECON-LWC-005": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"RECON-LWC-006": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"RECON-PRB-001": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-PRB-002": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-PRB-003": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-PRB-004": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-PRB-005": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-PRB-006": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-PRB-007": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"RECON-TXC-001": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"RECON-TXC-002": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"RECON-TXC-003": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"RECON-TXC-004": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"RECON-TXC-005": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"RECON-TXC-006": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"RECON-TXC-007": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"REG-FIND-001": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-P0_primer0_launch.md (range)",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"REG-FIND-002": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-P0_primer0_launch.md (range)",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"REG-FIND-003": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-P0_primer0_launch.md (range)",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"REG-FIND-004": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-005": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-006": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-007": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-008": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-009": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-010": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-FIND-011": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"REG-KEEP-001": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"REG-KEEP-002": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"REG-KEEP-003": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)"
+],
+"REG-KEEP-004": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)"
+],
+"RG-01": [
+"00_MANIFEST.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"RG-02": [
+"00_MANIFEST.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"RG-03": [
+"00_MANIFEST.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"RG-04": [
+"00_MANIFEST.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"RG-05": [
+"00_MANIFEST.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"RG-06": [
+"00_MANIFEST.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"RUN-0": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"RUN-1": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"RUN-2": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"RUN-3": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"RUN-4": [
+"10_regulatory-execution/EXEC-1_execution_directive.md"
+],
+"SD-01": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"SD-02": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"SD-03": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"SD-04": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"SD-05": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)"
+],
+"SG-V1-0": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"SPINE-1": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-2": [
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-3": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-4": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-5": [
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-6": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+"03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-7": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-8": [
+"01_north-star-and-transformation/MET-3_traceability_map.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SPINE-9": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+"03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+],
+"SRC-REG-001": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-002": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-003": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-004": [
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"08_research/RESEARCH-1_findings_gaps_source_map.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-005": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-006": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-007": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-008": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-009": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-010": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-011": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-012": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-013": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"SRC-REG-014": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-001": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-002": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-003": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-004": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-005": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-006": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-007": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-008": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-009": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-010": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-011": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-012": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"STD-013": [
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"T-001": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-002": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-003": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-030": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-031": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-032": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-033": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-034": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-035": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-036": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-037": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-038": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-039": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-040": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-041": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-042": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-043": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-044": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-045": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-050": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-051": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-052": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-053": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-054": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-055": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-056": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-057": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-058": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-059": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-060": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-061": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-062": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md (range)"
+],
+"T-070": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-071": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-072": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-080": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-081": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-082": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-083": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-084": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-085": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-086": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-087": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-088": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-089": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-090": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-091": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-092": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-093": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-094": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-095": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)"
+],
+"T-100": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-101": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-102": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-103": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-104": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-105": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-106": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"T-107": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (range)",
+"11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md (range)"
+],
+"TASK-001": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"TASK-002": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"TASK-003": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"TASK-ABC-001": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"TASK-ABC-002": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"TASK-ABC-003": [
+"11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md (range)"
+],
+"TASK-ANT-001": [
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"TASK-ANT-002": [
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"TASK-ANT-003": [
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"TASK-CEC-001": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"TASK-CEC-002": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"TASK-CEC-003": [
+"11_prompts/PROMPT-PRM-CEC_engines_launch.md (range)"
+],
+"TASK-HDC-001": [
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-HDC-002": [
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-HDC-003": [
+"11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LBP-001": [
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LBP-002": [
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LBP-003": [
+"11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LEG-001": [
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LEG-002": [
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LEG-003": [
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-PRM-SERIES_index.md (range)"
+],
+"TASK-LWC-001": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"TASK-LWC-002": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"TASK-LWC-003": [
+"11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md (range)"
+],
+"TASK-PRB-001": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"TASK-PRB-002": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"TASK-PRB-003": [
+"11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md (range)"
+],
+"TASK-REG-001": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-002": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-003": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-004": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-005": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-006": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-007": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-008": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-009": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)"
+],
+"TASK-REG-010": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"TASK-REG-011": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-LEG_stack_launch.md (range)",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"TASK-REG-012": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"TASK-REG-013": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html (range)",
+"03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"TASK-REG-014": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-NZ_v1.0.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md (range)"
+],
+"TASK-REG-015": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-016": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-017": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-018": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/EXEC-1_execution_directive.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-019": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-020": [
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-021": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-REG-022": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md"
+],
+"TASK-RWC-001": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"TASK-RWC-002": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"TASK-RWC-003": [
+"11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md (range)"
+],
+"TASK-TXC-001": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"TASK-TXC-002": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"TASK-TXC-003": [
+"11_prompts/PROMPT-PRM-TXC_patient_face_launch.md (range)"
+],
+"V1-C1": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"V1-C2": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"V1-S0": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md",
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V1-S1": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md",
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V1-S2": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md",
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-E1": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-E2": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-E3": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-E4": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-E5": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-S0": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-S1": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-S2": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-S3": [
+"10_regulatory-execution/REG-SPRINT_v1.0.md"
+],
+"V2-S3a": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"V2-S3b": [
+"10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+],
+"W0": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"W1": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)",
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md"
+],
+"W10": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"W11": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"W2": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)",
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md"
+],
+"W3": [
+"03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)",
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md"
+],
+"W4": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)",
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md"
+],
+"W5": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)",
+"10_regulatory-execution/FOLD-1_antennae_fold_worklist.md"
+],
+"W6": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"W7": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"W8": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"W9": [
+"04_hardening/HARDEN-3_hardening_plan_worklist.md",
+"04_hardening/HARDEN-3_hardening_plan_worklist.md (wave table)"
+],
+"WATCH-REG-001": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"WATCH-REG-002": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"WATCH-REG-003": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"WATCH-REG-004": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"WATCH-REG-005": [
+"01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md (range)",
+"03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html (range)",
+"03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md (range)",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+"03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md (range)",
+"07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md (range)",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"WATCH-REG-006": [
+"05_registers-and-contracts/REG-R30.1_seed_delta.md",
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+],
+"WATCH-REG-007": [
+"10_regulatory-execution/REG-POSTURE_v1.1.md",
+"11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md (range)"
+]
+}

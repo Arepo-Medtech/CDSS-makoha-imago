@@ -1,0 +1,184 @@
+<title>Degrees of Truth</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9; --panel: #ffffff; --panel-2: #eef0f4;
+    --ink: #1c2330; --ink-2: #4a5468; --ink-3: #8791a3;
+    --accent: #35477d; --accent-soft: #dfe4f0;
+    --amber: #a0752f; --amber-soft: #f2e8d5;
+    --line: #d9dde5; --good: #2e6b4f; --warn: #9a5b2d; --crit: #8c3b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+      --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+      --accent: #a3b3e3; --accent-soft: #2a3450;
+      --amber: #d3a55c; --amber-soft: #3a3122;
+      --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+    --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+    --accent: #a3b3e3; --accent-soft: #2a3450;
+    --amber: #d3a55c; --amber-soft: #3a3122;
+    --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--ink); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 17px; line-height: 1.6; margin: 0; padding: 0 20px 90px; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 10px; border-bottom: 3px solid var(--accent); margin-bottom: 8px; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+  h1 { font-family: Spectral, Georgia, serif; font-weight: 700; font-size: clamp(34px, 6vw, 46px); line-height: 1.12; margin: 0 0 10px; text-wrap: balance; }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 0 26px; max-width: 64ch; }
+  h2 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 27px; line-height: 1.2; margin: 58px 0 8px; text-wrap: balance; }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: .12em; margin-bottom: 6px; }
+  h3 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 20px; margin: 30px 0 6px; text-wrap: balance; }
+  p { max-width: 70ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  ul { padding-left: 22px; max-width: 68ch; }
+  li { margin: 7px 0; }
+  .verdict { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber); padding: 18px 22px; margin: 30px 0; border-radius: 4px; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  .verdict p { margin: 8px 0; }
+  blockquote { margin: 22px 0; padding: 4px 22px; border-left: 3px solid var(--accent); color: var(--ink-2); font-style: italic; font-family: Spectral, Georgia, serif; font-size: 18px; max-width: 62ch; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+  .tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: 4px; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  th, td { padding: 10px 13px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  thead tr { background: var(--panel-2); }
+  tbody tr { background: var(--panel); }
+  .mono { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+  .pill { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .06em; padding: 1px 9px; border-radius: 100px; border: 1px solid var(--line); white-space: nowrap; }
+  .pill.adopt { color: var(--good); border-color: var(--good); }
+  .pill.adapt { color: var(--warn); border-color: var(--warn); }
+  .pill.study { color: var(--ink-3); }
+  .anti { border-left: 4px solid var(--crit); background: var(--panel); border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 4px; padding: 14px 20px; margin: 22px 0; }
+  .anti h5 { margin: 0 0 6px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--crit); font-weight: 500; }
+  .anti ul { margin: 0; padding-left: 18px; }
+  .anti li { font-size: 15px; color: var(--ink-2); }
+  .req { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; margin: 14px 0; padding: 13px 18px; }
+  .req .rid { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600; color: var(--accent); letter-spacing: .04em; margin-right: 10px; }
+  .req .norm { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .08em; padding: 1px 8px; border-radius: 100px; margin-right: 8px; border: 1px solid var(--crit); color: var(--crit); }
+  .req .norm.should { border-color: var(--warn); color: var(--warn); }
+  .req .body { display: block; margin-top: 6px; }
+  .req .why { display: block; margin-top: 6px; font-size: 14.5px; color: var(--ink-3); }
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  .foot { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Research dossier · compiled 30 Aug 2026 · fifth volume in the Mākoha research series</p>
+  <h1>Degrees of Truth</h1>
+  <p class="dek">Fuzzy logic in a triple-facing CDSS: the sixty-year lineage, the current literature, the verified tooling, and the precise — deliberately narrow — place where fuzzy methods strengthen the Four Faces Corpus without corrupting its uncertainty semantics.</p>
+</header>
+
+<div class="verdict">
+  <p class="lbl">The short version</p>
+  <p>Fuzzy logic earns a place in Mākoha — but not the place the primer sketches. Its rightful role is at the <strong>circumrational boundary</strong>: formalizing the vague linguistic terms that guidelines and patients actually use ("elderly," "mildly elevated," "poor sleep") as versioned, ratified membership functions attached to <em>grounds and warrant applicability</em> — killing the cliff effects where 139 mmHg and 141 mmHg produce different universes. What it must never become is a rival inference engine or a source of pseudo-confidence: <strong>fuzziness is vagueness (degrees of meaning), not uncertainty (degrees of belief)</strong>, and the primer's "78% confidence" — a rule-activation strength dressed as a probability — is precisely the semantic soup the argument schema exists to prevent. The good news is structural: fuzzy inference is deterministic arithmetic with zero learned parameters, so it is natively SPINE-7-compatible and J-1-compatible; the tooling is mature, verified, and even has an IEEE standard (1855-2016 FML) that makes membership functions serializable, versionable, ratifiable knowledge-plane artifacts. The field's own 2025–26 literature is asking for "regulation-ready, interpretable, expert-editable" fuzzy CDSS — which is to say, it is asking for the governance your corpus already specifies.</p>
+</div>
+
+<h2><span class="sec">01</span>The lineage — fuzzy medicine is older than most of CDSS</h2>
+<p>Zadeh's fuzzy sets (1965) reached medicine early and deeply. Kazem Sadegh-Zadeh built a philosophy of medicine on the insight that disease categories are graded; Klaus-Peter Adlassnig's <strong>CADIAG-2</strong> at the Vienna General Hospital (1980s) encoded symptom–disease relationships as fuzzy relations and ran against real hospital data for decades — one of the few knowledge-based diagnostic systems ever routinely connected to a hospital information system. The series has already met this lineage without naming it: the Blake–Kerr–Gammack program cites <strong>Seising (2006)</strong> — "it is very difficult to define sharp borders between various symptoms… and between various diseases" — as its warrant for pairing formal criteria with clinical judgment, and <strong>Stranieri himself</strong> published fuzzy work at both ends of his career: fuzzy-evolutionary macroeconomic forecasting (1999) and a pruned fuzzy min–max neural network <em>with rule extraction</em> for patient admission prediction (Neural Computing &amp; Applications, 2015) — characteristically insisting that the fuzzy model surrender readable rules. Fuzzy logic is not an exotic bolt-on to this project's intellectual base; it is a suppressed premise of it.</p>
+
+<h2><span class="sec">02</span>The current literature (2024–2026)</h2>
+<p>The field is active and — read against the corpus — converging on your problems without your machinery:</p>
+<ul>
+  <li><strong>Reviews:</strong> a 2025 PRISMA review of fuzzy logic across chronic-disease diagnosis (25 studies: diabetes, CVD, cancers, liver, thyroid…) finds broad diagnostic use but a research agenda still centred on single-disease scorers; a 2025 systematic review of ANN + attention + fuzzy hybrids (32 studies) credits fuzzy specifically with "robust handling of ambiguity… through continuous degrees of membership" inside otherwise black-box stacks.</li>
+  <li><strong>The agenda paper:</strong> a 2026 fuzzy-expert-systems roadmap calls for structured elicitation of fuzzy knowledge bases from clinicians, adaptive membership tuning, an explainability layer of human-readable IF–THEN rules, uncertainty quantification, conflict resolution between knowledge sources, and "regulation-ready" architectures that preserve clinician autonomy — a near-verbatim request for the knowledge plane, the argument fabric, SPINE-6 conflict materialization, and AF-5 governance.</li>
+  <li><strong>Type-2 fuzzy</strong> (membership functions whose boundaries are themselves uncertain) is the growth area: interval type-2 knowledge bases for anaesthesia pre-op assessment (2024), type-2 + DEMATEL/VIKOR for patient bed allocation (2025), type-2 semantic-ontology diabetes CDSS (2024). Type-2's clinical meaning: <em>the experts disagree about where "elderly" begins</em> — a formal home for inter-clinician disagreement.</li>
+  <li><strong>Fuzzy cognitive maps:</strong> a 2026 <em>Scientific Reports</em> framework couples data-driven FCM weight learning with an explicit <em>expert-correction operator</em> and stability proofs — governed human override of learned structure, which is AF-5's ratification loop discovered independently in the FCM idiom.</li>
+  <li><strong>Hybrids:</strong> fuzzy preprocessing + logistic regression for T2DM prediction (2025) reports AUC gains over pure-ML baselines with interpretability retained — evidence for fuzzy as <em>input semantics for a probabilistic engine</em> rather than as the engine itself.</li>
+</ul>
+<p>The persistent gap mirrors the CDSS literature at large: no multi-stakeholder rendering, no deviation machinery, no membership-function governance, no regulatory mapping. The fuzzy community has the mathematics and asks for the governance; the corpus has the governance and can adopt the mathematics.</p>
+
+<h2><span class="sec">03</span>The load-bearing distinction: vagueness ≠ uncertainty</h2>
+<p>Everything in this dossier hangs on one distinction the primer blurs. A membership degree μ<sub>elevated</sub>(142/92) = 0.72 says the reading <em>partially satisfies the meaning</em> of "elevated" — a fact about language and category boundaries, true even with a perfect measurement. A posterior P(hypertensive disease | evidence) = 0.72 says how strongly the evidence supports a claim — a fact about belief under incomplete information. Conformal coverage says how often the claim-set traps the truth. These three numbers can coexist in one decision and mean entirely different things; collapse them into one "confidence %" and the clinician face misleads, the patient face lies, and the auditor face cannot audit. The corpus's argument schema already has distinct homes for all three:</p>
+<div class="tablewrap"><table>
+  <thead><tr><th>Quantity</th><th>Semantics</th><th>Home in the argument object</th></tr></thead>
+  <tbody>
+    <tr><td>Membership degree μ</td><td>Gradedness of a linguistic ground or of a warrant's applicability precondition ("elderly to degree 0.8")</td><td><strong>Grounds annotation</strong> and <strong>warrant-applicability grading</strong> — never the Qualifier</td></tr>
+    <tr><td>Posterior probability</td><td>Belief in the claim given the evidence</td><td>Qualifier (Bayesian differential)</td></tr>
+    <tr><td>Conformal set + coverage</td><td>Distribution-free guarantee on the claim set</td><td>Qualifier (conformal wrapper, EN-4)</td></tr>
+    <tr><td>Rule-activation strength</td><td>Degree to which a fuzzy rule fired — an <em>intermediate computation</em></td><td>Evaluation trace (auditor-visible), never rendered as confidence</td></tr>
+  </tbody>
+</table></div>
+
+<h2><span class="sec">04</span>Where fuzzy slots into the Four Faces architecture</h2>
+<p>The primer's pipeline (fuzzify → infer → defuzzify → per-persona adaptation layer) is the classic Mamdani control loop. Mapped onto the corpus, its pieces land in different places than it assumes — and two of its moves must be corrected, not adopted.</p>
+
+<h3>Adopted, with placement</h3>
+<div class="tablewrap"><table>
+  <thead><tr><th>Fuzzy component</th><th>Corpus placement</th><th>What it does there</th></tr></thead>
+  <tbody>
+    <tr><td>Fuzzy Knowledge Base (linguistic variables, membership functions)</td><td><strong>Knowledge plane</strong> (SPINE-5/6, EN-3)</td><td>Membership functions become versioned, ratified artifacts — serialized in IEEE 1855-2016 FML — entering only through the Guideline Compiler, exactly like every other piece of clinical logic. "Elderly," "elevated," "poor sleep efficiency" get one governed definition per guideline lineage, jurisdiction-adaptable under XC-4.</td></tr>
+    <tr><td>Fuzzification Engine</td><td><strong>Data plane → grounds preparation</strong></td><td>Crisp values acquire gradedness annotations against the ratified linguistic variables at capture time; the annotation carries the membership-function version pin. This is circumrational boundary work given a formalism — the corpus's Chapman thesis, operationalized.</td></tr>
+    <tr><td>Fuzzy Inference (rule evaluation)</td><td><strong>Warrant-applicability grading inside per-criterion engines</strong> (EN-2)</td><td>Where a guideline criterion is inherently hedged ("consider X in elderly patients with borderline control"), the GenericArgument warrant carries a fuzzy precondition; its evaluation yields graded applicability. Release still requires the ratified crisp threshold recorded in the template — deterministic, replayable, SPINE-7-clean.</td></tr>
+    <tr><td>Defuzzification</td><td><strong>Inside the deterministic evaluator, against template-ratified thresholds</strong></td><td>The defuzzified value never leaves as a bare score (SPINE-1); it feeds the argument's evaluation trace, and any face-visible consequence is a claim with the full argument attached.</td></tr>
+    <tr><td>Membership visualisations ("where 145/90 sits on the scale")</td><td><strong>Register renderings</strong> (SPINE-3, PF-5)</td><td>The primer's patient flow is right and matches the Blake diary lesson: gradedness renders as a sliding scale in the plain register, as μ-annotated criteria in the clinical register, as full membership math + rule firings in the compliance register — one argument, three renderings.</td></tr>
+    <tr><td>Fuzzy boundary structure</td><td><strong>Corruption engine test class</strong> (EN-5)</td><td>Membership supports mark exactly where cliff-effect adversarial cases live; the corruption engine sweeps membership boundaries and publishes failures as rebuttals. Fuzzy sets double as an adversarial-test map.</td></tr>
+    <tr><td>Fuzzy cognitive maps</td><td><strong>Authoring-time only</strong> (EN-6 Classes 1–3 analogue)</td><td>Causal sketching during guideline compilation and AF-5 change-proposal analysis; never a runtime engine.</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Corrected, with reasons</h3>
+<ul>
+  <li><strong>The "Triple-Facing Adaptation Layer" is already built — and stricter.</strong> The corpus renders one argument object in three registers (SPINE-3) and forbids renderers to add, remove, or reweight content per audience. The primer's layer, read literally, would let each face receive differently shaped decisions; that is the three-truths failure mode SPINE-9 exists to prevent. Keep the persona sensitivity; discard the per-persona content shaping.</li>
+  <li><strong>"78% confidence" is prohibited output.</strong> A defuzzified activation is not a probability; rendering it as one violates the vagueness/uncertainty separation (§03) and would poison the conformal qualifier's meaning. The clinician sees μ-graded criteria plus the Bayesian/conformal qualifier, each labelled as what it is.</li>
+  <li><strong>The auditor's "nudge the membership curve to reduce alert fatigue" dial is an ontology change, not a UI affordance.</strong> Membership functions are ratified knowledge-plane artifacts; changing one to suppress alerts is precisely the alert-governor-abuse risk in the corpus register. The correct loop exists: deviation and override aggregates → AF-5 change proposal → governed ratification → new membership-function version, with the old version pinned to its historical decisions (SPINE-5). The primer's instinct (tune curves from override evidence) is right; only the governance is missing.</li>
+  <li><strong>Fuzzy risk scoring stays out of J-3.</strong> The subtle point: fuzzy inference is deterministic and transparent — criterion (c)-friendly in <em>form</em> — but a fuzzy-derived patient risk grade is new diagnostic information, which fails exemption criterion (a) regardless of transparency. Fuzzy engines are J-1/J-2 components; the J-3 SBOM denylist (MAK-ELSM §08) gains the fuzzy namespaces (<span class="mono">skfuzzy, simpful, pyfuzzylite, pyit2fls</span>). Verbatim display of a guideline's own hedge language remains fine in J-3.</li>
+</ul>
+
+<h3>Type-2: the disagreement formalism — deferred</h3>
+<p>Interval type-2 fuzzy sets put uncertainty bands around the membership functions themselves — formally: the experts do not agree where "elderly" begins. That is a natural fit for MDT disagreement (CF-6) and for pluralist guideline lineages (SPINE-6), and the tooling exists (PyIT2FLS, MIT, active 2025). Verdict: <strong>defer</strong>. Type-1 with governed versioning captures most of the value at a fraction of the explanatory burden; adopt type-2 only when a real ratification dispute produces evidence that a disagreement band, not a decision, is what the community can ratify. Record the trigger, not the machinery.</p>
+
+<h2><span class="sec">05</span>Verified tooling and standards</h2>
+<div class="tablewrap"><table>
+  <thead><tr><th>Tool / standard</th><th>What it gives you</th><th>Status (verified 30 Aug 2026)</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/scikit-fuzzy/scikit-fuzzy">scikit-fuzzy</a></td><td>General Python fuzzy toolkit on SciPy: membership functions, Mamdani control, fuzzy c-means</td><td class="mono">872★ · Python · v0.5.0 Aug 2024 · active</td><td><span class="pill adopt">ADOPT (prototyping)</span></td></tr>
+    <tr><td><a href="https://github.com/aresio/simpful">Simpful</a></td><td>Fuzzy inference with rules as <em>readable strings</em> — Mamdani + Sugeno; the natural-language rule format is ideal for clinician-reviewable warrant preconditions; companion pyFUME learns fuzzy models from data</td><td class="mono">148★ · AFL-3.0 · IJCIS 2020 paper · maintained</td><td><span class="pill adopt">ADOPT</span></td></tr>
+    <tr><td><a href="https://github.com/fuzzylite/pyfuzzylite">pyfuzzylite / fuzzylite</a></td><td>Six controller types, 25 term shapes, 7 defuzzifiers, vectorized; FLL language plus FCL/FIS interchange via the C++ sibling</td><td class="mono">81★ · GPL-3.0 + commercial dual license · v8.0.6 · active</td><td><span class="pill adapt">ADAPT (license review for SaMD)</span></td></tr>
+    <tr><td><a href="https://github.com/Haghrah/PyIT2FLS">PyIT2FLS</a></td><td>Type-1 and interval type-2 systems, Mamdani/TSK, NumPy/SciPy-based</td><td class="mono">87★ · MIT · v0.8.6 Apr 2025 · active</td><td><span class="pill study">STUDY (type-2 deferral)</span></td></tr>
+    <tr><td><a href="https://github.com/sotillo19/JFML">JFML</a> + <strong>IEEE Std 1855-2016 (FML)</strong></td><td>The IEEE-standard XML serialization for fuzzy systems, with the reference Java library — membership functions as standard, versionable, diffable knowledge-plane artifacts; conformity-file-grade provenance for every linguistic variable</td><td class="mono">IEEE standard · Java reference lib (Univ. Córdoba) · IEEE Access 2018 paper</td><td><span class="pill adopt">ADOPT AS FORMAT</span></td></tr>
+    <tr><td>jFuzzyLogic + IEC 61131-7 (FCL)</td><td>The older Fuzzy Control Language standard and its Java implementation</td><td class="mono">Aging; FML supersedes for interchange</td><td><span class="pill study">STUDY</span></td></tr>
+    <tr><td><a href="https://github.com/SamvelMK/FCMpy">FCMpy</a></td><td>Fuzzy cognitive map construction, simulation, and learning (PeerJ CS 2022; arXiv:2111.12749)</td><td class="mono">Python · open source · research-grade</td><td><span class="pill study">AUTHORING-TIME STUDY</span></td></tr>
+    <tr><td>MATLAB Fuzzy Logic Toolbox</td><td>Rapid membership-function design and surface visualization</td><td class="mono">Commercial</td><td><span class="pill study">PROTOTYPING ONLY</span></td></tr>
+  </tbody>
+</table></div>
+<p><strong>The standards finding matters most.</strong> IEEE 1855-2016 gives membership functions and rule bases a standard, machine-readable, human-diffable serialization. That converts the corpus requirement "fuzzy semantics are governed knowledge-plane artifacts" from aspiration to file format: a linguistic variable's definition becomes an FML document with a version, an author, a ratification record, and a place in the SPINE-5 pin-set — reviewable by an auditor and exportable in an AF-7 conformity bundle.</p>
+
+<h2><span class="sec">06</span>Proposed corpus deltas (for ratification, not yet ratified)</h2>
+<p>Six candidate requirements, offered as argued deviations to MAK-FFC per its own change policy. Prefix <span class="mono">FZ</span> provisional.</p>
+<div class="req"><span class="rid">FZ-1</span><span class="norm">MUST</span><span class="body">Vagueness and uncertainty are type-separated end to end: membership degrees attach to grounds and warrant-applicability only; posteriors and conformal sets own the Qualifier; rule-activation strengths live in the evaluation trace. No face renders a membership degree or activation strength as a probability, confidence, or percentage of certainty.</span><span class="why">Trace: §03; SPINE-2; Abbas 2025 (unvalidated confidence is a liability).</span></div>
+<div class="req"><span class="rid">FZ-2</span><span class="norm">MUST</span><span class="body">Every linguistic variable and membership function is a knowledge-plane artifact: serialized in IEEE 1855-2016 FML, versioned, ratified through the Guideline Compiler path (EN-3), pinned per decision (SPINE-5), and jurisdiction-adaptable as a sibling lineage (XC-4). Ad-hoc or code-embedded membership definitions are prohibited.</span><span class="why">Trace: §05 standards finding; EN-3 single change surface; ICSD-freeze lesson.</span></div>
+<div class="req"><span class="rid">FZ-3</span><span class="norm">MUST</span><span class="body">Fuzzy evaluation releases nothing directly: graded applicability feeds the deterministic evaluator, whose release thresholds are crisp values ratified inside the GenericArgument template. Defuzzified values are evaluation-trace content, never face-released scores.</span><span class="why">Trace: SPINE-1/7; §04 corrections.</span></div>
+<div class="req"><span class="rid">FZ-4</span><span class="norm">MUST</span><span class="body">Membership-function change is AF-5 governed change: proposals may cite override and alert-fatigue evidence, ratification produces a new FML version, and prior decisions replay against their pinned versions. No runtime, per-user, or UI-mediated tuning of membership functions exists in any face.</span><span class="why">Trace: §04 correction of the primer's auditor dial; CF-5 alert-governor discipline; SPINE-5.</span></div>
+<div class="req"><span class="rid">FZ-5</span><span class="norm should">SHOULD</span><span class="body">The corruption engine maintains a boundary-sweep test class derived from the ratified membership supports, publishing cliff-effect and boundary-instability findings as rebuttals on the affected warrants.</span><span class="why">Trace: EN-5; fuzzy sets as adversarial map (§04).</span></div>
+<div class="req"><span class="rid">FZ-6</span><span class="norm">MUST</span><span class="body">Fuzzy inference namespaces (<span class="mono">skfuzzy, simpful, pyfuzzylite, pyit2fls</span> and equivalents) join the J-3 prohibited-namespace manifest (MAK-J3 GPP-8; MAK-ELSM §08): fuzzy-derived patient grading is new diagnostic information and fails exemption criterion (a) notwithstanding its deterministic transparency. Verbatim display of a guideline's own hedge language remains in-profile.</span><span class="why">Trace: MAK-J3 §2.2; TGA criterion (a) recommendation definition; §04 regulatory note.</span></div>
+
+<div class="anti">
+  <h5>Anti-patterns (carry the same force as the corpus's anti-requirement blocks)</h5>
+  <ul>
+    <li>Never render μ, activation strength, or defuzzified output as "confidence" — in any register.</li>
+    <li>Never let fuzzy inference become a parallel engine emitting its own recommendations beside the Bayesian differential; it grades inputs and applicability for the one argument pipeline.</li>
+    <li>Never tune membership functions outside AF-5 governance — including "just for this clinic."</li>
+    <li>Never adopt type-2 machinery before a real ratification dispute demonstrates the need (§04 deferral trigger).</li>
+  </ul>
+</div>
+
+<h2><span class="sec">07</span>Sources</h2>
+<ul class="srcs">
+  <li>Repositories verified individually 30 Aug 2026: <a href="https://github.com/scikit-fuzzy/scikit-fuzzy">scikit-fuzzy/scikit-fuzzy</a> · <a href="https://github.com/aresio/simpful">aresio/simpful</a> · <a href="https://github.com/fuzzylite/pyfuzzylite">fuzzylite/pyfuzzylite</a> · <a href="https://github.com/Haghrah/PyIT2FLS">Haghrah/PyIT2FLS</a> · <a href="https://github.com/sotillo19/JFML">sotillo19/JFML</a> · <a href="https://github.com/SamvelMK/FCMpy">SamvelMK/FCMpy</a>.</li>
+  <li>Standards: IEEE Std 1855-2016 (Fuzzy Markup Language; <a href="https://ieeexplore.ieee.org/document/8476558/">JFML paper, IEEE Access 2018</a>; <a href="http://www.uco.es/JFML/">uco.es/JFML</a>) · IEC 61131-7 (Fuzzy Control Language).</li>
+  <li>Literature (2024–26, via Consensus): Thukral et al. 2025, fuzzy logic in chronic-disease decision-making (Informatics for Health &amp; Social Care) · Zacarias-Morales et al. 2025, ANN + attention + fuzzy systematic review (AI) · Cherukuri et al. 2026, fuzzy-logic-driven expert systems for clinical decision-making (IJDDT) · Zakaria 2026, human-centric FCM decision support (Scientific Reports) · Chen et al. 2025, interval type-2 MCDM bed allocation (Scientific Reports) · Malyar et al. 2024, type-2 fuzzy knowledge bases for anaesthesia assessment · Dadashkarimi 2025, hybrid fuzzy + logistic regression T2DM · Manikandabalaji et al. 2024, type-2 fuzzy semantic-ontology diabetes CDSS · Sabahi 2024, extended fuzzy logic causality in CHD.</li>
+  <li>Lineage: Zadeh 1965 (fuzzy sets) · Adlassnig, CADIAG-2 (Vienna, 1980s–) · Seising 2006 (cited by the Blake–Kerr–Gammack program; see Sleep Tools Dossier) · Stranieri et al. 2015, pruned fuzzy min–max NN with rule extraction for patient admission (Neural Computing &amp; Applications; see The Stranieri File) · Dubois &amp; Prade on possibility vs probability.</li>
+  <li>Companion volumes: <em>The Four Faces Corpus</em> (MAK-FFC v1.1), <em>Execution Layer Sourcing Map</em> (MAK-ELSM v1.1), <em>Addendum J-3</em> (MAK-J3), <em>Sleep Tools Dossier</em>, <em>The Stranieri File</em>.</li>
+</ul>
+
+<p class="foot">Degrees of Truth v1.0 · repo rows reflect direct fetches on 30 Aug 2026; literature drawn from 2023+ database search plus the series' primary-source base. The FZ-n deltas are proposals under MAK-FFC's change policy — argued deviations awaiting ratification, not ratified requirements.</p>
+</div>

@@ -1,0 +1,9 @@
+# MANIFEST stub — cdss-spine (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-spine
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [contracts, templates, tolerances, register schemas]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_owned: [R1 Version Registry (written by every release), R2 Artifact Manifest Register (written by every silo emit)]
+registers_staged: [R29/R30 schemas — canonical drafts in 05_registers-and-contracts/, move here on DEC-02]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"

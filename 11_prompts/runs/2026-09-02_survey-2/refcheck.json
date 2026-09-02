@@ -1,0 +1,125 @@
+{
+ "unresolved_paths": [
+  {
+   "file": "04_hardening/HARDEN-1_coverage_ledger_seed.md",
+   "line": 32,
+   "ref": "06_repositories/**",
+   "context": "**Amendment A-001 (2026-09-01, appended):** the 06_ skeleton set expanded to ~91 files (14 existing-repo skeletons + cdss-integration/GPP-CHANNEL + proposed-rep"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 61,
+   "ref": "docs/agents.md",
+   "context": "**All 4 agent personas** \u2014 `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` \u2014 composed per `docs/agents.md` (decision matrix, orc"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 61,
+   "ref": "references/orchestration-patterns.md",
+   "context": "**All 4 agent personas** \u2014 `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` \u2014 composed per `docs/agents.md` (decision matrix, orc"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "definition-of-done.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "testing-patterns.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "security-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "performance-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "accessibility-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "observability-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "orchestration-patterns.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 102,
+   "ref": "references/definition-of-done.md",
+   "context": "- Clear the `references/definition-of-done.md` standing bar in addition to the artifact's own acceptance criteria."
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "line": 13,
+   "ref": "references/definition-of-done.md",
+   "context": "An artifact is HARDENED only when, with captured evidence: (1) explicit triggers; (2) deterministic, ordered, testable steps; (3) exit criteria with named evide"
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "line": 18,
+   "ref": "validate_build_plan.py",
+   "context": "| CC-1 Primers + execution layers | Primer 0, A\u2013L, variants, harness, annex, + their new \u00a7-10/\u00a7-11 annexes | ten execution fields present and non-empty; \u00a7-8 num"
+  },
+  {
+   "file": "10_regulatory-execution/FOLD-1_antennae_fold_worklist.md",
+   "line": 17,
+   "ref": "antennae-corpus_v1.1.md",
+   "context": "Produce `antennae-corpus_v1.1.md` as a new file: wrapper Parts 0\u20134 carried, Annex 1"
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.1.md",
+   "line": 572,
+   "ref": "observer_adjudication.md",
+   "context": "evidence. Any clause added to `observer_adjudication.md` should be"
+  }
+ ],
+ "resolved_by_basename": [
+  {
+   "file": "06_repositories/REPO-MAP_v2.md",
+   "line": 30,
+   "ref": "GPP-CHANNEL.md",
+   "found": [
+    "06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md"
+   ]
+  }
+ ],
+ "unresolved_anchors": [
+  {
+   "file": "09_diagrams/register_topology_v2.mermaid",
+   "line": 17,
+   "ref": "MT2 \u00a77.4",
+   "context": "R29 --> CI[\"CI ratchet: row-completeness<br/>check on every merge (MT2 \u00a77.4)\"]:::prop"
+  },
+  {
+   "file": "09_diagrams/cdss_diagrams_v2.html",
+   "line": 96,
+   "ref": "MT2 \u00a77.4",
+   "context": "R29 --> CI[\"CI ratchet: row-completeness<br/>check on every merge (MT2 \u00a77.4)\"]:::prop"
+  }
+ ],
+ "stats": {
+  "path_refs_checked": 19,
+  "anchor_refs_checked": 129,
+  "unresolved_paths": 15,
+  "resolved_by_basename_only": 1,
+  "unresolved_anchors": 2
+ }
+}

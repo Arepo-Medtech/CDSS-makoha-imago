@@ -1,0 +1,183 @@
+<title>The Legs Corpus</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #f6f7f9; --panel: #ffffff; --panel-2: #eef0f4;
+    --ink: #1c2330; --ink-2: #4a5468; --ink-3: #8791a3;
+    --accent: #35477d; --accent-soft: #dfe4f0;
+    --amber: #a0752f; --amber-soft: #f2e8d5;
+    --line: #d9dde5; --good: #2e6b4f; --warn: #9a5b2d; --crit: #8c3b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+      --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+      --accent: #a3b3e3; --accent-soft: #2a3450;
+      --amber: #d3a55c; --amber-soft: #3a3122;
+      --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #14181f; --panel: #1b212b; --panel-2: #222a37;
+    --ink: #e6e9f0; --ink-2: #aab3c5; --ink-3: #77819a;
+    --accent: #a3b3e3; --accent-soft: #2a3450;
+    --amber: #d3a55c; --amber-soft: #3a3122;
+    --line: #323a49; --good: #7fc2a3; --warn: #d3a06b; --crit: #d98a8a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--ink); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 17px; line-height: 1.62; margin: 0; padding: 0 20px 90px; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  header.masthead { padding: 56px 0 10px; border-bottom: 3px solid var(--amber); margin-bottom: 8px; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+  h1 { font-family: Spectral, Georgia, serif; font-weight: 700; font-size: clamp(34px, 6vw, 48px); line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  .dek { font-size: 19px; color: var(--ink-2); margin: 0 0 24px; max-width: 64ch; }
+  .docmeta { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 12px 0 22px; }
+  h2 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 28px; line-height: 1.18; margin: 64px 0 8px; text-wrap: balance; }
+  h2 .sec { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); display: block; letter-spacing: .12em; margin-bottom: 6px; }
+  h3 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 21px; margin: 34px 0 6px; text-wrap: balance; }
+  p { max-width: 70ch; margin: 12px 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  ul, ol { padding-left: 24px; max-width: 68ch; }
+  li { margin: 7px 0; }
+  .verdict { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--amber); padding: 18px 22px; margin: 30px 0; border-radius: 4px; }
+  .verdict .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  .verdict p { margin: 8px 0; }
+  blockquote { margin: 22px 0; padding: 4px 22px; border-left: 3px solid var(--accent); color: var(--ink-2); font-style: italic; font-family: Spectral, Georgia, serif; font-size: 18px; max-width: 62ch; }
+  .req { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; margin: 14px 0; padding: 13px 18px; }
+  .req .rid { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600; color: var(--accent); letter-spacing: .04em; margin-right: 10px; }
+  .req .norm { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .08em; padding: 1px 8px; border-radius: 100px; margin-right: 8px; border: 1px solid var(--line); }
+  .req .norm.must { color: var(--crit); border-color: var(--crit); }
+  .req .norm.should { color: var(--warn); border-color: var(--warn); }
+  .req .norm.may { color: var(--ink-3); }
+  .req .body { display: block; margin-top: 6px; color: var(--ink); }
+  .req .why { display: block; margin-top: 6px; font-size: 14.5px; color: var(--ink-3); }
+  .req .why em { font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .05em; color: var(--amber); }
+  nav.toc { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 18px 24px; margin: 28px 0; }
+  nav.toc ol { margin: 6px 0 0; padding-left: 20px; }
+  nav.toc li { font-size: 15.5px; margin: 5px 0; }
+  nav.toc .lbl { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  .tablewrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: 4px; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  th, td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  thead tr { background: var(--panel-2); }
+  tbody tr { background: var(--panel); }
+  td.mono, .mono { font-family: "IBM Plex Mono", monospace; font-size: 13px; }
+  .anti { border-left: 4px solid var(--crit); background: var(--panel); border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 4px; padding: 14px 20px; margin: 22px 0; }
+  .anti h5 { margin: 0 0 6px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--crit); font-weight: 500; }
+  .anti ul { margin: 0; padding-left: 18px; }
+  .anti li { font-size: 15px; color: var(--ink-2); }
+  code { font-family: "IBM Plex Mono", monospace; font-size: 14px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 3px; padding: 1px 6px; }
+  pre { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 16px 18px; overflow-x: auto; font-family: "IBM Plex Mono", monospace; font-size: 13.5px; line-height: 1.55; color: var(--ink); }
+  .arch { margin: 26px 0; display: flex; flex-direction: column; gap: 6px; }
+  .arch .row { display: grid; gap: 6px; }
+  .arch .row.three { grid-template-columns: 1fr 1fr 1fr; }
+  @media (max-width: 620px) { .arch .row.three { grid-template-columns: 1fr; } }
+  .arch .layer { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 10px 14px; text-align: center; }
+  .arch .layer strong { display: block; font-size: 15px; }
+  .arch .layer span { font-size: 13px; color: var(--ink-2); }
+  .arch .layer.face { background: var(--accent-soft); border-color: var(--accent); }
+  .arch .layer.fuzzy { background: var(--amber-soft); border-color: var(--amber); }
+  .arch .conn { text-align: center; color: var(--ink-3); font-size: 13px; line-height: 1; }
+  .srcs { font-size: 14.5px; color: var(--ink-2); }
+  .srcs li { margin: 5px 0; }
+  .foot { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eyebrow">Execution defaults · v1.0 · 1 Sep 2026 · sixteenth volume in the Mākoha research series · the Reasonable Default Stack</p>
+  <h1>The Legs Corpus</h1>
+  <p class="dek">The Reasonable Default Stack for executing the CDSS Butterfly — six legs (frontend, backend, database, cache and queue, storage, infrastructure and deploy), each given as a sensible default with the binding constraints that are the actual law, the alternatives that satisfy them, and the tier and regulatory notes that travel with the choice.</p>
+  <div class="docmeta"><span>STATUS: informative defaults + normative bindings</span><span>AUTHORITY: defaults are suggestions; bindings are law</span><span>REQ IDS: LS · L1–L6 (23)</span><span>SUBORDINATE TO: every corpus in the series</span><span>GOVERNED BY: REG-POSTURE v1.0 via MAK-ANT</span></div>
+</header>
+
+<nav class="toc" aria-label="Contents"><span class="lbl">Contents</span><ol><li><a href="#p0">How to use this document</a></li><li><a href="#p1">Why legs, and the stack laws (LS)</a></li><li><a href="#p2">Leg 1 · Frontend (L1)</a></li><li><a href="#p3">Leg 2 · Backend (L2)</a></li><li><a href="#p4">Leg 3 · Database (L3)</a></li><li><a href="#p5">Leg 4 · Cache &amp; queue (L4)</a></li><li><a href="#p6">Leg 5 · Storage (L5)</a></li><li><a href="#p7">Leg 6 · Infrastructure &amp; deploy (L6)</a></li><li><a href="#p8">The stack-to-series binding map</a></li></ol></nav>
+
+<div class="verdict">
+  <p class="lbl">Thesis</p>
+  <p>A butterfly's legs are not glamorous, and nobody chooses a butterfly for its legs — but they are what it stands on between flights, and some of them taste what they touch. The stack is the same: no technology choice below wins the product, and several could lose it. The series' architecture documents are deliberately technology-agnostic; this volume supplies what an implementation team still needs on day one — a reasonable default for each of the six legs, chosen for boringness, hireability, and fit with the components the sourcing record verified — while being honest about which layer is actually law. The law is not "use PostgreSQL"; the law is pins that replay, one gate to the faces, tamper-evident ledger storage, tier manifests in CI, and an offline floor the patient face never falls through. Choose different legs freely; the body they carry does not bend.</p>
+</div>
+
+<h2 id="p0"><span class="sec">PART 0</span>How to use this document</h2>
+<p>Read each leg as three layers. <strong>The default</strong> (SHOULD): the named technologies — per the commissioning instruction, a reasonable example, not an authoritative ruleset. <strong>The bindings</strong> (MUST): the series-law constraints the leg must satisfy whatever is chosen — these are restatements at stack level of requirements that live in the corpora, and they are authoritative. <strong>The notes</strong>: alternatives that also satisfy the bindings, tier consequences (J-1/J-2/J-3 per MAK-CEC RG-6), and REG-POSTURE bindings with their open assumptions.</p>
+<ul><li><strong>Substitution rule.</strong> Swapping a default for an equivalent that satisfies the leg's bindings is a recorded choice, not a deviation. Violating a binding is a deviation against the corpus requirement the binding cites.</li><li><strong>Requirement IDs.</strong> <code>LS-n</code> stack laws (cross-leg); <code>L1-n</code>..<code>L6-n</code> per leg.</li></ul>
+<h2 id="p1"><span class="sec">PART 1</span>Why legs, and the stack laws</h2>
+<p>The stack recommendation follows one strategic fact the sourcing record established twice over: <strong>the moat is the fabric, not the stack.</strong> Everything distinctive in Mākoha — the justification fabric, the GAAM service, the deviation and gap machinery, the five-stage gate, the workbenches — is a build on top of ordinary infrastructure; nothing in the moat demands exotic technology. The rational stack posture is therefore aggressive boringness: managed services where they carry no lock-in risk to the moat, mainstream languages with deep hiring pools, LTS versions, and every clever engineering hour saved for the components no one sells.</p>
+<div class="req" id="LS-1"><span class="rid">LS-1</span><span class="norm must">MUST</span><span class="body">Defaults are defaults; bindings are law. An implementation may substitute any technology for a leg's default provided the leg's MUST bindings hold and the choice is recorded with its rationale; no substitution, however conventional, may violate a binding — the binding's cited corpus requirement governs.</span><span class="why"><em>TRACE</em> commissioning instruction (examples, not authoritative rules); series subordination law.</span></div>
+<div class="req" id="LS-2"><span class="rid">LS-2</span><span class="norm must">MUST</span><span class="body">The stack emits the series' evidence by construction: whatever is chosen per leg, the assembled stack supports version pinning and bit-for-bit replay (SPINE-5, MAK-CEC RG-4), the single release gate with no second path (RG-1), tier manifests with SBOM diffs in CI (RG-6; TASK-REG-011), the unified telemetry schema (RG-5), and conformity-file artifact retention (MAK-ABC AX family). A stack that cannot evidence these is non-conformant regardless of its components' individual merits.</span><span class="why"><em>TRACE</em> MAK-CEC RG-1/4/5/6; MAK-ABC AX-3; REG-POSTURE TASK-REG-011.</span></div>
+<div class="req" id="LS-3"><span class="rid">LS-3</span><span class="norm must">MUST</span><span class="body">Polyglot is bounded by contract: the verified execution components dictate a JVM presence (CQL translator, clinical-reasoning, HAPI — ELSM-01/02/20) and a Python presence (engine plane: MAPIE/pgmpy-class — ELSM-12/14) alongside the default TypeScript application layer; every runtime boundary crosses through the MAK-CEC engine contract (OM-2/OM-7), and no clinical logic is reimplemented across languages to avoid a service call (EN-3's single-path law at the stack).</span><span class="why"><em>TRACE</em> MAK-CEC OM-7; MAK-ELSM verified-component languages; CP-1 single compilation path.</span></div>
+<div class="req" id="LS-4"><span class="rid">LS-4</span><span class="norm should">SHOULD</span><span class="body">Boring-technology bias governs additions: a new stack component enters only when a binding or a verified sourcing entry demands it; managed, widely-hired, LTS-supported options are preferred; and the count of distinct runtime technologies is a reviewed metric, not an accident.</span><span class="why"><em>TRACE</em> moat-is-the-fabric strategy; operational economics of a small regulated team.</span></div>
+<h2 id="p2"><span class="sec">PART 2</span>Leg 1 · Frontend</h2>
+<p><strong>Default (the commissioned example):</strong> React with Next.js, TypeScript, Tailwind CSS.</p>
+<p><strong>Why it is reasonable:</strong> the largest component-library and hiring ecosystem; Next.js gives the clinician face server-rendered speed and the patient face PWA/offline scaffolding; TypeScript carries the five-signal registry and register lint as types; Tailwind keeps the identity system (MAK-LBP CV-1) in tokens rather than scattered CSS. The verified low-resource delivery vehicle remains Android-native (android-fhir/fhircore, ELSM-04/05) where a national deployment rides that stack — the web frontend and the Android path coexist by design (MAK-TXC TL profiles).</p>
+<div class="req" id="L1-1"><span class="rid">L1-1</span><span class="norm should">SHOULD</span><span class="body">The web frontend defaults to React + Next.js + TypeScript + Tailwind, structured as the two governed component libraries (MAK-PRB PC-1; MAK-LBP CC-1) over shared design tokens, with the identity sheet and register lints compiled into CI.</span><span class="why"><em>TRACE</em> commissioned default; MAK-PRB/MAK-LBP library laws; ecosystem economics.</span></div>
+<div class="req" id="L1-2"><span class="rid">L1-2</span><span class="norm must">MUST</span><span class="body">Whatever frontend is chosen, it satisfies the UI corpora's bindings: offline-first with resumable, lossless capture on the patient face (MAK-PRB PI-1/2, PA-1); the one-surface law and verdict fidelity on the clinician face (MAK-LBP CA-5 suite); the bright line structurally (MAK-PRB PS-4); WCAG 2.2 AA equivalent on both faces; and the embedding floor for CDS Hooks/SMART delivery (MAK-LBP CA-2).</span><span class="why"><em>TRACE</em> MAK-PRB PA-6; MAK-LBP CA-5; the UI conformance suites as the leg's acceptance tests.</span></div>
+<div class="req" id="L1-3"><span class="rid">L1-3</span><span class="norm may">MAY</span><span class="body">Low-resource deployments may ship the Android-native path (android-fhir SDC + fhircore lineage) as the patient face's primary vehicle, with the web frontend serving clinician and auditor faces — provided register, bright-line, and floor conformance run on both vehicles from the same content artifacts.</span><span class="why"><em>TRACE</em> MAK-ELSM ELSM-04/05 verdicts; MAK-TXC TL-1/2; single-content-source discipline.</span></div>
+<h2 id="p3"><span class="sec">PART 3</span>Leg 2 · Backend</h2>
+<p><strong>Default (the commissioned example):</strong> Node.js with NestJS, TypeScript, REST or GraphQL as the use case requires.</p>
+<p><strong>Why it is reasonable:</strong> NestJS gives the application layer structure (modules, guards, interceptors) that maps naturally onto per-face gateways and register-scoped projections (SPINE-9); TypeScript shares types with the frontend; REST for the face APIs (cacheable, simple), GraphQL only where a face's read patterns genuinely demand composition. The engine plane and the CQL stack remain their own services per LS-3 — the Node layer orchestrates and projects; it never computes clinical logic.</p>
+<div class="req" id="L2-1"><span class="rid">L2-1</span><span class="norm should">SHOULD</span><span class="body">The application/API layer defaults to NestJS + TypeScript, organized as per-face gateways (authn, authz, register rendering) over the fabric's read API (SPINE-9), with REST as the default interface style and GraphQL adopted per-surface only on demonstrated composition need.</span><span class="why"><em>TRACE</em> commissioned default; MAK-FFC SPINE-9 / per-face gateway architecture.</span></div>
+<div class="req" id="L2-2"><span class="rid">L2-2</span><span class="norm must">MUST</span><span class="body">Whatever backend is chosen: clinical logic lives only in compiled knowledge-plane artifacts executed by the engine services (CP-1 — no rules in controllers, resolvers, or middleware); the deterministic evaluator is the single verdict producer (RG-1) and the API layer holds no release-capable code path; every face request resolves against evaluator-released content with pins intact; and service boundaries carry the engine contract types (OM-2/OM-3) without coercion.</span><span class="why"><em>TRACE</em> MAK-CEC CP-1/RG-1/OM-2/OM-3; second-path erosion risk at the API layer.</span></div>
+<div class="req" id="L2-3"><span class="rid">L2-3</span><span class="norm must">MUST</span><span class="body">The data plane speaks FHIR at its boundaries: HAPI FHIR (or equivalent conformant server) fronts clinical resources (ELSM-20), with the fabric's bindings (GuidanceResponse, Provenance, AuditEvent, DetectedIssue, Consent, QuestionnaireResponse — SPINE-4) as the interchange contract; bespoke clinical schemas exist only behind the fabric, never at integration boundaries.</span><span class="why"><em>TRACE</em> MAK-FFC SPINE-4; MAK-ELSM ELSM-20; interoperability as regulatory and LMIC necessity.</span></div>
+<h2 id="p4"><span class="sec">PART 4</span>Leg 3 · Database</h2>
+<p><strong>Default (the commissioned example):</strong> PostgreSQL — or as the use case requires.</p>
+<p><strong>Why it is reasonable:</strong> the sourcing record already settled the hard question: QLDB is retired (ELSM-18), and the AWS-native answer for the tamper-evident ledger is Aurora PostgreSQL with an application-level hash-chain/transparency-log pattern and periodic external anchoring (ELSM-19). One engine (PostgreSQL) then serves the ledger, the relational read models, and — via JSONB — the artifact metadata, with immudb (ELSM-17) as the alternative if BUSL terms clear legal review.</p>
+<div class="req" id="L3-1"><span class="rid">L3-1</span><span class="norm should">SHOULD</span><span class="body">PostgreSQL (Aurora PostgreSQL in the AWS default) is the default database for the fabric ledger, read models, and operational stores — one engine, few instances, boring on purpose.</span><span class="why"><em>TRACE</em> commissioned default; MAK-ELSM ELSM-19; LS-4.</span></div>
+<div class="req" id="L3-2"><span class="rid">L3-2</span><span class="norm must">MUST</span><span class="body">Whatever database is chosen, the ledger properties hold: append-only with tamper evidence (hash-chained, Merkle-verifiable, externally anchored on a ratified cadence — SPINE-4), corrections as superseding entries, bit-for-bit replay from pinned versions (SPINE-5), and the remodeling ledger (MAK-RWC MA-1) on the same evidentiary footing. Verification is exercised: the anchor-check and replay attestation run on schedule, not on faith.</span><span class="why"><em>TRACE</em> MAK-FFC SPINE-4/5; MAK-ELSM ELSM-18/19 landmine and pattern; MAK-ABC AE-1.</span></div>
+<div class="req" id="L3-3"><span class="rid">L3-3</span><span class="norm may">MAY</span><span class="body">Specialized stores may serve specialized reads (a search index for the auditor face's queries, a time-series store for telemetry) as derived, disposable projections of the ledger — rebuildable, never authoritative, and never a face's direct source (SPINE-9's derived-cache rule).</span><span class="why"><em>TRACE</em> MAK-FFC SPINE-9; read-model economics without truth-forking.</span></div>
+<h2 id="p5"><span class="sec">PART 5</span>Leg 4 · Cache &amp; queue</h2>
+<p><strong>Default (the commissioned example):</strong> Redis for caching; RabbitMQ if needed for queueing.</p>
+<p><strong>Why it is reasonable:</strong> Redis covers session, face-cache, and rate-limiting needs with managed options everywhere; a broker earns its place only when the workflow load (campaign scheduling, replay jobs, sync fan-out) outgrows Postgres-backed jobs — "if needed" is the operative phrase, and SQS is the lower-operations AWS-native alternative when it does.</p>
+<div class="req" id="L4-1"><span class="rid">L4-1</span><span class="norm should">SHOULD</span><span class="body">Redis (managed) is the default cache; queueing starts with database-backed jobs and graduates to a broker (RabbitMQ, or SQS in the AWS default) only on demonstrated need — with the choice recorded per LS-1.</span><span class="why"><em>TRACE</em> commissioned default ("if needed"); LS-4 boring bias.</span></div>
+<div class="req" id="L4-2"><span class="rid">L4-2</span><span class="norm must">MUST</span><span class="body">Whatever cache and queue are chosen: caches hold only derived, disposable projections (never the sole copy of any fabric content — SPINE-9), a cache never serves pre-verdict or held content to a face (RG-1/HR-4 at the infrastructure layer), queues deliver the sync and telemetry flows with at-least-once semantics and idempotent consumers (the patient face's deferred sync must not lose or duplicate capture — MAK-PRB PI-2), and nothing clinical is decided in a queue consumer (OM-5).</span><span class="why"><em>TRACE</em> MAK-FFC SPINE-9; MAK-CEC RG-1/OM-5; MAK-PRB PI-2; cache-as-second-path risk.</span></div>
+<div class="req" id="L4-3"><span class="rid">L4-3</span><span class="norm may">MAY</span><span class="body">Offline-heavy deployments may add an edge sync layer (the android-fhir engine's sync, or CRDT-style additive merge for diary data) provided sync conflicts resolve additively with review flags (MAK-PRB PI-2), never by overwrite.</span><span class="why"><em>TRACE</em> MAK-PRB PI-2; MAK-TXC TL-1; low-resource sync reality.</span></div>
+<h2 id="p6"><span class="sec">PART 6</span>Leg 5 · Storage</h2>
+<p><strong>Default (the commissioned example):</strong> AWS S3 or equivalent cloud object storage.</p>
+<p><strong>Why it is reasonable:</strong> the knowledge plane is an artifact economy — compiled templates, FML files, codebook packs, instrument versions, evidence-library snapshots, SBOMs, conformity bundles — and versioned object storage with immutability controls is exactly that economy's warehouse.</p>
+<div class="req" id="L5-1"><span class="rid">L5-1</span><span class="norm should">SHOULD</span><span class="body">Object storage (S3 in the AWS default) holds the artifact economy: knowledge-plane artifacts, evidence-library snapshots, replay corpora, exports, and conformity bundles — versioned buckets, lifecycle rules, and jurisdiction-pinned regions per deployment.</span><span class="why"><em>TRACE</em> commissioned default; SPINE-5 artifact discipline; MAK-TXC TC-3 routing realities.</span></div>
+<div class="req" id="L5-2"><span class="rid">L5-2</span><span class="norm must">MUST</span><span class="body">Whatever storage is chosen: knowledge-plane artifacts are immutable at rest per version (write-once semantics or object-lock equivalent), addressed by content hash where pins reference them (SPINE-5), with conformity artifacts (suite results, SBOMs, bundles) retained under the obligations register's retention rules (MAK-ABC AX-3) and patient-exportable data honouring custody and routing law (MAK-TXC TC-1/3).</span><span class="why"><em>TRACE</em> MAK-FFC SPINE-5; MAK-ABC AX-3; MAK-TXC TC family.</span></div>
+<div class="req" id="L5-3"><span class="rid">L5-3</span><span class="norm may">MAY</span><span class="body">The firewalled evaluation corpus may live in physically or account-separated storage with independent access control, making EN-7's no-write-access reproducibility an infrastructure property rather than a policy.</span><span class="why"><em>TRACE</em> MAK-FFC EN-7; MAK-CEC RG-3; separation as architecture.</span></div>
+<h2 id="p7"><span class="sec">PART 7</span>Leg 6 · Infrastructure &amp; deploy</h2>
+<p><strong>Default (the commissioned example):</strong> AWS managed services with Docker.</p>
+<p><strong>Why it is reasonable:</strong> the programme is already AWS-resident, and REG-POSTURE has already made the leg's hard calls: split the Amplify path (synthetic/demo push-to-deploy versus regulated gated releases — TASK-REG-010), move runtime inference to Baseten Sydney dedicated deployments with contractual version pinning (TASK-REG-009, ASSUME-REG-004 open), SBOMs in CI feeding Ketryx supply-chain management (TASK-REG-011, KTX-012), and Ketryx-on-Jira as the lifecycle system of record (KTX-001..012, ASSUME-REG-006 open).</p>
+<div class="req" id="L6-1"><span class="rid">L6-1</span><span class="norm should">SHOULD</span><span class="body">Infrastructure defaults to AWS managed services with Docker-containerized services under infrastructure-as-code: ECS/Fargate-class runtime for the application and engine services, Aurora and managed Redis per legs 3–4, S3 per leg 5, and the Amplify split path per REG-POSTURE — demo/synthetic push-to-deploy, regulated releases through the gated pipeline with approvals landing as CI artifacts.</span><span class="why"><em>TRACE</em> commissioned default; REG-POSTURE TASK-REG-010; LS-4.</span></div>
+<div class="req" id="L6-2"><span class="rid">L6-2</span><span class="norm must">MUST</span><span class="body">Whatever infrastructure is chosen: builds are reproducible and containerized with SBOM generation in CI diffed against tier manifests (RG-6; TASK-REG-011); the regulated release pipeline enforces the gates (suite results, approvals, risk-file linkage) before deploy (GATE discipline; KTX traceability); runtime model substrates carry contractual version-stability and change-notice terms before any regulated use (RG-7; ASSUME-REG-004 open — never described as settled); environments enforce the synthetic-only line pre-GATE-002 (REG-KEEP-004); and data residency pins per deployment jurisdiction.</span><span class="why"><em>TRACE</em> MAK-CEC RG-6/7; REG-POSTURE TASK-REG-009..013, REG-KEEP-004; MAK-ANT AN-7.</span></div>
+<div class="req" id="L6-3"><span class="rid">L6-3</span><span class="norm should">SHOULD</span><span class="body">Observability rides the unified telemetry schema (RG-5) into boring managed tooling (CloudWatch/Grafana-class), with the auditor face's system lens as the only clinical-telemetry consumer surface — infrastructure dashboards carry operational metrics, never clinical-decision analytics.</span><span class="why"><em>TRACE</em> MAK-CEC RG-5; MAK-FFC AF-8/EN-9 lens discipline at the ops layer.</span></div>
+<div class="req" id="L6-4"><span class="rid">L6-4</span><span class="norm may">MAY</span><span class="body">Low-resource deployments may substitute the managed-cloud default with in-country or on-premise equivalents (a national health cloud, a ministry data centre) where sovereignty or connectivity demands it — the bindings travel unchanged, and the substitution is the recorded, expected case rather than an exception.</span><span class="why"><em>TRACE</em> north star; MAK-TXC TC-3 routing; XC-3/XC-4 deployment pluralism.</span></div>
+<h2 id="p8"><span class="sec">PART 8</span>The stack-to-series binding map</h2>
+<div class="tablewrap"><table><thead><tr><th>Leg</th><th>Default (suggestion)</th><th>The law it must satisfy (authoritative)</th></tr></thead><tbody><tr><td>1 · Frontend</td><td>React/Next.js · TypeScript · Tailwind</td><td>MAK-PRB PA-6 + MAK-LBP CA-5 suites; bright line structural; offline floor; embedding floor</td></tr><tr><td>2 · Backend</td><td>Node.js/NestJS · TS · REST (GraphQL on need)</td><td>No clinical logic outside compiled artifacts (CP-1); single gate (RG-1); FHIR at boundaries (SPINE-4); typed signals uncoerced (OM-3)</td></tr><tr><td>3 · Database</td><td>PostgreSQL / Aurora</td><td>Tamper-evident append-only ledger with anchoring + replay (SPINE-4/5); QLDB avoided (retired); derived stores never authoritative (SPINE-9)</td></tr><tr><td>4 · Cache &amp; queue</td><td>Redis · RabbitMQ/SQS if needed</td><td>Caches derived-only; no pre-verdict content served; idempotent lossless sync (PI-2); no decisions in consumers (OM-5)</td></tr><tr><td>5 · Storage</td><td>S3-class object storage</td><td>Immutable versioned artifacts, hash-addressed pins (SPINE-5); conformity retention (AX-3); custody-honouring exports (TC)</td></tr><tr><td>6 · Infra &amp; deploy</td><td>AWS managed · Docker</td><td>SBOM + tier manifests in CI (RG-6); gated regulated pipeline (TASK-REG-010); pinned inference substrate under contract (RG-7, ASSUME-REG-004); synthetic-only pre-GATE-002</td></tr></tbody></table></div>
+<h3>Findings → requirements</h3>
+<div class="tablewrap"><table><thead><tr><th>Finding</th><th>Source</th><th>Requirements it drives</th></tr></thead><tbody><tr><td>The moat is the fabric; everything around it is buyable</td><td>MAK-ELSM/LWC/RWC sourcing passes</td><td>LS-4, all SHOULD defaults</td></tr><tr><td>Examples are suggestions, not authoritative rules</td><td>commissioning instruction</td><td>LS-1; the two-layer structure</td></tr><tr><td>QLDB retired; Aurora + transparency-log is the pattern</td><td>MAK-ELSM ELSM-18/19</td><td>L3-1/2</td></tr><tr><td>Verified components fix the polyglot floor (JVM + Python + TS)</td><td>MAK-ELSM ELSM-01/02/12/14/20</td><td>LS-3</td></tr><tr><td>Stack decisions with regulatory weight are already made and assumption-gated</td><td>REG-POSTURE TASK-REG-009..013; ASSUME-REG-004/006</td><td>L6-1/2</td></tr><tr><td>Caches and queues are where second paths and data loss hide</td><td>MAK-CEC RG-1; MAK-PRB PI-2</td><td>L4-2</td></tr><tr><td>Low-resource substitution is the expected case, not the exception</td><td>north star; XC-3/4</td><td>L6-4, L1-3</td></tr></tbody></table></div>
+<h3>Sources</h3>
+<ul><li>Commissioning instruction (the six legs and their example stacks, given as suggestions).</li><li>Series: MAK-CEC v1.1 (RG family, OM contract) · MAK-PRB/MAK-LBP v1.0 (UI suites) · MAK-ABC v1.0 (evidence duties) · MAK-ANT v1.0 / REG-POSTURE v1.0 (TASK-REG-009..013, KTX-001..012, REG-KEEP-004, ASSUME-REG-004/006) · MAK-ELSM v1.1 + wing annexes (verified components and landmines).</li></ul>
+<p><em>Document footer (source artifact):</em> The Legs Corpus v1.0 · defaults are suggestions; bindings are law; requirement IDs are stable. Compiled 1 Sep 2026 as the sixteenth and final volume of the CDSS Butterfly set.</p>
+<h2 id="appendix-a-id-census-additive"><span class="sec">APPENDIX</span>Appendix A — ID census (additive)</h2>
+<p>Authoritative enumeration for validator checks. Count: <strong>23</strong>.</p>
+<pre>{
+  &quot;doc_id&quot;: &quot;MAK-LEG&quot;,
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;requirements&quot;: {
+    &quot;LS&quot;: [&quot;LS-1&quot;,&quot;LS-2&quot;,&quot;LS-3&quot;,&quot;LS-4&quot;],
+    &quot;L1&quot;: [&quot;L1-1&quot;,&quot;L1-2&quot;,&quot;L1-3&quot;],
+    &quot;L2&quot;: [&quot;L2-1&quot;,&quot;L2-2&quot;,&quot;L2-3&quot;],
+    &quot;L3&quot;: [&quot;L3-1&quot;,&quot;L3-2&quot;,&quot;L3-3&quot;],
+    &quot;L4&quot;: [&quot;L4-1&quot;,&quot;L4-2&quot;,&quot;L4-3&quot;],
+    &quot;L5&quot;: [&quot;L5-1&quot;,&quot;L5-2&quot;,&quot;L5-3&quot;],
+    &quot;L6&quot;: [&quot;L6-1&quot;,&quot;L6-2&quot;,&quot;L6-3&quot;,&quot;L6-4&quot;]
+  },
+  &quot;levels&quot;: {
+    &quot;MUST&quot;:   [&quot;LS-1&quot;,&quot;LS-2&quot;,&quot;LS-3&quot;,&quot;L1-2&quot;,&quot;L2-2&quot;,&quot;L2-3&quot;,&quot;L3-2&quot;,&quot;L4-2&quot;,&quot;L5-2&quot;,&quot;L6-2&quot;],
+    &quot;SHOULD&quot;: [&quot;LS-4&quot;,&quot;L1-1&quot;,&quot;L2-1&quot;,&quot;L3-1&quot;,&quot;L4-1&quot;,&quot;L5-1&quot;,&quot;L6-1&quot;,&quot;L6-3&quot;],
+    &quot;MAY&quot;:    [&quot;L1-3&quot;,&quot;L3-3&quot;,&quot;L4-3&quot;,&quot;L5-3&quot;,&quot;L6-4&quot;]
+  },
+  &quot;retired&quot;: []
+}</pre>
+<p>Census arithmetic: 10 MUST + 8 SHOULD + 5 MAY = 23 (4+3+3+3+3+3+4 across seven families).</p>
+<h2 id="appendix-b-self-audit-checks-additive"><span class="sec">APPENDIX</span>Appendix B — Self-audit checks (additive)</h2>
+<ol><li><strong>ID uniqueness</strong> — no requirement ID appears in more than one requirement header.</li><li><strong>ID census parity</strong> — headers matching <code>^### (LS|L[1-6])-\d+ \((MUST|SHOULD|MAY)\)$</code> exactly equal Appendix A's enumeration.</li><li><strong>Level parity</strong> — header levels match Appendix A buckets; every default is SHOULD or MAY, never MUST (the authority note's structural guarantee).</li><li><strong>Trace presence</strong> — every requirement block has a non-empty rationale trace.</li><li><strong>Normative leakage</strong> — no capitalized MUST/SHOULD/MAY outside requirement blocks, quoted text, or this appendix.</li><li><strong>Binding resolution</strong> — every corpus requirement a binding cites resolves in its host volume.</li><li><strong>Assumption honesty</strong> — ASSUME-REG-004/006 are never described as closed; Baseten/Ketryx bindings carry their contingency.</li><li><strong>Two-layer integrity</strong> — every leg has at least one SHOULD default and at least one MUST binding; no leg's law depends on its default.</li><li><strong>Table integrity</strong> — consistent column counts per row.</li><li><strong>Stability</strong> — IDs from previous versions present or explicitly retired; never reused.</li></ol>
+
+<p class="foot">The Legs Corpus v1.0 · MAK-LEG · defaults are suggestions; bindings are law; requirement IDs are stable. 23 requirements (10 MUST · 8 SHOULD · 5 MAY). Sixteenth and final volume of the CDSS Butterfly set · 1 Sep 2026.</p>
+</div>

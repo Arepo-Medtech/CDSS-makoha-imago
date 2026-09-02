@@ -1,0 +1,5 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-spine (Existing repo — Arch §10; skeleton mirrors it. Status of additions: Transformed/Proposed)
+Holds the architecture document and **every shared contract, once, versioned** — "Nothing is duplicated into component repos, ever; duplication is where drift begins." A contract change is a spine PR that visibly breaks consumers in CI.
+Layout: `contracts/` (existing set + proposed additions as pointer stubs) · `registers/` (register-of-registers schemas; R29/R30 proposed) · `templates/` (model-card, prompt-card, PR templates) · `tolerances/` (I8's authoritative numbers as versioned configuration) · `validator/` (validate_build_plan.py wiring per Arch §13.8) · `north-star/` (SPINE-NS-1 block).
+Lockfile note: Arch §10 permits the integration lockfile to live here "or the spine itself" — home decided at DEC-09 (see ../cdss-integration/).

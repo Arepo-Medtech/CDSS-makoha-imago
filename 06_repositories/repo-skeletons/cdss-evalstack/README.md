@@ -1,0 +1,4 @@
+<!-- SKELETON — Proposed (DEC-09; Arch §10 mirrored). No code, build, or deployment is claimed. Every directory README states what its owning primer/annex requires; content lands only through that repo's own gauntlet. -->
+# cdss-evalstack (Existing — Primer I; annex I10)
+Pipeline/CI definitions others import; **operates, does not author**. Additions this pass: new change classes (fabric schema, GA compilation, deviation taxonomy, render contract, FML dormant, GPP = new device -> PR halted), RG cross-walk duty (CEC Part 7 rows), and the **R29 ratchet** (activates on DEC-02; an instruction-bearing artifact merging without a current row = CI failure — MT2 §7(4)).
+Layout: `pipelines/` (imported by all repos) · `properties/` (registry, R7; 20 seeded in I8) · `contracts/` (runtime assertion library, mechanism 5) · `shadow/` (mechanism 6 plumbing) · `incidents/` (ledger admission criteria; one-way door, R20).

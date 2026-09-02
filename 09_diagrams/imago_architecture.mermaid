@@ -1,0 +1,32 @@
+%% IMAGO-1 — Merged (imago) architecture: fabric wraps the release spine. Status: Proposed (MET-1 §5.4 successor)
+flowchart TD
+  subgraph KNOW["Knowledge plane (versioned, ratified)"]
+    LIB["Evidence library B<br/>E1/E2/E3 = BACKING"]
+    REGY["Content registry D<br/>signed fragments"]
+    COMP["Guideline Compiler EN-3 (Proposed)<br/>CQL/FHIR-CPG/WHO-SMART → GenericArguments"]
+    GA["GenericArgument store<br/>warrants + thresholds + lineage"]
+    COMP --> GA
+  end
+  subgraph RUN["Runtime (per encounter)"]
+    CODE["Coder (fork lives here)<br/>findings = GROUNDS + provenance"]
+    ENG["Bayesian engine A<br/>LR chains = WARRANT instantiation"]
+    SAFE["Red-flag overrides<br/>safety-class claims"]
+    CONF["Conformal wrapper F<br/>= QUALIFIER (mandatory, SPINE-2)"]
+    GRAPH["Graph RAG E<br/>prunes = REBUTTALS; conflicts = DetectedIssue (SPINE-6)"]
+    EVAL["Deterministic evaluator<br/>five gates + argument-tree checks<br/>(SPINE-7: only arithmetic releases)"]
+    ARG["ActualArgument<br/>claim·grounds·warrant·backing·qualifier·rebuttal<br/>append-only, hash-chained (SPINE-4), pinned (SPINE-5)"]
+  end
+  subgraph FACES["Register renderers (SPINE-3: compress/reorder only)"]
+    HDC["Clinician face MAK-HDC<br/>+ Labial-Palps UI"]
+    TXC["Patient face MAK-TXC<br/>+ Proboscis UI (scope per DEC-07)"]
+    ABC["Auditor face MAK-ABC<br/>projections (SPINE-9)"]
+  end
+  CODE --> ENG --> SAFE --> CONF --> GRAPH --> EVAL --> ARG
+  LIB --> ENG
+  GA --> ENG
+  REGY --> EVAL
+  ARG --> HDC & TXC & ABC
+  DEV["Deviation objects (SPINE-8)<br/>structured, first-class"] --> ARG
+  SAB["Corruption engine G<br/>+ ARG-class suites<br/>findings published as REBUTTALS"] -.-> EVAL
+  CORPUS["Firewalled corpus C<br/>own account · checkpoints only"] -.-> ARG
+  GPP["GPP channel (J-3, Proposed)<br/>guideline prompts only — no differential"] -.-> REGY

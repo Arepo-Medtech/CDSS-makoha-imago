@@ -1,0 +1,8 @@
+# MANIFEST stub — cdss-engine (Skeleton, Proposed; format per Arch §10 / Harness manifest discipline)
+name: cdss-engine
+status: skeleton-proposed        # nothing emitted yet; this file becomes the artifact manifest on first emit
+emits: [compute container, trace emitter, argument-payload envelope]
+consumes:
+  cdss-spine: "[PIN NEEDS DEFINITION]"   # contracts consumed as pinned dependency; a spine change visibly breaks this repo's CI
+registers_written: [R1 stamps on every trace, R25 property runs, R12 adjudications on change]
+version_stamp: "[joins the integration lockfile pin-set — register law §12.1(4)]"
