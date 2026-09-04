@@ -1,0 +1,41 @@
+name: Confluence mirror
+
+# Keeps the Imago Confluence space in step with this repository.
+# Content already flows live (Git for Confluence renders each file from main on view);
+# this job only adds pages for files and folders that do not have one yet.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Report what would be created without creating anything
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: confluence-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Create missing Confluence pages
+        env:
+          CONFLUENCE_EMAIL: ${{ secrets.CONFLUENCE_EMAIL }}
+          CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            node .github/confluence-mirror/mirror.mjs --dry-run
+          else
+            node .github/confluence-mirror/mirror.mjs
+          fi
