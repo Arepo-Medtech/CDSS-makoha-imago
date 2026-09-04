@@ -1,0 +1,25 @@
+{
+  "baseUrl": "https://arepo-tech.atlassian.net/wiki",
+  "spaceId": "1245187",
+  "spaceKey": "IMAGO",
+  "homePageId": "1245280",
+  "repoUrl": "https://github.com/Arepo-Medtech/CDSS-makoha-imago",
+  "branch": "main",
+  "citeCommit": "73460b3",
+  "appExtensionPrefix": "5d62e7a9-4a47-45c5-92b8-36e63f5fa417/c4bd2e15-f2cb-439a-af68-b0e199262954/static/",
+  "topFolderPages": {
+    ".": "1245383",
+    "01_north-star-and-transformation": "1212442",
+    "02_cdss-stack-augmented": "1376307",
+    "03_makoha-butterfly-corpus": "1376329",
+    "04_hardening": "1212465",
+    "05_registers-and-contracts": "1245405",
+    "06_repositories": "1376351",
+    "07_deployment-and-operations": "1146897",
+    "08_research": "1146919",
+    "09_diagrams": "1376373",
+    "10_regulatory-execution": "1376395",
+    "11_prompts": "1245427"
+  },
+  "ignorePageIds": ["1376259", "1376284", "1212422"]
+}
