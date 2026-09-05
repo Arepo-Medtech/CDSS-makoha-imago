@@ -1,0 +1,4 @@
+# FIRST_IMPROVEMENTS — 08_research (weight order)
+
+- [OPTIMISATION] [2] [L2-REPLETENESS/Q-D-08] [RESEARCH] RG-01..08 carry owner and a closure path (RESEARCH-1.1 D-3 'Closes into') but no trigger/when. — measured: RESEARCH-1 l.18 `| Gap | What's needed | Who |`; RESEARCH-1.1 D-3 `+ Closes into`… — exemplar: 01_north-star-and-transformation/MET-2.1_decision_register_delta.md (Trigger/When column) — blocks: — — remedy: RESEARCH-1.2: 'Trigger/when' column (RUN-n or DEC) per RG (CLAUDE-CODE-EXECUTABLE-NOW, Research author; RG owners) — QI-0022
+- [OPTIMISATION] [1] [L1-STRUCTURE/Q-D-10] [DELTA] Mechanical Q-line failure(s) ['Q-D-10'] not covered by a Phase 1 row; recorded for the item, weight by radius 1. — measured: Q-D-10: prefix collision or label overlap (see L2_id_lifecycle)… — exemplar: — — blocks: — — remedy: line PASS (CLAUDE-CODE-EXECUTABLE-NOW, folder owner (INDEX §4)) — QI-0124

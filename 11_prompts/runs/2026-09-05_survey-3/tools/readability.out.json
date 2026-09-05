@@ -1,0 +1,1292 @@
+{
+ "tool": "readability.py",
+ "formula": "FK grade = 0.39*ASL + 11.8*ASW - 15.59; prose only",
+ "files": 194,
+ "scored": 154,
+ "median_asl": 22.1,
+ "median_fk": 13.2,
+ "thresholds_[ASSESSOR-PROPOSED]": {
+  "asl_max": 35,
+  "fk_max": 14
+ },
+ "rows": [
+  {
+   "file": "07_deployment-and-operations/SEC-1_security_privacy_compliance.md",
+   "prose_words": 244,
+   "sentences": 3,
+   "avg_sentence_len": 81.3,
+   "fk_grade": 40.4
+  },
+  {
+   "file": "06_repositories/REPO-MAP_v2.md",
+   "prose_words": 202,
+   "sentences": 3,
+   "avg_sentence_len": 67.3,
+   "fk_grade": 32.6
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.1_seed_delta.md",
+   "prose_words": 199,
+   "sentences": 3,
+   "avg_sentence_len": 66.3,
+   "fk_grade": 27.4
+  },
+  {
+   "file": "07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md",
+   "prose_words": 173,
+   "sentences": 3,
+   "avg_sentence_len": 57.7,
+   "fk_grade": 29.6
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29_hardening_coverage_ledger.schema.md",
+   "prose_words": 101,
+   "sentences": 2,
+   "avg_sentence_len": 50.5,
+   "fk_grade": 22.3
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-ARG-1_argument_schema.md",
+   "prose_words": 156,
+   "sentences": 4,
+   "avg_sentence_len": 39.0,
+   "fk_grade": 26.2
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+   "prose_words": 657,
+   "sentences": 17,
+   "avg_sentence_len": 38.6,
+   "fk_grade": 16.7
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md",
+   "prose_words": 115,
+   "sentences": 3,
+   "avg_sentence_len": 38.3,
+   "fk_grade": 15.4
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "prose_words": 264,
+   "sentences": 7,
+   "avg_sentence_len": 37.7,
+   "fk_grade": 16.9
+  },
+  {
+   "file": "00_MANIFEST.md",
+   "prose_words": 2218,
+   "sentences": 66,
+   "avg_sentence_len": 33.6,
+   "fk_grade": 16.6
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+   "prose_words": 3614,
+   "sentences": 109,
+   "avg_sentence_len": 33.2,
+   "fk_grade": 19.6
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md",
+   "prose_words": 130,
+   "sentences": 4,
+   "avg_sentence_len": 32.5,
+   "fk_grade": 14.3
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "prose_words": 161,
+   "sentences": 5,
+   "avg_sentence_len": 32.2,
+   "fk_grade": 20.4
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/contracts/README.md",
+   "prose_words": 63,
+   "sentences": 2,
+   "avg_sentence_len": 31.5,
+   "fk_grade": 20.3
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/README.md",
+   "prose_words": 93,
+   "sentences": 3,
+   "avg_sentence_len": 31.0,
+   "fk_grade": 17.6
+  },
+  {
+   "file": "08_research/RESEARCH-1_findings_gaps_source_map.md",
+   "prose_words": 93,
+   "sentences": 3,
+   "avg_sentence_len": 31.0,
+   "fk_grade": 20.9
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+   "prose_words": 512,
+   "sentences": 17,
+   "avg_sentence_len": 30.1,
+   "fk_grade": 13.0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+   "prose_words": 89,
+   "sentences": 3,
+   "avg_sentence_len": 29.7,
+   "fk_grade": 18.7
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/README.md",
+   "prose_words": 88,
+   "sentences": 3,
+   "avg_sentence_len": 29.3,
+   "fk_grade": 15.3
+  },
+  {
+   "file": "06_repositories/INDEX.md",
+   "prose_words": 435,
+   "sentences": 15,
+   "avg_sentence_len": 29.0,
+   "fk_grade": 14.4
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+   "prose_words": 7404,
+   "sentences": 259,
+   "avg_sentence_len": 28.6,
+   "fk_grade": 16.0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-SERIES_index.md",
+   "prose_words": 1539,
+   "sentences": 55,
+   "avg_sentence_len": 28.0,
+   "fk_grade": 13.3
+  },
+  {
+   "file": "11_prompts/PROMPT-SERIES_A-L_index.md",
+   "prose_words": 700,
+   "sentences": 25,
+   "avg_sentence_len": 28.0,
+   "fk_grade": 13.6
+  },
+  {
+   "file": "02_cdss-stack-augmented/variant_2_ml_coder_runtime.md",
+   "prose_words": 835,
+   "sentences": 30,
+   "avg_sentence_len": 27.8,
+   "fk_grade": 18.1
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "prose_words": 386,
+   "sentences": 14,
+   "avg_sentence_len": 27.6,
+   "fk_grade": 12.4
+  },
+  {
+   "file": "10_regulatory-execution/INDEX.md",
+   "prose_words": 523,
+   "sentences": 19,
+   "avg_sentence_len": 27.5,
+   "fk_grade": 13.6
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+   "prose_words": 1641,
+   "sentences": 60,
+   "avg_sentence_len": 27.4,
+   "fk_grade": 18.2
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+   "prose_words": 6101,
+   "sentences": 226,
+   "avg_sentence_len": 27.0,
+   "fk_grade": 14.5
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_K_llm_augmentation.md",
+   "prose_words": 1638,
+   "sentences": 61,
+   "avg_sentence_len": 26.9,
+   "fk_grade": 17.5
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+   "prose_words": 6127,
+   "sentences": 228,
+   "avg_sentence_len": 26.9,
+   "fk_grade": 15.0
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_I_living_evaluation.md",
+   "prose_words": 1878,
+   "sentences": 70,
+   "avg_sentence_len": 26.8,
+   "fk_grade": 17.2
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+   "prose_words": 6218,
+   "sentences": 232,
+   "avg_sentence_len": 26.8,
+   "fk_grade": 15.4
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md",
+   "prose_words": 692,
+   "sentences": 26,
+   "avg_sentence_len": 26.6,
+   "fk_grade": 13.1
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+   "prose_words": 4440,
+   "sentences": 168,
+   "avg_sentence_len": 26.4,
+   "fk_grade": 14.2
+  },
+  {
+   "file": "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+   "prose_words": 264,
+   "sentences": 10,
+   "avg_sentence_len": 26.4,
+   "fk_grade": 11.6
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md",
+   "prose_words": 553,
+   "sentences": 21,
+   "avg_sentence_len": 26.3,
+   "fk_grade": 14.7
+  },
+  {
+   "file": "05_registers-and-contracts/INDEX.md",
+   "prose_words": 420,
+   "sentences": 16,
+   "avg_sentence_len": 26.2,
+   "fk_grade": 11.8
+  },
+  {
+   "file": "08_research/INDEX.md",
+   "prose_words": 210,
+   "sentences": 8,
+   "avg_sentence_len": 26.2,
+   "fk_grade": 11.7
+  },
+  {
+   "file": "02_cdss-stack-augmented/architecture_and_integration.md",
+   "prose_words": 3528,
+   "sentences": 135,
+   "avg_sentence_len": 26.1,
+   "fk_grade": 16.8
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md",
+   "prose_words": 6243,
+   "sentences": 240,
+   "avg_sentence_len": 26.0,
+   "fk_grade": 14.9
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md",
+   "prose_words": 6293,
+   "sentences": 242,
+   "avg_sentence_len": 26.0,
+   "fk_grade": 15.7
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "prose_words": 181,
+   "sentences": 7,
+   "avg_sentence_len": 25.9,
+   "fk_grade": 12.5
+  },
+  {
+   "file": "07_deployment-and-operations/INDEX.md",
+   "prose_words": 310,
+   "sentences": 12,
+   "avg_sentence_len": 25.8,
+   "fk_grade": 12.5
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md",
+   "prose_words": 6000,
+   "sentences": 235,
+   "avg_sentence_len": 25.5,
+   "fk_grade": 14.0
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/README.md",
+   "prose_words": 102,
+   "sentences": 4,
+   "avg_sentence_len": 25.5,
+   "fk_grade": 20.3
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+   "prose_words": 6270,
+   "sentences": 247,
+   "avg_sentence_len": 25.4,
+   "fk_grade": 14.9
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_J_model_governance.md",
+   "prose_words": 1987,
+   "sentences": 79,
+   "avg_sentence_len": 25.2,
+   "fk_grade": 16.7
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "prose_words": 3565,
+   "sentences": 142,
+   "avg_sentence_len": 25.1,
+   "fk_grade": 16.4
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/degrees-of-truth_v1.0.md",
+   "prose_words": 2053,
+   "sentences": 82,
+   "avg_sentence_len": 25.0,
+   "fk_grade": 16.7
+  },
+  {
+   "file": "02_cdss-stack-augmented/grounding_and_weak_supervision.md",
+   "prose_words": 2353,
+   "sentences": 95,
+   "avg_sentence_len": 24.8,
+   "fk_grade": 14.7
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_F_conformal_wrapper.md",
+   "prose_words": 1242,
+   "sentences": 50,
+   "avg_sentence_len": 24.8,
+   "fk_grade": 17.0
+  },
+  {
+   "file": "02_cdss-stack-augmented/variant_1b_deterministic_coder.md",
+   "prose_words": 918,
+   "sentences": 37,
+   "avg_sentence_len": 24.8,
+   "fk_grade": 16.8
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1_operating_procedures.md",
+   "prose_words": 297,
+   "sentences": 12,
+   "avg_sentence_len": 24.8,
+   "fk_grade": 16.0
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_L_runtime_llm.md",
+   "prose_words": 2001,
+   "sentences": 81,
+   "avg_sentence_len": 24.7,
+   "fk_grade": 16.8
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "prose_words": 5181,
+   "sentences": 210,
+   "avg_sentence_len": 24.7,
+   "fk_grade": 16.2
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+   "prose_words": 315,
+   "sentences": 13,
+   "avg_sentence_len": 24.2,
+   "fk_grade": 10.5
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "prose_words": 2582,
+   "sentences": 107,
+   "avg_sentence_len": 24.1,
+   "fk_grade": 15.7
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_E_graph_rag.md",
+   "prose_words": 1264,
+   "sentences": 53,
+   "avg_sentence_len": 23.8,
+   "fk_grade": 17.0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LEG_stack_launch.md",
+   "prose_words": 571,
+   "sentences": 24,
+   "avg_sentence_len": 23.8,
+   "fk_grade": 10.6
+  },
+  {
+   "file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "prose_words": 28586,
+   "sentences": 1207,
+   "avg_sentence_len": 23.7,
+   "fk_grade": 15.9
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+   "prose_words": 5374,
+   "sentences": 227,
+   "avg_sentence_len": 23.7,
+   "fk_grade": 13.2
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md",
+   "prose_words": 470,
+   "sentences": 20,
+   "avg_sentence_len": 23.5,
+   "fk_grade": 12.6
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "prose_words": 2298,
+   "sentences": 98,
+   "avg_sentence_len": 23.4,
+   "fk_grade": 15.1
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "prose_words": 2371,
+   "sentences": 102,
+   "avg_sentence_len": 23.2,
+   "fk_grade": 14.9
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+   "prose_words": 975,
+   "sentences": 42,
+   "avg_sentence_len": 23.2,
+   "fk_grade": 11.8
+  },
+  {
+   "file": "10_regulatory-execution/REG-US_v1.0.md",
+   "prose_words": 1246,
+   "sentences": 54,
+   "avg_sentence_len": 23.1,
+   "fk_grade": 14.2
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_H_lumos_pathway.md",
+   "prose_words": 1887,
+   "sentences": 82,
+   "avg_sentence_len": 23.0,
+   "fk_grade": 16.3
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "prose_words": 7348,
+   "sentences": 320,
+   "avg_sentence_len": 23.0,
+   "fk_grade": 16.4
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_G_corruption_engine.md",
+   "prose_words": 1235,
+   "sentences": 54,
+   "avg_sentence_len": 22.9,
+   "fk_grade": 15.6
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/thorax-corpus_v1.0.md",
+   "prose_words": 3428,
+   "sentences": 151,
+   "avg_sentence_len": 22.7,
+   "fk_grade": 15.0
+  },
+  {
+   "file": "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md",
+   "prose_words": 227,
+   "sentences": 10,
+   "avg_sentence_len": 22.7,
+   "fk_grade": 10.2
+  },
+  {
+   "file": "04_hardening/INDEX.md",
+   "prose_words": 407,
+   "sentences": 18,
+   "avg_sentence_len": 22.6,
+   "fk_grade": 10.7
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   "prose_words": 2104,
+   "sentences": 93,
+   "avg_sentence_len": 22.6,
+   "fk_grade": 10.9
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "prose_words": 225,
+   "sentences": 10,
+   "avg_sentence_len": 22.5,
+   "fk_grade": 9.6
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+   "prose_words": 3559,
+   "sentences": 159,
+   "avg_sentence_len": 22.4,
+   "fk_grade": 12.8
+  },
+  {
+   "file": "11_prompts/PROMPT-L_runtime_llm_launch.md",
+   "prose_words": 245,
+   "sentences": 11,
+   "avg_sentence_len": 22.3,
+   "fk_grade": 12.9
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_B_evidence_library.md",
+   "prose_words": 1282,
+   "sentences": 58,
+   "avg_sentence_len": 22.1,
+   "fk_grade": 15.0
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT-1.1_delta.md",
+   "prose_words": 551,
+   "sentences": 25,
+   "avg_sentence_len": 22.0,
+   "fk_grade": 13.2
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md",
+   "prose_words": 925,
+   "sentences": 42,
+   "avg_sentence_len": 22.0,
+   "fk_grade": 10.8
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_0_ecosystem_explainer.md",
+   "prose_words": 2040,
+   "sentences": 93,
+   "avg_sentence_len": 21.9,
+   "fk_grade": 13.6
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "prose_words": 3521,
+   "sentences": 162,
+   "avg_sentence_len": 21.7,
+   "fk_grade": 14.6
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus_artifacts_briefing.md",
+   "prose_words": 456,
+   "sentences": 21,
+   "avg_sentence_len": 21.7,
+   "fk_grade": 11.6
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "prose_words": 345,
+   "sentences": 16,
+   "avg_sentence_len": 21.6,
+   "fk_grade": 11.7
+  },
+  {
+   "file": "11_prompts/PROMPT-K_llm_augmentation_launch.md",
+   "prose_words": 238,
+   "sentences": 11,
+   "avg_sentence_len": 21.6,
+   "fk_grade": 14.5
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/README.md",
+   "prose_words": 86,
+   "sentences": 4,
+   "avg_sentence_len": 21.5,
+   "fk_grade": 19.3
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1_deployment_plan_and_sequencing.md",
+   "prose_words": 86,
+   "sentences": 4,
+   "avg_sentence_len": 21.5,
+   "fk_grade": 14.1
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_D_content_registry.md",
+   "prose_words": 1091,
+   "sentences": 51,
+   "avg_sentence_len": 21.4,
+   "fk_grade": 15.1
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+   "prose_words": 1896,
+   "sentences": 89,
+   "avg_sentence_len": 21.3,
+   "fk_grade": 16.7
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "prose_words": 5434,
+   "sentences": 255,
+   "avg_sentence_len": 21.3,
+   "fk_grade": 15.2
+  },
+  {
+   "file": "02_cdss-stack-augmented/harness_ml_primer.md",
+   "prose_words": 2376,
+   "sentences": 112,
+   "avg_sentence_len": 21.2,
+   "fk_grade": 15.6
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md",
+   "prose_words": 487,
+   "sentences": 23,
+   "avg_sentence_len": 21.2,
+   "fk_grade": 10.3
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md",
+   "prose_words": 972,
+   "sentences": 46,
+   "avg_sentence_len": 21.1,
+   "fk_grade": 11.7
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_C_casebundle_corpus.md",
+   "prose_words": 1342,
+   "sentences": 64,
+   "avg_sentence_len": 21.0,
+   "fk_grade": 15.4
+  },
+  {
+   "file": "02_cdss-stack-augmented/ecosystem_integration_report.md",
+   "prose_words": 396,
+   "sentences": 19,
+   "avg_sentence_len": 20.8,
+   "fk_grade": 13.7
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "prose_words": 7311,
+   "sentences": 352,
+   "avg_sentence_len": 20.8,
+   "fk_grade": 16.1
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-coder/README.md",
+   "prose_words": 83,
+   "sentences": 4,
+   "avg_sentence_len": 20.8,
+   "fk_grade": 14.7
+  },
+  {
+   "file": "09_diagrams/INDEX.md",
+   "prose_words": 353,
+   "sentences": 17,
+   "avg_sentence_len": 20.8,
+   "fk_grade": 9.6
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+   "prose_words": 1034,
+   "sentences": 50,
+   "avg_sentence_len": 20.7,
+   "fk_grade": 9.8
+  },
+  {
+   "file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "prose_words": 1209,
+   "sentences": 59,
+   "avg_sentence_len": 20.5,
+   "fk_grade": 12.4
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+   "prose_words": 1980,
+   "sentences": 97,
+   "avg_sentence_len": 20.4,
+   "fk_grade": 13.0
+  },
+  {
+   "file": "11_prompts/PROMPT-P0_primer0_launch.md",
+   "prose_words": 694,
+   "sentences": 34,
+   "avg_sentence_len": 20.4,
+   "fk_grade": 10.3
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md",
+   "prose_words": 3662,
+   "sentences": 180,
+   "avg_sentence_len": 20.3,
+   "fk_grade": 13.0
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md",
+   "prose_words": 101,
+   "sentences": 5,
+   "avg_sentence_len": 20.2,
+   "fk_grade": 14.7
+  },
+  {
+   "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "prose_words": 1954,
+   "sentences": 97,
+   "avg_sentence_len": 20.1,
+   "fk_grade": 12.2
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md",
+   "prose_words": 399,
+   "sentences": 20,
+   "avg_sentence_len": 19.9,
+   "fk_grade": 10.4
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_A_bayesian_engine.md",
+   "prose_words": 1309,
+   "sentences": 66,
+   "avg_sentence_len": 19.8,
+   "fk_grade": 14.5
+  },
+  {
+   "file": "04_hardening/HARDEN-1_coverage_ledger_seed.md",
+   "prose_words": 99,
+   "sentences": 5,
+   "avg_sentence_len": 19.8,
+   "fk_grade": 12.5
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-governance/README.md",
+   "prose_words": 79,
+   "sentences": 4,
+   "avg_sentence_len": 19.8,
+   "fk_grade": 11.8
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-harness/README.md",
+   "prose_words": 79,
+   "sentences": 4,
+   "avg_sentence_len": 19.8,
+   "fk_grade": 13.5
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-2_testing_verification_acceptance.md",
+   "prose_words": 218,
+   "sentences": 11,
+   "avg_sentence_len": 19.8,
+   "fk_grade": 12.8
+  },
+  {
+   "file": "10_regulatory-execution/REG-NZ_v1.0.md",
+   "prose_words": 892,
+   "sentences": 45,
+   "avg_sentence_len": 19.8,
+   "fk_grade": 12.0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-TXC_patient_face_launch.md",
+   "prose_words": 552,
+   "sentences": 28,
+   "avg_sentence_len": 19.7,
+   "fk_grade": 10.2
+  },
+  {
+   "file": "11_prompts/PROMPT-H_lumos_pathway_launch.md",
+   "prose_words": 274,
+   "sentences": 14,
+   "avg_sentence_len": 19.6,
+   "fk_grade": 11.8
+  },
+  {
+   "file": "10_regulatory-execution/EXEC-1_execution_directive.md",
+   "prose_words": 995,
+   "sentences": 51,
+   "avg_sentence_len": 19.5,
+   "fk_grade": 11.9
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-llm-lattice/README.md",
+   "prose_words": 97,
+   "sentences": 5,
+   "avg_sentence_len": 19.4,
+   "fk_grade": 13.5
+  },
+  {
+   "file": "AGENTS.md",
+   "prose_words": 783,
+   "sentences": 41,
+   "avg_sentence_len": 19.1,
+   "fk_grade": 11.1
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/README.md",
+   "prose_words": 76,
+   "sentences": 4,
+   "avg_sentence_len": 19.0,
+   "fk_grade": 13.2
+  },
+  {
+   "file": "11_prompts/PROMPT-J_model_governance_launch.md",
+   "prose_words": 209,
+   "sentences": 11,
+   "avg_sentence_len": 19.0,
+   "fk_grade": 13.2
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/README.md",
+   "prose_words": 74,
+   "sentences": 4,
+   "avg_sentence_len": 18.5,
+   "fk_grade": 11.9
+  },
+  {
+   "file": "11_prompts/PROMPT-A_bayesian_engine_launch.md",
+   "prose_words": 241,
+   "sentences": 13,
+   "avg_sentence_len": 18.5,
+   "fk_grade": 10.0
+  },
+  {
+   "file": "08_research/RESEARCH-1.1_findings_delta.md",
+   "prose_words": 165,
+   "sentences": 9,
+   "avg_sentence_len": 18.3,
+   "fk_grade": 8.5
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md",
+   "prose_words": 537,
+   "sentences": 30,
+   "avg_sentence_len": 17.9,
+   "fk_grade": 10.6
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-CEC_engines_launch.md",
+   "prose_words": 483,
+   "sentences": 27,
+   "avg_sentence_len": 17.9,
+   "fk_grade": 9.0
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/README.md",
+   "prose_words": 71,
+   "sentences": 4,
+   "avg_sentence_len": 17.8,
+   "fk_grade": 12.6
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+   "prose_words": 463,
+   "sentences": 26,
+   "avg_sentence_len": 17.8,
+   "fk_grade": 9.5
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md",
+   "prose_words": 528,
+   "sentences": 30,
+   "avg_sentence_len": 17.6,
+   "fk_grade": 9.0
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "prose_words": 1402,
+   "sentences": 80,
+   "avg_sentence_len": 17.5,
+   "fk_grade": 11.5
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md",
+   "prose_words": 140,
+   "sentences": 8,
+   "avg_sentence_len": 17.5,
+   "fk_grade": 8.6
+  },
+  {
+   "file": "11_prompts/PROMPT-B_evidence_library_launch.md",
+   "prose_words": 227,
+   "sentences": 13,
+   "avg_sentence_len": 17.5,
+   "fk_grade": 11.5
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "prose_words": 4321,
+   "sentences": 248,
+   "avg_sentence_len": 17.4,
+   "fk_grade": 12.5
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "prose_words": 5105,
+   "sentences": 294,
+   "avg_sentence_len": 17.4,
+   "fk_grade": 11.6
+  },
+  {
+   "file": "11_prompts/PROMPT-F_conformal_wrapper_launch.md",
+   "prose_words": 243,
+   "sentences": 14,
+   "avg_sentence_len": 17.4,
+   "fk_grade": 10.6
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corpus/README.md",
+   "prose_words": 104,
+   "sentences": 6,
+   "avg_sentence_len": 17.3,
+   "fk_grade": 13.7
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/README.md",
+   "prose_words": 86,
+   "sentences": 5,
+   "avg_sentence_len": 17.2,
+   "fk_grade": 9.6
+  },
+  {
+   "file": "02_cdss-stack-augmented/primers_briefing.md",
+   "prose_words": 324,
+   "sentences": 19,
+   "avg_sentence_len": 17.1,
+   "fk_grade": 10.7
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/MANIFEST.md",
+   "prose_words": 188,
+   "sentences": 11,
+   "avg_sentence_len": 17.1,
+   "fk_grade": 11.8
+  },
+  {
+   "file": "11_prompts/PROMPT-G_corruption_engine_launch.md",
+   "prose_words": 205,
+   "sentences": 12,
+   "avg_sentence_len": 17.1,
+   "fk_grade": 9.7
+  },
+  {
+   "file": "11_prompts/PROMPT-I_living_evaluation_launch.md",
+   "prose_words": 188,
+   "sentences": 11,
+   "avg_sentence_len": 17.1,
+   "fk_grade": 10.7
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+   "prose_words": 591,
+   "sentences": 35,
+   "avg_sentence_len": 16.9,
+   "fk_grade": 9.3
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.1.md",
+   "prose_words": 4089,
+   "sentences": 248,
+   "avg_sentence_len": 16.5,
+   "fk_grade": 11.5
+  },
+  {
+   "file": "11_prompts/PROMPT-D_content_registry_launch.md",
+   "prose_words": 212,
+   "sentences": 13,
+   "avg_sentence_len": 16.3,
+   "fk_grade": 10.3
+  },
+  {
+   "file": "11_prompts/PROMPT-E_graph_rag_launch.md",
+   "prose_words": 208,
+   "sentences": 13,
+   "avg_sentence_len": 16.0,
+   "fk_grade": 10.8
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/README.md",
+   "prose_words": 63,
+   "sentences": 4,
+   "avg_sentence_len": 15.8,
+   "fk_grade": 11.9
+  },
+  {
+   "file": "README.md",
+   "prose_words": 441,
+   "sentences": 28,
+   "avg_sentence_len": 15.8,
+   "fk_grade": 9.2
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/README.md",
+   "prose_words": 62,
+   "sentences": 4,
+   "avg_sentence_len": 15.5,
+   "fk_grade": 11.4
+  },
+  {
+   "file": "10_regulatory-execution/FOLD-1_antennae_fold_worklist.md",
+   "prose_words": 233,
+   "sentences": 15,
+   "avg_sentence_len": 15.5,
+   "fk_grade": 8.9
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT_v1.0.md",
+   "prose_words": 925,
+   "sentences": 61,
+   "avg_sentence_len": 15.2,
+   "fk_grade": 11.7
+  },
+  {
+   "file": "11_prompts/PROMPT-C_casebundle_corpus_launch.md",
+   "prose_words": 183,
+   "sentences": 12,
+   "avg_sentence_len": 15.2,
+   "fk_grade": 9.4
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/README.md",
+   "prose_words": 59,
+   "sentences": 4,
+   "avg_sentence_len": 14.8,
+   "fk_grade": 15.8
+  },
+  {
+   "file": "10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md",
+   "prose_words": 1459,
+   "sentences": 101,
+   "avg_sentence_len": 14.4,
+   "fk_grade": 12.4
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/README.md",
+   "prose_words": 57,
+   "sentences": 4,
+   "avg_sentence_len": 14.2,
+   "fk_grade": 10.7
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md",
+   "prose_words": 986,
+   "sentences": 72,
+   "avg_sentence_len": 13.7,
+   "fk_grade": 8.5
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-conformal/README.md",
+   "prose_words": 54,
+   "sentences": 4,
+   "avg_sentence_len": 13.5,
+   "fk_grade": 12.4
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-lumos/README.md",
+   "prose_words": 51,
+   "sentences": 4,
+   "avg_sentence_len": 12.8,
+   "fk_grade": 11.4
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+   "prose_words": 43,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+   "prose_words": 24,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-3_traceability_map.md",
+   "prose_words": 0,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "04_hardening/HARDEN-3_hardening_plan_worklist.md",
+   "prose_words": 30,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+   "prose_words": 25,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/assist/README.md",
+   "prose_words": 12,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/bundles/README.md",
+   "prose_words": 9,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/lift/README.md",
+   "prose_words": 13,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/sources/README.md",
+   "prose_words": 6,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/tests/README.md",
+   "prose_words": 13,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/rulebook/README.md",
+   "prose_words": 28,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/properties/README.md",
+   "prose_words": 18,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/service/README.md",
+   "prose_words": 25,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/tests/README.md",
+   "prose_words": 24,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/pipelines/README.md",
+   "prose_words": 31,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/deviation/README.md",
+   "prose_words": 11,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/ledger/README.md",
+   "prose_words": 11,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/projector/README.md",
+   "prose_words": 10,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/service/README.md",
+   "prose_words": 17,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/tests/README.md",
+   "prose_words": 17,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/tests/README.md",
+   "prose_words": 27,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/lockfile/README.md",
+   "prose_words": 26,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/rows/README.md",
+   "prose_words": 26,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/validator/README.md",
+   "prose_words": 19,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/policy/README.md",
+   "prose_words": 23,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/contracts/CONTRACT-ARG-1.pointer.md",
+   "prose_words": 19,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/north-star/README.md",
+   "prose_words": 21,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/registers/README.md",
+   "prose_words": 35,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/templates/README.md",
+   "prose_words": 26,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/tolerances/README.md",
+   "prose_words": 31,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/validator/README.md",
+   "prose_words": 43,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/components/README.md",
+   "prose_words": 7,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/conformance/README.md",
+   "prose_words": 13,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/face/README.md",
+   "prose_words": 12,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/tokens/README.md",
+   "prose_words": 11,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/android/README.md",
+   "prose_words": 16,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/capture/README.md",
+   "prose_words": 6,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/components/README.md",
+   "prose_words": 9,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/face/README.md",
+   "prose_words": 18,
+   "note": "<50 prose words \u2014 not scored"
+  },
+  {
+   "file": "CLAUDE.md",
+   "prose_words": 37,
+   "note": "<50 prose words \u2014 not scored"
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+## Reference check
+
+- dead in-repo paths: 0; unresolved anchors: 0 (the two carried v2 `MT2 §7.4` defects excluded — DEF-003); external refs: 55; globs/placeholders: 91; prompt-declared future outputs: 608; doc-id shorthand: 3

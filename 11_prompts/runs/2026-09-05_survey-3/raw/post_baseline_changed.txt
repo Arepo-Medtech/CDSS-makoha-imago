@@ -1,0 +1,8 @@
+.gitignore
+00_MANIFEST.md
+11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md
+11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md
+11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md
+AGENTS.md
+CLAUDE.md
+README.md

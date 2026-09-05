@@ -1,0 +1,80 @@
+{
+ "tool": "schema_dupes.py",
+ "assets": 41,
+ "enums_total": 16,
+ "enums_duplicated_across_files": [],
+ "pinned_strings_in_3plus_files": [
+  {
+   "string": "skeleton-proposed",
+   "files": 19,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-coder/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-conformal/MANIFEST.yaml"
+   ]
+  },
+  {
+   "string": "cdss-spine: \"[PIN NEEDS DEFINITION]\"",
+   "files": 19,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-coder/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-conformal/MANIFEST.yaml"
+   ]
+  },
+  {
+   "string": "[joins the integration lockfile pin-set \u2014 register law \u00a712.1(4)]",
+   "files": 19,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-coder/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-conformal/MANIFEST.yaml"
+   ]
+  },
+  {
+   "string": "consume cdss-spine@[PIN]; fail on contract drift (spine PR breaks consumers visibly)",
+   "files": 17,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-coder/ci/pipeline.yml",
+    "06_repositories/repo-skeletons/cdss-compiler/ci/pipeline.yml",
+    "06_repositories/repo-skeletons/cdss-conformal/ci/pipeline.yml"
+   ]
+  },
+  {
+   "string": "admissibility validator (cdss-governance shared CI action) \u2014 no card, no promotion",
+   "files": 15,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-coder/ci/pipeline.yml",
+    "06_repositories/repo-skeletons/cdss-compiler/ci/pipeline.yml",
+    "06_repositories/repo-skeletons/cdss-conformal/ci/pipeline.yml"
+   ]
+  },
+  {
+   "string": "row-completeness check on instruction-bearing artifacts (ACTIVATES on DEC-02 ratification; MT2 \u00a77(4))",
+   "files": 15,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-coder/ci/pipeline.yml",
+    "06_repositories/repo-skeletons/cdss-compiler/ci/pipeline.yml",
+    "06_repositories/repo-skeletons/cdss-conformal/ci/pipeline.yml"
+   ]
+  },
+  {
+   "string": "[per README \u2014 nothing emitted yet]",
+   "files": 4,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-fabric/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-ui-clinician/MANIFEST.yaml"
+   ]
+  },
+  {
+   "string": "[per annex bindings]",
+   "files": 4,
+   "examples": [
+    "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-fabric/MANIFEST.yaml",
+    "06_repositories/repo-skeletons/cdss-ui-clinician/MANIFEST.yaml"
+   ]
+  }
+ ]
+}

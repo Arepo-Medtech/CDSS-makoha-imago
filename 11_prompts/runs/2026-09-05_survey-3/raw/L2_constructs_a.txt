@@ -1,0 +1,51 @@
+== MET-4 G rows
+11:| G-01 fabric/GAAM: no public implementation — "the moat" | MAK-ELSM §02 | High | unchanged; Stranieri collaboration remains the named de-risk |
+12:| G-02 regulatory relabel unattested | ASSUME-REG-001/002 | High | unchanged; blocks GATE-000 |
+13:| G-03 MT2 pass unexecuted; engine uninstalled | HARDEN-1 row zero | High | narrowed: spec/plan/ledger now exist as runnable inputs; execution still zero |
+14:| G-04 patient-surface scope undecided | C-06 | Med-high | unchanged |
+15:| G-05 FZ ratification ambiguity | C-09 | Medium | unchanged |
+16:| G-06 substrate conflict | C-03 | Medium | unchanged |
+17:| G-07 PF-4 custody more build than it looks | ELSM landmines | Medium | unchanged |
+18:| G-08 HeyDoc below-README uninventoried | MET-1 §4.1 | Low-med | DEC-12 commissions the inventory |
+19:| G-09 DR/RTO/RPO, org owners, commercial thresholds | [NEEDS DEFINITION] | Low→rising | unchanged |
+20:| G-10 derived-artifact drift | complete stack/diagrams | Low | mitigated: regeneration notices + successor page shipped; rebuild queued behind DEC-01 |
+21:| G-11 (new) skill-pack count drift (24 vs 25) and 0.6.4 eval framework unmapped in directive | C-11; live README/releases | Low | row-zero reconciliation duty added (DEC-11) |
+9:| Gap | Evidence | Severity | Delta since v1.0 |
+10:|---|---|---|---|
+== RESEARCH RG rows
+08_research/RESEARCH-1_findings_gaps_source_map.md:20:| RG-01 | HeyDoc below-README clone inventory (schemas, trunk prompts, MCP servers — salvage assessment) | DEC-12 executor |
+08_research/RESEARCH-1_findings_gaps_source_map.md:21:| RG-02 | Counsel reading of the two MAK-J3 ⚑ flags (verbatim dose tables; values elicitation-display) | AU counsel |
+08_research/RESEARCH-1_findings_gaps_source_map.md:22:| RG-03 | Baseten Sydney dedicated terms in writing (ASSUME-REG-004) | Baseten |
+08_research/RESEARCH-1_findings_gaps_source_map.md:23:| RG-04 | immudb BUSL redistribution terms if C-05 ruling prefers it over the Aurora pattern | Legal |
+08_research/RESEARCH-1_findings_gaps_source_map.md:24:| RG-05 | Conformal-for-LLM literature watch before any L-capability qualifier claim (MAK-ELSM §05: "track it; do not ship ahead of it") | cdss-conformal owner |
+08_research/RESEARCH-1_findings_gaps_source_map.md:25:| RG-06 | WATCH-REG-002: TGA AI-enabled-SaMD guidance (applies from 5 Feb 2026) read against the intended-purpose statement once TASK-REG-001 exists | Regulatory owner |
+== EXEC-1 RUN rows
+== DEPLOY-1.1 DR rows
+45:| DR-1 | MT2 operator | [NEEDS DEFINITION] | DEC-10 (name the operator), DEC-11 (row-zero rule) |
+46:| DR-2 | Founder (programme) — dispatch of counsel packets; regulatory owner — packet content | [NEEDS DEFINITION] | G-09 / REG-POSTURE §12.3 (regulatory owner); DEC-22 (programme calendar) |
+47:| DR-3 | Regulatory owner (Jira/Ketryx, risk file); Architecture owner (DEC-02 registers); Infra + regulatory (DEC-03 substrate) | [NEEDS DEFINITION] | G-09; DEC-02; DEC-03; proposed DEC-23 (infra owner) |
+48:| DR-4 | Security owner (`TASK-REG-010..013`); Operations owner (`TASK-REG-014` usability programme) | [NEEDS DEFINITION] | G-09; proposed DEC-23 |
+49:| DR-5 | Architecture owner (L3 exit adjudication via Observer, Arch §13.7) | [NEEDS DEFINITION] | DEC-08 (Observer cadence) |
+50:| DR-6 | Regulatory + architecture owners (posture decision, GATE-003 evidence); NZ sponsor (`V2-S3a/b`) | [NEEDS DEFINITION] | DEC-01; DEC-19 (NZ sponsor structure); DEC-20 |
+51:| DR-7 | Regulatory owner; Founder | [NEEDS DEFINITION] | G-09; DEC-22 |
+60:| DR-1 | R29 rows (HARDENED with evidence / ESCALATED with blocker) — 100% of enumerated artifacts; MT2 §7(2) consolidated blocker report | engine tooling failure (MT2 §6); any stop-the-line rule (HARDEN-2) | R29 row (ESCALATED); operator report |
+61:| DR-2 | counsel's written opinion → `ASSUME-REG-001/002/003` ATTESTED or REFUTED with date; `TASK-REG-001` statement; claims inventory (`OBL-014`); packet dispatch receipt | counsel refuses non-device status → `SG-V1-0` fails (V1 collapses into V2 — REG-SPRINT "what would make this plan wr
+62:| DR-3 | Ketryx/Jira configured per `KTX-*` with verification evidence; risk file `TASK-REG-007` opened; DEC-03 ruling recorded; L1 exit evidence (Arch §11.2) | ceiling model shows free tier insufficient before `V1-S2` (`Q-REG-006`) → HALT-TYPED, re-plan tier; DEC-03 unruled → `TASK-REG-009`
+63:| DR-4 | controls operating with evidence per `TASK-REG-010..014`; month-4 checkpoint record (D-3) confirming or reversing `SD-02` | month-4 analytics contradict respiratory → `SD-02` reversal (low cost at month 4, high at month 7 — D-3) | R30 `GATE-002`; MET-2.1 DEC-18 |
+64:| DR-5 | L3 exit evidence (coverage within tolerance external + internal; abstention baseline; graph determinism) → R19 fork evidence | any L3 exit criterion fails → level not exited; no RUN penalty (no RUN gate here) | R25 property runs; R19 |
+65:| DR-6 | technical file producible on demand (`SG-V2-2`); WAND notification record (`V2-S3a`); first-site agreement (`V2-S3b`); `TASK-REG-015..018` evidence | `SG-V2-2` not passed → `V2-S3a` MUST NOT proceed (notifying without a producible file converts the NZ position into an ARTG liability �
+66:| DR-7 | conformity assessment certificate; ARTG inclusion (`TASK-REG-020`) | route undecided (`Q-REG-005` / `ASSUME-REG-005`) → HALT-TYPED at Phase 4 entry | R30 `GATE-004` |
+== OPS-1.1 PROC
+28:### PROC-01 — Change intake (OPS-1 §1 "All changes are Primer I events under the I8 binding table")
+37:### PROC-02 — Spine contract release (OPS-1 §1 "fabric/argument-schema (spine PR; consumers break visibly)")
+43:### PROC-03 — GenericArgument compilation release (OPS-1 §1 "registry-gateway class, pharmacist+clinician CODEOWNERS")
+48:### PROC-04 — Deviation-taxonomy change (OPS-1 §1)
+53:### PROC-05 — Register-render contract change (OPS-1 §1 "RRI-1 test mandatory")
+58:### PROC-06 — FML membership change (OPS-1 §1 "AF-5-governed per FZ-4 — dormant")
+61:### PROC-07 — IMPL dispatch and Observer adjudication (OPS-1 §2)
+66:### PROC-08 — Regulated work-item tracking and tool validation (OPS-1 §3, faithful to REG-POSTURE §5–§6)
+71:### PROC-09 — Integrator instructions (OPS-1 §4)
+78:### PROC-10 — Gated regulated pipeline split from synthetic push-to-deploy (`TASK-REG-010`) and SBOM → Ketryx (`TASK-REG-011`)
+83:### PROC-11 — Vulnerability handling, CVSS and CAPA (`TASK-REG-012`); supplier assessments (`TASK-REG-013`)
+88:### PROC-12 — Usability engineering ×3 surfaces (`TASK-REG-014`) and post-market / adverse-event readiness (`TASK-REG-017`, `OBL-002`)
+== SEC-2 TM

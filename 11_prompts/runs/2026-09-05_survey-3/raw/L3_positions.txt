@@ -1,0 +1,41 @@
+== Observer: Arch 13.7
+### 13.7 Observer instantiation (CDSS-specific)
+Admissible evidence: registers R1–R24 plus proposed R25–R27; CI artifacts; checkpoint aggregate results; deployment records. Prohibitions: the Observer never holds EVAL credentials, never reads casebundle content, and rules from R21/R9 aggregate rows only; an adjudication that touched corpus content is void. Cadence: one adjudication per level exit plus a standing quarterly review from L4; each adjudication names its successor date and required evidence (protocol: `observer_adjudication.md`).
+
+### 13.8 Validator wiring
+== Observer: OPS-1 §2
+10:IMPL sessions dispatch from R26; Observer adjudicates level exits from registers only (never corpus content; adjudications touching corpus content are void); validate_build_plan.py on every ECOSYSTEM-V2 block change; namespace law extended {FAB, UIC, UIP, GPP} (Proposed).
+12:Jira = regulated work-item tracker; Ketryx free tier from the Ketryx schema (KTX-001), strict risk (KTX-011), minimal V-model (KTX-010); free tier ⇒ tool validation carried in-house until the GATE-003 tier decision (WATCH-REG-004). Nimbalyst: pre-regulatory authoring surface only; **no Jira shim** (a translator between two things already sharing git adds a validated-tool obligation and breaks
+== Observer: REG-POSTURE 5.3
+25:  - Build Ecosystem v2.0 (Implementer Contract, Observer adjudication)
+711:- **Observer independence.** The shared workspace, context graph and searchable
+712:  session history make it easy to accidentally give the Observer the builder's
+840:- The Build Ecosystem v2.0 Implementer Contract and Observer adjudication protocol
+== Observer: GOV-1
+7:Retained: register owners per Arch §12.2; Observer prohibitions (§13.7) and cadence (per-level minimum; quarterly-from-L4 proposed, DEC-08); PR gateways with pharmacist+clinician CODEOWNERS; freshness monitor + correction pipeline loops (Arch §5); negative audits as scheduled jobs from L5 (now 
+== R25 positions
+330:Production at every level and in every repository is tracked through named registers (28 as of the Ecosystem-v2.0 ratification; R25–R28 entered by ratification recorded in the Integration Report). The principle, st
+450:| Evidence + Assumptions Ledgers (I10/I11; engineering claims only) | **Proposed R25 — Build Evidence & Assumptions Ledger** · owner `cdss-spine` · opens L1 · versioned · writers: recon/IMPL reports · readers:
+455:Clinical numbers remain solely under E1/E2/E3 and their sign-off flags; `E:*` tags ground engineering claims only. Negative-audit law §12.1(5) now extends to ecosystem IDs (R25–R27 ratified): an unregistered TASK 
+481:Admissible evidence: registers R1–R24 plus proposed R25–R27; CI artifacts; checkpoint aggregate results; deployment records. Prohibitions: the Observer never holds EVAL credentials, never reads casebundle content
+09_diagrams/register_topology_v3.mermaid:2:%% v3 successor to register_topology_v2.mermaid (preserved unedited): fixes the MT2 citation notation `§7.4` → `§7(4)` (00_MANIFEST §5 DEF-002 item nota
+09_diagrams/register_topology_v3.mermaid:6:    R25["R25 property runs<br/>(label under ruling — BSQ-0602)"]; R26["R26 build work"]; R27["R27 drift & adjudication"]
+02_cdss-stack-augmented/primer_A_bayesian_engine.md:138:**8. Gaps and register proposals.** GAP-A-001 → RESOLVED by ratification: engine property-run outputs home in **R25** (Arch §12.2).
+02_cdss-stack-augmented/primer_A_bayesian_engine.md:153:| Evidence to collect | R1 version stamps on every trace; R25 property-run outputs (I-1/2); adjudication records for any engine change (R12) |
+== coder / Guideline Compiler: MAK-FFC EN-3
+394:### EN-3 (MUST)
+463:| Ontology freeze | The ICSD-2 failure: knowledge plane fossilizes while medicine moves | EN-2/EN-3 recompilation path; SPINE-5 versioning; AF-5 feedback loop generating change pressure from practice |
+493:| Layered computable-guideline artifacts and national adaptation model for LMIC deployment | WHO SMART Guidelines (Lancet Digit. Health 2021; smart.who.int starter kit v2) | PF-7, EN-3, XC-3/4 |
+377:| Guideline Compiler | Narrative guideline → operational logic → computable artifacts (FHIR CPG / CQL; WHO SMART machine-readable layer) → GenericArgument templates with evidence-tier backing per warrant node | WHO SMART layer model; SPINE-
+395:**Statement:** The Guideline Compiler is the only path by which clinical logic enters the engine plane: narrative → computable → GenericArgument, with authorship, evidence tier, and ratification recorded per warrant node. Hand-coded rules out
+678:| Guideline Compiler → GenericArgument (EN-3) | ON | Warrant type restricted to `guideline-rule` (GPP-9) |
+== W-namespace: HARDEN-3 W rows
+11:| Wave | Tasks | Why this order |
+13:| W0 | T-000 row zero: install whole pack; confirm inventory vs live repo (C-11); record output | nothing starts befo
+14:| W1 | T-001..003: spine contracts — CONTRACT-ARG-1, CONTRACT-DEV-1, CONTRACT-RRI-1; T-004 R29 schema; T-005 R30 sc
+15:| W2 | T-010 MAK-FFC (+Annex J-3); T-011 MANIFEST | host law before anything that cites it |
+16:## W1 — Fold the annex
+21:## W2 — Re-run the carrier map (AN-5)
+33:## W3 — Log the signals (AN-6, additive to Part 4)
+38:## W4 — Range-endpoint re-check (DEF-REG-001 discipline)
+44:## W5 — Seal checks

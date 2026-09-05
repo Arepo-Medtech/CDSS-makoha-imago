@@ -1,0 +1,21 @@
+{
+ "tool": "depth.py",
+ "files": 271,
+ "histogram": {
+  "0": 5,
+  "1": 127,
+  "2": 43,
+  "3": 43,
+  "4": 53
+ },
+ "threshold": 4,
+ "exceeding": [],
+ "at_threshold": [
+  "06_repositories/repo-skeletons/cdss-coder/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-compiler/assist/README.md",
+  "06_repositories/repo-skeletons/cdss-compiler/bundles/README.md",
+  "06_repositories/repo-skeletons/cdss-compiler/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-compiler/lift/README.md",
+  "\u2026"
+ ]
+}

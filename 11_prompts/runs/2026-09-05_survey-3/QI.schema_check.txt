@@ -1,0 +1,7 @@
+check_schema: OK (Draft 2020-12); properties: 35 allOf conditions: 10
+warning+confidence                 -> valid
+warning+scorer_failed              -> valid
+warning+both (must FAIL)           -> INVALID (1)
+warning+neither (must FAIL)        -> INVALID (1)
+critical w=3 (must FAIL)           -> INVALID (1)
+optimisation no confidence (ok)    -> valid

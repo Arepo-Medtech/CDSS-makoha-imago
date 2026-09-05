@@ -1,0 +1,196 @@
+{
+ "run": "2026-09-05_survey-3",
+ "commit": "99e47f39e799be7a9e15dfefbce03396f88698f3",
+ "files_in_scope": 271,
+ "depth_histogram": {
+  "0": 5,
+  "1": 127,
+  "2": 43,
+  "3": 43,
+  "4": 53
+ },
+ "depth_exceeding": 0,
+ "markdown": {
+  "total": 194,
+  "with_frontmatter": 110,
+  "without_by_why": {
+   "retained-original": 22,
+   "corpus-companion": 4,
+   "skeleton-banner": 55,
+   "root-governance": 3
+  },
+  "omissions": [],
+  "missing_core_keys": 11,
+  "date_field_variants": {
+   "date": 93,
+   "date_issued": 8,
+   "guidance_currency_date": 6
+  },
+  "doc_id_repeats": [
+   "REG-NZ",
+   "REG-POSTURE"
+  ],
+  "ladder_skips": 2,
+  "tables_inconsistent": 0
+ },
+ "references": {
+  "dead_paths": 0,
+  "unresolved_anchors": 0,
+  "external": 55,
+  "globs": 91,
+  "future_outputs": 608,
+  "shorthand": 3
+ },
+ "graph": {
+  "reachable_from_README": 271,
+  "classes": {
+   "DESIGN-LINKED": 174,
+   "LEDGER-OR-INDEX-ONLY": 97
+  },
+  "orphans_total": 97,
+  "orphans_06_exempt": 90,
+  "orphan_candidates": [
+   "05_registers-and-contracts/CONTRACT-DEV-1.examples.jsonl",
+   "05_registers-and-contracts/CONTRACT-DEV-1.schema.json",
+   "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+   "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md",
+   "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+   "11_prompts/PROMPT-PRM-SERIES_index.md"
+  ]
+ },
+ "ids": {
+  "families": 155,
+  "minted": 2194,
+  "mixed_padding": [
+   "T",
+   "A",
+   "GPP",
+   "RG",
+   "E",
+   "B",
+   "NDG",
+   "AN",
+   "EX",
+   "M"
+  ],
+  "never_declared": [
+   "A",
+   "D",
+   "ELSM",
+   "DEC",
+   "C",
+   "E",
+   "G",
+   "B",
+   "M",
+   "P",
+   "RECON-CEC",
+   "RECON-LEG",
+   "RECON-RWC",
+   "DEF",
+   "RECON-ABC",
+   "RECON-ANT",
+   "RECON-HDC",
+   "RECON-LBP",
+   "RECON-PRB",
+   "RECON-TXC",
+   "RECON-A",
+   "RECON-B",
+   "RECON-D",
+   "RECON-E",
+   "RECON-HX",
+   "RECON-LWC",
+   "RECON-C",
+   "RECON-F",
+   "RECON-G",
+   "RECON-H",
+   "RECON-I",
+   "RECON-J",
+   "RECON-K",
+   "RECON-L",
+   "W",
+   "J",
+   "EXEC"
+  ]
+ },
+ "readability": {
+  "scored": 154,
+  "median_asl": 22.1,
+  "median_fk": 13.2,
+  "over_asl_35": 9
+ },
+ "style": {
+  "pages": 19,
+  "implied_colours": 28,
+  "pages_with_drift": 3
+ },
+ "schema": {
+  "assets": 41,
+  "enums": 16,
+  "dup_enums": 0
+ },
+ "placeholders": {
+  "NEEDS DEFINITION": 557,
+  "NEEDS SOURCE": 19,
+  "UNAVAILABLE": 2,
+  "PENDING-VALIDATOR": 46,
+  "PENDING-REGISTER-HOME": 6,
+  "PENDING-ENUMERATION": 7
+ },
+ "census_rows": {
+  "total": 59,
+  "valid": 59,
+  "by_severity": {
+   "WARNING": 18,
+   "OPTIMISATION": 29,
+   "NONE": 11,
+   "CRITICAL": 1
+  },
+  "by_layer": {
+   "L1-STRUCTURE": 18,
+   "L2-REPLETENESS": 15,
+   "L3-SEMANTICS": 17,
+   "L4-IMPECCABLE": 9
+  },
+  "by_class": {
+   "ID-SUPERSESSION-RULE-ABSENT": 1,
+   "FRONTMATTER-SCHEMA-GAP": 6,
+   "ORPHAN-IN-DESIGN-GRAPH": 7,
+   "TABLE-OR-LADDER-DEFECT": 2,
+   "PRESENT-IMPECCABLE": 10,
+   "PHASE-MAPPING-GAP": 5,
+   "ID-LIFECYCLE-GAP": 2,
+   "TAXONOMY-CONFLICT": 4,
+   "TAXONOMY-DUPLICATE": 2,
+   "GOVERNANCE-GAP": 1,
+   "PROPOSED-ADDITION": 1,
+   "READABILITY-DENSE": 9,
+   "SCHEMA-HARDCODE": 1,
+   "STYLE-DRIFT": 3,
+   "FORM-DEVIATION": 4,
+   "TOOL-UNAVAILABLE": 1
+  },
+  "by_folder": {
+   "CHAIN": 9,
+   "00": 3,
+   "05": 11,
+   "06": 4,
+   "07": 6,
+   "10": 6,
+   "11": 4,
+   "01": 7,
+   "03": 2,
+   "08": 1,
+   "09": 3,
+   "04": 2,
+   "02": 1
+  },
+  "by_executability": {
+   "EXECUTABLE-AFTER-DECISION": 4,
+   "CLAUDE-CODE-EXECUTABLE-NOW": 42,
+   "CORPUS-OWNER": 1,
+   "NONE": 12
+  }
+ }
+}

@@ -1,0 +1,5 @@
+QI.jsonl rows 174 valid 174 invalid 0 []
+severity {'WARNING': 17, 'OPTIMISATION': 46, 'NONE': 104, 'CRITICAL': 7}
+state {'OPEN': 170, 'DISMISSED-NOT-BLOCKING': 4}
+CRITICAL <80 confidence: []
+calibrated rows 15

@@ -1,0 +1,285 @@
+{
+"CHAIN": [
+{
+"artifact_path": "DEC-02",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "CRITICAL",
+"statement": "Ratify R29 + R30 into Arch \u00a712.2 \u2014 until closed every register-home cell in this run's ID lifecycle table is 'Proposed' and no impeccability verdict on 04_/05_ can be more than WITH-DECISIONS-PENDING.",
+"evidence": "MET-2 DEC-02 'Open'; INDEX-04 \u00a74; INDEX-05 \u00a74",
+"weight": 5,
+"criticality": 2,
+"radius": 3,
+"blocks": [
+"R29/R30 existence",
+"register homes for T-nnn, R29-row and every R30.3 row",
+"05_ MOVE to cdss-spine"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Architecture owner",
+"decision_ref": "DEC-02 (MET-2)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "DEC-09",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "CRITICAL",
+"statement": "Name repo owners and namespace prefixes \u2014 98 of 275 ledger owner cells and 22 component-owner cells resolve on this decision.",
+"evidence": "HARDEN-1.1 owner distribution (awk): 98 'Repo owner per REPO-MAP (DEC-09) [NEEDS DEFINITION]'; MET-2 DEC-09 Open",
+"weight": 5,
+"criticality": 2,
+"radius": 3,
+"blocks": [
+"98 HARDEN owner cells",
+"REPO-MAP v3",
+"cdss-compiler primer (BSQ-0391)"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Programme lead [NEEDS DEFINITION]",
+"decision_ref": "DEC-09 (MET-2)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "DEC-10",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "CRITICAL",
+"statement": "Name the MT2 operator and accept the row-zero rule \u2014 41 ledger owner cells and the whole hardening pass wait on it.",
+"evidence": "HARDEN-1.1: 30 + 11 'MT2 operator (DEC-10) [NEEDS DEFINITION]'; PROMPT-HARDEN precondition 1",
+"weight": 5,
+"criticality": 2,
+"radius": 3,
+"blocks": [
+"W0 \u2192 all waves",
+"PROMPT-HARDEN start",
+"code freeze"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Programme lead / Founder [NEEDS DEFINITION]",
+"decision_ref": "DEC-10 / DEC-11 (MET-2)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "DEC-22",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "CRITICAL",
+"statement": "Adopt EXEC-1 precedence and the run map \u2014 every timeline cell this run credits (RUN-0..4, DR-1..7) is in force only on this decision.",
+"evidence": "MET-2.1 DEC-22 'Open \u2014 adopting v1.2 as working set closes it'",
+"weight": 5,
+"criticality": 2,
+"radius": 3,
+"blocks": [
+"RUN-0 start",
+"DEPLOY-1.1 / IMAGO-4 v2 in force"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Founder (programme)",
+"decision_ref": "DEC-22 (MET-2.1)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "G-09",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "CRITICAL",
+"statement": "Name the regulatory, infra, security and operations owners \u2014 the person-level cell behind every 07_/10_ owner placeholder and the ratifier of the REG-TASK-OWNERS companion.",
+"evidence": "MET-4 G-09 '[NEEDS DEFINITION] Low\u2192rising'; REG-POSTURE \u00a712.3; DEPLOY-1.1 DR-2..7 '[NEEDS DEFINITION]'",
+"weight": 4,
+"criticality": 2,
+"radius": 2,
+"blocks": [
+"regulatory owner cells \u00d715 (HARDEN-1.1)",
+"REG-POSTURE owner field (\u00a712.3)",
+"infra RTO/RPO/DR",
+"TASK-REG owner map ratification (QI-0018)"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Founder",
+"decision_ref": "G-09 / proposed DEC-23 (MET-4; A-004)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "DEC-08",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "WARNING",
+"statement": "Ratify the Observer cadence (quarterly from L4, proposed) \u2014 the one open cell in the otherwise consistent Observer definition (L3 T-3).",
+"evidence": "MET-2 DEC-08 'Open (pre-existing)'; GOV-1:7",
+"weight": 3,
+"criticality": 2,
+"radius": 1,
+"blocks": [
+"Observer cadence text in Arch \u00a713.7 / GOV-1 / OPS-1"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Architecture owner",
+"decision_ref": "DEC-08 (MET-2)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "DEC-13",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "CRITICAL",
+"statement": "MAK-GOV namespace and the non-device first-revenue decision \u2014 the NDG verification gap (L2 matrix) and BSQ-0707 stay open on these.",
+"evidence": "MET-2.1 DEC-13/DEC-14 Open; INDEX-10 \u00a74",
+"weight": 4,
+"criticality": 2,
+"radius": 2,
+"blocks": [
+"MAK-GOV integration delta (BSQ-0707)",
+"NDG verification cells",
+"cdss-compiler primer"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Architecture owner; Founder + advisor",
+"decision_ref": "DEC-13 / DEC-14 (MET-2.1)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+},
+{
+"artifact_path": "DEC-01",
+"label": [
+"GAP / DECISION REGISTER"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-08",
+"Q-D-11"
+],
+"finding_class": "DECISION-PENDING",
+"severity": "WARNING",
+"statement": "Ratify the C-01 relabel portfolio-wide \u2014 the STYLE-DRIFT successor page (v4) should be produced in the same regeneration run, not before it.",
+"evidence": "MET-2 DEC-01 Open; INDEX-09 \u00a74",
+"weight": 3,
+"criticality": 2,
+"radius": 1,
+"blocks": [
+"regeneration of derived artifacts (PROC-09-REGEN)",
+"IMAGO-3 v4 / cdss_diagrams_v4"
+],
+"executability": "HUMAN-ONLY",
+"owner": "Regulatory + architecture owners",
+"decision_ref": "DEC-01 (MET-2)",
+"attribution": "PRE-EXISTING",
+"confidence": 100,
+"confidence_reason": "state read from MET-2/MET-2.1 register rows; OPEN by register"
+}
+],
+"00": [
+{
+"artifact_path": "00_inventory.txt",
+"label": [
+"MANIFEST / INVENTORY"
+],
+"layer": "L2-REPLETENESS",
+"q_lines": [
+"Q-D-11",
+"Q-D-17",
+"P-D-02"
+],
+"finding_class": "GOVERNANCE-GAP",
+"severity": "WARNING",
+"statement": "00_inventory.txt is an 82-line byte inventory with no header, date, status or supersession statement; 13 of its byte counts differ from disk and 16 of its paths no longer exist (the 03_ volumes moved under corpus-md/; merged_runtime renamed), while 202 tracked in-scope files are not listed. README says 'the tracked tree is authoritative', but the file itself makes a currency claim it cannot honour and says nothing about being a v1.1-build snapshot.",
+"evidence": "raw/inventory_drift.txt: 82 lines; equal 53; size drift 13; missing 16; not listed 202. git show 73460b3:MET-2 | wc -c = 6414 = disk \u2192 drifts predate the seal (no append-only breach). README l.40\u201341 'The manifest's own file count describes the v1.1 build\u2026 the tracked tree is authoritative'; 00_MANIFEST \u00a71 cites '84 files'",
+"weight": 3,
+"criticality": 1,
+"radius": 2,
+"blocks": [
+"any reader who takes the inventory as current",
+"00_MANIFEST \u00a74.1 preservation audit lineage"
+],
+"executability": "CLAUDE-CODE-EXECUTABLE-NOW",
+"owner": "Manifest owner [NEEDS DEFINITION]",
+"attribution": "PRE-EXISTING",
+"confidence": 95,
+"confidence_reason": "every number is command output; the absence of a header is the file's first line",
+"observed_state": "undated snapshot presented as an inventory",
+"target_state": "a successor `00_inventory_v1.3.txt` regenerated from `git ls-files` with a header line (`# inventory of main@<sha>, <date>; bytes path; the tracked tree is authoritative`) and an A-008 row marking the v1.1 file as retained snapshot",
+"exemplar_path": "11_prompts/runs/2026-09-05_survey-3/CHECKSUMS_BEFORE.txt (form: one line per file, generated, dated by run)",
+"remediation_draft": "# 00_inventory_v1.3.txt \u2014 regenerated from `git ls-files` at main@<sha> on <date>; bytes<TAB>path; the tracked tree is authoritative (README); 00_inventory.txt (v1.1 build, 2026-09-01) retained as snapshot\\n$ git ls-files | grep -v '^11_prompts/runs/\\|^\\.' | while read p; do printf '%s\\t%s\\n' \"$(wc -c < \"$p\")\" \"$p\"; done",
+"build_spec": {
+"target_path": "00_inventory_v1.3.txt (root) + 00_MANIFEST A-008 row",
+"class_plines": "MANIFEST / INVENTORY; P-D-02, P-D-13",
+"mandatory_sections": [
+"header line with sha, date, rule",
+"one line per tracked in-scope file"
+],
+"inputs": [
+"git ls-files"
+],
+"laws": "append-only (new file); the v1.1 file untouched",
+"evidence_to_capture": "line count = scope count pasted",
+"acceptance_test": "every in-scope path present once; header present",
+"closes_rows": [],
+"harden_linkage": "HARDEN-1.2 row (debt)",
+"ratifying_owner": "Manifest owner",
+"depends_on": "\u2014"
+}
+}
+]
+}

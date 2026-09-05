@@ -1,0 +1,363 @@
+{
+ "tool": "style_census.py",
+ "pages": 19,
+ "rows": [
+  {
+   "page": "02_cdss-stack-augmented/cdss_diagrams.html",
+   "bytes": 40939,
+   "hex_colours": 8,
+   "px_rem_values": 11,
+   "font_families": [
+    "Georgia"
+   ],
+   "media_queries": 0,
+   "external_stylesheets": 0,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 8
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html",
+   "bytes": 47691,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+   "bytes": 73598,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html",
+   "bytes": 75122,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/degrees-of-truth.html",
+   "bytes": 29290,
+   "hex_colours": 28,
+   "px_rem_values": 36,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 1,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/execution-sourcing-map.html",
+   "bytes": 27577,
+   "hex_colours": 28,
+   "px_rem_values": 36,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 1,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/four-faces-corpus.html",
+   "bytes": 74971,
+   "hex_colours": 28,
+   "px_rem_values": 40,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 3,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/head-corpus.html",
+   "bytes": 47348,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+   "bytes": 36914,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/left-wing-corpus.html",
+   "bytes": 74223,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html",
+   "bytes": 35234,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/makoha-in-flight.html",
+   "bytes": 26599,
+   "hex_colours": 24,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 3,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/proboscis-corpus.html",
+   "bytes": 36862,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html",
+   "bytes": 104573,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/sleep-tools-dossier.html",
+   "bytes": 34998,
+   "hex_colours": 26,
+   "px_rem_values": 39,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/stranieri-dossier.html",
+   "bytes": 27003,
+   "hex_colours": 26,
+   "px_rem_values": 36,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "03_makoha-butterfly-corpus/artifacts-html/thorax-corpus.html",
+   "bytes": 46148,
+   "hex_colours": 28,
+   "px_rem_values": 38,
+   "font_families": [
+    "IBM Plex Mono",
+    "Source Sans 3",
+    "Spectral"
+   ],
+   "media_queries": 2,
+   "external_stylesheets": 1,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 0
+  },
+  {
+   "page": "09_diagrams/cdss_diagrams_v2.html",
+   "bytes": 7219,
+   "hex_colours": 7,
+   "px_rem_values": 12,
+   "font_families": [
+    "Georgia"
+   ],
+   "media_queries": 0,
+   "external_stylesheets": 0,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 7
+  },
+  {
+   "page": "09_diagrams/cdss_diagrams_v3.html",
+   "bytes": 10917,
+   "hex_colours": 7,
+   "px_rem_values": 12,
+   "font_families": [
+    "Georgia"
+   ],
+   "media_queries": 0,
+   "external_stylesheets": 0,
+   "style_blocks": 1,
+   "drift_colours_not_in_implied": 7
+  }
+ ],
+ "implied_token_set": {
+  "threshold_pages": 8,
+  "colours": [
+   "#14181f",
+   "#1b212b",
+   "#1c2330",
+   "#222a37",
+   "#2a3450",
+   "#2e6b4f",
+   "#323a49",
+   "#35477d",
+   "#3a3122",
+   "#4a5468",
+   "#77819a",
+   "#7fc2a3",
+   "#8791a3",
+   "#8c3b3b",
+   "#9a5b2d",
+   "#a0752f",
+   "#a3b3e3",
+   "#aab3c5",
+   "#d3a06b",
+   "#d3a55c",
+   "#d98a8a",
+   "#d9dde5",
+   "#dfe4f0",
+   "#e6e9f0",
+   "#eef0f4",
+   "#f2e8d5",
+   "#f6f7f9",
+   "#ffffff"
+  ],
+  "sizes": [
+   "1px",
+   "2px",
+   "3px",
+   "4px",
+   "5px",
+   "6px",
+   "7px",
+   "8px",
+   "10px",
+   "11px",
+   "11.5px",
+   "12px",
+   "12.5px",
+   "13px",
+   "13.5px",
+   "14px",
+   "14.5px",
+   "15px",
+   "15.5px",
+   "16px",
+   "17px",
+   "18px",
+   "19px",
+   "20px",
+   "21px",
+   "22px",
+   "24px",
+   "26px",
+   "28px",
+   "30px",
+   "34px",
+   "48px",
+   "56px",
+   "64px",
+   "90px",
+   "100px",
+   "620px",
+   "800px"
+  ],
+  "fonts": [
+   "IBM Plex Mono",
+   "Source Sans 3",
+   "Spectral"
+  ]
+ }
+}

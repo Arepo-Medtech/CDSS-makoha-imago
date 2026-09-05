@@ -1,0 +1,415 @@
+{
+"ROOT": {
+"intro": "ROOT = `README.md`, `AGENTS.md`, `CLAUDE.md` (`.gitignore` excluded from scope; `00_inventory.txt` and `00_MANIFEST.md` are folder 00). Governance text outside the 00_\u201311_ append-only law; judged for terminology consistency, reference integrity and governance statements.",
+"owner": "Owner: Ken Lee (README Provenance)",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"README 'Layout' + 'Laws of the corpus' = the root briefing; AGENTS.md restates the laws for agents"
+],
+[
+"Q-F-02",
+"PASS",
+"README Layout table = folder-level index; 00_MANIFEST \u00a71"
+],
+[
+"Q-F-04",
+"PASS",
+"README 'How to change it'; AGENTS.md 'How work lands'"
+],
+[
+"Q-F-05",
+"N/A",
+"no INDEX/delta at root"
+]
+],
+"verdict": "IMPECCABLE (every applicable line PASS; the GLOSSARY.md proposal is a CHAIN row, not a root defect)"
+},
+"00": {
+"intro": "Folder 00 = `00_MANIFEST.md` (the manifest, appended by amendment) and `00_inventory.txt` (a v1.1-build byte inventory).",
+"owner": "Manifest owner [NEEDS DEFINITION]",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"00_MANIFEST \u00a71\u2013\u00a73 briefs the whole repository"
+],
+[
+"Q-F-02",
+"PASS",
+"\u00a71 + A-001..A-007 rows equal disk (render_index self-audits per folder; this run's count 271 reconciled in CENSUS)"
+],
+[
+"Q-F-04",
+"FAIL",
+"\u00a76 placeholder census stale (QI-0023); the inventory file states no status (row below)"
+],
+[
+"Q-F-05",
+"PASS",
+"amendment form uniform"
+]
+],
+"verdict": "BELOW-STANDARD (WARNING rows QI-0023 and the inventory row; no CRITICAL) \u2014 remedied by one appended amendment A-008"
+},
+"01": {
+"intro": "01_ = MET-1 v1.0 (retained) + MET-1.1, MET-2 + MET-2.1, MET-3, MET-4. No INDEX (survey-2 P-F-02 ruling: MET-1 \u00a716 is the parent; 00_MANIFEST \u00a71 row).",
+"owner": "Architecture owner",
+"qf": [
+[
+"Q-F-01",
+"PASS (MET-1 \u00a71)",
+"executive summary serves as briefing (survey-2)"
+],
+[
+"Q-F-02",
+"PARTIAL",
+"no INDEX; MET-1 \u00a716 + 00_MANIFEST \u00a71 list the six files; HARDEN rows exist for all six"
+],
+[
+"Q-F-03",
+"FAIL",
+"MET-4 roadmap without owner/verification cells (QI-0016)"
+],
+[
+"Q-F-04",
+"PARTIAL",
+"status lines carry honesty; owner of the folder's cadence unstated"
+],
+[
+"Q-F-05",
+"FAIL",
+"MET-1.1/MET-2.1 delta form (QI-0052/0053)"
+]
+],
+"verdict": "BELOW-STANDARD \u2014 1 CRITICAL (MET-4), 3 WARNING (MET-2 closure column; C/DEC/G declaration; via CHAIN rows); remedy = MET-4.1 + MET-2.2 (two files)"
+},
+"02": {
+"intro": "02_ = 21 retained CDSS originals (byte-exact + annex) + primers_briefing (companion). Retained-verbatim: measured on companion set and retention honesty (law 5); Layer 3/4 readings reported, not filed as edits.",
+"owner": "Architecture owner / component owners per primer [NEEDS DEFINITION \u2014 DEC-09]",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"primers_briefing.md Part 1/2"
+],
+[
+"Q-F-02",
+"PASS",
+"primers_briefing 'Non-primer files' + 00_MANIFEST \u00a71/\u00a74.2 (21 files)"
+],
+[
+"Q-F-04",
+"PASS",
+"annex banners ('Pure append; zero edits'); \u00a74.4 honesty"
+],
+[
+"Q-F-05",
+"PASS",
+"X1\u2013X10 skeleton uniform (survey-2 / RUN-REPORT)"
+]
+],
+"verdict": "IMPECCABLE-WITH-DECISIONS-PENDING (Q-D-13 glossary anchor drift is a CHAIN row; cdss_diagrams.html drift dismissed as retained; R25/W rulings pending: BSQ-0602/0711)"
+},
+"03": {
+"intro": "03_ = corpus MANIFEST, briefing, 15 corpus volumes, 16 artifact pages, 10 butterfly primers + primer 0 + RUN-REPORT + programme prompt. Zero edits permitted; every remedy is CORPUS-OWNER.",
+"owner": "Corpus owner (03_ MANIFEST precedence)",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"corpus_artifacts_briefing.md"
+],
+[
+"Q-F-02",
+"PASS",
+"03_ MANIFEST table (15 volumes + 2 dossiers); butterfly-primers/RUN-REPORT R1 (10 primers)"
+],
+[
+"Q-F-04",
+"PASS",
+"MANIFEST 'Precedence in one paragraph'; change_policy per volume"
+],
+[
+"Q-F-05",
+"PASS",
+"corpus spine 15/15; primer X1\u2013X10 10/10 (survey-2)"
+]
+],
+"verdict": "IMPECCABLE-WITH-DECISIONS-PENDING \u2014 the two prefix collisions (RG, CC) touch corpus families and need the Corpus owner's alias ruling; one ladder skip and one ELSM declaration note are CORPUS-OWNER OPTIMISATION"
+},
+"04": {
+"intro": "04_ = MT2 (retained), HARDEN-1/1.1, HARDEN-2/2.1, HARDEN-3/3.1, INDEX-04.",
+"owner": "MT2 operator (DEC-10) [NEEDS DEFINITION]",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-04 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"INDEX-04 \u00a72 = 8 files"
+],
+[
+"Q-F-03",
+"PASS",
+"PROMPT-HARDEN named (decision-gated)"
+],
+[
+"Q-F-04",
+"PASS",
+"INDEX-04 \u00a74"
+],
+[
+"Q-F-05",
+"PASS",
+"ladder; deltas exemplary"
+]
+],
+"verdict": "IMPECCABLE-WITH-DECISIONS-PENDING \u2014 no folder-level defect; the CC prefix collision is a CHAIN row with an alias-law draft; DEC-02/10/11 pending"
+},
+"05": {
+"intro": "05_ = contracts (ARG-1, DEV-1, RRI-1), schemas + examples, R29 (schema json/md, examples, R29.1), R30 (schema+seed md, R30.1/2, schema json, R30.3 jsonl), INDEX-05.",
+"owner": "Architecture owner (DEC-02) / cdss-spine; R30: cdss-governance",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-05 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"INDEX-05 \u00a72 = 16 files"
+],
+[
+"Q-F-04",
+"PASS",
+"INDEX-05 \u00a73 reading rule + \u00a74"
+],
+[
+"Q-F-05",
+"PARTIAL",
+"R30.1/R30.2 delta form (QI-0054); R29.1 minor"
+]
+],
+"verdict": "BELOW-STANDARD (3 ORPHAN WARNING candidates at confidence 60 \u2192 resolve in Phase 3; else OPTIMISATION only) \u2014 if the three orphans read as cited, the folder is IMPECCABLE-WITH-DECISIONS-PENDING (DEC-02/09)"
+},
+"06": {
+"intro": "06_ = REPO-MAP v2, INDEX-06, 96 skeleton files in 19 trees.",
+"owner": "Repo owner per REPO-MAP (DEC-09) [NEEDS DEFINITION]",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-06 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"INDEX-06 \u00a72 (19 trees) + \u00a73 (96 files)"
+],
+[
+"Q-F-03",
+"PASS",
+"instantiation via primers; REPO-MAP v3 after DEC-09"
+],
+[
+"Q-F-04",
+"PASS",
+"INDEX-06 \u00a74/\u00a75 (13 unbannered files recorded \u2014 DEF-004)"
+],
+[
+"Q-F-05",
+"PASS",
+"stub form uniform (the SCHEMA-HARDCODE row is the same fact seen from Layer 3)"
+]
+],
+"verdict": "IMPECCABLE-WITH-DECISIONS-PENDING (DEC-09) \u2014 REPO-MAP readability and the template hard-codes are OPTIMISATION"
+},
+"07": {
+"intro": "07_ = DEPLOY-1/2, GOV-1, OPS-1, SEC-1 (1 Sep), DEPLOY-1.1, OPS-1.1, SEC-2 (sprint-1), INDEX-07.",
+"owner": "Operations / security / regulatory owners [NEEDS DEFINITION \u2014 G-09]",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-07 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"INDEX-07 \u00a72 = 9 files"
+],
+[
+"Q-F-03",
+"PASS",
+"INDEX-07 \u00a73 precedence; DR table"
+],
+[
+"Q-F-04",
+"PARTIAL",
+"person-level owners [NEEDS DEFINITION] (HUMAN-ONLY, survey-2)"
+],
+[
+"Q-F-05",
+"PASS",
+"ladder; deltas exemplary"
+]
+],
+"verdict": "BELOW-STANDARD \u2014 1 WARNING (SEC-2 TM owner/verification cells, QI-0019) + readability OPTIMISATION (SEC-1, GOV-1); remedy SEC-2.1"
+},
+"08": {
+"intro": "08_ = RESEARCH-1, RESEARCH-1.1, INDEX-08.",
+"owner": "Research author; RG owners per RESEARCH-1 \u00a73",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-08 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"3 files"
+],
+[
+"Q-F-04",
+"PASS",
+"closure path stated"
+],
+[
+"Q-F-05",
+"PASS",
+"RESEARCH-1.1 exemplary delta"
+]
+],
+"verdict": "BELOW-STANDARD only through the RG prefix collision (CHAIN WARNING) \u2014 otherwise IMPECCABLE; RG trigger column is OPTIMISATION"
+},
+"09": {
+"intro": "09_ = 7 mermaid sources (incl. v2/v3 successors, data_flow_v1), 2 derived pages, INDEX-09.",
+"owner": "Architecture owner (PROC-09-REGEN)",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-09 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"10 files"
+],
+[
+"Q-F-03",
+"PASS",
+"PROC-09-REGEN"
+],
+[
+"Q-F-04",
+"PASS",
+"\u00a74 defects carried; DEC-01 gate"
+],
+[
+"Q-F-05",
+"PASS",
+"header comments on every source"
+]
+],
+"verdict": "IMPECCABLE-WITH-DECISIONS-PENDING (R25 label BSQ-0602; DEC-01) \u2014 STYLE-DRIFT on the two pages is OPTIMISATION with a v4 successor draft"
+},
+"10": {
+"intro": "10_ = EXEC-1, FOLD-1, REG-POSTURE v1.1/v1.2 (+CONTENTS), REG-NZ v1.0/v1.1, REG-US, REG-EU, MAK-GOV, REG-SPRINT v1.0/1.1/1.2, validate_reg.py, INDEX-10. ADVISORY_ONLY throughout.",
+"owner": "Regulatory owner [NEEDS DEFINITION \u2014 G-09]",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"INDEX-10 \u00a71"
+],
+[
+"Q-F-02",
+"PASS",
+"15 files"
+],
+[
+"Q-F-03",
+"PASS",
+"EXEC-1 RUN map; packets assembled"
+],
+[
+"Q-F-04",
+"PARTIAL",
+"regulatory owner [NEEDS DEFINITION] (HUMAN-ONLY, survey-2); supersession rule stated (EX-3)"
+],
+[
+"Q-F-05",
+"PARTIAL",
+"REG-SPRINT-1.1/1.2 lack supersedes (minor)"
+]
+],
+"verdict": "BELOW-STANDARD \u2014 WARNING rows: task owner/evidence cells (QI-0018 REGULATORY), doc_id rule (CHAIN), two ORPHAN candidates (confidence 60); W-namespace after decision"
+},
+"11": {
+"intro": "11_ = 31 launch/survey prompts + 2 indexes; run directories excluded. Judged as PROMPT class (role/laws/phases/output contract/eval pack; paths exist; indexed).",
+"owner": "MT2 operator (DEC-10) / prompt author",
+"qf": [
+[
+"Q-F-01",
+"PASS",
+"PROMPT-SERIES_A-L_index + PROMPT-PRM-SERIES_index headers"
+],
+[
+"Q-F-02",
+"PASS",
+"A-004 indexed 11_; every prompt has a HARDEN-1.1 row"
+],
+[
+"Q-F-04",
+"PASS",
+"each prompt's status honesty; run-directory convention"
+],
+[
+"Q-F-05",
+"PASS",
+"PROMPT-SERIES form; 3.1/3.2 delta form exemplary"
+]
+],
+"verdict": "BELOW-STANDARD only through two ORPHAN candidates (PROMPT-FOLD-1, PRM-SERIES index; confidence 60) and the T-nn label overlap \u2014 otherwise IMPECCABLE"
+},
+"CHAIN": {
+"intro": "CHAIN = cross-folder findings: doc_id supersession rule, prefix collisions (RG, CC), W-namespace, glossary anchor and GLOSSARY.md proposal, frontmatter key aliases, INDEX form (PRESENT), mermaid tool, and the DECISION-PENDING rows that gate impeccability across folders.",
+"owner": "Architecture owner / Programme lead [NEEDS DEFINITION]",
+"qf": [
+[
+"Q-F-05",
+"PASS",
+"7/7 INDEX ladders identical"
+],
+[
+"Q-D-05 (tree)",
+"FAIL",
+"doc_id supersession rule absent (QI-0001)"
+],
+[
+"Q-D-12 (tree)",
+"FAIL",
+"RG/CC collisions; W namespace; R25 label"
+],
+[
+"Q-D-13",
+"FAIL",
+"no consolidated glossary; anchor drift"
+],
+[
+"Q-D-17 (tree)",
+"FAIL",
+"frontmatter key aliases without rule"
+]
+],
+"verdict": "BELOW-STANDARD \u2014 6 WARNING rows, all with drafted alias laws / schema; no CRITICAL; closes when MET-2.2 + GLOSSARY + 00_FRONTMATTER.schema land and the Architecture owner rules R25/W"
+}
+}
