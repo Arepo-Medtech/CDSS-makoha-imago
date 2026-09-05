@@ -1,0 +1,11 @@
+release spine|21|13
+SPINE-|1092|115
+coder|432|56
+Guideline Compiler|47|26
+Observer|168|48
+property runs|20|18
+Build Evidence|12|7
+property-run|7|5
+Implementer Contract|59|31
+IMPL|70|36
+GLOSSARY\|Glossary\|glossary|26|13

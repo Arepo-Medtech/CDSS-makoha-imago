@@ -1,0 +1,2227 @@
+{
+ "tool": "idgrammar.py",
+ "families": 155,
+ "total_minted": 2194,
+ "families_with_mixed_padding": [
+  "T",
+  "A",
+  "GPP",
+  "RG",
+  "E",
+  "B",
+  "NDG",
+  "AN",
+  "EX",
+  "M"
+ ],
+ "families_never_declared": [
+  "A",
+  "D",
+  "ELSM",
+  "DEC",
+  "C",
+  "E",
+  "G",
+  "B",
+  "M",
+  "P",
+  "RECON-CEC",
+  "RECON-LEG",
+  "RECON-RWC",
+  "DEF",
+  "RECON-ABC",
+  "RECON-ANT",
+  "RECON-HDC",
+  "RECON-LBP",
+  "RECON-PRB",
+  "RECON-TXC",
+  "RECON-A",
+  "RECON-B",
+  "RECON-D",
+  "RECON-E",
+  "RECON-HX",
+  "RECON-LWC",
+  "RECON-C",
+  "RECON-F",
+  "RECON-G",
+  "RECON-H",
+  "RECON-I",
+  "RECON-J",
+  "RECON-K",
+  "RECON-L",
+  "W",
+  "J",
+  "EXEC"
+ ],
+ "rows": [
+  {
+   "family": "T",
+   "minted": 300,
+   "minting_files": 4,
+   "top_file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "padding_forms": {
+    "3d": 276,
+    "2d": 24
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+    "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ],
+   "register_home": "HARDEN-3.1 (self; R29 on DEC-02)"
+  },
+  {
+   "family": "TASK-REG",
+   "minted": 70,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 70
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "STD",
+   "minted": 55,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 55
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "OBL",
+   "minted": 47,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 47
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "SRC-REG",
+   "minted": 45,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 45
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "REG-FIND",
+   "minted": 42,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 42
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "A",
+   "minted": 42,
+   "minting_files": 4,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.1.md",
+   "padding_forms": {
+    "1d": 27,
+    "2d": 15
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "10_regulatory-execution/REG-NZ_v1.1.md",
+    "10_regulatory-execution/REG-POSTURE_v1.1.md",
+    "10_regulatory-execution/REG-POSTURE_v1.2.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "D",
+   "minted": 37,
+   "minting_files": 10,
+   "top_file": "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   "padding_forms": {
+    "1d": 37
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "04_hardening/HARDEN-3.1_task_register_delta.md",
+    "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "GPP",
+   "minted": 34,
+   "minting_files": 4,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+   "padding_forms": {
+    "1d": 20,
+    "2d": 14
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+    "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "ELSM",
+   "minted": 33,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "2d": 33
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "DEC",
+   "minted": 32,
+   "minting_files": 3,
+   "top_file": "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+   "padding_forms": {
+    "2d": 32
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ],
+   "register_home": "MET-2/MET-2.1"
+  },
+  {
+   "family": "RG",
+   "minted": 31,
+   "minting_files": 5,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 9,
+    "2d": 22
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+    "08_research/INDEX.md",
+    "08_research/RESEARCH-1_findings_gaps_source_map.md"
+   ],
+   "register_home": "RESEARCH-1.1 / INDEX-08 \u00a73"
+  },
+  {
+   "family": "ASSUME-REG",
+   "minted": 31,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 31
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "Q-REG",
+   "minted": 30,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 30
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "SPINE",
+   "minted": 28,
+   "minting_files": 4,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 28
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EU-STD",
+   "minted": 27,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 27
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-STD",
+   "minted": 27,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 27
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "C",
+   "minted": 26,
+   "minting_files": 3,
+   "top_file": "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+   "padding_forms": {
+    "2d": 26
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ],
+   "register_home": "MET-2/MET-2.1"
+  },
+  {
+   "family": "NZ-STD",
+   "minted": 26,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 26
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "KTX",
+   "minted": 25,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 25
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "E",
+   "minted": 25,
+   "minting_files": 3,
+   "top_file": "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+   "padding_forms": {
+    "2d": 22,
+    "1d": 3
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+    "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "WATCH-REG",
+   "minted": 24,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "3d": 24
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "NZ-OBL",
+   "minted": 23,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 23
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "CC",
+   "minted": 22,
+   "minting_files": 4,
+   "top_file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "padding_forms": {
+    "1d": 22
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+    "04_hardening/HARDEN-2_hardening_spec.md"
+   ],
+   "register_home": "HARDEN-2.1"
+  },
+  {
+   "family": "EN",
+   "minted": 22,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 22
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "G",
+   "minted": 21,
+   "minting_files": 2,
+   "top_file": "01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md",
+   "padding_forms": {
+    "2d": 21
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md"
+   ],
+   "register_home": "MET-4"
+  },
+  {
+   "family": "DR",
+   "minted": 21,
+   "minting_files": 1,
+   "top_file": "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+   "padding_forms": {
+    "1d": 21
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "DEPLOY-1.1"
+  },
+  {
+   "family": "B",
+   "minted": 21,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "padding_forms": {
+    "1d": 20,
+    "2d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+    "10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md",
+    "10_regulatory-execution/REG-POSTURE_v1.2.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "NZ-FIND",
+   "minted": 21,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 21
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "CF",
+   "minted": 20,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 20
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PF",
+   "minted": 20,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 20
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AF",
+   "minted": 20,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 20
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "US-SRC",
+   "minted": 19,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 19
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "TM",
+   "minted": 18,
+   "minting_files": 1,
+   "top_file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "padding_forms": {
+    "2d": 18
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "SEC-2"
+  },
+  {
+   "family": "NZ-TASK",
+   "minted": 18,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 18
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "NZ-SRC",
+   "minted": 18,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 18
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-REG",
+   "minted": 17,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 17
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "REG-KEEP",
+   "minted": 16,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "padding_forms": {
+    "3d": 16
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "EU-FIND",
+   "minted": 16,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 16
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "EU-OBL",
+   "minted": 16,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 16
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-FIND",
+   "minted": 16,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 16
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "NDG",
+   "minted": 14,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md",
+   "padding_forms": {
+    "1d": 9,
+    "2d": 5
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "EU-LAW",
+   "minted": 14,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 14
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "EU-SRC",
+   "minted": 14,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 14
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-OBL",
+   "minted": 14,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 14
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "FZ",
+   "minted": 13,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/degrees-of-truth_v1.0.md",
+   "padding_forms": {
+    "1d": 13
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AN",
+   "minted": 13,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 10,
+    "2d": 3
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "HR",
+   "minted": 13,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 13
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "HA",
+   "minted": 13,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 13
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EU-TASK",
+   "minted": 13,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 13
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-TASK",
+   "minted": 13,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 13
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "PROC",
+   "minted": 12,
+   "minting_files": 1,
+   "top_file": "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md",
+   "padding_forms": {
+    "2d": 12
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "OPS-1.1"
+  },
+  {
+   "family": "SD",
+   "minted": 12,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "padding_forms": {
+    "2d": 12
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [
+    "10_regulatory-execution/REG-SPRINT-1.1_delta.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "HW",
+   "minted": 11,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 11
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "HG",
+   "minted": 11,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 11
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "TW",
+   "minted": 11,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 11
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "TR",
+   "minted": 11,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 11
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "TA",
+   "minted": 11,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 11
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "TL",
+   "minted": 11,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 11
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EX",
+   "minted": 11,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/EXEC-1_execution_directive.md",
+   "padding_forms": {
+    "1d": 10,
+    "2d": 1
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "M",
+   "minted": 11,
+   "minting_files": 1,
+   "top_file": "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   "padding_forms": {
+    "1d": 9,
+    "2d": 2
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FS",
+   "minted": 10,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 10
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FE",
+   "minted": 10,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 10
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "MS",
+   "minted": 10,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 10
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "XC",
+   "minted": 10,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 10
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+    "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "P",
+   "minted": 10,
+   "minting_files": 2,
+   "top_file": "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+   "padding_forms": {
+    "2d": 10
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-CEC",
+   "minted": 9,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+   "padding_forms": {
+    "3d": 9
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FP",
+   "minted": 9,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 9
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "ME",
+   "minted": 9,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 9
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "TC",
+   "minted": 9,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 9
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "NZ-ASSUME",
+   "minted": 9,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 9
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "NZ-Q",
+   "minted": 9,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 9
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "OM",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 8
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "DX",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 8
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-LEG",
+   "minted": 8,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md",
+   "padding_forms": {
+    "3d": 8
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FC",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 8
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FA",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 8
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-RWC",
+   "minted": 8,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md",
+   "padding_forms": {
+    "3d": 8
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "MC",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 8
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "MA",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 8
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "NZ-WATCH",
+   "minted": 8,
+   "minting_files": 2,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 8
+   },
+   "declared_in_files": 2,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "DEF",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "00_MANIFEST.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "00_MANIFEST.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-ABC",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-ANT",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "CP",
+   "minted": 7,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-HDC",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-LBP",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "CS",
+   "minted": 7,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-PRB",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PS",
+   "minted": 7,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PA",
+   "minted": 7,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "MP",
+   "minted": 7,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-TXC",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EU-WATCH",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-WATCH",
+   "minted": 7,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 7
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "RECON-A",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_A_bayesian_engine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-B",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_B_evidence_library.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-D",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_D_content_registry.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-E",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_E_graph_rag.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-HX",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/harness_ml_primer.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AL",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AR",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AT",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "QU",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AD",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "HT",
+   "minted": 6,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "HE",
+   "minted": 6,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "CV",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "CI",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "CA",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-LWC",
+   "minted": 6,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PV",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PC",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PI",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "MX",
+   "minted": 6,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "TE",
+   "minted": 6,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/thorax-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+    "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EU-ASSUME",
+   "minted": 6,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "EU-Q",
+   "minted": 6,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "SG-V2",
+   "minted": 6,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "padding_forms": {
+    "1d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-ASSUME",
+   "minted": 6,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-Q",
+   "minted": 6,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 6
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "AG",
+   "minted": 5,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 5
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AX",
+   "minted": 5,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 5
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "AE",
+   "minted": 5,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 5
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "LS",
+   "minted": 5,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 5
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "L6",
+   "minted": 5,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 5
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-C",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_C_casebundle_corpus.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-F",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_F_conformal_wrapper.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-G",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_G_corruption_engine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-H",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_H_lumos_pathway.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-I",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_I_living_evaluation.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-J",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_J_model_governance.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-K",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_K_llm_augmentation.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RECON-L",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "02_cdss-stack-augmented/cdss_complete_stack.md",
+    "02_cdss-stack-augmented/primer_L_runtime_llm.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "W",
+   "minted": 4,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "L1",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "L2",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "L3",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "L4",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "L5",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FX",
+   "minted": 4,
+   "minting_files": 2,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "RRI",
+   "minted": 4,
+   "minting_files": 1,
+   "top_file": "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md",
+   "padding_forms": {
+    "1d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EU-GATE",
+   "minted": 4,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "US-GATE",
+   "minted": 4,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-US_v1.0.md",
+   "padding_forms": {
+    "3d": 4
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "J",
+   "minted": 3,
+   "minting_files": 3,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "padding_forms": {
+    "1d": 3
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+    "10_regulatory-execution/REG-POSTURE_v1.1.md",
+    "10_regulatory-execution/REG-POSTURE_v1.2.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "EXEC",
+   "minted": 3,
+   "minting_files": 3,
+   "top_file": "10_regulatory-execution/EXEC-1_execution_directive.md",
+   "padding_forms": {
+    "1d": 3
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "10_regulatory-execution/EXEC-1_execution_directive.md",
+    "10_regulatory-execution/FOLD-1_antennae_fold_worklist.md",
+    "10_regulatory-execution/INDEX.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "NZ-GATE",
+   "minted": 3,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "padding_forms": {
+    "3d": 3
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "SG-V1",
+   "minted": 3,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "padding_forms": {
+    "1d": 3
+   },
+   "declared_in_files": 1,
+   "undeclared_in_files": [],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "FORK-REG",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "padding_forms": {
+    "3d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "GATE",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "padding_forms": {
+    "3d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md"
+   ],
+   "register_home": "R30.3"
+  },
+  {
+   "family": "MET",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/EXEC-1_execution_directive.md",
+   "padding_forms": {
+    "1d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "10_regulatory-execution/EXEC-1_execution_directive.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "FOLD",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "10_regulatory-execution/INDEX.md",
+   "padding_forms": {
+    "1d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "10_regulatory-execution/INDEX.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "PRM",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md",
+   "padding_forms": {
+    "1d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "HARDEN",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+   "padding_forms": {
+    "1d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md"
+   ],
+   "register_home": "\u2014"
+  },
+  {
+   "family": "SURVEY",
+   "minted": 1,
+   "minting_files": 1,
+   "top_file": "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+   "padding_forms": {
+    "1d": 1
+   },
+   "declared_in_files": 0,
+   "undeclared_in_files": [
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md"
+   ],
+   "register_home": "\u2014"
+  }
+ ]
+}

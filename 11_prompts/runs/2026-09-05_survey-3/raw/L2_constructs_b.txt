@@ -1,0 +1,168 @@
+== REG-POSTURE TASK-REG rows (backtick-tolerant)
+175:| `TASK-REG-nnn` | Sequenced work item | DONE-with-evidence or typed HALT |
+874:| `TASK-REG-001` | Write the intended purpose statement. One document, one claim. Everything downstream depends on it. Include the three surfaces explicitly and what each does. | `GATE-000` |
+875:| `TASK-REG-002` | Engage Australian regulatory counsel for a written classification opinion: medical device status, classification rule and class, exemption eligibility (expected: not eligible), conformity assessment route. *
+876:| `TASK-REG-003` | Reconcile public positioning. The site currently markets AI capability. Under an inclusion path this is fine and stops being a liability — but the claims must match the intended purpose statement exactly, 
+877:| `TASK-REG-004` | Decide the patient surface. Separate product, non-decision-support, or in-scope for the same submission. Each has different consequences. | `GATE-000` |
+878:| `TASK-REG-021` **[NEW v1.1]** | Triage the live demo surface: inventory the third-party AI provider as a supplier (`OBL-013`), confirm the disclosure is accurate, and decide whether the conversational surface remains public 
+879:| `TASK-REG-022` **[NEW v1.1]** | Decide the jurisdiction sequence (`Q-REG-008`). The north star names low-resource settings; the posture is Australia-only; J-3's jurisdiction map already spans TGA, FDA and EU MDR. An unstated
+880:| `TASK-REG-023` **[NEW v1.2]** | Governance Layer classification. Put the non-device question to counsel inside the single `TASK-REG-002` engagement (`ASSUME-REG-009`, `Q-REG-010`): does software that analyses documented clin
+897:| `TASK-REG-005` | Adopt Jira. Ketryx free tier. One project, synthetic scope. | `GATE-001` |
+898:| `TASK-REG-006` | Configure from the Ketryx schema (`KTX-001`). Risk module strict mode on (`KTX-011`). Traceability V-model configured minimally (`KTX-010`). **[AMENDED v1.1]** Model the configuration-item ceiling first (§6
+899:| `TASK-REG-007` | Stand up the ISO 14971 risk file. This is the spine everything else hangs from — before requirements, before design controls. | `GATE-001` |
+900:| `TASK-REG-008` | Requirements from the intended purpose statement, tagged with `Relevant standards` against Essential Principles (`KTX-008`). | `GATE-001` |
+901:| `TASK-REG-009` | Migrate inference to Baseten Sydney, dedicated deployment, pinned weights. Get version-stability and change-notice commitments in the contract (`ASSUME-REG-004`). **[AMENDED v1.1] Blocked on DEC-03.** If DEC
+902:| `TASK-REG-024` **[NEW v1.2 — recommendation]** | Decide the QMS certification route (`Q-REG-011`): (a) TGA conformity assessment of the QMS directly; (b) MDSAP audit by a recognised auditing organisation, accepted by TGA a
+912:| `TASK-REG-010` | Split the Amplify path: synthetic/demo continues push-to-deploy; regulated releases go through a gated pipeline with approval landing as a CI artifact. **[AMENDED v1.1]** Per `REG-FIND-011`, the gate must be
+913:| `TASK-REG-011` | SBOM generation in CI, flowing into Ketryx supply chain management (`KTX-012`, `OBL-004`). | `GATE-002` |
+914:| `TASK-REG-012` | Vulnerability handling and disclosure processes (`STD-009`), with CVSS scoring and CAPA linkage (`OBL-008`). | `GATE-002` |
+915:| `TASK-REG-013` | Supplier assessments — Baseten or Bedrock per DEC-03, AWS, and any third-party AI provider on a public surface (`OBL-005`, `OBL-006`, `OBL-013`). | `GATE-002` |
+916:| `TASK-REG-014` | IEC 62366-1 use-related risk analysis (`STD-004`). Three surfaces, three analyses. The patient surface is hardest; do it last but do not skip it. | `GATE-002` |
+927:| `TASK-REG-015` | Clinical evidence and validation — the Lumos linkage pathway. Longest lead item in the programme; started in parallel from Phase 1, not sequentially. **[AMENDED v1.1]** Now load-bearing rather than merely 
+928:| `TASK-REG-016` | Independent penetration testing, by a party outside the development team (`OBL-007`). | `GATE-003` |
+929:| `TASK-REG-017` | Post-market surveillance procedures, adverse event reporting readiness (`OBL-002`). | `GATE-003` |
+930:| `TASK-REG-018` | Ketryx tier upgrade for validated-out-of-the-box status and post-market surveillance features (`WATCH-REG-004`, `STD-013`). | `GATE-003` |
+939:| `TASK-REG-019` | Conformity assessment application. Route per counsel opinion (`Q-REG-005`). | `GATE-004` |
+940:| `TASK-REG-020` | ARTG inclusion. | `GATE-004` |
+1118:| `TASK-REG-021`, `TASK-REG-022` | Phase 0 plans; C-10 and `Q-REG-008` owners |
+1138:| `TASK-REG-024`, `Q-REG-011` | EXEC-1 RUN-1 row; MET-2 decision table |
+== REG-POSTURE GATE definitions
+31:  - GATE-000
+87:| **[confidence: high / medium / low]** | Author's confidence that the item is correctly stated and currently in force; low-confidence items must be re-anchored to a primary source before `GATE-000
+92:structure `GATE-000..004`, `TASK-REG-001..022` and `KTX-001..012` stand. Nothing in
+108:| A-3 | Synthetic-data posture corrected. TGA AI guidance indicates synthetic data will generally **not** substitute for clinical data as safety-and-performance evidence. v1.0 `REG-KEEP-004` was s
+158:GATE-000 blocks all Phase 1 work.
+487:| `REG-KEEP-004` | Synthetic-only until controls operate | Unchanged as a *control* commitment. **[AMENDED v1.1]** Explicitly **not** a validation-evidence commitment — see `REG-FIND-010`. Synth
+864:| `Q-REG-001`-adjacent | **Jurisdiction mapping.** Vendor states templates and traceability views are customer-authored (Word/Excel templates over a query language) and that an Essential Principle
+882:**`GATE-000`:** counsel opinion in hand; `ASSUME-REG-001`, `ASSUME-REG-002` and
+885:gate `GATE-000`: it gates MAK-GOV `GATE-G0` / REG-SPRINT `SG-V1-0`. A refusal on the
+888:> **[AMENDED v1.1] Interim rule pending `GATE-000`.** Patient-face work beyond the
+904:**`GATE-001`:** risk file exists, requirements traced, model version pinned **by
+918:**`GATE-002`:** controls operating. **This is the line before any identifiable
+920:**[AMENDED v1.1]** Passing `GATE-002` is what makes clinical data collection lawful;
+921:it is not itself evidence that the device works. That is `GATE-003`.
+== ASSUME-REG rows
+170:| `ASSUME-REG-nnn` | Assumption requiring external closure | Written attestation from named party |
+686:| `ASSUME-REG-004` | Baseten Sydney region available on dedicated deployment with contractual version-stability and change-notice terms | OPEN — closes on written confirmation from Baseten; **an
+862:| `ASSUME-REG-006` note | **Validation package.** Vendor validates continuously (each version built inside an already-validated version); each major/minor release produces a customer-shareable, ve
+961:| `ASSUME-REG-001` | Mākoha's device classification and applicable classification rule | AU regulatory counsel | `GATE-000` | OPEN |
+962:| `ASSUME-REG-002` | CDSS exemption is unavailable to Mākoha (`REG-FIND-001` confirmed) | AU regulatory counsel | `GATE-000` | OPEN |
+963:| `ASSUME-REG-003` | Patient surface treatment — separate product, non-decision-support, or in-scope. **Interim rule: work beyond the J-3-safe subset is Blocked** (DEC-07) | Counsel + product | 
+964:| `ASSUME-REG-004` | Baseten Sydney region on dedicated deployment, with version-stability and change-notice terms | Baseten | `GATE-001` | OPEN — conditional on DEC-03 |
+965:| `ASSUME-REG-005` | Conformity assessment route (TGA vs notified body) | AU regulatory counsel | `GATE-004` | OPEN |
+966:| `ASSUME-REG-006` | Ketryx tier and validation package timing | Ketryx | `GATE-003` | OPEN |
+967:| `ASSUME-REG-007` | Lumos linkage ethics and custodian requirements | Data custodian | `GATE-003` | OPEN — **[AMENDED v1.1]** engagement starts Phase 0 given `REG-FIND-010` |
+968:| `ASSUME-REG-008` **[NEW v1.1]** | J-3 / GPP exempt-tier eligibility as specified, including resolution of its two outstanding legal flags | AU regulatory counsel | DEC-06; `FORK-REG-001` | OPEN 
+969:| `ASSUME-REG-009` **[NEW v1.2]** | The Governance Layer (MAK-GOV) is **not a medical device** under s41BD and is not an accessory to Mākoha — organisational-conformance analysis with no clinic
+1120:| `ASSUME-REG-008`, `Q-REG-009` | MAK-J3; DEC-06 |
+== NZ-TASK / NZ-GATE
+51:| A-4 | Gates given IDs. v1.0 used `NZ-GATE-0/1/2` in prose without a definition table or prefix registration. | Validator discipline | `NZ-GATE-000..002`; `id_prefixes` |
+65:| **[confidence: high / medium / low]** | Author's confidence the item is correctly stated and currently in force; low-confidence items must be re-anchored before `NZ-GATE-000` |
+90:| `NZ-TASK-nnn` | Sequenced work item | DONE-with-evidence or typed HALT |
+408:| `NZ-GATE-000` | Decide | `NZ-TASK-001..004` | Counsel attested; sponsor decided; conflict cleared; timing modelled |
+409:| `NZ-GATE-001` | File and controls | `NZ-TASK-005..007`, `NZ-TASK-009` | Technical file complete (§6); post-market system operating; privacy and Māori-data assessments cleared |
+410:| `NZ-GATE-002` | Notify and supply | `NZ-TASK-008`, `NZ-TASK-010` | Notified; first supply — the two events are separable and are gated separately (`NZ-TASK-008` then `NZ-TASK-010`) |
+412:`NZ-GATE-001` is deliberately equivalent in substance to the Australian controls gate
+420:| `NZ-TASK-001` | Engage New Zealand regulatory counsel. Confirm `NZ-FIND-001..012`, the notification window, sponsor structure, expected classification, and `NZ-Q-004`. | `NZ-GATE-000` |
+421:| `NZ-TASK-002` | Resolve the sponsor question: Arepo NZ entity vs contracted sponsor. Cost, control and liability differ materially. | `NZ-GATE-000` |
+422:| `NZ-TASK-003` | Declare the registrar/director conflict to the employer; obtain written position before any commercial conversation in-country. | `NZ-GATE-000` |
+423:| `NZ-TASK-004` | Model the Medical Products Bill timing against technical-file readiness (`NZ-WATCH-001`, `NZ-ASSUME-005`). Decide whether NZ-first survives the analysis. | `NZ-GATE-000` |
+424:| `NZ-TASK-005` | NZ privacy, health information and Māori data sovereignty assessment — Privacy Impact Assessment against the Health Information Privacy Code 2020; data-residency decision for 
+425:| `NZ-TASK-006` | Technical file assembled to §6, from the standards in §5. **[AMENDED v1.1]** This is the same set of artifacts the Australian conformity assessment consumes, produced once and 
+426:| `NZ-TASK-007` | Post-market system operating **before** supply: complaints, adverse events, recall capability (`NZ-FIND-008`). | `NZ-GATE-001` |
+427:| `NZ-TASK-008` | WAND notification, at the earliest lawful point after `NZ-GATE-001` (`NZ-Q-004`). | `NZ-GATE-002` |
+428:| `NZ-TASK-009` **[NEW v1.1]** | Specify and test the SaMD post-market mechanisms named in `NZ-OBL-007`: complaint channel, adverse-event triage and Medsafe reporting SOP, remote disablement / for
+429:| `NZ-TASK-010` **[NEW v1.1]** | First New Zealand commercial site, on commercial readiness and independent of `NZ-TASK-008` timing. HISO / procurement security questionnaire (`NZ-OBL-011`) and da
+439:| `NZ-ASSUME-001` | The notification window and its trigger point | NZ counsel | `NZ-GATE-000` | OPEN |
+440:| `NZ-ASSUME-002` | Mākoha's NZ classification and whether any WAND exemption applies | NZ counsel | `NZ-GATE-000` | OPEN |
+441:| `NZ-ASSUME-003` | Sponsor structure and liability allocation | NZ counsel | `NZ-GATE-000` | OPEN |
+== US/EU TASK+GATE
+10_regulatory-execution/REG-EU_v1.0.md:65:| `EU-TASK-nnn` | Sequenced work item | DONE-with-evidence or typed HALT |
+10_regulatory-execution/REG-EU_v1.0.md:320:| `EU-GATE-000` | EU-capable foundations | `EU-TASK-001..004` | Technical documentation Annex II-indexable; GSPR checklist alive; AI Act 
+10_regulatory-execution/REG-EU_v1.0.md:321:| `EU-GATE-001` | EU decision and notified body engaged | `EU-TASK-005..008` | Counsel attested; NB selected (MDR + AI Act designation) a
+10_regulatory-execution/REG-EU_v1.0.md:322:| `EU-GATE-002` | Certification | `EU-TASK-009..012` | QMS certificate and technical documentation assessment complete; AI Act conformity
+10_regulatory-execution/REG-EU_v1.0.md:323:| `EU-GATE-003` | EU market | `EU-TASK-013` | Placed on the market in named Member States with language-compliant IFU; PMS/PSUR/vigilance
+10_regulatory-execution/REG-EU_v1.0.md:329:| `EU-TASK-001` | Index the technical documentation to Annex II headings alongside the Medsafe STED index and the Australian EP checklist
+10_regulatory-execution/REG-EU_v1.0.md:330:| `EU-TASK-002` | Capture AI Act Annex IV / Article 10 content from the first training or tuning run: data provenance, selection criteria
+10_regulatory-execution/REG-EU_v1.0.md:331:| `EU-TASK-003` | Design automatic logging (Article 12) into the runtime: per-inference record of model version, inputs summary, output, 
+10_regulatory-execution/REG-EU_v1.0.md:332:| `EU-TASK-004` | Clinical evidence protocol (NZ/AU) written with EU applicability in mind: population description against EU demographic
+10_regulatory-execution/REG-EU_v1.0.md:338:| `EU-TASK-005` | Engage EU regulatory counsel; put `EU-ASSUME-001..006` to them with the intended purpose statement, classification rati
+10_regulatory-execution/REG-EU_v1.0.md:339:| `EU-TASK-006` | Notified body selection: designated for MDR software codes **and** under the AI Act; pre-application dialogue on class 
+10_regulatory-execution/REG-EU_v1.0.md:340:| `EU-TASK-007` | Appoint Authorised Representative (mandate per Article 11(3)); designate PRRC (Article 15); register actor in EUDAMED (
+10_regulatory-execution/REG-EU_v1.0.md:341:| `EU-TASK-008` | GDPR: appoint EU representative (Art 27); DPIA; Article 28 processor terms; Chapter V transfer mechanism for Australian
+10_regulatory-execution/REG-EU_v1.0.md:342:| `EU-TASK-009` | Clinical Evaluation Report to MDCG 2020-1; PMCF plan; PMS plan; PSUR template. | `EU-GATE-002` |
+10_regulatory-execution/REG-EU_v1.0.md:343:| `EU-TASK-010` | Cyber documentation to MDCG 2019-16: secure lifecycle evidence (EN IEC 81001-5-1), threat model, security risk manageme
+10_regulatory-execution/REG-EU_v1.0.md:344:| `EU-TASK-011` | AI Act conformity package integrated with the MDR file: risk management (Art 9 within ISO 14971 file), data governance 
+10_regulatory-execution/REG-EU_v1.0.md:345:| `EU-TASK-012` | UDI assignment (Basic UDI-DI, UDI-DI); EU Declaration of Conformity; CE marking; EUDAMED device registration; Member-St
+10_regulatory-execution/REG-EU_v1.0.md:346:| `EU-TASK-013` | Post-market operating: vigilance procedures with 15/10/2-day clocks; trend reporting; PSUR cadence (annual if IIb); PMC
+10_regulatory-execution/REG-EU_v1.0.md:356:| `EU-ASSUME-001` | Mākoha is MDSW under Rule 11, Class IIb (planning) / IIa (floor); no exemption or lower tier available | EU counsel 
+10_regulatory-execution/REG-EU_v1.0.md:357:| `EU-ASSUME-002` | Mākoha is a high-risk AI system under AI Act Article 6(1) / Annex I point 11, with the notified body performing the 
+10_regulatory-execution/REG-EU_v1.0.md:358:| `EU-ASSUME-003` | Conformity assessment route: Annex IX Chapters I and III (QMS + technical documentation) | NB | `EU-GATE-001` | OPEN 
+10_regulatory-execution/REG-EU_v1.0.md:359:| `EU-ASSUME-004` | NZ/AU clinical evidence to ISO 14155 is acceptable for the CER without an EU confirmatory investigation, subject to p
+10_regulatory-execution/REG-EU_v1.0.md:360:| `EU-ASSUME-005` | Arepo acts as processor (not controller) for EU clinical customers; Article 22 is satisfied by the clinician decision
+10_regulatory-execution/REG-US_v1.0.md:43:> reading the primary before `US-GATE-000`.**
+10_regulatory-execution/REG-US_v1.0.md:64:| `US-TASK-nnn` | Sequenced work item | DONE-with-evidence or typed HALT |
+10_regulatory-execution/REG-US_v1.0.md:328:| `US-GATE-000` | US-capable foundations | `US-TASK-001..004` | Records, SBOM, clinical-evidence design and documentation structure are U
+10_regulatory-execution/REG-US_v1.0.md:329:| `US-GATE-001` | US decision and Pre-Sub | `US-TASK-005..008` | Counsel attested; Pre-Sub held; pathway, documentation level and PCCP sc
+10_regulatory-execution/REG-US_v1.0.md:330:| `US-GATE-002` | Submission | `US-TASK-009..012` | De Novo / 510(k) submitted with PCCP; US Agent and registration in place |
+10_regulatory-execution/REG-US_v1.0.md:331:| `US-GATE-003` | US market | `US-TASK-013` | Granted/cleared; listed; postmarket system operating with US timeframes |
+10_regulatory-execution/REG-US_v1.0.md:337:| `US-TASK-001` | Make every design-control record Part 11-capable from the first artifact: unique attribution, MFA-backed e-signature wi
+== REG-SPRINT-1.2 rows
+29:| ID | Defined at (source location) | Definition shape | R30.3 status (verbatim at source) | Owner role | Exit gate / blocks |
+31:| `V1-S0` | REG-SPRINT v1.0 §V1.3 Sprints (table row l.77) | table-row | OPEN (not started) | Founder (programme) — V1 track | SG-V1-0 |
+32:| `V1-S1` | REG-SPRINT v1.0 §V1.3 Sprints (table row l.78) | table-row | OPEN (not started) | Founder (programme) — V1 track | SG-V1-1 |
+33:| `V1-S2` | REG-SPRINT v1.0 §V1.3 Sprints (table row l.79) | table-row | OPEN (not started) | Founder (programme) — V1 track | SG-V1-2 |
+34:| `V1-C1` | REG-SPRINT-1.1 §D-4 — Corporate track rows (from the advisor's letter, missing from v1.0) (table row l.107) | table-row | OPEN (not started) | Founder + accountant / R&D specialist (D-4) | — (corporat
+35:| `V1-C2` | REG-SPRINT-1.1 §D-4 — Corporate track rows (from the advisor's letter, missing from v1.0) (table row l.108) | table-row | OPEN (not started) | Founder + accountant / R&D specialist (D-4) | — (before t
+36:| `V2-S0` | REG-SPRINT v1.0 §V2.3 Sprints (table row l.125) | table-row | OPEN (not started) | Founder + NZ counsel / NZ sponsor (SD-03) | SG-V2-0 (= NZ-GATE-000) |
+37:| `V2-S1` | REG-SPRINT v1.0 §V2.3 Sprints (table row l.126) | table-row | OPEN (not started) | Founder + NZ counsel / NZ sponsor (SD-03) | SG-V2-1 |
+38:| `V2-S2` | REG-SPRINT v1.0 §V2.3 Sprints (table row l.127) | table-row | OPEN (not started) | Founder + NZ counsel / NZ sponsor (SD-03) | SG-V2-2 |
+39:| `V2-S3` | REG-SPRINT v1.0 §V2.3 Sprints (table row l.128) | table-row | OPEN (not started) | Founder + NZ counsel / NZ sponsor (SD-03) | SG-V2-3 (split by D-2 into 3a/3b) |
+40:| `V2-S3a` | REG-SPRINT-1.1 §D-2 — WAND notification split from first supply; new counsel question (table row l.54) | table-row | OPEN (not started) | Founder + NZ counsel / NZ sponsor (SD-03) | SG-V2-3a |
+41:| `V2-S3b` | REG-SPRINT-1.1 §D-2 — WAND notification split from first supply; new counsel question (table row l.55) | table-row | OPEN (not started) | Founder + NZ counsel / NZ sponsor (SD-03) | SG-V2-3b |
+42:| `V2-E1` | REG-SPRINT v1.0 §V2.4 The evidence study — design it before launch, not after (table row l.143) | table-row | OPEN (not started) | Clinical + regulatory (study design); AU counsel for V2-E5 | feeds GATE
+43:| `V2-E2` | REG-SPRINT v1.0 §V2.4 The evidence study — design it before launch, not after (table row l.144) | table-row | OPEN (not started) | Clinical + regulatory (study design); AU counsel for V2-E5 | NZ ethics 
+44:| `V2-E3` | REG-SPRINT v1.0 §V2.4 The evidence study — design it before launch, not after (table row l.145) | table-row | OPEN (not started) | Clinical + regulatory (study design); AU counsel for V2-E5 | NZ-GATE-00
+45:| `V2-E4` | REG-SPRINT v1.0 §V2.4 The evidence study — design it before launch, not after (table row l.146) | table-row | OPEN (not started) | Clinical + regulatory (study design); AU counsel for V2-E5 | from first
+46:| `V2-E5` | REG-SPRINT v1.0 §V2.4 The evidence study — design it before launch, not after (table row l.147) | table-row | OPEN (not started) | Clinical + regulatory (study design); AU counsel for V2-E5 | NZ-ASSUME-
+47:| `SG-V1-0` | REG-SPRINT v1.0 §V1.3 Sprints (exit cell l.77) | prose | OPEN (not passed) | Founder (programme); counsel attests SG-V1-0 | gate itself — counsel attests non-device (blocking) |
+48:| `SG-V1-1` | REG-SPRINT v1.0 §V1.3 Sprints (exit cell l.78) | prose | OPEN (not passed) | Founder (programme); counsel attests SG-V1-0 | gate itself — suite green, structural absence proven |
+49:| `SG-V1-2` | REG-SPRINT v1.0 §V1.3 Sprints (exit cell l.79) | prose | OPEN (not passed) | Founder (programme); counsel attests SG-V1-0 | gate itself — one committed site, real bundles |
+50:| `SG-V2-0` | REG-SPRINT v1.0 §V2.3 Sprints (exit cell l.125) | prose | OPEN (not passed) | NZ sponsor / regulatory owner | gate itself — NZ-GATE-000 |
+51:| `SG-V2-1` | REG-SPRINT v1.0 §V2.3 Sprints (exit cell l.126) | prose | OPEN (not passed) | NZ sponsor / regulatory owner | gate itself — engine passes its evaluation gate |
+52:| `SG-V2-2` | REG-SPRINT v1.0 §V2.3 Sprints (exit cell l.127) | prose | OPEN (not passed) | NZ sponsor / regulatory owner | gate itself — file producible on demand; gates SG-V2-3a absolutely |
+53:| `SG-V2-3` | REG-SPRINT v1.0 §V2.3 Sprints (exit cell l.128) | prose | OPEN (not passed) | NZ sponsor / regulatory owner | gate itself (v1.0) — lawful supply; split by D-2 |
+54:| `SG-V2-3a` | REG-R30.1 seed delta (new rows list) + REG-SPRINT-1.1 D-2 | prose | OPEN (not passed) | NZ sponsor / regulatory owner | gate itself — WAND notification (Bill-clock milestone) |
+55:| `SG-V2-3b` | REG-R30.1 seed delta (new rows list) + REG-SPRINT-1.1 D-2 | prose | OPEN (not passed) | NZ sponsor / regulatory owner | gate itself — first commercial site (revenue milestone) |
+56:| `SD-01` | REG-SPRINT v1.0 §Decisions (table row l.199) | table-row | OPEN (→ MET-2.1 rows (SD-02 provisionally resolved, checkpoint month 4)) | Founder + advisor | blocks all V1 |
+57:| `SD-02` | REG-SPRINT v1.0 §Decisions (table row l.200) | table-row | OPEN (→ MET-2.1 rows (SD-02 provisionally resolved, checkpoint month 4)) | Clinical + regulatory | blocks V2-S1 — provisionally resolved (D-3
+58:| `SD-03` | REG-SPRINT v1.0 §Decisions (table row l.201) | table-row | OPEN (→ MET-2.1 rows (SD-02 provisionally resolved, checkpoint month 4)) | Founder + counsel | blocks V2-S0 |
+59:| `SD-04` | REG-SPRINT v1.0 §Decisions (table row l.202) | table-row | OPEN (→ MET-2.1 rows (SD-02 provisionally resolved, checkpoint month 4)) | Founder + counsel | blocks V2-S3 (3b) |
+60:| `SD-05` | REG-SPRINT v1.0 §Decisions (table row l.203) | table-row | OPEN (→ MET-2.1 rows (SD-02 provisionally resolved, checkpoint month 4)) | Architecture owner | blocks V1-S1 |
+66:| `V1-S` | V1 sprints | 3 | R30 (sprint tasks) |
+67:| `V1-C` | V1 corporate track rows (D-4) | 2 | R30 (D-5: sprint tasks) — corporate, no regulatory content |
+68:| `V2-S` | V2 sprints incl. the D-2 split | 6 | R30 |
+69:| `V2-E` | V2 evidence-study tasks | 5 | R30 |
+70:| `V3-*` | V3 — declared, none minted | 0 | — |
+71:| `SG-V1` | V1 gates | 3 | R30 (gate rows; `passed` register-only) |
+72:| `SG-V2` | V2 gates incl. 3a/3b | 6 | R30 |
+== EXEC-1 RUN + EX
+33:### EX-1 (MUST)
+44:### EX-2 (MUST)
+53:### EX-3 (MUST)
+62:### EX-4 (MUST)
+81:| **RUN-0 · Decide** (weeks 1–4) | The single counsel engagement (five questions, EX-6) · intended purpose statements ×2 (Mākoha `TASK-REG-001`; Governance Layer `T-G01`) · claims inventorie
+82:| **RUN-1 · Foundation** (weeks 4–12) | `V1-S2` foothold → first revenue (weeks 5–9, D-1) · Jira/Ketryx per `TASK-REG-005/006` with the ceiling modelled first · risk file `TASK-REG-007` ·
+83:| **RUN-2 · Controls & domain** (months 3–9) | `V2-S1` respiratory domain build (D-3; **month-4 checkpoint** against V1 gap analytics) · Phase 2 controls `TASK-REG-010..014` · study design `V2
+84:| **RUN-3 · File & notify** (months 6–14) | `V2-S2` technical file · `V2-S3a` WAND notification at earliest lawful point after `SG-V2-2` (D-2) · `V2-S3b` first NZ site on commercial readiness 
+85:| **RUN-4 · Evidence & submission** (months 12+) | Phase 3 `TASK-REG-015..018` with NZ evidence accruing · Phase 4 `TASK-REG-019/020` | REG-POSTURE Phases 3–4 = REG-SPRINT V3 | `GATE-004` |
+87:### EX-5 (MUST)
+91:rescheduled by this directive — it proceeds per MET-4 P0 in parallel with RUN-0 —
+99:### EX-6 (MUST) — the counsel packet
+101:external act of RUN-0; NZ counsel engaged in the same week as a second, smaller
+115:### EX-7 (MUST) — the working assumption is registered, not silent
+121:closes badly, `V2-S3a` loses its urgency ranking and RUN-3 re-weights toward
+126:### EX-8 (MUST) — the week-one board
+132:**Rationale trace:** RUN-0 contents; "move now" priced without thinning any gate.
+134:### EX-9 (SHOULD) — audience track
+142:### EX-10 (MUST) — evidence of execution

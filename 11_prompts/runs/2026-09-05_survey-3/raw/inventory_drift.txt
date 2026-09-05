@@ -1,0 +1,31 @@
+00_inventory.txt: 82 lines; equal 53; size drift 13; missing 16
+DRIFT 01_north-star-and-transformation/MET-2_conflict_and_decision_register.md: inventory 6413 disk 6414
+DRIFT 02_cdss-stack-augmented/architecture_and_integration.md: inventory 50573 disk 50574
+DRIFT 02_cdss-stack-augmented/primer_C_casebundle_corpus.md: inventory 15050 disk 15051
+DRIFT 02_cdss-stack-augmented/primer_I_living_evaluation.md: inventory 19439 disk 19440
+MISSING 03_makoha-butterfly-corpus/abdomen-corpus_v1.0.md
+MISSING 03_makoha-butterfly-corpus/addendum-j3-guideline-prompt-profile_v0.9.md
+MISSING 03_makoha-butterfly-corpus/antennae-corpus_v1.0.md
+MISSING 03_makoha-butterfly-corpus/compound-eyes-corpus_v1.1.md
+MISSING 03_makoha-butterfly-corpus/degrees-of-truth_v1.0.md
+MISSING 03_makoha-butterfly-corpus/execution-layer-sourcing-map_v1.1.md
+MISSING 03_makoha-butterfly-corpus/four-faces-corpus_v1.1.md
+MISSING 03_makoha-butterfly-corpus/head-corpus_v1.0.md
+MISSING 03_makoha-butterfly-corpus/labial-palps-corpus_v1.0.md
+MISSING 03_makoha-butterfly-corpus/left-wing-corpus_v1.1.md
+MISSING 03_makoha-butterfly-corpus/legs-corpus_v1.0.md
+MISSING 03_makoha-butterfly-corpus/makoha-in-flight_v1.0.md
+MISSING 03_makoha-butterfly-corpus/proboscis-corpus_v1.0.md
+MISSING 03_makoha-butterfly-corpus/right-wing-corpus_v1.1.md
+MISSING 03_makoha-butterfly-corpus/thorax-corpus_v1.0.md
+DRIFT 04_hardening/HARDEN-1_coverage_ledger_seed.md: inventory 3061 disk 3517
+DRIFT 04_hardening/HARDEN-3_hardening_plan_worklist.md: inventory 2557 disk 2558
+DRIFT 06_repositories/REPO-MAP_v2.md: inventory 3088 disk 4322
+DRIFT 07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md: inventory 1516 disk 1518
+DRIFT 07_deployment-and-operations/SEC-1_security_privacy_compliance.md: inventory 2203 disk 2205
+DRIFT 09_diagrams/cdss_diagrams_v2.html: inventory 6646 disk 7219
+DRIFT 09_diagrams/deployment_ladders.mermaid: inventory 1070 disk 1283
+DRIFT 09_diagrams/imago_architecture.mermaid: inventory 2049 disk 1862
+MISSING 09_diagrams/merged_runtime.mermaid
+DRIFT 09_diagrams/register_topology_v2.mermaid: inventory 876 disk 1290
+tracked in-scope files not in inventory: 202 (inventory is the 73460b3 seal snapshot — expected to be stale by every later amendment)

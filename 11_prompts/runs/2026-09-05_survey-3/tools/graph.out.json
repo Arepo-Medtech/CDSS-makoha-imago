@@ -1,0 +1,2844 @@
+{
+ "tool": "graph.py",
+ "files": 271,
+ "reachable_from_README": 271,
+ "class_counts": {
+  "DESIGN-LINKED": 174,
+  "LEDGER-OR-INDEX-ONLY": 97
+ },
+ "orphans_in_design_graph": [
+  "05_registers-and-contracts/CONTRACT-DEV-1.examples.jsonl",
+  "05_registers-and-contracts/CONTRACT-DEV-1.schema.json",
+  "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+  "06_repositories/repo-skeletons/cdss-coder/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-coder/README.md",
+  "06_repositories/repo-skeletons/cdss-coder/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-compiler/CODEOWNERS",
+  "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-compiler/assist/README.md",
+  "06_repositories/repo-skeletons/cdss-compiler/bundles/README.md",
+  "06_repositories/repo-skeletons/cdss-compiler/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-compiler/lift/README.md",
+  "06_repositories/repo-skeletons/cdss-compiler/sources/README.md",
+  "06_repositories/repo-skeletons/cdss-compiler/tests/README.md",
+  "06_repositories/repo-skeletons/cdss-conformal/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-conformal/README.md",
+  "06_repositories/repo-skeletons/cdss-conformal/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-corpus/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-corpus/README.md",
+  "06_repositories/repo-skeletons/cdss-corruption/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-corruption/README.md",
+  "06_repositories/repo-skeletons/cdss-corruption/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-corruption/rulebook/README.md",
+  "06_repositories/repo-skeletons/cdss-engine/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-engine/README.md",
+  "06_repositories/repo-skeletons/cdss-engine/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-engine/properties/README.md",
+  "06_repositories/repo-skeletons/cdss-engine/service/README.md",
+  "06_repositories/repo-skeletons/cdss-engine/tests/README.md",
+  "06_repositories/repo-skeletons/cdss-evalstack/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-evalstack/README.md",
+  "06_repositories/repo-skeletons/cdss-evalstack/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-evalstack/pipelines/README.md",
+  "06_repositories/repo-skeletons/cdss-fabric/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-fabric/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-fabric/deviation/README.md",
+  "06_repositories/repo-skeletons/cdss-fabric/ledger/README.md",
+  "06_repositories/repo-skeletons/cdss-fabric/projector/README.md",
+  "06_repositories/repo-skeletons/cdss-fabric/service/README.md",
+  "06_repositories/repo-skeletons/cdss-fabric/tests/README.md",
+  "06_repositories/repo-skeletons/cdss-governance/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-governance/README.md",
+  "06_repositories/repo-skeletons/cdss-governance/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-graph/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-graph/README.md",
+  "06_repositories/repo-skeletons/cdss-graph/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-graph/tests/README.md",
+  "06_repositories/repo-skeletons/cdss-harness/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-harness/README.md",
+  "06_repositories/repo-skeletons/cdss-harness/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-integration/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-integration/README.md",
+  "06_repositories/repo-skeletons/cdss-integration/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-integration/lockfile/README.md",
+  "06_repositories/repo-skeletons/cdss-library/CODEOWNERS",
+  "06_repositories/repo-skeletons/cdss-library/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-library/README.md",
+  "06_repositories/repo-skeletons/cdss-library/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-library/rows/README.md",
+  "06_repositories/repo-skeletons/cdss-library/validator/README.md",
+  "06_repositories/repo-skeletons/cdss-llm-lattice/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-llm-lattice/README.md",
+  "06_repositories/repo-skeletons/cdss-llm-lattice/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-lumos/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-lumos/README.md",
+  "06_repositories/repo-skeletons/cdss-lumos/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-registry/CODEOWNERS",
+  "06_repositories/repo-skeletons/cdss-registry/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-registry/README.md",
+  "06_repositories/repo-skeletons/cdss-registry/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-registry/policy/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/CODEOWNERS",
+  "06_repositories/repo-skeletons/cdss-spine/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-spine/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-spine/contracts/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/north-star/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/registers/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/templates/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/tolerances/README.md",
+  "06_repositories/repo-skeletons/cdss-spine/validator/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-clinician/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-ui-clinician/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-ui-clinician/components/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-clinician/conformance/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-clinician/face/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-clinician/tokens/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-patient/MANIFEST.yaml",
+  "06_repositories/repo-skeletons/cdss-ui-patient/android/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-patient/capture/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-patient/ci/pipeline.yml",
+  "06_repositories/repo-skeletons/cdss-ui-patient/components/README.md",
+  "06_repositories/repo-skeletons/cdss-ui-patient/face/README.md",
+  "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md",
+  "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+  "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+  "11_prompts/PROMPT-PRM-SERIES_index.md"
+ ],
+ "unreachable": [],
+ "rows": [
+  {
+   "file": "00_MANIFEST.md",
+   "inbound": 20,
+   "outbound": 82,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "02_cdss-stack-augmented/primer_0_ecosystem_explainer.md",
+    "10_regulatory-execution/EXEC-1_execution_directive.md"
+   ]
+  },
+  {
+   "file": "00_inventory.txt",
+   "inbound": 5,
+   "outbound": 82,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md"
+   ]
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+   "inbound": 23,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md"
+   ]
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+   "inbound": 71,
+   "outbound": 25,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+   "inbound": 21,
+   "outbound": 13,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R30.1_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md"
+   ]
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+   "inbound": 62,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-3_traceability_map.md",
+   "inbound": 8,
+   "outbound": 31,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md"
+   ]
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md",
+   "inbound": 28,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/architecture_and_integration.md",
+   "inbound": 19,
+   "outbound": 12,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "inbound": 8,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/cdss_diagrams.html",
+   "inbound": 17,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/ecosystem_integration_report.md",
+   "inbound": 7,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/grounding_and_weak_supervision.md",
+   "inbound": 4,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/primers_briefing.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/harness_ml_primer.md",
+   "inbound": 4,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/primers_briefing.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_0_ecosystem_explainer.md",
+   "inbound": 9,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_A_bayesian_engine.md",
+   "inbound": 7,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+    "11_prompts/PROMPT-A_bayesian_engine_launch.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_B_evidence_library.md",
+   "inbound": 3,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_C_casebundle_corpus.md",
+   "inbound": 3,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_D_content_registry.md",
+   "inbound": 4,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_E_graph_rag.md",
+   "inbound": 3,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_F_conformal_wrapper.md",
+   "inbound": 3,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_G_corruption_engine.md",
+   "inbound": 4,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "11_prompts/PROMPT-B_evidence_library_launch.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_H_lumos_pathway.md",
+   "inbound": 3,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_I_living_evaluation.md",
+   "inbound": 4,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_J_model_governance.md",
+   "inbound": 3,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_K_llm_augmentation.md",
+   "inbound": 3,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_L_runtime_llm.md",
+   "inbound": 3,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/primers_briefing.md",
+   "inbound": 9,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/variant_1b_deterministic_coder.md",
+   "inbound": 5,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/primers_briefing.md",
+    "11_prompts/PROMPT-J_model_governance_launch.md"
+   ]
+  },
+  {
+   "file": "02_cdss-stack-augmented/variant_2_ml_coder_runtime.md",
+   "inbound": 5,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/primers_briefing.md",
+    "11_prompts/PROMPT-J_model_governance_launch.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/MANIFEST.md",
+   "inbound": 26,
+   "outbound": 19,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/abdomen-corpus.html",
+   "inbound": 3,
+   "outbound": 13,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/antennae-corpus.html",
+   "inbound": 3,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/compound-eyes-corpus.html",
+   "inbound": 3,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/degrees-of-truth.html",
+   "inbound": 3,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/execution-sourcing-map.html",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/four-faces-corpus.html",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/head-corpus.html",
+   "inbound": 3,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/labial-palps-corpus.html",
+   "inbound": 3,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/left-wing-corpus.html",
+   "inbound": 3,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/legs-corpus.html",
+   "inbound": 3,
+   "outbound": 12,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/makoha-in-flight.html",
+   "inbound": 3,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/proboscis-corpus.html",
+   "inbound": 3,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/right-wing-corpus.html",
+   "inbound": 3,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/sleep-tools-dossier.html",
+   "inbound": 4,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "03_makoha-butterfly-corpus/MANIFEST.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/stranieri-dossier.html",
+   "inbound": 4,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "03_makoha-butterfly-corpus/MANIFEST.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/artifacts-html/thorax-corpus.html",
+   "inbound": 3,
+   "outbound": 11,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+   "inbound": 6,
+   "outbound": 28,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md",
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+   "inbound": 13,
+   "outbound": 28,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+   "inbound": 4,
+   "outbound": 23,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md",
+    "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+   "inbound": 19,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+   "inbound": 20,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+   "inbound": 21,
+   "outbound": 26,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+   "inbound": 18,
+   "outbound": 26,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+   "inbound": 17,
+   "outbound": 27,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md",
+   "inbound": 17,
+   "outbound": 25,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md",
+   "inbound": 25,
+   "outbound": 20,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md",
+   "inbound": 19,
+   "outbound": 26,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md",
+   "inbound": 16,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+   "inbound": 19,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+    "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "inbound": 41,
+   "outbound": 12,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+   "inbound": 65,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "inbound": 76,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "inbound": 51,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/degrees-of-truth_v1.0.md",
+   "inbound": 27,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+   "inbound": 57,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "inbound": 89,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "inbound": 37,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "inbound": 27,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "inbound": 41,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "inbound": 25,
+   "outbound": 11,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+   "inbound": 43,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "inbound": 26,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "inbound": 44,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/thorax-corpus_v1.0.md",
+   "inbound": 34,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus_artifacts_briefing.md",
+   "inbound": 7,
+   "outbound": 17,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "inbound": 14,
+   "outbound": 265,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-1_coverage_ledger_seed.md",
+   "inbound": 37,
+   "outbound": 15,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "inbound": 5,
+   "outbound": 22,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "inbound": 20,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/architecture_and_integration.md",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "inbound": 15,
+   "outbound": 265,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-3_hardening_plan_worklist.md",
+   "inbound": 33,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/architecture_and_integration.md",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md"
+   ]
+  },
+  {
+   "file": "04_hardening/INDEX.md",
+   "inbound": 4,
+   "outbound": 11,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md",
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "inbound": 10,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "05_registers-and-contracts/REG-R29.examples.jsonl",
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-ARG-1.examples.jsonl",
+   "inbound": 4,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-ARG-1.schema.json",
+   "inbound": 4,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-ARG-1_argument_schema.md",
+   "inbound": 38,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "02_cdss-stack-augmented/primer_A_bayesian_engine.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-DEV-1.examples.jsonl",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-DEV-1.schema.json",
+   "inbound": 3,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md",
+   "inbound": 4,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/INDEX.md",
+   "inbound": 3,
+   "outbound": 27,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+   "inbound": 4,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.examples.jsonl",
+   "inbound": 6,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.schema.json",
+   "inbound": 10,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29_hardening_coverage_ledger.schema.md",
+   "inbound": 13,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.1_seed_delta.md",
+   "inbound": 11,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "08_research/RESEARCH-1.1_findings_delta.md",
+    "10_regulatory-execution/EXEC-1_execution_directive.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+   "inbound": 6,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "08_research/RESEARCH-1.1_findings_delta.md",
+    "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+   "inbound": 6,
+   "outbound": 22,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+    "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.schema.json",
+   "inbound": 7,
+   "outbound": 12,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "06_repositories/repo-skeletons/cdss-governance/ci/pipeline.yml"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md",
+   "inbound": 25,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "05_registers-and-contracts/REG-R30.1_seed_delta.md"
+   ]
+  },
+  {
+   "file": "06_repositories/INDEX.md",
+   "inbound": 3,
+   "outbound": 131,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md"
+   ]
+  },
+  {
+   "file": "06_repositories/REPO-MAP_v2.md",
+   "inbound": 12,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "11_prompts/PROMPT-A_bayesian_engine_launch.md",
+    "11_prompts/PROMPT-P0_primer0_launch.md"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-coder/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-coder/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-coder/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/CODEOWNERS",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/README.md",
+   "inbound": 4,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/assist/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/bundles/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/lift/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/sources/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/tests/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-conformal/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-conformal/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-conformal/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corpus/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corpus/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/rulebook/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/properties/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/service/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/tests/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/pipelines/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/README.md",
+   "inbound": 4,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/deviation/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/ledger/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/projector/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/service/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/tests/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-governance/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-governance/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-governance/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/tests/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-harness/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-harness/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-harness/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md",
+   "inbound": 7,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "06_repositories/REPO-MAP_v2.md",
+    "06_repositories/repo-skeletons/cdss-integration/README.md",
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/lockfile/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/CODEOWNERS",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/rows/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/validator/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-llm-lattice/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-llm-lattice/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-llm-lattice/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-lumos/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-lumos/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-lumos/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/CODEOWNERS",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/policy/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/CODEOWNERS",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/contracts/CONTRACT-ARG-1.pointer.md",
+   "inbound": 10,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-CEC_engines_launch.md",
+    "11_prompts/PROMPT-PRM-LEG_stack_launch.md",
+    "11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/contracts/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/north-star/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/registers/README.md",
+   "inbound": 3,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/templates/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/tolerances/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/validator/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/README.md",
+   "inbound": 4,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/components/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/conformance/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/face/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/tokens/README.md",
+   "inbound": 3,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/MANIFEST.yaml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/README.md",
+   "inbound": 4,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt"
+   ]
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/android/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/capture/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/ci/pipeline.yml",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/components/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/face/README.md",
+   "inbound": 3,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+   "inbound": 9,
+   "outbound": 21,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "09_diagrams/cdss_diagrams_v3.html",
+    "09_diagrams/deployment_ladders_v2.mermaid",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1_deployment_plan_and_sequencing.md",
+   "inbound": 23,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-2_testing_verification_acceptance.md",
+   "inbound": 21,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md",
+   "inbound": 10,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/INDEX.md",
+   "inbound": 3,
+   "outbound": 18,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md",
+   "inbound": 7,
+   "outbound": 14,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md",
+    "AGENTS.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1_operating_procedures.md",
+   "inbound": 16,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-1_security_privacy_compliance.md",
+   "inbound": 15,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-3_traceability_map.md",
+    "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "inbound": 7,
+   "outbound": 11,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "09_diagrams/cdss_diagrams_v3.html",
+    "09_diagrams/data_flow_v1.mermaid"
+   ]
+  },
+  {
+   "file": "08_research/INDEX.md",
+   "inbound": 4,
+   "outbound": 13,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ]
+  },
+  {
+   "file": "08_research/RESEARCH-1.1_findings_delta.md",
+   "inbound": 5,
+   "outbound": 22,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ]
+  },
+  {
+   "file": "08_research/RESEARCH-1_findings_gaps_source_map.md",
+   "inbound": 13,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-3_traceability_map.md"
+   ]
+  },
+  {
+   "file": "09_diagrams/INDEX.md",
+   "inbound": 5,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md",
+    "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+    "09_diagrams/cdss_diagrams_v3.html"
+   ]
+  },
+  {
+   "file": "09_diagrams/cdss_diagrams_v2.html",
+   "inbound": 15,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "02_cdss-stack-augmented/cdss_diagrams.html",
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md"
+   ]
+  },
+  {
+   "file": "09_diagrams/cdss_diagrams_v3.html",
+   "inbound": 5,
+   "outbound": 20,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md"
+   ]
+  },
+  {
+   "file": "09_diagrams/data_flow_v1.mermaid",
+   "inbound": 6,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+    "09_diagrams/cdss_diagrams_v3.html"
+   ]
+  },
+  {
+   "file": "09_diagrams/deployment_ladders.mermaid",
+   "inbound": 5,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "09_diagrams/deployment_ladders_v2.mermaid"
+   ]
+  },
+  {
+   "file": "09_diagrams/deployment_ladders_v2.mermaid",
+   "inbound": 5,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "09_diagrams/cdss_diagrams_v3.html"
+   ]
+  },
+  {
+   "file": "09_diagrams/imago_architecture.mermaid",
+   "inbound": 5,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "09_diagrams/cdss_diagrams_v3.html"
+   ]
+  },
+  {
+   "file": "09_diagrams/merged_runtime_sequence.mermaid",
+   "inbound": 6,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "09_diagrams/cdss_diagrams_v3.html",
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md"
+   ]
+  },
+  {
+   "file": "09_diagrams/register_topology_v2.mermaid",
+   "inbound": 7,
+   "outbound": 0,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "05_registers-and-contracts/REG-R29.examples.jsonl",
+    "09_diagrams/register_topology_v3.mermaid"
+   ]
+  },
+  {
+   "file": "09_diagrams/register_topology_v3.mermaid",
+   "inbound": 5,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "09_diagrams/cdss_diagrams_v3.html"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/EXEC-1_execution_directive.md",
+   "inbound": 40,
+   "outbound": 22,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/FOLD-1_antennae_fold_worklist.md",
+   "inbound": 19,
+   "outbound": 11,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "05_registers-and-contracts/REG-R30.1_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/INDEX.md",
+   "inbound": 3,
+   "outbound": 26,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_MANIFEST.md"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md",
+   "inbound": 34,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "inbound": 15,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "05_registers-and-contracts/REG-R30.schema.json"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-NZ_v1.0.md",
+   "inbound": 28,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "05_registers-and-contracts/REG-R30.schema.json"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "inbound": 28,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "05_registers-and-contracts/REG-R30.schema.json"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.1.md",
+   "inbound": 101,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "inbound": 101,
+   "outbound": 19,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md",
+   "inbound": 4,
+   "outbound": 13,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT-1.1_delta.md",
+   "inbound": 24,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "inbound": 4,
+   "outbound": 14,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT_v1.0.md",
+   "inbound": 26,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "05_registers-and-contracts/REG-R30.schema.json"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-US_v1.0.md",
+   "inbound": 15,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+    "05_registers-and-contracts/REG-R30.3_row-form_seed.jsonl",
+    "05_registers-and-contracts/REG-R30.schema.json"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/validate_reg.py",
+   "inbound": 8,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+    "10_regulatory-execution/REG-POSTURE_v1.2.md",
+    "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-A_bayesian_engine_launch.md",
+   "inbound": 25,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-B_evidence_library_launch.md",
+    "11_prompts/PROMPT-C_casebundle_corpus_launch.md",
+    "11_prompts/PROMPT-D_content_registry_launch.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-B_evidence_library_launch.md",
+   "inbound": 5,
+   "outbound": 3,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-G_corruption_engine_launch.md",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-C_casebundle_corpus_launch.md",
+   "inbound": 5,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-G_corruption_engine_launch.md",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-D_content_registry_launch.md",
+   "inbound": 7,
+   "outbound": 2,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-E_graph_rag_launch.md",
+    "11_prompts/PROMPT-G_corruption_engine_launch.md",
+    "11_prompts/PROMPT-K_llm_augmentation_launch.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-E_graph_rag_launch.md",
+   "inbound": 5,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-G_corruption_engine_launch.md",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+   "inbound": 4,
+   "outbound": 26,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "11_prompts/PROMPT-F_conformal_wrapper_launch.md",
+   "inbound": 4,
+   "outbound": 4,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-G_corruption_engine_launch.md",
+   "inbound": 5,
+   "outbound": 8,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-K_llm_augmentation_launch.md",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md",
+   "inbound": 6,
+   "outbound": 19,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+    "AGENTS.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-H_lumos_pathway_launch.md",
+   "inbound": 6,
+   "outbound": 6,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "08_research/RESEARCH-1.1_findings_delta.md",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-I_living_evaluation_launch.md",
+   "inbound": 4,
+   "outbound": 5,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-J_model_governance_launch.md",
+   "inbound": 6,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "06_repositories/repo-skeletons/cdss-governance/ci/pipeline.yml",
+    "11_prompts/PROMPT-L_runtime_llm_launch.md",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-K_llm_augmentation_launch.md",
+   "inbound": 5,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "06_repositories/repo-skeletons/cdss-llm-lattice/ci/pipeline.yml",
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-L_runtime_llm_launch.md",
+   "inbound": 4,
+   "outbound": 10,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SERIES_A-L_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-P0_primer0_launch.md",
+   "inbound": 33,
+   "outbound": 30,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-A_bayesian_engine_launch.md",
+    "11_prompts/PROMPT-B_evidence_library_launch.md",
+    "11_prompts/PROMPT-C_casebundle_corpus_launch.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md",
+   "inbound": 4,
+   "outbound": 25,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+   "inbound": 3,
+   "outbound": 27,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-CEC_engines_launch.md",
+   "inbound": 3,
+   "outbound": 22,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md",
+   "inbound": 3,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md",
+   "inbound": 4,
+   "outbound": 26,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LEG_stack_launch.md",
+   "inbound": 3,
+   "outbound": 23,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md",
+   "inbound": 12,
+   "outbound": 28,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md",
+    "11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+    "11_prompts/PROMPT-PRM-CEC_engines_launch.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md",
+   "inbound": 4,
+   "outbound": 25,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md",
+   "inbound": 3,
+   "outbound": 24,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-SERIES_index.md",
+   "inbound": 3,
+   "outbound": 46,
+   "reachable_from_README": true,
+   "class": "LEDGER-OR-INDEX-ONLY",
+   "design_inbound_examples": []
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-TXC_patient_face_launch.md",
+   "inbound": 3,
+   "outbound": 19,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-SERIES_index.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md",
+   "inbound": 14,
+   "outbound": 35,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md",
+    "11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+    "11_prompts/PROMPT-PRM-CEC_engines_launch.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-SERIES_A-L_index.md",
+   "inbound": 10,
+   "outbound": 23,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "08_research/RESEARCH-1.1_findings_delta.md",
+    "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+    "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+   "inbound": 5,
+   "outbound": 49,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+   "inbound": 5,
+   "outbound": 47,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+    "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   "inbound": 3,
+   "outbound": 9,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+    "AGENTS.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+   "inbound": 2,
+   "outbound": 7,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "AGENTS.md"
+   ]
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md",
+   "inbound": 4,
+   "outbound": 38,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+    "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+    "AGENTS.md"
+   ]
+  },
+  {
+   "file": "AGENTS.md",
+   "inbound": 9,
+   "outbound": 28,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "08_research/RESEARCH-1_findings_gaps_source_map.md",
+    "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md"
+   ]
+  },
+  {
+   "file": "CLAUDE.md",
+   "inbound": 10,
+   "outbound": 1,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+    "08_research/RESEARCH-1_findings_gaps_source_map.md",
+    "11_prompts/PROMPT-P0_primer0_launch.md"
+   ]
+  },
+  {
+   "file": "README.md",
+   "inbound": 14,
+   "outbound": 30,
+   "reachable_from_README": true,
+   "class": "DESIGN-LINKED",
+   "design_inbound_examples": [
+    "00_inventory.txt",
+    "11_prompts/PROMPT-A_bayesian_engine_launch.md",
+    "11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md"
+   ]
+  }
+ ]
+}

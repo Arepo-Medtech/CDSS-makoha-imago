@@ -1,0 +1,2381 @@
+{
+ "tool": "frontmatter.py",
+ "md_files": 194,
+ "with_frontmatter": 110,
+ "without_by_why": {
+  "retained-original": 22,
+  "corpus-companion": 4,
+  "skeleton-banner": 55,
+  "root-governance": 3
+ },
+ "omissions": [],
+ "missing_core_files": [
+  [
+   "00_MANIFEST.md",
+   [
+    "version"
+   ]
+  ],
+  [
+   "05_registers-and-contracts/CONTRACT-ARG-1_argument_schema.md",
+   [
+    "version",
+    "date"
+   ]
+  ],
+  [
+   "05_registers-and-contracts/REG-R29_hardening_coverage_ledger.schema.md",
+   [
+    "version",
+    "date"
+   ]
+  ],
+  [
+   "05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md",
+   [
+    "version",
+    "date"
+   ]
+  ],
+  [
+   "06_repositories/REPO-MAP_v2.md",
+   [
+    "version",
+    "date"
+   ]
+  ],
+  [
+   "07_deployment-and-operations/DEPLOY-1_deployment_plan_and_sequencing.md",
+   [
+    "date"
+   ]
+  ],
+  [
+   "07_deployment-and-operations/DEPLOY-2_testing_verification_acceptance.md",
+   [
+    "date"
+   ]
+  ],
+  [
+   "07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md",
+   [
+    "date"
+   ]
+  ],
+  [
+   "07_deployment-and-operations/OPS-1_operating_procedures.md",
+   [
+    "date"
+   ]
+  ],
+  [
+   "07_deployment-and-operations/SEC-1_security_privacy_compliance.md",
+   [
+    "date"
+   ]
+  ],
+  [
+   "08_research/RESEARCH-1_findings_gaps_source_map.md",
+   [
+    "status"
+   ]
+  ]
+ ],
+ "date_field_variants": {
+  "date": 93,
+  "date_issued": 8,
+  "guidance_currency_date": 6
+ },
+ "doc_id_repeats": {
+  "REG-NZ": {
+   "files": [
+    "10_regulatory-execution/REG-NZ_v1.0.md",
+    "10_regulatory-execution/REG-NZ_v1.1.md"
+   ],
+   "all_but_one_carry_supersedes": true
+  },
+  "REG-POSTURE": {
+   "files": [
+    "10_regulatory-execution/REG-POSTURE_v1.1.md",
+    "10_regulatory-execution/REG-POSTURE_v1.2.md"
+   ],
+   "all_but_one_carry_supersedes": true
+  }
+ },
+ "mint_without_declaration": [
+  [
+   "00_MANIFEST.md",
+   [
+    "DEF"
+   ],
+   7
+  ],
+  [
+   "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+   [
+    "C",
+    "DEC",
+    "G"
+   ],
+   30
+  ],
+  [
+   "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+   [
+    "C",
+    "DEC"
+   ],
+   14
+  ],
+  [
+   "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+   [
+    "C",
+    "DEC"
+   ],
+   24
+  ],
+  [
+   "01_north-star-and-transformation/MET-3_traceability_map.md",
+   [
+    "FZ",
+    "GPP",
+    "SPINE"
+   ],
+   8
+  ],
+  [
+   "01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md",
+   [
+    "G"
+   ],
+   11
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+   [
+    "AE",
+    "AG",
+    "AL",
+    "AR",
+    "AT",
+    "AX",
+    "RECON-ABC"
+   ],
+   13
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+   [
+    "AN",
+    "RECON-ANT",
+    "W"
+   ],
+   12
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+   [
+    "AD",
+    "CP",
+    "DX",
+    "GPP",
+    "OM",
+    "QU",
+    "RECON-CEC",
+    "RG"
+   ],
+   16
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+   [
+    "HA",
+    "HE",
+    "HG",
+    "HR",
+    "HT",
+    "HW",
+    "RECON-HDC"
+   ],
+   13
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+   [
+    "CA",
+    "CC",
+    "CI",
+    "CS",
+    "CV",
+    "RECON-LBP"
+   ],
+   12
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md",
+   [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "LS",
+    "RECON-LEG"
+   ],
+   15
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md",
+   [
+    "FA",
+    "FC",
+    "FE",
+    "FP",
+    "FS",
+    "FX",
+    "RECON-LWC"
+   ],
+   12
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md",
+   [
+    "PA",
+    "PC",
+    "PI",
+    "PS",
+    "PV",
+    "RECON-PRB"
+   ],
+   12
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md",
+   [
+    "MA",
+    "MC",
+    "ME",
+    "MP",
+    "MS",
+    "MX",
+    "RECON-RWC"
+   ],
+   14
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+   [
+    "RECON-TXC",
+    "TA",
+    "TC",
+    "TE",
+    "TL",
+    "TR",
+    "TW"
+   ],
+   13
+  ],
+  [
+   "03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+   [
+    "ELSM"
+   ],
+   10
+  ],
+  [
+   "04_hardening/HARDEN-2_hardening_spec.md",
+   [
+    "CC"
+   ],
+   8
+  ],
+  [
+   "08_research/RESEARCH-1_findings_gaps_source_map.md",
+   [
+    "RG"
+   ],
+   6
+  ],
+  [
+   "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+   [
+    "E",
+    "P",
+    "T"
+   ],
+   26
+  ],
+  [
+   "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   [
+    "D",
+    "M",
+    "T"
+   ],
+   24
+  ],
+  [
+   "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+   [
+    "E"
+   ],
+   3
+  ],
+  [
+   "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md",
+   [
+    "A",
+    "E",
+    "P",
+    "T"
+   ],
+   35
+  ]
+ ],
+ "ladder_skips_files": [
+  [
+   "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+   1
+  ],
+  [
+   "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+   1
+  ]
+ ],
+ "tables_inconsistent": [],
+ "rows": [
+  {
+   "file": "00_MANIFEST.md",
+   "frontmatter": true,
+   "missing_core": [
+    "version"
+   ],
+   "doc_id": "MANIFEST-IMAGO",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "DEF"
+   ],
+   "minted_count": 7,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MET-1.1",
+   "supersedes": true,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MET-1",
+   "supersedes": true,
+   "declares_prefix": false,
+   "minted_families": [
+    "C",
+    "DEC",
+    "G"
+   ],
+   "minted_count": 30,
+   "ladder_skips": 1,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-2.1_decision_register_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MET-2.1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "C",
+    "DEC"
+   ],
+   "minted_count": 14,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MET-2",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "C",
+    "DEC"
+   ],
+   "minted_count": 24,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-3_traceability_map.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MET-3",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "FZ",
+    "GPP",
+    "SPINE"
+   ],
+   "minted_count": 8,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MET-4",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "G"
+   ],
+   "minted_count": 11,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "02_cdss-stack-augmented/architecture_and_integration.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/cdss_complete_stack.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/ecosystem_integration_report.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/grounding_and_weak_supervision.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/harness_ml_primer.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_0_ecosystem_explainer.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_A_bayesian_engine.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_B_evidence_library.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_C_casebundle_corpus.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_D_content_registry.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_E_graph_rag.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_F_conformal_wrapper.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_G_corruption_engine.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_H_lumos_pathway.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_I_living_evaluation.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_J_model_governance.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_K_llm_augmentation.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primer_L_runtime_llm.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/primers_briefing.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/variant_1b_deterministic_coder.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "02_cdss-stack-augmented/variant_2_ml_coder_runtime.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/MANIFEST.md",
+   "frontmatter": false,
+   "why": "corpus-companion"
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primer-programme_prompt_v1.0.md",
+   "frontmatter": false,
+   "why": "corpus-companion"
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md",
+   "frontmatter": false,
+   "why": "corpus-companion"
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_0_butterfly_explainer.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-0",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 1,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ABC_auditor_face.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-ABC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "AE",
+    "AG",
+    "AL",
+    "AR",
+    "AT",
+    "AX",
+    "RECON-ABC"
+   ],
+   "minted_count": 13,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_ANT_regulatory_sensing.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-ANT",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "AN",
+    "RECON-ANT",
+    "W"
+   ],
+   "minted_count": 12,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_CEC_engines.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-CEC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "AD",
+    "CP",
+    "DX",
+    "GPP",
+    "OM",
+    "QU",
+    "RECON-CEC",
+    "RG"
+   ],
+   "minted_count": 16,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-HDC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "HA",
+    "HE",
+    "HG",
+    "HR",
+    "HT",
+    "HW",
+    "RECON-HDC"
+   ],
+   "minted_count": 13,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LBP_clinician_ui.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-LBP",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "CA",
+    "CC",
+    "CI",
+    "CS",
+    "CV",
+    "RECON-LBP"
+   ],
+   "minted_count": 12,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LEG_stack.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-LEG",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "LS",
+    "RECON-LEG"
+   ],
+   "minted_count": 15,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_LWC_fuzzy_spine.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-LWC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "FA",
+    "FC",
+    "FE",
+    "FP",
+    "FS",
+    "FX",
+    "RECON-LWC"
+   ],
+   "minted_count": 12,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_PRB_patient_ui.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-PRB",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "PA",
+    "PC",
+    "PI",
+    "PS",
+    "PV",
+    "RECON-PRB"
+   ],
+   "minted_count": 12,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_RWC_meta_rationality.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-RWC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "MA",
+    "MC",
+    "ME",
+    "MP",
+    "MS",
+    "MX",
+    "RECON-RWC"
+   ],
+   "minted_count": 14,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/butterfly-primers/primer_TXC_patient_face.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PRM-TXC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "RECON-TXC",
+    "TA",
+    "TC",
+    "TE",
+    "TL",
+    "TR",
+    "TW"
+   ],
+   "minted_count": 13,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/abdomen-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-ABC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "AE",
+    "AG",
+    "AL",
+    "AR",
+    "AT",
+    "AX"
+   ],
+   "minted_count": 27,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/addendum-j3-guideline-prompt-profile_v0.9.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-J3",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "AF",
+    "CF",
+    "EN",
+    "GPP",
+    "PF",
+    "SPINE",
+    "XC"
+   ],
+   "minted_count": 27,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/antennae-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-ANT",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "AN",
+    "ASSUME-REG",
+    "FORK-REG",
+    "GATE",
+    "KTX",
+    "OBL",
+    "Q-REG",
+    "REG-FIND",
+    "REG-KEEP",
+    "STD",
+    "TASK-REG",
+    "WATCH-REG"
+   ],
+   "minted_count": 27,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/compound-eyes-corpus_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-CEC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "AD",
+    "CP",
+    "DX",
+    "OM",
+    "QU",
+    "RG"
+   ],
+   "minted_count": 38,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/degrees-of-truth_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-DOT",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "FZ"
+   ],
+   "minted_count": 6,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/execution-layer-sourcing-map_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-ELSM",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "ELSM"
+   ],
+   "minted_count": 10,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/four-faces-corpus_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-FFC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "AF",
+    "CF",
+    "EN",
+    "GPP",
+    "PF",
+    "SPINE",
+    "XC"
+   ],
+   "minted_count": 62,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/head-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-HDC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "HA",
+    "HE",
+    "HG",
+    "HR",
+    "HT",
+    "HW"
+   ],
+   "minted_count": 30,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/labial-palps-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-LBP",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "CA",
+    "CC",
+    "CI",
+    "CS",
+    "CV",
+    "HA",
+    "HE",
+    "HG",
+    "HR",
+    "HT",
+    "HW"
+   ],
+   "minted_count": 50,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/left-wing-corpus_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-LWC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "FA",
+    "FC",
+    "FE",
+    "FP",
+    "FS",
+    "FX",
+    "FZ",
+    "J"
+   ],
+   "minted_count": 50,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/legs-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-LEG",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "LS"
+   ],
+   "minted_count": 23,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/makoha-in-flight_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-MIF",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/proboscis-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-PRB",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "PA",
+    "PC",
+    "PI",
+    "PS",
+    "PV",
+    "TA",
+    "TC",
+    "TE",
+    "TL",
+    "TR",
+    "TW"
+   ],
+   "minted_count": 52,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/right-wing-corpus_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-RWC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "AF",
+    "CF",
+    "ELSM",
+    "EN",
+    "MA",
+    "MC",
+    "ME",
+    "MP",
+    "MS",
+    "MX",
+    "PF",
+    "SPINE",
+    "XC"
+   ],
+   "minted_count": 111,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus-md/thorax-corpus_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-TXC",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "TA",
+    "TC",
+    "TE",
+    "TL",
+    "TR",
+    "TW"
+   ],
+   "minted_count": 28,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "03_makoha-butterfly-corpus/corpus_artifacts_briefing.md",
+   "frontmatter": false,
+   "why": "corpus-companion"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "HARDEN-1.1",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/HARDEN-1_coverage_ledger_seed.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "HARDEN-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "HARDEN-2.1",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "HARDEN-2",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "CC"
+   ],
+   "minted_count": 8,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "HARDEN-3.1",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/HARDEN-3_hardening_plan_worklist.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "HARDEN-3",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-04",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "frontmatter": false,
+   "why": "retained-original"
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-ARG-1_argument_schema.md",
+   "frontmatter": true,
+   "missing_core": [
+    "version",
+    "date"
+   ],
+   "doc_id": "CONTRACT-ARG-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/CONTRACT-RRI-1_render-invariance_test-spec.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "CONTRACT-RRI-1-TEST",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "RRI"
+   ],
+   "minted_count": 4,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-05",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-R29.1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29_hardening_coverage_ledger.schema.md",
+   "frontmatter": true,
+   "missing_core": [
+    "version",
+    "date"
+   ],
+   "doc_id": "REG-R29",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.1_seed_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-R30.1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30.2_seed_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-R30.2",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R30_regulatory_posture_register.schema+seed.md",
+   "frontmatter": true,
+   "missing_core": [
+    "version",
+    "date"
+   ],
+   "doc_id": "REG-R30",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "06_repositories/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-06",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "06_repositories/REPO-MAP_v2.md",
+   "frontmatter": true,
+   "missing_core": [
+    "version",
+    "date"
+   ],
+   "doc_id": "REPO-MAP-v2",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-coder/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/assist/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/bundles/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/lift/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/sources/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-compiler/tests/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-conformal/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corpus/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-corruption/rulebook/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/properties/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/service/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-engine/tests/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-evalstack/pipelines/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/deviation/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/ledger/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/projector/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/service/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-fabric/tests/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-governance/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-graph/tests/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-harness/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-integration/lockfile/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/rows/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-library/validator/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-llm-lattice/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-lumos/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-registry/policy/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/contracts/CONTRACT-ARG-1.pointer.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/contracts/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/north-star/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/registers/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/templates/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/tolerances/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-spine/validator/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/components/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/conformance/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/face/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-clinician/tokens/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/android/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/capture/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/components/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "06_repositories/repo-skeletons/cdss-ui-patient/face/README.md",
+   "frontmatter": false,
+   "why": "skeleton-banner"
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "DEPLOY-1.1",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [
+    "DR"
+   ],
+   "minted_count": 7,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1_deployment_plan_and_sequencing.md",
+   "frontmatter": true,
+   "missing_core": [
+    "date"
+   ],
+   "doc_id": "DEPLOY-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-2_testing_verification_acceptance.md",
+   "frontmatter": true,
+   "missing_core": [
+    "date"
+   ],
+   "doc_id": "DEPLOY-2",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/GOV-1_ownership_governance_postdeploy.md",
+   "frontmatter": true,
+   "missing_core": [
+    "date"
+   ],
+   "doc_id": "GOV-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-07",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "OPS-1.1",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [
+    "PROC"
+   ],
+   "minted_count": 12,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1_operating_procedures.md",
+   "frontmatter": true,
+   "missing_core": [
+    "date"
+   ],
+   "doc_id": "OPS-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-1_security_privacy_compliance.md",
+   "frontmatter": true,
+   "missing_core": [
+    "date"
+   ],
+   "doc_id": "SEC-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "SEC-2",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "B"
+   ],
+   "minted_count": 7,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "08_research/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-08",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "08_research/RESEARCH-1.1_findings_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "RESEARCH-1.1",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "08_research/RESEARCH-1_findings_gaps_source_map.md",
+   "frontmatter": true,
+   "missing_core": [
+    "status"
+   ],
+   "doc_id": "RESEARCH-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "RG"
+   ],
+   "minted_count": 6,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "09_diagrams/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-09",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/EXEC-1_execution_directive.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "EXEC-1",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "EX",
+    "EXEC",
+    "MET"
+   ],
+   "minted_count": 12,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/FOLD-1_antennae_fold_worklist.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "FOLD-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "EXEC"
+   ],
+   "minted_count": 1,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/INDEX.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "INDEX-10",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "EXEC",
+    "FOLD"
+   ],
+   "minted_count": 2,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/MAK-GOV_addendum-g_v0.9.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "MAK-GOV",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [
+    "B",
+    "NDG"
+   ],
+   "minted_count": 18,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-EU_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-EU",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-NZ_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-NZ",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-NZ",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [
+    "A"
+   ],
+   "minted_count": 9,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.1.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-POSTURE",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [
+    "A",
+    "J"
+   ],
+   "minted_count": 13,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-POSTURE",
+   "supersedes": true,
+   "declares_prefix": true,
+   "minted_families": [
+    "A",
+    "B",
+    "J"
+   ],
+   "minted_count": 23,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-POSTURE-TOC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "EX"
+   ],
+   "minted_count": 1,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT-1.1_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-SPRINT-1.1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT-1.2_census_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-SPRINT-1.2",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-SPRINT_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-SPRINT",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "10_regulatory-execution/REG-US_v1.0.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "REG-US",
+   "supersedes": false,
+   "declares_prefix": true,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-A_bayesian_engine_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-A",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-B_evidence_library_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-B",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-C_casebundle_corpus_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-C",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-D_content_registry_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-D",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-E_graph_rag_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-E",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-FOLD-1_antennae_v1.2_fold.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-FOLD-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-F_conformal_wrapper_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-F",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-G_corruption_engine_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-G",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-HARDEN_mt2_pass_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-HARDEN",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-H_lumos_pathway_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-H",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-I_living_evaluation_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-I",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-J_model_governance_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-J",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-K_llm_augmentation_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-K",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-L_runtime_llm_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-L",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-P0_primer0_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-P0",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-ABC_auditor_face_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-ABC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-ANT_regulatory_sensing_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-ANT",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-CEC_engines_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-CEC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-HDC_clinician_face_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-HDC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LBP_clinician_ui_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-LBP",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LEG_stack_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-LEG",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-LWC_fuzzy_spine_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-LWC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-PRB_patient_ui_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-PRB",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-RWC_meta_rationality_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-RWC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-SERIES_index.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-SERIES",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM-TXC_patient_face_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM-TXC",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-PRM0_butterfly_primer0_launch.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-PRM0",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "PRM"
+   ],
+   "minted_count": 1,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-SERIES_A-L_index.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-SERIES",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [],
+   "minted_count": 0,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-1_ecosystem_repleteness_surveyor.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-SURVEY-1",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "E",
+    "P",
+    "T"
+   ],
+   "minted_count": 26,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-2_folder-parity_build-spec-queue.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-SURVEY-2",
+   "supersedes": false,
+   "declares_prefix": false,
+   "minted_families": [
+    "HARDEN",
+    "SURVEY"
+   ],
+   "minted_count": 2,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-SURVEY-3.1",
+   "supersedes": true,
+   "declares_prefix": false,
+   "minted_families": [
+    "D",
+    "M",
+    "T"
+   ],
+   "minted_count": 24,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-SURVEY-3.2",
+   "supersedes": true,
+   "declares_prefix": false,
+   "minted_families": [
+    "E"
+   ],
+   "minted_count": 3,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md",
+   "frontmatter": true,
+   "missing_core": [],
+   "doc_id": "PROMPT-SURVEY-3",
+   "supersedes": true,
+   "declares_prefix": false,
+   "minted_families": [
+    "A",
+    "E",
+    "P",
+    "T"
+   ],
+   "minted_count": 35,
+   "ladder_skips": 0,
+   "tables_inconsistent_columns": 0
+  },
+  {
+   "file": "AGENTS.md",
+   "frontmatter": false,
+   "why": "root-governance"
+  },
+  {
+   "file": "CLAUDE.md",
+   "frontmatter": false,
+   "why": "root-governance"
+  },
+  {
+   "file": "README.md",
+   "frontmatter": false,
+   "why": "root-governance"
+  }
+ ]
+}

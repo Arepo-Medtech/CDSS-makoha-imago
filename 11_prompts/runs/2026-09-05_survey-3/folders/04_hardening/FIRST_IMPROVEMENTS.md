@@ -1,0 +1,4 @@
+# FIRST_IMPROVEMENTS — 04_hardening (weight order)
+
+- [OPTIMISATION] [1] [L3-SEMANTICS/Q-D-15] [load-bearing document] Prose-only average sentence length 37.7 words (threshold 35; FK grade 16.9) — dense for a multi-disciplinary or non-native reader. — measured: 37.7 vs 35 words per sentence (prose only) — exemplar: 02_cdss-stack-augmented/primer_A_bayesian_engine.md (ASL 19.8) — blocks: — — remedy: plain-language companion (≤ 25 words/sentence) or, for a register/schema document, a form finding instead of a readability finding (CLAUDE-CODE-EXECUTABLE-NOW, base document's owner) — QI-0041
+- [OPTIMISATION] [1] [L1-STRUCTURE/Q-D-10] [DELTA] Mechanical Q-line failure(s) ['Q-D-10'] not covered by a Phase 1 row; recorded for the item, weight by radius 1. — measured: Q-D-10: prefix collision or label overlap (see L2_id_lifecycle)… — exemplar: — — blocks: — — remedy: line PASS (CLAUDE-CODE-EXECUTABLE-NOW, folder owner (INDEX §4)) — QI-0113
