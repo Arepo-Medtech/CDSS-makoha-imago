@@ -265,3 +265,21 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Governance text aligned (outside the 00_–11_ law).** `AGENTS.md` "How work lands" said survey *and* sprint runs leave the diff outside the run directory empty; sprint-1 (A-004, 37 files) and this sprint do not, by design — a sprint builds deliverables. The sentence now reads: "Sprint runs keep their record and bookends under the same path and land their deliverables as **new files** beside retained files (deltas, companions, successors), each with a ledger row and task; the bookends must show no pre-existing file changed except the manifest (appended) and root governance files outside 00_–11_ (A-004 and A-010 precedent)." Found by the Copilot review on PR #16; changed on the branch.
 
 **Process (requirement).** The PR carrying this amendment is opened by Kenny-bytes so that the Copilot review is auto-requested under ruleset 22326380; it is to be merged only after that review has posted and its findings have been addressed on the branch, per the A-007 process note.
+
+# 17. Amendment A-011 (2026-09-05) — MET-2.3: DEC-24, DEC-25 and DEC-26 ruled as drafted by the Architecture owner
+
+**What was added.** One file, `01_north-star-and-transformation/MET-2.3_architecture_rulings_delta.md` (additive delta to MET-2, MET-2.1 and MET-2.2; none edited), and this section. On 2026-09-05 the Architecture owner (Kenny-bytes, MET-2.2 §1) ruled the three decisions MET-2.2 §5 had drafted, in the words "Rule DEC-24 to DEC-26 as drafted". MET-2.3 §1 quotes the MET-2.2 draft text verbatim as the law and closes the three rows.
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `01_north-star-and-transformation/MET-2.3_architecture_rulings_delta.md` | §1 DEC-24 doc_id supersession rule · DEC-25 R25 = "Build Evidence & Assumptions Ledger" (alias "property runs") · DEC-26 alias laws W / RG / CC — all Closed as drafted · §2 register rows (govern over MET-2.2 §2) · §3 read-through R-01..R-07 and owed work (register_topology v5 + page v5 for the R25 label; REG-R29.2 twin delta for the `HCC-n` enum respelling; GLOSSARY v1.1) · §4 self-audit with pasted outputs | Added — register delta; rulings are owner facts |
+
+**Census.** DEC-01..26 = 26 (unchanged); Closed 12 (+3: DEC-24, 25, 26); Open 11 + DEC-18 provisional + DEC-21 repo component + DEC-23 values. `A-001..011` = 11 amendments; `DEF-001..008` = 8.
+
+**Effect on sprint-2 files (retained, read through MET-2.3 §3).** RESEARCH-1.2 D-2 and HARDEN-2.2 D-2/D-4 are law, not Proposed; GLOSSARY rows W-n, CC-n, RG-nn, R25 read as Closed; IMAGO-3 v4 still carries the pre-ruling R25 label until the v5 regeneration.
+
+**Not done by A-011.** No schema enum respelled (DEC-02's ratified R29 schema stands until REG-R29.2); no diagram regenerated; no other decision changed State; nothing retained edited.
+
+**Ledger debt.** MET-2.3 has no HARDEN-1.x row or HARDEN-3.x task — owed by HARDEN-1.3 / HARDEN-3.3 with the files MET-2.3 §3 owes.
+
+**Process (requirement).** PR opened by Kenny-bytes (Copilot auto-requested under ruleset 22326380); at most two Copilot passes — fix the first pass on the branch, one confirming pass, then the owner's merge decision.
