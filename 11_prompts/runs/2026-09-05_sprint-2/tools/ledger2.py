@@ -150,7 +150,7 @@ def gen():
         if k=='i09':
             mp=json.load(open('11_prompts/runs/2026-09-05_sprint-2/raw/mermaid_parse.json'))
             L+=['','## §3 Recorded self-audit — headless parse of every source and inlined block (sprint-1 `tools/mermaid/parse.mjs`, run 2026-09-05)','','```',mp['tool']]+[f"  {r['file']:36s} {r['kind']:18s} {r['result']}" for r in mp['results']]+[f"total {len(mp['results'])}  FAIL {sum(1 for r in mp['results'] if r['result']!='PASS')}",'```','','Source↔inline identity: the v4 page inlines `register_topology_v4.mermaid` from the `flowchart LR` line verbatim (generator copies the source; RUN-REPORT pastes the diff = ∅). R25 label carried pending DEC-25; `MT2 §7.4` occurrences in v4 files: 0.']
-        L+=['','## §4 Census',f'',f'Rows: {len(files)} = files sprint-2 added under `{folder}/` (generator); each has a HARDEN-1.2 row and a HARDEN-3.2 task. Parent INDEX byte-identical (sprint-2 CHECKSUMS).','']
+        L+=['',f"## {'§4' if k=='i09' else '§3'} Census",f'',f'Rows: {len(files)} = files sprint-2 added under `{folder}/` (generator); each has a HARDEN-1.2 row and a HARDEN-3.2 task. Parent INDEX byte-identical (sprint-2 CHECKSUMS).','']
         idx_out[k]='\n'.join(L)
     # inventory
     inv=[f'# inventory of main@{SHA} + sprint-2 (2026-09-05); "bytes path"; every tracked file outside 11_prompts/runs/ (run directories are evidence, not corpus); the tracked tree is authoritative (README); supersedes 00_inventory.txt (v1.1-build snapshot of 2026-09-01, retained unedited — 00_MANIFEST A-008 / DEF-008; survey-3 QI-0063)']

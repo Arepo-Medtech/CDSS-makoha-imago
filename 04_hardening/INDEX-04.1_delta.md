@@ -24,6 +24,6 @@ HARDEN-2.2 carries the CC and W alias laws (survey-3 QI-0025/QI-0030; DEC-26 Pro
 | `04_hardening/HARDEN-3.2_task_register_delta.md` | CC-8 | HARDEN-3.2 | 1.2-delta | 2026-09-05 | Added (sprint-2). Plan delta; no task started; every task PENDING (pre-pass placeholder). HARDEN-3 v1.0 and HARDEN-3.1 are preserved verbatim beside this file; read HARDEN-3 through 3.1 through this f… | 86892 | Added (sprint-2) — Proposed | 402 | T-928 | §16 A-010 |
 | `04_hardening/INDEX-04.1_delta.md` | CC-8 | INDEX-04.1 | 1.0 | 2026-09-05 | Added (sprint-2). Additive delta over 04_hardening/INDEX.md (not edited); indexes only. Every row is generated from disk by the sprint-2 generator; HARDEN row and task ids are those HARDEN-1.2 / HARDE… | 2798 | Added (sprint-2) — Proposed | 403 | T-929 | §16 A-010 |
 
-## §4 Census
+## §3 Census
 
 Rows: 4 = files sprint-2 added under `04_hardening/` (generator); each has a HARDEN-1.2 row and a HARDEN-3.2 task. Parent INDEX byte-identical (sprint-2 CHECKSUMS).

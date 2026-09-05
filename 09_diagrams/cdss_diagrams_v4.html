@@ -100,7 +100,7 @@ flowchart LR
   classDef prop stroke-dasharray: 5 5
 </pre>
 <h2>4. The three ladders with the EXEC-1 run overlay</h2>
-<p>IMAGO-4 <strong>v2</strong>: RUN-0..4 rows and SG-V*/NZ-GATE exits added from DEPLOY-1.1 D-1 (in force as calendar on DEC-22); gate content unchanged. Source: <code>deployment_ladders_v2.mermaid</code>.</p>
+<p>IMAGO-4 <strong>v2</strong> (unchanged from v3): RUN-0..4 rows and SG-V*/NZ-GATE exits from DEPLOY-1.1 D-1 — the calendar is in force since DEC-22 closed (MET-2.2 §3.1); gate content unchanged. Source: <code>deployment_ladders_v2.mermaid</code>.</p>
 <pre class="mermaid">
 flowchart TD
   subgraph RUNS["EXEC-1 runs (one calendar — EX-5)"]
@@ -132,7 +132,7 @@ flowchart TD
   class RUN0,RUN1,RUN2,RUN3,RUN4 prop
 </pre>
 <h2>5. Data flow and trust boundaries (SEC-2 §1)</h2>
-<p>IMAGO-5 (new): the boundary map SEC-2's STRIDE table hangs from — per-environment accounts, corpus account firewall, signing enclave, substrate per DEC-03 (both drawn; Baseten pending). Source: <code>data_flow_v1.mermaid</code>.</p>
+<p>IMAGO-5 (unchanged from v3, where it was introduced): the boundary map SEC-2's STRIDE table hangs from — per-environment accounts, corpus account firewall, signing enclave, substrate per DEC-03 (both drawn; Baseten pending). Source: <code>data_flow_v1.mermaid</code>.</p>
 <pre class="mermaid">
 flowchart LR
   subgraph ORG["AWS Organizations — per-environment accounts (Arch §11.1 T3: no network path staging→production)"]

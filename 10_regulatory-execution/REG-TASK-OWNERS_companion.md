@@ -25,7 +25,7 @@ REG-EU are ADVISORY jurisdiction postures) and say so rather than inventing a ru
 
 | Task | Gate | DR step (DEPLOY-1.1) | RUN (EXEC-1) | Owner role | Account (MET-2.2 §1) | Evidence artifact (DONE-WITH-EVIDENCE means…) | R30.3 row | Source |
 |---|---|---|---|---|---|---|---|---|
-| `TASK-REG-001` | `GATE-000` | DR-2 | RUN-0 · Decide | Founder (programme) — DR-2 | Kenny-bytes | intended purpose statement v1.0, signed (draft: 11_prompts/runs/2026-09-05_primer-0/DRAFT_TASK-REG-001) | PRESENT | `REG-POSTURE_v1.2.md:874` |
+| `TASK-REG-001` | `GATE-000` | DR-2 | RUN-0 · Decide | Founder (programme) — DR-2 | Kenny-bytes | intended purpose statement v1.0, signed (draft: 11_prompts/runs/2026-09-05_primer-0/DRAFT_TASK-REG-001_intended_purpose.md) | PRESENT | `REG-POSTURE_v1.2.md:874` |
 | `TASK-REG-002` | `GATE-000` | DR-2 | RUN-0 · Decide | Regulatory owner (packet content); Founder (dispatch) | kendo-Jones; Kenny-bytes | counsel's written classification opinion, dated (AU packet dispatched: counsel_packet_AU/) | PRESENT | `REG-POSTURE_v1.2.md:875` |
 | `TASK-REG-003` | `GATE-000` | DR-2 | RUN-0 · Decide | Regulatory owner (packet content); Founder (dispatch) | kendo-Jones; Kenny-bytes | versioned claims inventory reconciled to the intended purpose statement (OBL-014) | PRESENT | `REG-POSTURE_v1.2.md:876` |
 | `TASK-REG-004` | `GATE-000` | DR-2 | RUN-0 · Decide | Counsel + product (DEC-07) | [NEEDS DEFINITION — DEC-07]; kendo-Jones drafts | DEC-07 ruling recorded in MET-2.n; ASSUME-REG-003 ATTESTED/REFUTED | PRESENT | `REG-POSTURE_v1.2.md:877` |
@@ -86,7 +86,7 @@ REG-EU are ADVISORY jurisdiction postures) and say so rather than inventing a ru
 | `EU-TASK-012` | `EU-GATE-002` | — (no DR step: US/EU are ADVISORY jurisdictions outside the EXEC-1 run map; REG-SPRINT V3 at the earliest) | not in EXEC-1 RUN-0..4 (V3 / later) | Regulatory owner | kendo-Jones | UDI assignment; EU Declaration of Conformity; CE marking record; EUDAMED device registration; launch-market IFUs | PRESENT | `REG-EU_v1.0.md:345` |
 | `EU-TASK-013` | `EU-GATE-003` | — (no DR step: US/EU are ADVISORY jurisdictions outside the EXEC-1 run map; REG-SPRINT V3 at the earliest) | not in EXEC-1 RUN-0..4 (V3 / later) | Regulatory owner | kendo-Jones | vigilance procedures with 15/10/2-day clocks; trend reporting; PSUR cadence; PMCF running; significant-change SOP (EU-OBL-011); liability evidence retention | PRESENT | `REG-EU_v1.0.md:346` |
 
-## §3 Census and self-audit (generated 2026-09-05T12:15:07Z; `tools/regtask.py`)
+## §3 Census and self-audit (generated 2026-09-05T13:27:28Z; `tools/regtask.py`)
 
 ```
 tasks parsed per family: {"TASK-REG": 24, "NZ-TASK": 10, "US-TASK": 13, "EU-TASK": 13}  total 60

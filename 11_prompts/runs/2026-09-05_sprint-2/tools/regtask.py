@@ -41,7 +41,7 @@ OVR = {
 }
 # evidence artifact that makes the task DONE-WITH-EVIDENCE (REG-POSTURE §0.4) — named from the task's own text
 EV = {
- 'TASK-REG-001':'intended purpose statement v1.0, signed (draft: 11_prompts/runs/2026-09-05_primer-0/DRAFT_TASK-REG-001)','TASK-REG-002':"counsel's written classification opinion, dated (AU packet dispatched: counsel_packet_AU/)",
+ 'TASK-REG-001':'intended purpose statement v1.0, signed (draft: 11_prompts/runs/2026-09-05_primer-0/DRAFT_TASK-REG-001_intended_purpose.md)','TASK-REG-002':"counsel's written classification opinion, dated (AU packet dispatched: counsel_packet_AU/)",
  'TASK-REG-003':'versioned claims inventory reconciled to the intended purpose statement (OBL-014)','TASK-REG-004':'DEC-07 ruling recorded in MET-2.n; ASSUME-REG-003 ATTESTED/REFUTED',
  'TASK-REG-005':'Jira project + Ketryx workspace exist (screenshot/export), synthetic scope declared','TASK-REG-006':'Ketryx configuration export per KTX-001/010/011 + configuration-item ceiling model (§6.1)',
  'TASK-REG-007':'ISO 14971 risk file opened (Ketryx risk module export, first hazard rows)','TASK-REG-008':'requirements set tagged to Essential Principles (KTX-008 export)',

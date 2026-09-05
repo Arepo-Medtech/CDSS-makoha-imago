@@ -351,7 +351,7 @@
 10322 09_diagrams/INDEX.md
 7219 09_diagrams/cdss_diagrams_v2.html
 10917 09_diagrams/cdss_diagrams_v3.html
-11671 09_diagrams/cdss_diagrams_v4.html
+11756 09_diagrams/cdss_diagrams_v4.html
 2014 09_diagrams/data_flow_v1.mermaid
 1283 09_diagrams/deployment_ladders.mermaid
 2229 09_diagrams/deployment_ladders_v2.mermaid
@@ -375,7 +375,7 @@
 6141 10_regulatory-execution/REG-SPRINT-1.1_delta.md
 8986 10_regulatory-execution/REG-SPRINT-1.2_census_delta.md
 10741 10_regulatory-execution/REG-SPRINT_v1.0.md
-20821 10_regulatory-execution/REG-TASK-OWNERS_companion.md
+20841 10_regulatory-execution/REG-TASK-OWNERS_companion.md
 47772 10_regulatory-execution/REG-US_v1.0.md
 3904 10_regulatory-execution/validate_reg.py
 14790 11_prompts/PROMPT-A_bayesian_engine_launch.md
