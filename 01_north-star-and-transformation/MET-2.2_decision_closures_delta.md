@@ -209,13 +209,20 @@ Ledger debt: this file has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-
 
 ## 8. Self-audit (run 2026-09-05 on the PR branch; commands pasted, outputs quoted)
 
-1. **Append-only** — `python3 .github/audit/append_only.py origin/main` (run after the final edit of both changed files; CI job "Mechanical audit" on PR #15: pass) →
+1. **Append-only** — `python3 .github/audit/append_only.py origin/main`, run from the repository root after the final edit of both changed files (the same script the design-ecosystem audit workflow runs on every pull request) →
 ```
 00_MANIFEST.md: appended 6887 bytes; prefix preserved (sha256 6867157e3d4c)
 append-only: 2 changed paths, 2 permitted, 0 violations
 ```
 2. **References** — `python3 .github/audit/refcheck.py 00_MANIFEST.md 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` → `dead in-repo paths: 0; unresolved anchors: 0`. Owed future files in §6 are written without backticks so they are not read as references.
-3. **Census parity (§2)** — `grep -c '^| DEC-'` → 26 rows; `grep -o '^| DEC-[0-9]*' | sort -u | wc -l` → 26 distinct ids = DEC-01..26 · `grep -c '^| DEC-.*\*\*Closed'` → 9 closed rows (DEC-01, 02, 08, 09, 10, 11, 13, 14, 22) · `grep -c '^| C-17'` → 1. C census 12 + 4 + 1 = 17; DEC census 23 minted + 3 proposed = 26; both agree with the frontmatter `req_prefixes` (C, DEC — the families this file mints into; G is cited, not minted) and `id_families`.
+3. **Census parity (§2)** — run from the repository root against this file:
+```
+grep -c '^| DEC-' 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md                       → 26
+grep -o '^| DEC-[0-9]*' 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md | sort -u | wc -l  → 26
+grep -c '^| DEC-.*\*\*Closed' 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md          → 9
+grep -c '^| C-17' 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md                        → 1
+```
+   26 table rows, 26 distinct ids = DEC-01..26; 9 closed rows (DEC-01, 02, 08, 09, 10, 11, 13, 14, 22); one C-17 row. C census 12 + 4 + 1 = 17; DEC census 23 minted + 3 proposed = 26; both agree with the frontmatter `req_prefixes` (C, DEC — the families this file mints into; G is cited, not minted) and `id_families`.
 4. **DEC-13 ground (a)** — `git ls-files | grep -v '^11_prompts/runs/' | xargs grep -l 'MAK-GOV' | wc -l` → 37 tracked files (this file and the manifest included); by top-level folder:
 ```
 1 .github
