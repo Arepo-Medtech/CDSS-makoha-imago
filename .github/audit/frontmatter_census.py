@@ -8,7 +8,7 @@ nofm = collections.defaultdict(list); gaps = collections.Counter(); ids = collec
 for f in files:
     t = open(f, encoding="utf-8", errors="replace").read()
     if not t.startswith("---"):
-        cls = "retained-original" if f.startswith("02_") or "MAJOR_TASK_2" in f else "skeleton-stub" if f.startswith("06_repositories/repo-skeletons") else "companion-or-omission"
+        cls = "root-governance" if "/" not in f else "retained-original" if f.startswith("02_") or "MAJOR_TASK_2" in f else "skeleton-stub" if f.startswith("06_repositories/repo-skeletons") else "companion-or-omission"
         nofm[cls].append(f); continue
     head = t.split("---", 2)[1]
     for k in core:

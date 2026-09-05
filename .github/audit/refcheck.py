@@ -13,7 +13,7 @@ for k, p in DOCS.items():
         if m: hs.add(m.group(1))
     heads[k] = hs
 tracked = set(subprocess.check_output(["git", "ls-files"]).decode().split("\n"))
-EXTERNAL = ("validate_regulatory_sensing.py", "coder_contract.md", "pharm-check.schema.json", "x8stats.py", "references/", "docs/agents.md", "validate_build_plan.py", "observer_adjudication.md", "definition-of-done.md", "testing-patterns.md", "security-checklist.md", "performance-checklist.md", "accessibility-checklist.md", "observability-checklist.md", "orchestration-patterns.md")
+EXTERNAL = (".venv", "node_modules", "validate_regulatory_sensing.py", "coder_contract.md", "pharm-check.schema.json", "x8stats.py", "references/", "docs/agents.md", "validate_build_plan.py", "observer_adjudication.md", "definition-of-done.md", "testing-patterns.md", "security-checklist.md", "performance-checklist.md", "accessibility-checklist.md", "observability-checklist.md", "orchestration-patterns.md")
 PATHRX = re.compile(r"`((?:\d\d_[A-Za-z0-9_\-]+/)[^`\s]*)`|`([^`\s]+?\.(?:md|json|jsonl|yaml|yml|py|html|mermaid|txt|mjs))`")
 ANCH = re.compile(r"(Arch|MT2|MET-1|REG-POSTURE|Primer 0|HARDEN-2|REG-NZ|EXEC-1|MAK-GOV|OPS-1)\s*§\s*([0-9]+(?:\.[0-9]+)?|[A-Z](?:\.[0-9]+)?)")
 dead = []; ext = glob = fut = shorthand = 0; anchors_bad = []
