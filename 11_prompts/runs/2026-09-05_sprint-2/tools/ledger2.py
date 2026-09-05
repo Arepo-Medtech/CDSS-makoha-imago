@@ -9,7 +9,7 @@ H1=['04_hardening/HARDEN-1_coverage_ledger_seed.md','04_hardening/HARDEN-1.1_cov
 OUT={'h12':'04_hardening/HARDEN-1.2_coverage_ledger_owner_delta.md','h32':'04_hardening/HARDEN-3.2_task_register_delta.md',
      'i04':'04_hardening/INDEX-04.1_delta.md','i06':'06_repositories/INDEX-06.1_delta.md','i08':'08_research/INDEX-08.1_delta.md','i09':'09_diagrams/INDEX-09.1_delta.md','i10':'10_regulatory-execution/INDEX-10.1_delta.md','inv':'00_inventory_v1.3.txt'}
 import shlex
-def sh(c): return subprocess.run(shlex.split(c),capture_output=True,text=True).stdout
+def sh(c): return subprocess.run(shlex.split(c),capture_output=True,text=True,check=True).stdout  # fail fast: a failed command must not seal partial output
 # --- existing ledger rows
 rows11=[]; paths_with_row=set()
 for f in H1:

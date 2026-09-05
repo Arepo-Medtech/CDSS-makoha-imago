@@ -125,7 +125,7 @@
 1454 .github/workflows/confluence-mirror.yml
 3320 .github/workflows/design-ecosystem-audit.yml
 375 .gitignore
-52171 00_MANIFEST.md
+52375 00_MANIFEST.md
 5049 00_inventory.txt
 24257 00_inventory_v1.3.txt
 2969 01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md
