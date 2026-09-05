@@ -99,7 +99,8 @@ HARDEN-3.x task — owed by the next HARDEN-1.3 / HARDEN-3.3 delta together with
    → REG-POSTURE_v1.2.md:13 supersedes: REG-POSTURE v1.1 (2026-09-01); REG-POSTURE v1.0 (2026-08-31)
    → REG-POSTURE_v1.1.md:11 supersedes: REG-POSTURE v1.0 (2026-08-31)
    → REG-NZ_v1.1.md:13 supersedes: REG-NZ v1.0 (2026-09-01)
-   → REG-NZ_v1.0.md: (none — first version; nothing to supersede)   → every superseding file complies; nothing owed
+   (grep prints no line for REG-NZ_v1.0.md — it has no supersedes: field)
+   note, not output: REG-NZ v1.0 is a first version with nothing to supersede; every superseding file complies; nothing owed
 4. grep -c 'Proposed; becomes law on DEC-26' 08_research/RESEARCH-1.2_alias_and_triggers_delta.md 04_hardening/HARDEN-2.2_alias_laws_delta.md → 1 + 2 (retained; read via R-01/R-02)
 5. python3 .github/audit/refcheck.py 01_north-star-and-transformation/MET-2.3_architecture_rulings_delta.md → dead in-repo paths: 0; unresolved anchors: 0
 ```
