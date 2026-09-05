@@ -12,6 +12,6 @@ for p in pages:
     for s in sizes: size_pages[s]+=1
     for f in fonts: font_pages[f]+=1
 N=len(pages); k=max(1,round(N*0.4))  # implied token = used by >= 40% of pages [ASSESSOR-PROPOSED]
-implied={"threshold_pages":k,"colours":sorted([h for h,c in colour_pages.items() if c>=k]),"sizes":sorted([s for s,c in size_pages.items() if c>=k],key=lambda x:float(re.match(r'[\d.]+',x).group())),"fonts":sorted(f for f,c in font_pages.items() if c>=k)}
+implied={"threshold_pages":k,"colours":sorted([h for h,c in colour_pages.items() if c>=k]),"sizes":sorted([s for s,c in size_pages.items() if c>=k],key=lambda x:(float(re.match(r'[\d.]+',x).group()),x)),"fonts":sorted(f for f,c in font_pages.items() if c>=k)}
 for r in rows: r["drift_colours_not_in_implied"]=len([h for h in r["hex_list"] if h not in implied["colours"]]); del r["hex_list"]
 print(json.dumps({"tool":"style_census.py","pages":N,"rows":rows,"implied_token_set":implied},indent=1))
