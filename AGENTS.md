@@ -62,9 +62,12 @@ first. For the quality standard read `11_prompts/PROMPT-SURVEY-3_final-quality-i
 - Branch from `main`; add new files; open a pull request. `main` accepts changes only by PR.
 - Record the amendment in `00_MANIFEST.md` (next A-nnn), and give every new file a HARDEN-1.x row and
   a HARDEN-3.x task in the same PR or note the debt in the amendment.
-- Survey and sprint runs write only under `11_prompts/runs/<date>_<name>/` with sha256 checksum
-  bookends (`CHECKSUMS_BEFORE.txt` / `CHECKSUMS_AFTER.txt`); the diff outside the run directory must
-  be empty (or the manifest only, appended).
+- Survey runs write only under `11_prompts/runs/<date>_<name>/` with sha256 checksum bookends
+  (`CHECKSUMS_BEFORE.txt` / `CHECKSUMS_AFTER.txt`); the diff outside the run directory must be empty
+  (or the manifest only, appended). Sprint runs keep their record and bookends under the same path and
+  land their deliverables as **new files** beside retained files (deltas, companions, successors), each
+  with a ledger row and task; the bookends must show no pre-existing file changed except the manifest
+  (appended) and root governance files outside 00_–11_ (A-004 and A-010 precedent).
 - On merge the Confluence mirror (`.github/workflows/confluence-mirror.yml`) creates one Imago page per
   new file; run directories and agent tooling are excluded.
 

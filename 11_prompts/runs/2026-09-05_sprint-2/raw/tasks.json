@@ -1,0 +1,415 @@
+[
+ {
+  "id": "TASK-REG-001",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 874,
+  "text": "Write the intended purpose statement. One document, one claim. Everything downstream depends on it. Include the three surfaces explicitly and what each does.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-002",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 875,
+  "text": "Engage Australian regulatory counsel for a written classification opinion: medical device status, classification rule and class, exemption eligibility (expected: not eligible), conformity assessment route. **[AMENDED v1.1]** Scope extended to the J-3 legal flags (`Q-REG-009`) and the patient-surface question (`ASSUME-REG-003`) in the same engagement — three separate engagements for one counsel relationship wastes the longest lead time in the programme.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-003",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 876,
+  "text": "Reconcile public positioning. The site currently markets AI capability. Under an inclusion path this is fine and stops being a liability — but the claims must match the intended purpose statement exactly, because advertising requirements for therapeutic goods apply to exempt and included devices alike (`OBL-003`). **[AMENDED v1.1]** Output is a versioned claims inventory (`OBL-014`), not a one-off edit.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-004",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 877,
+  "text": "Decide the patient surface. Separate product, non-decision-support, or in-scope for the same submission. Each has different consequences.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-021",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 878,
+  "text": "Triage the live demo surface: inventory the third-party AI provider as a supplier (`OBL-013`), confirm the disclosure is accurate, and decide whether the conversational surface remains public before the intended-purpose statement exists. Do not defer behind `TASK-REG-001` — the surface is live now.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-022",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 879,
+  "text": "Decide the jurisdiction sequence (`Q-REG-008`). The north star names low-resource settings; the posture is Australia-only; J-3's jurisdiction map already spans TGA, FDA and EU MDR. An unstated sequence will be set by accident. **[AMENDED v1.2]** Working sequence as stated to Ketryx on 1 September 2026: New Zealand first (notification), Australia second (conformity assessment + ARTG), FDA and EU MDR later. Recorded as the working assumption; DEC on `Q-REG-008` still required.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-023",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 880,
+  "text": "Governance Layer classification. Put the non-device question to counsel inside the single `TASK-REG-002` engagement (`ASSUME-REG-009`, `Q-REG-010`): does software that analyses documented clinical decisions for organisational conformance, with no clinical write path and no patient-specific output, meet s41BD — and specifically, is it an *accessory* to Mākoha, and is \"analysing for a medical purpose\" engaged. Attach MAK-GOV §2 and the Governance Layer intended purpose statement (`T-G01`). Homes the MAK-GOV §5 forward reference.",
+  "gate": "`GATE-000`"
+ },
+ {
+  "id": "TASK-REG-005",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 897,
+  "text": "Adopt Jira. Ketryx free tier. One project, synthetic scope.",
+  "gate": "`GATE-001`"
+ },
+ {
+  "id": "TASK-REG-006",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 898,
+  "text": "Configure from the Ketryx schema (`KTX-001`). Risk module strict mode on (`KTX-011`). Traceability V-model configured minimally (`KTX-010`). **[AMENDED v1.1]** Model the configuration-item ceiling first (§6.1).",
+  "gate": "`GATE-001`"
+ },
+ {
+  "id": "TASK-REG-007",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 899,
+  "text": "Stand up the ISO 14971 risk file. This is the spine everything else hangs from — before requirements, before design controls.",
+  "gate": "`GATE-001`"
+ },
+ {
+  "id": "TASK-REG-008",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 900,
+  "text": "Requirements from the intended purpose statement, tagged with `Relevant standards` against Essential Principles (`KTX-008`).",
+  "gate": "`GATE-001`"
+ },
+ {
+  "id": "TASK-REG-009",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 901,
+  "text": "Migrate inference to Baseten Sydney, dedicated deployment, pinned weights. Get version-stability and change-notice commitments in the contract (`ASSUME-REG-004`). **[AMENDED v1.1] Blocked on DEC-03.** If DEC-03 rules for Bedrock, this task is superseded and the pinning requirement must be met another way — the requirement survives the substrate choice.",
+  "gate": "`GATE-001`; DEC-03"
+ },
+ {
+  "id": "TASK-REG-024",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 902,
+  "text": "Decide the QMS certification route (`Q-REG-011`): (a) TGA conformity assessment of the QMS directly; (b) MDSAP audit by a recognised auditing organisation, accepted by TGA as evidence and simultaneously by FDA (in lieu of routine inspection), Health Canada (mandatory), ANVISA and MHLW; (c) EU notified-body ISO 13485 certification. For the stated NZ → AU → FDA → EU sequence, (b) is the only option that is author-once across three of the four regulators. Decide before the QMS is audited by anyone, because the audit-scope documents differ. Output: a decision row in MET-2 and the certification body engaged.",
+  "gate": "`GATE-001`"
+ },
+ {
+  "id": "TASK-REG-010",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 912,
+  "text": "Split the Amplify path: synthetic/demo continues push-to-deploy; regulated releases go through a gated pipeline with approval landing as a CI artifact. **[AMENDED v1.1]** Per `REG-FIND-011`, the gate must be pre-deployment, and functional-update assessment happens inside it.",
+  "gate": "`GATE-002`"
+ },
+ {
+  "id": "TASK-REG-011",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 913,
+  "text": "SBOM generation in CI, flowing into Ketryx supply chain management (`KTX-012`, `OBL-004`).",
+  "gate": "`GATE-002`"
+ },
+ {
+  "id": "TASK-REG-012",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 914,
+  "text": "Vulnerability handling and disclosure processes (`STD-009`), with CVSS scoring and CAPA linkage (`OBL-008`).",
+  "gate": "`GATE-002`"
+ },
+ {
+  "id": "TASK-REG-013",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 915,
+  "text": "Supplier assessments — Baseten or Bedrock per DEC-03, AWS, and any third-party AI provider on a public surface (`OBL-005`, `OBL-006`, `OBL-013`).",
+  "gate": "`GATE-002`"
+ },
+ {
+  "id": "TASK-REG-014",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 916,
+  "text": "IEC 62366-1 use-related risk analysis (`STD-004`). Three surfaces, three analyses. The patient surface is hardest; do it last but do not skip it.",
+  "gate": "`GATE-002`"
+ },
+ {
+  "id": "TASK-REG-015",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 927,
+  "text": "Clinical evidence and validation — the Lumos linkage pathway. Longest lead item in the programme; started in parallel from Phase 1, not sequentially. **[AMENDED v1.1]** Now load-bearing rather than merely long: per `REG-FIND-010`, synthetic evidence does not reduce this burden. Ethics and custodian engagement (`Q-REG-007`) begins in Phase 0, not Phase 3.",
+  "gate": "`GATE-003`"
+ },
+ {
+  "id": "TASK-REG-016",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 928,
+  "text": "Independent penetration testing, by a party outside the development team (`OBL-007`).",
+  "gate": "`GATE-003`"
+ },
+ {
+  "id": "TASK-REG-017",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 929,
+  "text": "Post-market surveillance procedures, adverse event reporting readiness (`OBL-002`).",
+  "gate": "`GATE-003`"
+ },
+ {
+  "id": "TASK-REG-018",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 930,
+  "text": "Ketryx tier upgrade for validated-out-of-the-box status and post-market surveillance features (`WATCH-REG-004`, `STD-013`).",
+  "gate": "`GATE-003`"
+ },
+ {
+  "id": "TASK-REG-019",
+  "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+  "line": 939,
+  "text": "Conformity assessment application. Route per counsel opinion (`Q-REG-005`).",
+  "gate": "`GATE-004`"
+ },
+ {
+  "id": "NZ-TASK-001",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 420,
+  "text": "Engage New Zealand regulatory counsel. Confirm `NZ-FIND-001..012`, the notification window, sponsor structure, expected classification, and `NZ-Q-004`.",
+  "gate": "`NZ-GATE-000`"
+ },
+ {
+  "id": "NZ-TASK-002",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 421,
+  "text": "Resolve the sponsor question: Arepo NZ entity vs contracted sponsor. Cost, control and liability differ materially.",
+  "gate": "`NZ-GATE-000`"
+ },
+ {
+  "id": "NZ-TASK-003",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 422,
+  "text": "Declare the registrar/director conflict to the employer; obtain written position before any commercial conversation in-country.",
+  "gate": "`NZ-GATE-000`"
+ },
+ {
+  "id": "NZ-TASK-004",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 423,
+  "text": "Model the Medical Products Bill timing against technical-file readiness (`NZ-WATCH-001`, `NZ-ASSUME-005`). Decide whether NZ-first survives the analysis.",
+  "gate": "`NZ-GATE-000`"
+ },
+ {
+  "id": "NZ-TASK-005",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 424,
+  "text": "NZ privacy, health information and Māori data sovereignty assessment — Privacy Impact Assessment against the Health Information Privacy Code 2020; data-residency decision for New Zealand patient data; Māori data governance engagement. Distinct from the Australian work.",
+  "gate": "`NZ-GATE-001`"
+ },
+ {
+  "id": "NZ-TASK-006",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 425,
+  "text": "Technical file assembled to §6, from the standards in §5. **[AMENDED v1.1]** This is the same set of artifacts the Australian conformity assessment consumes, produced once and indexed for Medsafe; it is not a second file.",
+  "gate": "`NZ-GATE-001`"
+ },
+ {
+  "id": "NZ-TASK-007",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 426,
+  "text": "Post-market system operating **before** supply: complaints, adverse events, recall capability (`NZ-FIND-008`).",
+  "gate": "`NZ-GATE-001`"
+ },
+ {
+  "id": "NZ-TASK-008",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 427,
+  "text": "WAND notification, at the earliest lawful point after `NZ-GATE-001` (`NZ-Q-004`).",
+  "gate": "`NZ-GATE-002`"
+ },
+ {
+  "id": "NZ-TASK-009",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 428,
+  "text": "Specify and test the SaMD post-market mechanisms named in `NZ-OBL-007`: complaint channel, adverse-event triage and Medsafe reporting SOP, remote disablement / forced-update recall path with user notification, functional-change pre-deployment assessment (`NZ-OBL-013`). Evidence: a tabletop recall exercise on the synthetic deployment.",
+  "gate": "`NZ-GATE-001`"
+ },
+ {
+  "id": "NZ-TASK-010",
+  "file": "10_regulatory-execution/REG-NZ_v1.1.md",
+  "line": 429,
+  "text": "First New Zealand commercial site, on commercial readiness and independent of `NZ-TASK-008` timing. HISO / procurement security questionnaire (`NZ-OBL-011`) and data agreement executed.",
+  "gate": "`NZ-GATE-002`"
+ },
+ {
+  "id": "US-TASK-001",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 337,
+  "text": "Make every design-control record Part 11-capable from the first artifact: unique attribution, MFA-backed e-signature with meaning and timestamp, append-only audit trail, validated system. Verify the Ketryx claim by intended-use test (an AI-drafted item cannot reach a controlled state without a named human signature). Evidence: tool-validation record.",
+  "gate": "`US-GATE-000`"
+ },
+ {
+  "id": "US-TASK-002",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 338,
+  "text": "Generate the SBOM in CycloneDX or SPDX with the §524B-expected fields (component name, version, supplier, level of support, end-of-support, known vulnerabilities) including manual entries for the AI service vendor and pinned model. Same SBOM serves TGA `OBL-004` and the Medsafe file.",
+  "gate": "`US-GATE-000`"
+ },
+ {
+  "id": "US-TASK-003",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 339,
+  "text": "Design the clinical evidence programme (NZ and AU) to ISO 14155 with ethics approval and informed consent so it satisfies 21 CFR 812.28; hold intended purpose constant across jurisdictions; pre-register subgroup analyses that FDA's AI guidance expects.",
+  "gate": "`US-GATE-000`"
+ },
+ {
+  "id": "US-TASK-004",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 340,
+  "text": "Organise the software documentation (IEC 62304 outputs) so the Enhanced-level document set of the 2023 software guidance can be generated as a projection: SRS, architecture, detailed design, V&V, unresolved anomalies, revision history, SOUP/OTS. Configure the Ketryx document template for it now, even if unused until entry.",
+  "gate": "`US-GATE-000`"
+ },
+ {
+  "id": "US-TASK-005",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 346,
+  "text": "Engage US regulatory counsel / RA consultant. Put `US-ASSUME-001..006` to them with the intended purpose statement, the reviewable-basis design, and the January 2026 CDS guidance read.",
+  "gate": "`US-GATE-001`"
+ },
+ {
+  "id": "US-TASK-006",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 347,
+  "text": "Predicate search and pathway analysis (De Novo vs 510(k)); draft indications for use statement; decide PCCP scope (evidence-library updates; model re-training; UI).",
+  "gate": "`US-GATE-001`"
+ },
+ {
+  "id": "US-TASK-007",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 348,
+  "text": "Pre-Submission (Q-Sub) to CDRH: pathway, classification, documentation level, clinical evidence sufficiency (including foreign data), PCCP scope, cyber documentation.",
+  "gate": "`US-GATE-001`"
+ },
+ {
+  "id": "US-TASK-008",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 349,
+  "text": "Decide QMS certification route if not already decided in Australia: MDSAP covers FDA routine inspection (`US-FIND-007`).",
+  "gate": "`US-GATE-001`"
+ },
+ {
+  "id": "US-TASK-009",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 350,
+  "text": "Cyber device package: SPDF evidence (81001-5-1), threat model (TIR57/STRIDE), security risk management report (SW96), SBOM, postmarket vulnerability and coordinated-disclosure plan (29147/30111), penetration test report, security architecture views per FDA cyber guidance.",
+  "gate": "`US-GATE-002`"
+ },
+ {
+  "id": "US-TASK-010",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 351,
+  "text": "AI-enabled function documentation per `US-FIND-011`: data management, model description, performance validation with subgroups, transparency/model card, postmarket performance monitoring plan, PCCP (description, modification protocol, impact assessment).",
+  "gate": "`US-GATE-002`"
+ },
+ {
+  "id": "US-TASK-011",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 352,
+  "text": "Human factors validation report per FDA HF guidance for each US-marketed surface; US labelling and IFU (21 CFR 801) with UDI.",
+  "gate": "`US-GATE-002`"
+ },
+ {
+  "id": "US-TASK-012",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 353,
+  "text": "Appoint US Agent; establishment registration and listing; HIPAA business-associate readiness (Security Rule risk analysis, BAA template); FTC HBNR readiness for any patient-facing function. Submit.",
+  "gate": "`US-GATE-002`"
+ },
+ {
+  "id": "US-TASK-013",
+  "file": "10_regulatory-execution/REG-US_v1.0.md",
+  "line": 354,
+  "text": "Postmarket: MDR (Part 803) and corrections/removals (Part 806) procedures with US timeframes; §524B vulnerability monitoring live; PCCP modification protocol operating; performance monitoring reporting.",
+  "gate": "`US-GATE-003`"
+ },
+ {
+  "id": "EU-TASK-001",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 329,
+  "text": "Index the technical documentation to Annex II headings alongside the Medsafe STED index and the Australian EP checklist — one Ketryx document template per regulator over the same items. Maintain a GSPR checklist from the first requirement.",
+  "gate": "`EU-GATE-000`"
+ },
+ {
+  "id": "EU-TASK-002",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 330,
+  "text": "Capture AI Act Annex IV / Article 10 content from the first training or tuning run: data provenance, selection criteria, representativeness assessment, bias examination, labelling procedures, data-set splits. Retrofitting this is the single most expensive EU omission.",
+  "gate": "`EU-GATE-000`"
+ },
+ {
+  "id": "EU-TASK-003",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 331,
+  "text": "Design automatic logging (Article 12) into the runtime: per-inference record of model version, inputs summary, output, confidence/conformal interval, clinician action — retained for the period the AI Act and PLD require. Already close to the programme's justification ledger; make the retention and access provisions explicit.",
+  "gate": "`EU-GATE-000`"
+ },
+ {
+  "id": "EU-TASK-004",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 332,
+  "text": "Clinical evidence protocol (NZ/AU) written with EU applicability in mind: population description against EU demographics, ISO 14155 conduct, endpoints structured as valid clinical association / technical performance / clinical performance.",
+  "gate": "`EU-GATE-000`"
+ },
+ {
+  "id": "EU-TASK-005",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 338,
+  "text": "Engage EU regulatory counsel; put `EU-ASSUME-001..006` to them with the intended purpose statement, classification rationale and AI Act analysis.",
+  "gate": "`EU-GATE-001`"
+ },
+ {
+  "id": "EU-TASK-006",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 339,
+  "text": "Notified body selection: designated for MDR software codes **and** under the AI Act; pre-application dialogue on class (IIa/IIb), clinical evidence sufficiency including foreign data, AI Act integration, and timeline. Lodge application.",
+  "gate": "`EU-GATE-001`"
+ },
+ {
+  "id": "EU-TASK-007",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 340,
+  "text": "Appoint Authorised Representative (mandate per Article 11(3)); designate PRRC (Article 15); register actor in EUDAMED (SRN).",
+  "gate": "`EU-GATE-001`"
+ },
+ {
+  "id": "EU-TASK-008",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 341,
+  "text": "GDPR: appoint EU representative (Art 27); DPIA; Article 28 processor terms; Chapter V transfer mechanism for Australian processing or EU-region hosting decision.",
+  "gate": "`EU-GATE-001`"
+ },
+ {
+  "id": "EU-TASK-009",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 342,
+  "text": "Clinical Evaluation Report to MDCG 2020-1; PMCF plan; PMS plan; PSUR template.",
+  "gate": "`EU-GATE-002`"
+ },
+ {
+  "id": "EU-TASK-010",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 343,
+  "text": "Cyber documentation to MDCG 2019-16: secure lifecycle evidence (EN IEC 81001-5-1), threat model, security risk management report, SBOM, vulnerability handling process, IFU security information, residual-risk disclosure.",
+  "gate": "`EU-GATE-002`"
+ },
+ {
+  "id": "EU-TASK-011",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 344,
+  "text": "AI Act conformity package integrated with the MDR file: risk management (Art 9 within ISO 14971 file), data governance record, Annex IV documentation, logging design, instructions for deployers, human-oversight design evidence, accuracy/robustness/cyber evidence; register in the EU AI database (Art 49).",
+  "gate": "`EU-GATE-002`"
+ },
+ {
+  "id": "EU-TASK-012",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 345,
+  "text": "UDI assignment (Basic UDI-DI, UDI-DI); EU Declaration of Conformity; CE marking; EUDAMED device registration; Member-State language IFU for launch markets.",
+  "gate": "`EU-GATE-002`"
+ },
+ {
+  "id": "EU-TASK-013",
+  "file": "10_regulatory-execution/REG-EU_v1.0.md",
+  "line": 346,
+  "text": "Post-market operating: vigilance procedures with 15/10/2-day clocks; trend reporting; PSUR cadence (annual if IIb); PMCF running; significant-change assessment procedure (`EU-OBL-011`); product-liability evidence retention.",
+  "gate": "`EU-GATE-003`"
+ }
+]

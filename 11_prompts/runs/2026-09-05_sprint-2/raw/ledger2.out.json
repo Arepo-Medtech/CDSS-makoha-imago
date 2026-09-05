@@ -1,0 +1,1326 @@
+{
+ "new_rows": [
+  {
+   "id": 274,
+   "t": "T-800",
+   "path": ".claude/agents/impeccable-asset-producer.md",
+   "class": "CC-5",
+   "bytes": 5993,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 275,
+   "t": "T-801",
+   "path": ".claude/agents/impeccable-documenter.md",
+   "class": "CC-5",
+   "bytes": 3184,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 276,
+   "t": "T-802",
+   "path": ".claude/agents/impeccable-finish-reviewer.md",
+   "class": "CC-5",
+   "bytes": 15230,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 277,
+   "t": "T-803",
+   "path": ".claude/agents/impeccable-manual-edit-applier.md",
+   "class": "CC-5",
+   "bytes": 6983,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 278,
+   "t": "T-804",
+   "path": ".claude/skills/impeccable/SKILL.md",
+   "class": "CC-5",
+   "bytes": 11375,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 279,
+   "t": "T-805",
+   "path": ".claude/skills/impeccable/reference/adapt.md",
+   "class": "CC-5",
+   "bytes": 10307,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 280,
+   "t": "T-806",
+   "path": ".claude/skills/impeccable/reference/adapt.native.md",
+   "class": "CC-5",
+   "bytes": 3910,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 281,
+   "t": "T-807",
+   "path": ".claude/skills/impeccable/reference/android.md",
+   "class": "CC-5",
+   "bytes": 4093,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 282,
+   "t": "T-808",
+   "path": ".claude/skills/impeccable/reference/animate.md",
+   "class": "CC-5",
+   "bytes": 5236,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 283,
+   "t": "T-809",
+   "path": ".claude/skills/impeccable/reference/audit.md",
+   "class": "CC-5",
+   "bytes": 7873,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 284,
+   "t": "T-810",
+   "path": ".claude/skills/impeccable/reference/audit.native.md",
+   "class": "CC-5",
+   "bytes": 8364,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 285,
+   "t": "T-811",
+   "path": ".claude/skills/impeccable/reference/bolder.md",
+   "class": "CC-5",
+   "bytes": 3471,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 286,
+   "t": "T-812",
+   "path": ".claude/skills/impeccable/reference/clarify.md",
+   "class": "CC-5",
+   "bytes": 4590,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 287,
+   "t": "T-813",
+   "path": ".claude/skills/impeccable/reference/colorize.md",
+   "class": "CC-5",
+   "bytes": 4537,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 288,
+   "t": "T-814",
+   "path": ".claude/skills/impeccable/reference/craft-floor.md",
+   "class": "CC-5",
+   "bytes": 4484,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 289,
+   "t": "T-815",
+   "path": ".claude/skills/impeccable/reference/craft.md",
+   "class": "CC-5",
+   "bytes": 555,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 290,
+   "t": "T-816",
+   "path": ".claude/skills/impeccable/reference/critique.md",
+   "class": "CC-5",
+   "bytes": 42717,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 291,
+   "t": "T-817",
+   "path": ".claude/skills/impeccable/reference/degraded/asset-producer.md",
+   "class": "CC-5",
+   "bytes": 6200,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 292,
+   "t": "T-818",
+   "path": ".claude/skills/impeccable/reference/degraded/documenter.md",
+   "class": "CC-5",
+   "bytes": 3365,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 293,
+   "t": "T-819",
+   "path": ".claude/skills/impeccable/reference/degraded/finish-reviewer.md",
+   "class": "CC-5",
+   "bytes": 15397,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 294,
+   "t": "T-820",
+   "path": ".claude/skills/impeccable/reference/degraded/manual-edit-applier.md",
+   "class": "CC-5",
+   "bytes": 7196,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 295,
+   "t": "T-821",
+   "path": ".claude/skills/impeccable/reference/delight.md",
+   "class": "CC-5",
+   "bytes": 3716,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 296,
+   "t": "T-822",
+   "path": ".claude/skills/impeccable/reference/distill.md",
+   "class": "CC-5",
+   "bytes": 5624,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 297,
+   "t": "T-823",
+   "path": ".claude/skills/impeccable/reference/doctor.md",
+   "class": "CC-5",
+   "bytes": 5481,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 298,
+   "t": "T-824",
+   "path": ".claude/skills/impeccable/reference/document.md",
+   "class": "CC-5",
+   "bytes": 27428,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 299,
+   "t": "T-825",
+   "path": ".claude/skills/impeccable/reference/extract.md",
+   "class": "CC-5",
+   "bytes": 3340,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 300,
+   "t": "T-826",
+   "path": ".claude/skills/impeccable/reference/harden.md",
+   "class": "CC-5",
+   "bytes": 8539,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 301,
+   "t": "T-827",
+   "path": ".claude/skills/impeccable/reference/hooks.md",
+   "class": "CC-5",
+   "bytes": 13312,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 302,
+   "t": "T-828",
+   "path": ".claude/skills/impeccable/reference/init.md",
+   "class": "CC-5",
+   "bytes": 11443,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 303,
+   "t": "T-829",
+   "path": ".claude/skills/impeccable/reference/ios.md",
+   "class": "CC-5",
+   "bytes": 3812,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 304,
+   "t": "T-830",
+   "path": ".claude/skills/impeccable/reference/layout.md",
+   "class": "CC-5",
+   "bytes": 5161,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 305,
+   "t": "T-831",
+   "path": ".claude/skills/impeccable/reference/live-setup.md",
+   "class": "CC-5",
+   "bytes": 7459,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 306,
+   "t": "T-832",
+   "path": ".claude/skills/impeccable/reference/live.md",
+   "class": "CC-5",
+   "bytes": 35804,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 307,
+   "t": "T-833",
+   "path": ".claude/skills/impeccable/reference/new-work.md",
+   "class": "CC-5",
+   "bytes": 52779,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 308,
+   "t": "T-834",
+   "path": ".claude/skills/impeccable/reference/onboard.md",
+   "class": "CC-5",
+   "bytes": 7740,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 309,
+   "t": "T-835",
+   "path": ".claude/skills/impeccable/reference/operate.md",
+   "class": "CC-5",
+   "bytes": 4145,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 310,
+   "t": "T-836",
+   "path": ".claude/skills/impeccable/reference/optimize.md",
+   "class": "CC-5",
+   "bytes": 7614,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 311,
+   "t": "T-837",
+   "path": ".claude/skills/impeccable/reference/overdrive.md",
+   "class": "CC-5",
+   "bytes": 9085,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 312,
+   "t": "T-838",
+   "path": ".claude/skills/impeccable/reference/polish.md",
+   "class": "CC-5",
+   "bytes": 6646,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 313,
+   "t": "T-839",
+   "path": ".claude/skills/impeccable/reference/quieter.md",
+   "class": "CC-5",
+   "bytes": 4859,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 314,
+   "t": "T-840",
+   "path": ".claude/skills/impeccable/reference/routing.md",
+   "class": "CC-5",
+   "bytes": 2911,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 315,
+   "t": "T-841",
+   "path": ".claude/skills/impeccable/reference/shape.md",
+   "class": "CC-5",
+   "bytes": 3547,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 316,
+   "t": "T-842",
+   "path": ".claude/skills/impeccable/reference/typeset.md",
+   "class": "CC-5",
+   "bytes": 5256,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 317,
+   "t": "T-843",
+   "path": ".claude/skills/impeccable/reference/visualize.md",
+   "class": "CC-5",
+   "bytes": 11294,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 318,
+   "t": "T-844",
+   "path": ".claude/skills/impeccable/scripts/VERSION",
+   "class": "CC-5",
+   "bytes": 6,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 319,
+   "t": "T-845",
+   "path": ".claude/skills/impeccable/scripts/command-metadata.json",
+   "class": "CC-5",
+   "bytes": 7934,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 320,
+   "t": "T-846",
+   "path": ".claude/skills/impeccable/scripts/data/font-index-failures.json",
+   "class": "CC-5",
+   "bytes": 2437,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 321,
+   "t": "T-847",
+   "path": ".claude/skills/impeccable/scripts/data/font-index.json",
+   "class": "CC-5",
+   "bytes": 1100013,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 322,
+   "t": "T-848",
+   "path": ".claude/skills/impeccable/scripts/impeccable",
+   "class": "CC-5",
+   "bytes": 6438,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 323,
+   "t": "T-849",
+   "path": ".claude/skills/impeccable/scripts/impeccable.cmd",
+   "class": "CC-5",
+   "bytes": 5606,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 324,
+   "t": "T-850",
+   "path": ".claude/skills/impeccable/scripts/live-browser-dom.js",
+   "class": "CC-5",
+   "bytes": 4917,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 325,
+   "t": "T-851",
+   "path": ".claude/skills/impeccable/scripts/live-browser-ignores.js",
+   "class": "CC-5",
+   "bytes": 10346,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 326,
+   "t": "T-852",
+   "path": ".claude/skills/impeccable/scripts/live-browser-session.js",
+   "class": "CC-5",
+   "bytes": 4090,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 327,
+   "t": "T-853",
+   "path": ".claude/skills/impeccable/scripts/live-browser.js",
+   "class": "CC-5",
+   "bytes": 522564,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 328,
+   "t": "T-854",
+   "path": ".claude/skills/impeccable/scripts/modern-screenshot.umd.js",
+   "class": "CC-5",
+   "bytes": 29290,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 329,
+   "t": "T-855",
+   "path": ".github/agents/impeccable-asset-producer.agent.md",
+   "class": "CC-5",
+   "bytes": 5907,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 330,
+   "t": "T-856",
+   "path": ".github/agents/impeccable-documenter.agent.md",
+   "class": "CC-5",
+   "bytes": 3104,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 331,
+   "t": "T-857",
+   "path": ".github/agents/impeccable-finish-reviewer.agent.md",
+   "class": "CC-5",
+   "bytes": 15159,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 332,
+   "t": "T-858",
+   "path": ".github/agents/impeccable-manual-edit-applier.agent.md",
+   "class": "CC-5",
+   "bytes": 6897,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 333,
+   "t": "T-859",
+   "path": ".github/audit/append_only.py",
+   "class": "CC-5",
+   "bytes": 1743,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 334,
+   "t": "T-860",
+   "path": ".github/audit/depth.py",
+   "class": "CC-5",
+   "bytes": 673,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 335,
+   "t": "T-861",
+   "path": ".github/audit/frontmatter_census.py",
+   "class": "CC-5",
+   "bytes": 2289,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 336,
+   "t": "T-862",
+   "path": ".github/audit/mermaid/package.json",
+   "class": "CC-5",
+   "bytes": 77,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 337,
+   "t": "T-863",
+   "path": ".github/audit/mermaid/parse.mjs",
+   "class": "CC-5",
+   "bytes": 1916,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 338,
+   "t": "T-864",
+   "path": ".github/audit/refcheck.py",
+   "class": "CC-5",
+   "bytes": 4491,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 339,
+   "t": "T-865",
+   "path": ".github/audit/run_all.sh",
+   "class": "CC-5",
+   "bytes": 1795,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 340,
+   "t": "T-866",
+   "path": ".github/audit/schemas.py",
+   "class": "CC-5",
+   "bytes": 1404,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 341,
+   "t": "T-867",
+   "path": ".github/copilot-instructions.md",
+   "class": "CC-8",
+   "bytes": 6635,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 342,
+   "t": "T-868",
+   "path": ".github/instructions/corpus-never-edited.instructions.md",
+   "class": "CC-8",
+   "bytes": 510,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 343,
+   "t": "T-869",
+   "path": ".github/instructions/retained-files.instructions.md",
+   "class": "CC-8",
+   "bytes": 699,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 344,
+   "t": "T-870",
+   "path": ".github/skills/impeccable/SKILL.md",
+   "class": "CC-5",
+   "bytes": 11276,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 345,
+   "t": "T-871",
+   "path": ".github/skills/impeccable/reference/adapt.md",
+   "class": "CC-5",
+   "bytes": 10307,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 346,
+   "t": "T-872",
+   "path": ".github/skills/impeccable/reference/adapt.native.md",
+   "class": "CC-5",
+   "bytes": 3910,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 347,
+   "t": "T-873",
+   "path": ".github/skills/impeccable/reference/android.md",
+   "class": "CC-5",
+   "bytes": 4093,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 348,
+   "t": "T-874",
+   "path": ".github/skills/impeccable/reference/animate.md",
+   "class": "CC-5",
+   "bytes": 5236,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 349,
+   "t": "T-875",
+   "path": ".github/skills/impeccable/reference/audit.md",
+   "class": "CC-5",
+   "bytes": 7873,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 350,
+   "t": "T-876",
+   "path": ".github/skills/impeccable/reference/audit.native.md",
+   "class": "CC-5",
+   "bytes": 8364,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 351,
+   "t": "T-877",
+   "path": ".github/skills/impeccable/reference/bolder.md",
+   "class": "CC-5",
+   "bytes": 3476,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 352,
+   "t": "T-878",
+   "path": ".github/skills/impeccable/reference/clarify.md",
+   "class": "CC-5",
+   "bytes": 4590,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 353,
+   "t": "T-879",
+   "path": ".github/skills/impeccable/reference/colorize.md",
+   "class": "CC-5",
+   "bytes": 4537,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 354,
+   "t": "T-880",
+   "path": ".github/skills/impeccable/reference/craft-floor.md",
+   "class": "CC-5",
+   "bytes": 4484,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 355,
+   "t": "T-881",
+   "path": ".github/skills/impeccable/reference/craft.md",
+   "class": "CC-5",
+   "bytes": 555,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 356,
+   "t": "T-882",
+   "path": ".github/skills/impeccable/reference/critique.md",
+   "class": "CC-5",
+   "bytes": 42766,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 357,
+   "t": "T-883",
+   "path": ".github/skills/impeccable/reference/degraded/asset-producer.md",
+   "class": "CC-5",
+   "bytes": 6200,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 358,
+   "t": "T-884",
+   "path": ".github/skills/impeccable/reference/degraded/documenter.md",
+   "class": "CC-5",
+   "bytes": 3365,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 359,
+   "t": "T-885",
+   "path": ".github/skills/impeccable/reference/degraded/finish-reviewer.md",
+   "class": "CC-5",
+   "bytes": 15397,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 360,
+   "t": "T-886",
+   "path": ".github/skills/impeccable/reference/degraded/manual-edit-applier.md",
+   "class": "CC-5",
+   "bytes": 7196,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 361,
+   "t": "T-887",
+   "path": ".github/skills/impeccable/reference/delight.md",
+   "class": "CC-5",
+   "bytes": 3716,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 362,
+   "t": "T-888",
+   "path": ".github/skills/impeccable/reference/distill.md",
+   "class": "CC-5",
+   "bytes": 5629,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 363,
+   "t": "T-889",
+   "path": ".github/skills/impeccable/reference/doctor.md",
+   "class": "CC-5",
+   "bytes": 5481,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 364,
+   "t": "T-890",
+   "path": ".github/skills/impeccable/reference/document.md",
+   "class": "CC-5",
+   "bytes": 27433,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 365,
+   "t": "T-891",
+   "path": ".github/skills/impeccable/reference/extract.md",
+   "class": "CC-5",
+   "bytes": 3345,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 366,
+   "t": "T-892",
+   "path": ".github/skills/impeccable/reference/harden.md",
+   "class": "CC-5",
+   "bytes": 8539,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 367,
+   "t": "T-893",
+   "path": ".github/skills/impeccable/reference/hooks.md",
+   "class": "CC-5",
+   "bytes": 13312,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 368,
+   "t": "T-894",
+   "path": ".github/skills/impeccable/reference/init.md",
+   "class": "CC-5",
+   "bytes": 11448,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 369,
+   "t": "T-895",
+   "path": ".github/skills/impeccable/reference/ios.md",
+   "class": "CC-5",
+   "bytes": 3812,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 370,
+   "t": "T-896",
+   "path": ".github/skills/impeccable/reference/layout.md",
+   "class": "CC-5",
+   "bytes": 5161,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 371,
+   "t": "T-897",
+   "path": ".github/skills/impeccable/reference/live-setup.md",
+   "class": "CC-5",
+   "bytes": 7459,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 372,
+   "t": "T-898",
+   "path": ".github/skills/impeccable/reference/live.md",
+   "class": "CC-5",
+   "bytes": 35804,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 373,
+   "t": "T-899",
+   "path": ".github/skills/impeccable/reference/new-work.md",
+   "class": "CC-5",
+   "bytes": 52146,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 374,
+   "t": "T-900",
+   "path": ".github/skills/impeccable/reference/onboard.md",
+   "class": "CC-5",
+   "bytes": 7740,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 375,
+   "t": "T-901",
+   "path": ".github/skills/impeccable/reference/operate.md",
+   "class": "CC-5",
+   "bytes": 4145,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 376,
+   "t": "T-902",
+   "path": ".github/skills/impeccable/reference/optimize.md",
+   "class": "CC-5",
+   "bytes": 7614,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 377,
+   "t": "T-903",
+   "path": ".github/skills/impeccable/reference/overdrive.md",
+   "class": "CC-5",
+   "bytes": 9090,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 378,
+   "t": "T-904",
+   "path": ".github/skills/impeccable/reference/polish.md",
+   "class": "CC-5",
+   "bytes": 6646,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 379,
+   "t": "T-905",
+   "path": ".github/skills/impeccable/reference/quieter.md",
+   "class": "CC-5",
+   "bytes": 4864,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 380,
+   "t": "T-906",
+   "path": ".github/skills/impeccable/reference/routing.md",
+   "class": "CC-5",
+   "bytes": 2911,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 381,
+   "t": "T-907",
+   "path": ".github/skills/impeccable/reference/shape.md",
+   "class": "CC-5",
+   "bytes": 3547,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 382,
+   "t": "T-908",
+   "path": ".github/skills/impeccable/reference/typeset.md",
+   "class": "CC-5",
+   "bytes": 5256,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 383,
+   "t": "T-909",
+   "path": ".github/skills/impeccable/reference/visualize.md",
+   "class": "CC-5",
+   "bytes": 11294,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 384,
+   "t": "T-910",
+   "path": ".github/skills/impeccable/scripts/VERSION",
+   "class": "CC-5",
+   "bytes": 6,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 385,
+   "t": "T-911",
+   "path": ".github/skills/impeccable/scripts/command-metadata.json",
+   "class": "CC-5",
+   "bytes": 7934,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 386,
+   "t": "T-912",
+   "path": ".github/skills/impeccable/scripts/data/font-index-failures.json",
+   "class": "CC-5",
+   "bytes": 2437,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 387,
+   "t": "T-913",
+   "path": ".github/skills/impeccable/scripts/data/font-index.json",
+   "class": "CC-5",
+   "bytes": 1100013,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 388,
+   "t": "T-914",
+   "path": ".github/skills/impeccable/scripts/impeccable",
+   "class": "CC-5",
+   "bytes": 6438,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 389,
+   "t": "T-915",
+   "path": ".github/skills/impeccable/scripts/impeccable.cmd",
+   "class": "CC-5",
+   "bytes": 5606,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 390,
+   "t": "T-916",
+   "path": ".github/skills/impeccable/scripts/live-browser-dom.js",
+   "class": "CC-5",
+   "bytes": 4917,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 391,
+   "t": "T-917",
+   "path": ".github/skills/impeccable/scripts/live-browser-ignores.js",
+   "class": "CC-5",
+   "bytes": 10346,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 392,
+   "t": "T-918",
+   "path": ".github/skills/impeccable/scripts/live-browser-session.js",
+   "class": "CC-5",
+   "bytes": 4090,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 393,
+   "t": "T-919",
+   "path": ".github/skills/impeccable/scripts/live-browser.js",
+   "class": "CC-5",
+   "bytes": 522564,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 394,
+   "t": "T-920",
+   "path": ".github/skills/impeccable/scripts/modern-screenshot.umd.js",
+   "class": "CC-5",
+   "bytes": 29290,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository tooling; vendored Impeccable 4.2.0 skill pack, hardened by version pin)",
+   "note": "agent deployment layer (A-005); vendored third-party skill pack \u2014 no content review implied"
+  },
+  {
+   "id": 395,
+   "t": "T-921",
+   "path": ".github/workflows/design-ecosystem-audit.yml",
+   "class": "CC-5",
+   "bytes": 3320,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "agent deployment layer (A-005)"
+  },
+  {
+   "id": 396,
+   "t": "T-922",
+   "path": "00_inventory_v1.3.txt",
+   "class": "CC-8",
+   "bytes": 24257,
+   "owner": "Manifest owner [NEEDS DEFINITION \u2014 not named in MET-2.2 \u00a71]",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 397,
+   "t": "T-923",
+   "path": "01_north-star-and-transformation/MET-2.2_decision_closures_delta.md",
+   "class": "CC-8",
+   "bytes": 21013,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "A-009 ledger debt"
+  },
+  {
+   "id": 398,
+   "t": "T-924",
+   "path": "01_north-star-and-transformation/MET-4.1_gap_register_delta.md",
+   "class": "CC-8",
+   "bytes": 7720,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 399,
+   "t": "T-925",
+   "path": "01_north-star-and-transformation/MET-5_ratification_read-through_notice.md",
+   "class": "CC-8",
+   "bytes": 6489,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 400,
+   "t": "T-926",
+   "path": "04_hardening/HARDEN-1.2_coverage_ledger_owner_delta.md",
+   "class": "CC-8",
+   "bytes": 76468,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 401,
+   "t": "T-927",
+   "path": "04_hardening/HARDEN-2.2_alias_laws_delta.md",
+   "class": "CC-8",
+   "bytes": 3713,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 402,
+   "t": "T-928",
+   "path": "04_hardening/HARDEN-3.2_task_register_delta.md",
+   "class": "CC-8",
+   "bytes": 86892,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 403,
+   "t": "T-929",
+   "path": "04_hardening/INDEX-04.1_delta.md",
+   "class": "CC-8",
+   "bytes": 2798,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 404,
+   "t": "T-930",
+   "path": "06_repositories/INDEX-06.1_delta.md",
+   "class": "CC-8",
+   "bytes": 1921,
+   "owner": "Programme lead \u2014 Kenny-bytes (DEC-09)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 405,
+   "t": "T-931",
+   "path": "06_repositories/REPO-MAP_v3.md",
+   "class": "CC-5",
+   "bytes": 8510,
+   "owner": "Programme lead \u2014 Kenny-bytes (DEC-09)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 406,
+   "t": "T-932",
+   "path": "08_research/INDEX-08.1_delta.md",
+   "class": "CC-8",
+   "bytes": 1957,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 407,
+   "t": "T-933",
+   "path": "08_research/RESEARCH-1.2_alias_and_triggers_delta.md",
+   "class": "CC-8",
+   "bytes": 4631,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 408,
+   "t": "T-934",
+   "path": "09_diagrams/INDEX-09.1_delta.md",
+   "class": "CC-8",
+   "bytes": 4155,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 409,
+   "t": "T-935",
+   "path": "09_diagrams/cdss_diagrams_v4.html",
+   "class": "CC-6",
+   "bytes": 11908,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 410,
+   "t": "T-936",
+   "path": "09_diagrams/register_topology_v4.mermaid",
+   "class": "CC-6",
+   "bytes": 1894,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 411,
+   "t": "T-937",
+   "path": "09_diagrams/tokens.css",
+   "class": "CC-6",
+   "bytes": 2334,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 412,
+   "t": "T-938",
+   "path": "10_regulatory-execution/INDEX-10.1_delta.md",
+   "class": "CC-8",
+   "bytes": 2075,
+   "owner": "Regulatory owner \u2014 kendo-Jones (MET-2.2 \u00a71; DEC-23)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 413,
+   "t": "T-939",
+   "path": "10_regulatory-execution/REG-TASK-OWNERS_companion.md",
+   "class": "CC-4",
+   "bytes": 20906,
+   "owner": "Regulatory owner \u2014 kendo-Jones (MET-2.2 \u00a71; DEC-23)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  },
+  {
+   "id": 414,
+   "t": "T-940",
+   "path": "11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md",
+   "class": "CC-8",
+   "bytes": 28024,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10) / prompt author",
+   "note": "A-005/A-006/A-007 ledger debt"
+  },
+  {
+   "id": 415,
+   "t": "T-941",
+   "path": "11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md",
+   "class": "CC-8",
+   "bytes": 7149,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10) / prompt author",
+   "note": "A-005/A-006/A-007 ledger debt"
+  },
+  {
+   "id": 416,
+   "t": "T-942",
+   "path": "11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md",
+   "class": "CC-8",
+   "bytes": 47895,
+   "owner": "MT2 operator \u2014 Kenny-bytes (DEC-10) / prompt author",
+   "note": "A-005/A-006/A-007 ledger debt"
+  },
+  {
+   "id": 417,
+   "t": "T-943",
+   "path": "AGENTS.md",
+   "class": "CC-8",
+   "bytes": 6727,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "repository governance (A-005)"
+  },
+  {
+   "id": 418,
+   "t": "T-944",
+   "path": "CLAUDE.md",
+   "class": "CC-8",
+   "bytes": 294,
+   "owner": "Programme lead \u2014 Kenny-bytes (repository governance; A-005)",
+   "note": "repository governance (A-005)"
+  },
+  {
+   "id": 419,
+   "t": "T-945",
+   "path": "GLOSSARY.md",
+   "class": "CC-8",
+   "bytes": 12137,
+   "owner": "Architecture owner \u2014 Kenny-bytes (MET-2.2 \u00a71)",
+   "note": "sprint-2 artifact (built 2026-09-05)"
+  }
+ ],
+ "resolved": 182,
+ "unresolved": {
+  "Corpus owner (03_ MANIFEST precedence) [NEEDS DEFINITION]": 46,
+  "Manifest owner [NEEDS DEFINITION]": 13
+ },
+ "tree": 416,
+ "missing_after": [],
+ "rows_without_file": []
+}
