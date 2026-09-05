@@ -356,9 +356,9 @@ Scope rule as HARDEN-1.1: every tracked file except `.DS_Store`, `.git/**` and `
 | 414 | `11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md` | CC-8 | 28024 | MT2 operator — Kenny-bytes (DEC-10) / prompt author | PENDING | A-005/A-006/A-007 ledger debt |
 | 415 | `11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md` | CC-8 | 7149 | MT2 operator — Kenny-bytes (DEC-10) / prompt author | PENDING | A-005/A-006/A-007 ledger debt |
 | 416 | `11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md` | CC-8 | 47895 | MT2 operator — Kenny-bytes (DEC-10) / prompt author | PENDING | A-005/A-006/A-007 ledger debt |
-| 417 | `AGENTS.md` | CC-8 | 6379 | Programme lead — Kenny-bytes (repository governance; A-005) | PENDING | repository governance (A-005) |
+| 417 | `AGENTS.md` | CC-8 | 6727 | Programme lead — Kenny-bytes (repository governance; A-005) | PENDING | repository governance (A-005) |
 | 418 | `CLAUDE.md` | CC-8 | 294 | Programme lead — Kenny-bytes (repository governance; A-005) | PENDING | repository governance (A-005) |
-| 419 | `GLOSSARY.md` | CC-8 | 12064 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
+| 419 | `GLOSSARY.md` | CC-8 | 12063 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 
 ## Census and self-audit (script output, `tools/ledger2.py`)
 

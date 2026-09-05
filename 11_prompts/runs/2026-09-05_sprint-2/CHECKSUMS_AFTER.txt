@@ -128,9 +128,9 @@ b64a76f1265ab2ee038289801d445fbf36ac1e4785f97b2c819a316fa4c14526  ./.github/work
 e08ec34c528616573e4552731d4ee2ca20b54950e97918f623450e4ff44c1559  ./.gitignore
 2bd6e55a6a12f69ee208c1ee857e782968cc85346b7fcde3f36be5722867f550  ./.playwright-mcp/console-2026-09-05T05-29-18-988Z.log
 f43f58e540d7df4b6c6e68504851a72093349010eeeb8e5a0406db67eab3593e  ./.playwright-mcp/page-2026-09-05T05-29-21-796Z.yml
-dfbbdf5724c860ec01dc190e99b02165a21528268f87f4c2a60d1edfb0e6521d  ./00_MANIFEST.md
+a4b18cf9dc7d2dd7662d2ea6e546a58fce9f9562a8468a2e7cac2d3a26fa0fe8  ./00_MANIFEST.md
 33bb0ee9cfaf7de8dffd87432ef263f9db00e638a493a6250d2a021351bae746  ./00_inventory.txt
-a8a8a91908bcb8c792361ba954aefa0852368a689a8a1ca43edddafe7c034365  ./00_inventory_v1.3.txt
+f43da79afc2c2022620e8e23a3f49fb1b84069f2a40fa4f2692e29c1a3f67849  ./00_inventory_v1.3.txt
 9b8b9f6a0e939a08e747f264db989094c139adf5fa179a8ff4508d8147ff0b93  ./01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md
 559a8dc3a23e9ad5bfd7fee68ebefb50c383beab6fa6838a4663d01db0a2dea4  ./01_north-star-and-transformation/MET-1_metamorphosis_plan_v1.0.md
 9c2e50116762f50d2884569f89e87b3e67567cdc3de97f34a6bf67fde0ba49c2  ./01_north-star-and-transformation/MET-2.1_decision_register_delta.md
@@ -209,7 +209,7 @@ c5650fe1b1b4636bd79e5ceb121d55468e754301f4921ff91a5f7c7a2dec31a3  ./03_makoha-bu
 e96673134d16326c58e110ffe6ab02775b3e6c98c91a8cd6fb4e1a7dc8b17fdb  ./03_makoha-butterfly-corpus/corpus-md/thorax-corpus_v1.0.md
 9751fadb6b797b50ae934d7f6588e0878242ebf1e211a37f0b24cb48101fc354  ./03_makoha-butterfly-corpus/corpus_artifacts_briefing.md
 dd1213462502062c630b6aa5c9679e31f3741f289faf438de0e4565143411144  ./04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md
-025e604e8afb4d0e6bc326090c1df1cf9b4446aaec35d704c419183fd7a7f781  ./04_hardening/HARDEN-1.2_coverage_ledger_owner_delta.md
+427d7684c9dc77da340ca43c49d2869341c33dd3fd9021cc2fec2d549d3b3f5b  ./04_hardening/HARDEN-1.2_coverage_ledger_owner_delta.md
 5bd4acf921a2f3a9f9679bed978dd29c97f0687377e125d3e5dce20141419e5c  ./04_hardening/HARDEN-1_coverage_ledger_seed.md
 32d837f44a0b476fd60c353ff19546b08e22dcc9d6794b05e2579290202602b0  ./04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md
 778c09903c1fa34df7df81b76ad83fbfc906abe397fb00bd95bd071630590d90  ./04_hardening/HARDEN-2.2_alias_laws_delta.md
@@ -642,7 +642,7 @@ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./11_prompts/r
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./11_prompts/runs/2026-09-05_survey-3/tools/style_census.err.txt
 65c46b999619cc9967014c1ed941c145394d443d03cf39bb0447f27fdd6fd041  ./11_prompts/runs/2026-09-05_survey-3/tools/style_census.out.json
 5bb965e571347ed308bfed41d096aed0b8fdb1f142329c1180b9b0df5f985cd5  ./11_prompts/runs/2026-09-05_survey-3/tools/style_census.py
-7a84add8af59b962917535a231283ca3fd9bdaace9039d3f0b6fa25e1b6b2319  ./AGENTS.md
+bbdace4f3a2b16deb1bcf8eec9dd12a2cda811fd02b53dbc515c4a489f1f978a  ./AGENTS.md
 30501007ed04a38f6369d1b916e4b443693a84458b776ae76755f443cef62f22  ./CLAUDE.md
-fb06685aedd44e210c7d17b47706c6c249e01a859a7b1abfbb9fc4c17a50817a  ./GLOSSARY.md
+615119fdc63cc3e15c554b20fdd738e75df7f669980273670c670bfe00a2e854  ./GLOSSARY.md
 b5f55a5923c13be413909ea31657ea9ca1fcdae8dbb639b45fab036220f08aad  ./README.md

@@ -4,14 +4,14 @@ Run: `11_prompts/runs/2026-09-05_sprint-2/` · Branch: `sprint-2-executable-now`
 
 ## 0. Append-only proof (law 1) — read this first
 
-Pasted at seal from `CHECKSUMS_BEFORE.txt` / `CHECKSUMS_AFTER.txt` / `CHECKSUMS_CHANGED.txt` (see §5). Expected and required: the only pre-existing file whose hash changes is `00_MANIFEST.md` (appended, A-010) and `README.md` (root governance, outside the 00_–11_ law; one row added under "Where to read it"). Every file under 00_–11_ that existed on `main` is byte-identical.
+Pasted at seal from `CHECKSUMS_BEFORE.txt` / `CHECKSUMS_AFTER.txt` / `CHECKSUMS_CHANGED.txt` (see §5). Expected and required: the only pre-existing files whose hash changes are `00_MANIFEST.md` (appended, A-010) and two root governance files outside the 00_–11_ law — `README.md` (one row added under "Where to read it") and `AGENTS.md` (one sentence, H-12). Every file under 00_–11_ that existed on `main` is byte-identical.
 
 ## 1. Coverage
 
 | Measure | Value |
 |---|---|
 | New files outside run directories | 18 |
-| Files modified outside 00_–11_ | 1 (`README.md`, +1 table row) |
+| Files modified outside 00_–11_ | 2 (`README.md`, +1 table row; `AGENTS.md`, one "How work lands" sentence — H-12) |
 | Manifest | appended only (A-010) |
 | Tracked files in HARDEN scope (excl. .DS_Store, .git, runs) | 416 — every one has a ledger row (HARDEN-1/1.1/1.2) and a task (HARDEN-3.1/3.2): files without a row after this sprint = 0 |
 | HARDEN-1.2 | D-1 owner cells resolved: 182 (98 repo owner + 22 component owner + 30 + 8 MT2 operator + 15 regulatory owner + 9 partial security/regulatory); still [NEEDS DEFINITION]: {'Corpus owner (03_ MANIFEST precedence) [NEEDS DEFINITION]': 46, 'Manifest owner [NEEDS DEFINITION]': 13}; D-2 new rows: 146 (ids 274..419) |
@@ -70,7 +70,7 @@ Survey-3 HUMAN-ONLY rows (QI-0167..0174) were closed by the owner in MET-2.2 (PR
 | `09_diagrams/tokens.css` | 2,124 |
 | `10_regulatory-execution/INDEX-10.1_delta.md` | 2,075 |
 | `10_regulatory-execution/REG-TASK-OWNERS_companion.md` | 20,821 |
-| `GLOSSARY.md` | 12,064 |
+| `GLOSSARY.md` | 12,063 |
 
 ## 4. Halts and open questions
 
@@ -83,13 +83,14 @@ Survey-3 HUMAN-ONLY rows (QI-0167..0174) were closed by the owner in MET-2.2 (PR
 ```
 CHECKSUMS_BEFORE.txt: 630 files (main 21b9675, before any write)
 CHECKSUMS_AFTER.txt:  648 files
-pre-existing files whose hash changed: 2
+pre-existing files whose hash changed: 3
 < c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6  ./00_MANIFEST.md
+< 7a84add8af59b962917535a231283ca3fd9bdaace9039d3f0b6fa25e1b6b2319  ./AGENTS.md
 < e772ec9e74ff5c560a1b05cb7e94ffa70267280facb997ca3fa78946eade614a  ./README.md
 pre-existing files removed: 0 []
 files added (outside this run directory): 18
-00_MANIFEST.md prefix check: head.startswith(main:00_MANIFEST.md) = True; appended 6751 bytes; sha256(main:00_MANIFEST.md) = c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6
-README.md: root governance file outside the 00_–11_ law; +1 table row (git diff --stat pasted in the PR)
+00_MANIFEST.md prefix check: head.startswith(main:00_MANIFEST.md) = True; appended 7280 bytes; sha256(main:00_MANIFEST.md) = c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6
+README.md, AGENTS.md: root governance files outside the 00_–11_ law; README +1 table row, AGENTS.md one 'How work lands' sentence (H-12)
 ```
 
 ## 6. Honesty lines
