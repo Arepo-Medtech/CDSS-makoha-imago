@@ -51,13 +51,14 @@ Replace the first of 3.1's two `allOf` conditions with:
 ```json
 {"if":{"properties":{"severity":{"enum":["CRITICAL","WARNING"]}}},
  "then":{"required":["confidence_reason","attribution"],
-         "anyOf":[{"required":["confidence"]},
-                  {"required":["scorer_failed"],"properties":{"scorer_failed":{"const":true}}}]}}
+         "oneOf":[{"required":["confidence"],"not":{"required":["scorer_failed"]}},
+                  {"required":["scorer_failed"],"properties":{"scorer_failed":{"const":true}},
+                   "not":{"required":["confidence"]}}]}}
 ```
 
 The second condition (`calibrated_weight` ⇒ `calibration_note`) is unchanged. Net effect: every
 CRITICAL and WARNING row carries attribution and a confidence reason, and either a confidence score or
-an explicit statement that scoring failed — never a number that was not assigned.
+an explicit statement that scoring failed — exactly one of the two, never both, never a number that was not assigned.
 
 ### E-2 — Law 16, scorer-failure sentence (corrects 3.1 `:175–177`)
 
@@ -83,13 +84,16 @@ second. 3.1 §4 therefore gains a fifth not-imported item:
 
 ### E-3 — Consequential wording in §j and T-11 (3.1 `:284`, `:292`)
 
-- §j (3.1 `:284`) reads as: "**Needs verification** — CRITICAL rows with confidence < 80 **and every
-  CRITICAL or WARNING row with `scorer_failed: true`** (law 16), each with the one check that would
-  settle it."
-- T-11 pass criteria (3.1 `:292`) read as: "every CRITICAL/WARNING row in `QI.jsonl` has
-  `confidence_reason` + `attribution` and either `confidence` or `scorer_failed: true`; no CRITICAL with
-  confidence < 80 and no `scorer_failed` row appears in §c; rows < 60 appear in §e with score; unscored
-  rows appear in §j; `jq` counts pasted."
+- §j — 3.1 `:284` currently reads: "**Needs verification** — CRITICAL rows with confidence < 80 (law
+  16), each with the one check that would settle it." Replace with: "**Needs verification** — CRITICAL
+  rows with confidence < 80 **and every CRITICAL or WARNING row with `scorer_failed: true`** (law 16),
+  each with the one check that would settle it."
+- T-11 pass criteria — 3.1 `:292` currently reads: "every CRITICAL/WARNING row in `QI.jsonl` has
+  `confidence` + `confidence_reason`; no CRITICAL with confidence < 80 appears in §c; rows < 60 appear
+  in §e with score; `jq` count pasted". Replace with: "every CRITICAL/WARNING row in `QI.jsonl` has
+  `confidence_reason` + `attribution` and exactly one of `confidence` or `scorer_failed: true`; no
+  CRITICAL with confidence < 80 and no `scorer_failed` row appears in §c; rows < 60 appear in §e with
+  score; unscored rows appear in §j; `jq` counts pasted"."
 
 ## 2. Process note (recorded, not adjudicated)
 
