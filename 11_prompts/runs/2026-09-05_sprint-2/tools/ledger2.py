@@ -35,7 +35,7 @@ def cls(p):
     if p.startswith('01_'): return next((r['class'] for r in rows11 if r['path'].startswith('01_north-star-and-transformation/MET-2')), 'CC-8')
     if p.startswith('04_hardening/HARDEN-2'): return next((r['class'] for r in rows11 if 'HARDEN-2.1' in r['path']),'CC-8')
     if p.startswith('04_hardening/HARDEN-1') or p.startswith('04_hardening/HARDEN-3'): return next((r['class'] for r in rows11 if 'HARDEN-1.1' in r['path']),'CC-2')
-    if p.endswith('INDEX-') or 'INDEX-' in p: return 'CC-8'
+    if '/INDEX-' in p: return 'CC-8'   # INDEX-0n.1 deltas
     if p.startswith('06_'): return next((r['class'] for r in rows11 if 'REPO-MAP_v2' in r['path']),'CC-8')
     if p.startswith('08_'): return next((r['class'] for r in rows11 if 'RESEARCH-1.1' in r['path']),'CC-8')
     if p.startswith('09_'): return 'CC-6'
