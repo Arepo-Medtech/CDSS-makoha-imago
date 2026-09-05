@@ -1,7 +1,8 @@
 /* tokens.css — Mākoha Imago design tokens for browser-borne pages (sprint-2, 2026-09-05).
    Series palette: the 28 colours and 3 font families present on ≥ 8 of the 19 corpus HTML pages
    (survey-3 tools/style_census.py → style_census.out.json "implied_token_set"). The census also reports 38
-   size values; they are NOT tokenised here — sizes stay per page until the corpus owner assigns roles. The
+   size values; none of them is tokenised here — the one size token below (--diag-measure, 1200px) is the
+   v2/v3 diagram page's own content width, carried with the diagram sub-palette, not a census value. The
    colours are recorded, not assigned to roles: role names belong to the corpus owner (03_ is never written here).
    Diagram sub-palette: the 7 colours cdss_diagrams_v2/v3.html hard-coded inline (survey-3 QI-0043/QI-0044
    STYLE-DRIFT), now named once. cdss_diagrams_v4.html links this file; v2 and v3 are untouched. */

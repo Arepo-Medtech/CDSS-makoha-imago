@@ -350,7 +350,7 @@ Scope rule as HARDEN-1.1: every tracked file except `.DS_Store`, `.git/**` and `
 | 408 | `09_diagrams/INDEX-09.1_delta.md` | CC-8 | 4155 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 409 | `09_diagrams/cdss_diagrams_v4.html` | CC-6 | 11671 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 410 | `09_diagrams/register_topology_v4.mermaid` | CC-6 | 1894 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
-| 411 | `09_diagrams/tokens.css` | CC-6 | 2231 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
+| 411 | `09_diagrams/tokens.css` | CC-6 | 2334 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 412 | `10_regulatory-execution/INDEX-10.1_delta.md` | CC-8 | 2075 | Regulatory owner — kendo-Jones (MET-2.2 §1; DEC-23) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 413 | `10_regulatory-execution/REG-TASK-OWNERS_companion.md` | CC-4 | 20821 | Regulatory owner — kendo-Jones (MET-2.2 §1; DEC-23) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 414 | `11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md` | CC-8 | 28024 | MT2 operator — Kenny-bytes (DEC-10) / prompt author | PENDING | A-005/A-006/A-007 ledger debt |
