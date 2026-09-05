@@ -1,0 +1,8 @@
+# ci/pipeline.yml — STUB (Proposed; not runnable; this repo is the SOURCE of the pipeline definitions every other repo imports — Primer I)
+# Tier 1+2 shape per Arch §11.1. Added 2026-09-05 (sprint-1, survey-2 BSQ-0392); skeleton file, no code claimed.
+# stages:
+  #   - pin: consume cdss-spine@[PIN]; fail on contract drift (spine PR breaks consumers visibly)
+  #   - self-test: the exported pipeline definitions lint and dry-run (I8 binding table as config; unmapped change class = hard fail)
+  #   - governance: admissibility validator (cdss-governance shared CI action) — no card, no promotion
+  #   - supply-chain: Trivy scan, ECR sign, signed SBOM (Syft/CycloneDX) -> R3
+  #   - r29-ratchet: row-completeness check on instruction-bearing artifacts (ACTIVATES on DEC-02 ratification; MT2 §7(4)) — this repo also EXPORTS the ratchet step

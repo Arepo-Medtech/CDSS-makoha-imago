@@ -1,0 +1,10 @@
+# ci/pipeline.yml — STUB (Proposed; not runnable; wired for real in cdss-evalstack imports)
+# Tier 1+2 shape per Arch §11.1; every repo imports pipeline definitions from cdss-evalstack (I). Added 2026-09-05 (sprint-1, survey-2 BSQ-0392); skeleton file, no code claimed.
+# stages:
+  #   - pin: consume cdss-spine@[PIN]; fail on contract drift (spine PR breaks consumers visibly)
+  #   - prompt-registry: every prompt change is a Primer I event (I8 class); prompt-card present or build fails (K8/R22)
+  #   - zero-calls: no model call in CI while DEC-03 is open (PROMPT-K: 0 LLM calls); any egress to a model endpoint fails the build
+  #   - rri: register-render invariance (CONTRACT-RRI-1 test spec) for the narration capability (L10) — hard failure on add/remove/reweight
+  #   - governance: admissibility validator (cdss-governance shared CI action) — no card, no promotion
+  #   - supply-chain: Trivy scan, ECR sign, signed SBOM (Syft/CycloneDX) -> R3
+  #   - r29-ratchet: row-completeness check on instruction-bearing artifacts (ACTIVATES on DEC-02 ratification; MT2 §7(4))

@@ -1,0 +1,9 @@
+# ci/pipeline.yml — STUB (Proposed; not runnable; wired for real in cdss-evalstack imports)
+# Tier 3 shape per Arch §11.1 (integration staging); this repo carries the lockfile and runs the cross-component gauntlet (Arch §10, §13.6 WF-SPINE-1). Added 2026-09-05 (sprint-1, survey-2 BSQ-0392); skeleton file, no code claimed. Home is DEC-09's call ("an integration repo (or the spine itself)").
+# stages:
+  #   - pin: assemble the lockfile (one pinned version per repo) {timeout: 5m, retry: max 2, idempotent: by pin-set hash}
+  #   - cross-gauntlet: I binding table + G cross-suites + property registry on the assembly {timeout: 60m, retry: 1, on_fail: no compensation — assembly never partially promotes}
+  #   - sign-and-record: sign the pin-set; write R14 {timeout: 5m, retry: 2, idempotent: by content hash}
+  #   - channels: GPP channel structural-absence proof (GPP-8 / NDG-5 pattern) where a GPP or Governance Layer artifact is in the assembly
+  #   - supply-chain: Trivy scan, ECR sign, signed SBOM (Syft/CycloneDX) -> R3
+  #   - r29-ratchet: row-completeness check on instruction-bearing artifacts (ACTIVATES on DEC-02 ratification; MT2 §7(4))

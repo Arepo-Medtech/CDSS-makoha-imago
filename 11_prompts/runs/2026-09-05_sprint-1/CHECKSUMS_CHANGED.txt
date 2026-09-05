@@ -1,0 +1,1 @@
+< ae7261eb67775f52afceb134f2dd32aa659dfbf9dc80a485f81700acb44561a2  ./00_MANIFEST.md

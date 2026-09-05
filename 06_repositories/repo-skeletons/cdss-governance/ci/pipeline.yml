@@ -1,0 +1,9 @@
+# ci/pipeline.yml — STUB (Proposed; not runnable; wired for real in cdss-evalstack imports)
+# Tier 1+2 shape per Arch §11.1; every repo imports pipeline definitions from cdss-evalstack (I). Added 2026-09-05 (sprint-1, survey-2 BSQ-0392); skeleton file, no code claimed.
+# stages:
+  #   - pin: consume cdss-spine@[PIN]; fail on contract drift (spine PR breaks consumers visibly)
+  #   - validator-self-test: the admissibility validator (shared CI action this repo EXPORTS) runs against constructed violations (PROMPT-J TASK-J-001 shape)
+  #   - census: registration-precedes-training negative audit; R4/R5 rows written
+  #   - registers: R30 schema validation of the row-form seed (05_/REG-R30.schema.json) — owner duties per REG-R30
+  #   - supply-chain: Trivy scan, ECR sign, signed SBOM (Syft/CycloneDX) -> R3
+  #   - r29-ratchet: row-completeness check on instruction-bearing artifacts (ACTIVATES on DEC-02 ratification; MT2 §7(4))

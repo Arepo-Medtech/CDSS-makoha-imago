@@ -1,0 +1,5 @@
+rows=549 invalid=0 valid=549 duplicates=0 self-statement=0 ASSUME-not-OPEN=0
+families 44 gap-families 0
+sample: {"reg_id": "REG-FIND-001", "statement": "Mākoha is assessed as **not eligible** for the CDSS exemption. The disqualifier is the diagnostic function, not the use of AI.", "status": "OPEN", "source_status_verbatim": "OPEN", "mapping_pending": false, "source": "REG-POSTURE v1.2 §1.1 Findings register (table row l.315)", "definition_shape": "table-row", "owner": "cdss-governance (register owner; row o
+sample KTX-001: ['(`KTX-001`). You have no legacy Jira to preserve, and the predefined work type']
+sample WATCH-REG-001 cadence: ['Quarterly']

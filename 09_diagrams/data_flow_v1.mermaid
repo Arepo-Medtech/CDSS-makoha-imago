@@ -1,0 +1,39 @@
+%% IMAGO-5 — Data-flow and trust boundaries (SEC-2 §1 source). Status: Proposed. Derived from Arch §11.5 topology + §11.4 mapping + §10 corpus firewall; substrate per DEC-03 (both drawn, Baseten marked pending). No deployment claimed.
+flowchart LR
+  subgraph ORG["AWS Organizations — per-environment accounts (Arch §11.1 T3: no network path staging→production)"]
+    subgraph DEV["Dev / staging accounts (T1+2, T3)"]
+      CI["CodeBuild + CodePipeline<br/>Trivy · ECR sign · signed SBOM → R3"]
+      STG["Staging VPC (WAF-fronted)<br/>lockfile-driven assembly"]
+    end
+    subgraph PROD["Production account (T5)"]
+      SVC["Engine · Conformal · Coder<br/>ECS Fargate (stateless)"]
+      REGP["Registry artifacts<br/>S3 versioned + object-lock"]
+      LOGS["Decision logs / telemetry<br/>Kinesis → S3 (object-lock) → Athena"]
+      FAB["Fabric ledger (DEC-04)<br/>Aurora + hash-chain"]
+      SEC["GuardDuty · Security Hub · Config<br/>CloudTrail org trail (immutable audit spine)"]
+    end
+    subgraph SIGN["Signing enclave — cdss-registry"]
+      KMS["KMS keys + cosign<br/>keys never leave"]
+    end
+    subgraph CORPUS["Corpus account — firewall as an account boundary (Primer C)"]
+      CASES["Casebundle corpus<br/>dev CI holds NO credential"]
+      R28["R28 aggregate mirror<br/>checkpoint results only"]
+    end
+  end
+  subgraph EXT["External / substrate (DEC-03 open)"]
+    BR["Amazon Bedrock via PrivateLink<br/>no public egress (Arch §11.4)"]
+    BS["Baseten Sydney, dedicated<br/>(REG-POSTURE §5.1 — PENDING DEC-03 / ASSUME-REG-004)"]
+    CLIN["Clinician / pharmacist / patient surfaces<br/>(patient beyond J-3-safe subset: BLOCKED, DEC-07)"]
+  end
+  CI --> STG --> SVC
+  KMS -. "signs" .-> REGP
+  REGP --> SVC
+  SVC --> FAB --> LOGS
+  SVC -. "harness/K/L calls only" .-> BR
+  SVC -. "pending" .-> BS
+  CLIN --> SVC
+  CASES -. "checkpoints only" .-> R28
+  R28 -. "aggregates" .-> FAB
+  SEC -. "watches" .-> PROD
+  classDef pend stroke-dasharray: 5 5
+  class BS,FAB pend

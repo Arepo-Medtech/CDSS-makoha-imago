@@ -1,0 +1,3 @@
+files in tree (incl. planned): 270 | ledger rows: 275 | distinct paths: 270 | missing: 0 | extra: 0
+by class: {"engine": 1, "CC-7": 8, "CC-2": 9, "CC-4": 16, "CC-3": 17, "CC-1": 33, "CC-6": 25, "corpus": 1, "external": 1, "CC-8": 58, "CC-5": 106}
+planned not yet on disk: []

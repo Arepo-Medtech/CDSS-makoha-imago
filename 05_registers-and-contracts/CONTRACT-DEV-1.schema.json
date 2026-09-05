@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdss-spine/contracts/contract-dev-1.schema.json",
+  "title": "CONTRACT-DEV-1 — Deviation object (Proposed, DEC-02; staged draft, MOVES to cdss-spine on DEC-02 + DEC-09)",
+  "$comment": "Companion to 05_registers-and-contracts/CONTRACT-ARG-1_argument_schema.md, Deviation paragraph (same file family). SPINE-8: deviation machinery exists at every recommendation point; a Deviation is never blocked except where a deterministic safety class applies. Seven fields verbatim from the field list. severity_tier values are [NEEDS DEFINITION — architecture owner, DEC-02]; the schema constrains shape, not the tier vocabulary. Built 2026-09-05 (sprint-1, survey-2 row BSQ-0205).",
+  "type": "object",
+  "required": ["dev_id", "arg_id", "reason_taxonomy_code", "free_text", "severity_tier", "author_identity", "timestamp"],
+  "additionalProperties": false,
+  "properties": {
+    "object_type": {"const": "Deviation"},
+    "dev_id": {"type": "string", "minLength": 1},
+    "arg_id": {"type": "string", "minLength": 1, "description": "the ActualArgument departed from (CONTRACT-ARG-1)"},
+    "reason_taxonomy_code": {"type": "string", "minLength": 1, "description": "structured reason taxonomy (SPINE-8); the taxonomy itself is an OPS-1 change class (deviation-taxonomy) and lives in the registry"},
+    "free_text": {"type": "string"},
+    "severity_tier": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9-]*$", "description": "[NEEDS DEFINITION — DEC-02 / architecture owner] tier vocabulary not yet ratified; pattern only"},
+    "author_identity": {"type": "string", "minLength": 1, "description": "face-side actor with clinical authority"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "blocked_by_deterministic_safety_class": {"type": "boolean", "description": "true only where a deterministic safety class applies (SPINE-8) — the sole permitted block"}
+  }
+}
