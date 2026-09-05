@@ -1,0 +1,28 @@
+/* tokens.css — Mākoha Imago design tokens for browser-borne pages (sprint-2, 2026-09-05).
+   Series palette: the 28 colours, 38 sizes and 3 font families present on ≥ 8 of the 19 corpus HTML pages
+   (survey-3 tools/style_census.py → style_census.out.json "implied_token_set"). They are recorded, not
+   assigned to roles: role names for the series colours belong to the corpus owner (03_ is never written here).
+   Diagram sub-palette: the 7 colours cdss_diagrams_v2/v3.html hard-coded inline (survey-3 QI-0043/QI-0044
+   STYLE-DRIFT), now named once. cdss_diagrams_v4.html links this file; v2 and v3 are untouched. */
+:root {
+  /* series palette — hex values verbatim from the census, ordered as reported */
+  --series-c01:#14181f; --series-c02:#1b212b; --series-c03:#1c2330; --series-c04:#222a37; --series-c05:#2a3450;
+  --series-c06:#2e6b4f; --series-c07:#323a49; --series-c08:#35477d; --series-c09:#3a3122; --series-c10:#4a5468;
+  --series-c11:#77819a; --series-c12:#7fc2a3; --series-c13:#8791a3; --series-c14:#8c3b3b; --series-c15:#9a5b2d;
+  --series-c16:#a0752f; --series-c17:#a3b3e3; --series-c18:#aab3c5; --series-c19:#d3a06b; --series-c20:#d3a55c;
+  --series-c21:#d98a8a; --series-c22:#d9dde5; --series-c23:#dfe4f0; --series-c24:#e6e9f0; --series-c25:#eef0f4;
+  --series-c26:#f2e8d5; --series-c27:#f6f7f9; --series-c28:#ffffff;
+  --series-font-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --series-font-sans:"Source Sans 3", system-ui, -apple-system, sans-serif;
+  --series-font-serif:Spectral, Georgia, serif;
+  /* diagram sub-palette — the v2/v3 page values, unchanged */
+  --diag-accent:#7c3aed;        /* h1 rule, h2 colour */
+  --diag-status-bg:#fef3c7;     /* status banner background */
+  --diag-status-border:#d97706; /* status banner left rule */
+  --diag-panel:#fafafa;         /* diagram panel background */
+  --diag-border:#ddd;           /* panel and footer rules */
+  --diag-muted:#666;            /* footer text */
+  --diag-ink:#1a1a1a;           /* body text */
+  --diag-font:Georgia, serif;   /* v2/v3 body font, retained for the diagram pages */
+  --diag-measure:1200px;
+}

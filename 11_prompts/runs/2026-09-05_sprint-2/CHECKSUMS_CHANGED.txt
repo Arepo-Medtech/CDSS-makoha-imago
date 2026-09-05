@@ -1,0 +1,9 @@
+CHECKSUMS_BEFORE.txt: 630 files (main 21b9675, before any write)
+CHECKSUMS_AFTER.txt:  648 files
+pre-existing files whose hash changed: 2
+< c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6  ./00_MANIFEST.md
+< e772ec9e74ff5c560a1b05cb7e94ffa70267280facb997ca3fa78946eade614a  ./README.md
+pre-existing files removed: 0 []
+files added (outside this run directory): 18
+00_MANIFEST.md prefix check: head.startswith(main:00_MANIFEST.md) = True; appended 6751 bytes; sha256(main:00_MANIFEST.md) = c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6
+README.md: root governance file outside the 00_–11_ law; +1 table row (git diff --stat pasted in the PR)

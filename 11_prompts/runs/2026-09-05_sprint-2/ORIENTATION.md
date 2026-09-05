@@ -1,0 +1,18 @@
+# ORIENTATION — sprint-2 (2026-09-05): the survey-3 EXECUTABLE-NOW set and the MET-2.2 owed files
+
+**Executor:** Claude Code (Fable 5.1), desktop session at the repository root; branch `sprint-2-executable-now` from `main` 21b9675 (PR #15 merged). **Mandate:** the owner's instruction of 5 Sep 2026: "merge the PR - proceed with sprint-2". **Scope taken:** every CLAUDE-CODE-EXECUTABLE-NOW row of the survey-3 Impeccability Queue (`11_prompts/runs/2026-09-05_survey-3/IMPECCABILITY_QUEUE.md` §c / §c.1: QI-0018, QI-0020, QI-0025, QI-0019, QI-0024, QI-0032, QI-0023), the weight-2 rows the Queue marked recommended (§d: the four orphan citations QI-0010/0011/0013/0014; the inventory successor QI-0063; tokens.css + v4 with the DEC-01 regeneration QI-0043/0044; the RG trigger column QI-0022), and the files MET-2.2 §6 owes now that nine decisions are closed (HARDEN-1.2/3.2, MET-4.1, REPO-MAP v3, REG-TASK-OWNERS, IMAGO-3 v4, the wording read-through). **Laws inherited:** AGENTS.md laws 1–7; PROMPT-SURVEY-3 through 3.1/3.2 for the quality bar; MT2 §3 (every artifact a row); EXEC-1 for sequencing (in force since DEC-22).
+
+## Inputs read in full
+`IMPECCABILITY_QUEUE.md` §c and §c.1 (all seven build specs with remediation drafts), §d recommended rows, §h hand-back · `QI.jsonl` rows cited · MET-2.2 (all sections) · MET-4 v1.1 · EXEC-1 run table · DEPLOY-1.1 D-2/D-3 · REPO-MAP v2 · the four posture task tables (REG-POSTURE §7, REG-NZ §8, REG-US, REG-EU) · R30.3 seed (reg_ids) · HARDEN-1/1.1 rows, HARDEN-3.1 rows and census · RESEARCH-1 §3, RESEARCH-1.1 D-3 · Primer 0 §9/§11 · Arch §12.2, §13.2–13.4, §13.7, §14.1–14.4 · IMAGO-3 v3 source and cdss_diagrams_v3.html · INDEX-04/06/08/09/10 §2 forms · sprint-1 RUN-REPORT and ORIENTATION (form precedent).
+
+## What changed since the survey (confirmed on `main` 21b9675)
++ `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` (A-009): DEC-01, 02, 08, 09, 10, 11, 13, 14, 22 closed; roles named to accounts; DEC-23 accepted; DEC-24..26 proposed. Consequences for this sprint: every owner cell can be a name; every timeline cell can be a RUN row; QI-0019 and QI-0023 are largely closed by MET-2.2 itself (closure column, `req_prefixes`/`id_families`) — this sprint adds the G declaration in MET-4.1 and records both as CLOSED-BY-MET-2.2 in the RUN-REPORT.
+
+## Not in scope (stated, not silently dropped)
+DEPLOY-1.2 (RTO/RPO values, L5 drill protocol) — waits on the infrastructure owner's values (DEC-23 values Open); no number is invented. `00_FRONTMATTER.schema.json` and SEC-2.1 — weight-2 rows the Queue did not mark recommended. DEC-24..26 rulings — Architecture owner; the alias-law text is drafted (RESEARCH-1.2, HARDEN-2.2) and marked Proposed. Regeneration of the 02_ derived artifacts (`cdss_complete_stack.md`, `cdss_diagrams.html` successors) — the DEC-01 regeneration run here covers IMAGO-3 v4 + the v4 page; the 02_ pair remains queued (MET-4.1 G-10). Nothing under 03_ written. No R29 row written. No ASSUME, gate or posture touched.
+
+## Tooling (run-local)
+`tools/regtask.py` (REG-TASK-OWNERS generator) · `tools/ledger2.py` (HARDEN-1.2, HARDEN-3.2, INDEX-0n.1 deltas, inventory — fixed-point generation) · sprint-1 `tools/mermaid/parse.mjs` (mermaid 10.9.8 via jsdom 24.1.3, node v20.20.2) for the parse · `.github/audit/*` (append-only, frontmatter, refcheck, depth, schemas via the sprint-1 venv) · `raw/` holds every tool output pasted into the deliverables.
+
+## Baseline
+`CHECKSUMS_BEFORE.txt`: 630 files (sha256; excludes .git, .DS_Store, node_modules, .venv, tools/mermaid and this run directory) taken on `main` 21b9675 before any write.

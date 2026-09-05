@@ -1,0 +1,21 @@
+%% IMAGO-3 v4 — Register topology. R1–R28 Existing/Ratified (Arch §12.2 + Ecosystem v2.0); R29–R30 RATIFIED by DEC-02 (MET-2.2 §3.4, 2026-09-05) and drawn solid. Status: Proposed as a diagram; the registers it draws are ratified.
+%% v4 successor to register_topology_v3.mermaid (preserved unedited): DEC-01 regeneration run (PROC-09-REGEN, INDEX-09 §4; MET-4.1 G-10). Changes: R29/R30 lose the dashed Proposed class; the CI ratchet stays dashed (not yet wired — HARDEN-1 row zero BLOCKED); the fabric ledger stays dashed (DEC-04 Open). The R25 label is carried unchanged pending DEC-25 (MET-2.2 §5; survey-2 BSQ-0602).
+flowchart LR
+  subgraph BUILD["Build & governance"]
+    R1["R1 version registry"]; R4["R4 model census/cards"]; R7["R7 property registry"]; R19["R19 posture + triggers"]; R23["R23 dossier evidence"]
+    R25["R25 property runs<br/>(label under ruling — DEC-25)"]; R26["R26 build work"]; R27["R27 drift & adjudication"]
+    R29["R29 hardening coverage<br/>(MT2 ledger — append-only,<br/>written by the pass only; ratified DEC-02)"]
+    R30["R30 regulatory posture<br/>(external attestations only; ratified DEC-02)"]
+  end
+  subgraph RUNTIME["Runtime ledgers"]
+    R11["R11 gate decision log"]; R13["R13 telemetry"]; R18["R18 contract violations"]; R20["R20 incidents"]
+  end
+  subgraph CORPUS["Corpus side (own account)"]
+    R9["R9 coverage map<br/>(+HeyDoc seed provenance)"]; R21["R21 exposure ledger"]; R28["R28 aggregate mirror"]
+  end
+  FAB["Fabric ledger (DEC-04 Open):<br/>one physical hash-chain;<br/>R11/R13/R18 become views"]:::prop
+  FAB -.-> R11 & R13 & R18
+  R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7(4))<br/>— not yet wired"]:::prop
+  R30 --> R19 & R23
+  R28 --> OBS["Observer (adjudicates from<br/>registers only, never corpus content;<br/>quarterly from L4 — DEC-08)"]
+  classDef prop stroke-dasharray: 5 5

@@ -18,6 +18,7 @@ them copy it.
 | Cite a document | This repository, by document ID and commit (see *How to cite*) |
 | Programme narrative and decisions | [Makoha space in Confluence](https://arepo-tech.atlassian.net/wiki/spaces/MAK) |
 | Work items | Jira project **MAK** |
+| House vocabulary — a term, its quoted source line, the ruling that guards it, its aliases | `GLOSSARY.md` (root; added sprint-2) |
 | The software being built from this design | [Arepo-Medtech/CDSS_Makoha](https://github.com/Arepo-Medtech/CDSS_Makoha) |
 
 ## Layout
