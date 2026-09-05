@@ -1,1 +1,11 @@
 .DS_Store
+
+# Impeccable ephemeral files (skills are tracked; caches are not)
+.impeccable/cache/
+.impeccable/live/state.json
+.impeccable/*.log
+# local browser profile
+.playwright-mcp/
+# Impeccable engine binaries are platform-specific; restore with `npx impeccable install` (skill text is tracked)
+.claude/skills/impeccable/scripts/bin/
+.github/skills/impeccable/scripts/bin/
