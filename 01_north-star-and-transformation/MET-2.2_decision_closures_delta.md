@@ -8,7 +8,7 @@ supersedes: "nothing — MET-2 v1.0 and MET-2.1 preserved verbatim beside this f
 applies_to: "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md; 01_north-star-and-transformation/MET-2.1_decision_register_delta.md; 01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md (G-09 narrowed)"
 change_policy: "Additive delta. Closures recorded here were ruled by their owners on 2026-09-05 (§0); the delta author drafted the wording and made one delegated naming ruling (DEC-13). No ASSUME-*, gate or posture is closed by this file."
 ruled_by: "Kenny-bytes (Founder; Programme lead; Architecture owner per §1) — rulings given 2026-09-05 in the Claude Code session that produced this file, in answer to the survey-3 Queue §c HUMAN-ONLY rows QI-0167..QI-0174"
-id_prefixes: [C, DEC, G]
+req_prefixes: [C, DEC, G]
 minted_here: "C-17; DEC-24, DEC-25, DEC-26 (proposed rows); DEC-23 accepted as a register row from the A-004 proposal — 5 new rows"
 req_count: 5
 id_families: "C: C-01..C-17 (17 rows, home MET-2 / MET-2.1 / this file) · DEC: DEC-01..DEC-26 (26 rows, 23 minted + 3 proposed, home MET-2 / MET-2.1 / this file; aliases DEC-G1..G4 = DEC-13..16, SD-01..05 = DEC-17..21) · G: G-01..G-11 (11 rows, home MET-4)"
@@ -208,9 +208,13 @@ Ledger debt: this file has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-
 
 ## 8. Self-audit (run 2026-09-05 on the PR branch; commands pasted, outputs quoted)
 
-1. **Append-only** — `python3 .github/audit/append_only.py origin/main` → `00_MANIFEST.md: appended … bytes; prefix preserved`; `0 violations` (CI job "Mechanical audit" on PR #15: pass).
+1. **Append-only** — `python3 .github/audit/append_only.py origin/main` (run after the final edit of both changed files; CI job "Mechanical audit" on PR #15: pass) →
+```
+00_MANIFEST.md: appended 6761 bytes; prefix preserved (sha256 6867157e3d4c)
+append-only: 2 changed paths, 2 permitted, 0 violations
+```
 2. **References** — `python3 .github/audit/refcheck.py 00_MANIFEST.md 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` → `dead in-repo paths: 0; unresolved anchors: 0`. Owed future files in §6 are written without backticks so they are not read as references.
-3. **Census parity (§2)** — `grep -c '^| DEC-'` → 26 rows; `grep -o '^| DEC-[0-9]*' | sort -u | wc -l` → 26 distinct ids = DEC-01..26 · `grep -c '^| DEC-.*\*\*Closed'` → 9 closed rows (DEC-01, 02, 08, 09, 10, 11, 13, 14, 22) · `grep -c '^| C-17'` → 1. C census 12 + 4 + 1 = 17; DEC census 23 minted + 3 proposed = 26; both agree with the frontmatter `id_families`.
+3. **Census parity (§2)** — `grep -c '^| DEC-'` → 26 rows; `grep -o '^| DEC-[0-9]*' | sort -u | wc -l` → 26 distinct ids = DEC-01..26 · `grep -c '^| DEC-.*\*\*Closed'` → 9 closed rows (DEC-01, 02, 08, 09, 10, 11, 13, 14, 22) · `grep -c '^| C-17'` → 1. C census 12 + 4 + 1 = 17; DEC census 23 minted + 3 proposed = 26; both agree with the frontmatter `req_prefixes` / `id_families`.
 4. **DEC-13 ground (a)** — `git ls-files | grep -v '^11_prompts/runs/' | xargs grep -l 'MAK-GOV' | wc -l` → 37 tracked files (this file and the manifest included); by top-level folder:
 ```
 1 .github

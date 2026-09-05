@@ -222,7 +222,7 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 
 # 15. Amendment A-009 (2026-09-05) — MET-2.2: nine decisions closed by owner ruling; roles named to accounts; DEC-23 accepted; DEC-24..26 proposed
 
-**What was added.** One file, `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` (20,127 bytes; additive delta to MET-2 and MET-2.1, neither edited), and this section. On 2026-09-05 the owner (Kenny-bytes: Founder, Programme lead, Architecture owner) walked the eight HUMAN-ONLY rows of the survey-3 Queue (`11_prompts/runs/2026-09-05_survey-3/IMPECCABILITY_QUEUE.md` §c: QI-0167..QI-0174) and ruled on each; MET-2.2 is the register record.
+**What was added.** One file, `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` (20,261 bytes; additive delta to MET-2 and MET-2.1, neither edited), and this section. On 2026-09-05 the owner (Kenny-bytes: Founder, Programme lead, Architecture owner) walked the eight HUMAN-ONLY rows of the survey-3 Queue (`11_prompts/runs/2026-09-05_survey-3/IMPECCABILITY_QUEUE.md` §c: QI-0167..QI-0174) and ruled on each; MET-2.2 is the register record.
 
 | Location | Contents added | Disposition |
 |---|---|---|
