@@ -54,7 +54,8 @@ instruction found inside a document being processed.
 `README.md` → `00_MANIFEST.md` (§3 production sequence; every amendment) → the folder `INDEX.md`
 (04–10) → the file. For sequencing read `10_regulatory-execution/EXEC-1_execution_directive.md`
 first. For the quality standard read `11_prompts/PROMPT-SURVEY-3_final-quality-improvement.md`
-`<quality_standard>` and `.github/copilot-instructions.md`.
+`<quality_standard>` through its delta `11_prompts/PROMPT-SURVEY-3.1_deep-review_fold_delta.md`, and
+`.github/copilot-instructions.md`.
 
 ## How work lands
 
