@@ -161,7 +161,7 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 
 # 12. Amendment A-006 (2026-09-05) — PROMPT-SURVEY-3.1: deep-review fold
 
-**What was added.** Nothing pre-existing was edited except this manifest (appended). One file is added under `11_prompts/`, a delta over PROMPT-SURVEY-3 v1.0, which is preserved verbatim and is now read through it.
+**What was added.** Nothing pre-existing under `00_`–`11_` was edited except this manifest (appended). Outside the append-only law, the root governance file `AGENTS.md` gained one read-order sentence (see table). One file is added under `11_prompts/`, a delta over PROMPT-SURVEY-3 v1.0, which is preserved verbatim and is now read through it.
 
 | Location | Contents added | Disposition |
 |---|---|---|
