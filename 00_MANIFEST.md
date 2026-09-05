@@ -189,3 +189,51 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Ledger debt.** `PROMPT-SURVEY-3.2` has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-005/A-006 debt owed by a HARDEN-1.2 / HARDEN-3.2 delta.
 
 **Honesty lines (extending §11, §12).** The Copilot review ruleset does not gate merging; PR #12 merged before its review posted, which is why this is an erratum file and not a branch fix · making the review or the mechanical audit a required status check is a candidate for a later amendment, not decided here.
+
+# 14. Amendment A-008 (2026-09-05) — survey-3 run recorded (PR #14, merge ac3b052); placeholder census re-run; DEF/A census; 00_inventory status
+
+**What was added.** Nothing pre-existing under `00_`–`11_` was edited except this manifest (appended). One run directory: `11_prompts/runs/2026-09-05_survey-3/` (excluded from the Confluence mirror; evidence, not corpus).
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `11_prompts/runs/2026-09-05_survey-3/` | PROMPT-SURVEY-3 v1.0 run, read through 3.1 and 3.2: ORIENTATION, QUALITY_STANDARD (17 Q-D + 5 Q-F lines), 8 tools + outputs, CENSUS + L1–L4 tables, 14 folder fragments, 13 depth-read items, `QI.jsonl` (174 rows, 174 valid), IMPECCABILITY_QUEUE (§a–§j), HALT_LOG, OPEN_QUESTIONS, CHECKSUMS_BEFORE/AFTER (diff ∅) | Evidence; Proposed queue for sprint-2 |
+
+**Placeholder census (re-run 2026-09-05, in-scope files).** `[NEEDS DEFINITION]` 557 in 67 files (98 = repo owners DEC-09; 46 = corpus owner; 41 = MT2 operator DEC-10; 22 = component owners DEC-09; 15 = regulatory owner G-09; 13 = manifest owner; …) · `[NEEDS SOURCE]` 19 in 11 · `[UNAVAILABLE]` 2 in 1 · `PENDING-VALIDATOR` 46 in 10 · `PENDING-REGISTER-HOME` 6 in 4 · `PENDING-ENUMERATION` 7 in 5. Every placeholder names its resolving DEC or gap; none is unregistered. Supersedes the §6 line of 2026-09-01 (22 / 4 / 1 / 4 / 5 / 1) as the current census (QI-0028).
+
+**ID census (this manifest).** `DEF-001..007` = 7 defect rows (§5, §10, §13); `A-001..008` = 8 amendments. Retired: none (QI-0027).
+
+**Inventory status.** `00_inventory.txt` is the v1.1-build byte inventory of 2026-09-01 (82 lines; 13 counts and 16 paths differ from disk — `11_prompts/runs/2026-09-05_survey-3/raw/inventory_drift.txt`). It is retained as a snapshot; the tracked tree is authoritative (README). A regenerated 00_inventory_v1.3.txt with a header line is queued (QI-0063).
+
+**Verdicts (survey-3 §b).** ROOT and 02 are IMPECCABLE-WITH-DECISIONS-PENDING; 01, 10 and CHAIN are BELOW-STANDARD on WARNING/CRITICAL rows with drafted remedies; every other folder is BELOW-STANDARD on OPTIMISATION rows only. One CRITICAL document defect: the MET-4 gap table (QI-0018). Layer scores in the Queue §b.
+
+**Ledger debt.** No file created since A-005 (governance files, PROMPT-SURVEY-3/3.1/3.2, this run) has a HARDEN-1.1 row or HARDEN-3.1 task; a HARDEN-1.2 / HARDEN-3.2 delta owes them, plus rows for every file the Queue's EXECUTABLE-NOW set would create.
+
+**Honesty lines (extending §11–§13).** The survey built nothing, ran no pass, wrote no R29 row, closed no decision · thresholds are `[ASSESSOR-PROPOSED]` (Queue §Assumptions; OPEN_QUESTIONS 10) · mermaid parse cited from CI, not run locally · confidence scored by the writer, not an independent scorer.
+
+**Defect rows.**
+
+| DEF | Found | Location | Nature | Disposition |
+|---|---|---|---|---|
+| DEF-008 (2026-09-05, survey-3 QI-0063) | survey-3 | `00_inventory.txt` | `00_inventory.txt` presents byte counts without a date, status or supersession line; 13 counts and 16 paths differ from disk. | Not an append-only breach (`git show 73460b3` sizes equal disk). Fix: this inventory-status paragraph + 00_inventory_v1.3.txt successor (QI-0063) |
+
+**Decisions proposed for MET-2.2 (register rows, not amendments — Architecture owner; carried as DEC-24..26 in A-009 below).**
+
+- **DEC-24** doc_id supersession rule (QI-0001) · **DEC-25** R25 label (BSQ-0602 / QI-0029) · **DEC-26** namespace alias laws: W-n (FOLD-1 vs HARDEN-3), RG (MAK-CEC vs RESEARCH-1), CC (HARDEN-2 vs MAK-LBP) (QI-0030 / QI-0024 / QI-0025).
+
+# 15. Amendment A-009 (2026-09-05) — MET-2.2: nine decisions closed by owner ruling; roles named to accounts; DEC-23 accepted; DEC-24..26 proposed
+
+**What was added.** One file, `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` (21,013 bytes; additive delta to MET-2 and MET-2.1, neither edited), and this section. On 2026-09-05 the owner (Kenny-bytes: Founder, Programme lead, Architecture owner) walked the eight HUMAN-ONLY rows of the survey-3 Queue (`11_prompts/runs/2026-09-05_survey-3/IMPECCABILITY_QUEUE.md` §c: QI-0167..QI-0174) and ruled on each; MET-2.2 is the register record.
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` | §1 roles → accounts (Kenny-bytes, kendo-Jones, Ken-nough, Ken-E-Gee — logins as returned by the GitHub org members API; seniority order as ruled) · §2 full DEC table DEC-01..26 with closure-evidence column · §3 rulings: DEC-22 adopted (EXEC-1 EX-1/EX-5; 10_ v1.2 working set) · DEC-10 operator = Kenny-bytes · DEC-11 C-11 rule accepted · DEC-02 R29/R30 ratified as real registers · DEC-09 repo owners named, PFX {FAB, UIP, UIC, GPP} ratified (Arch §14.4 → ratified) · DEC-08 IMPL rename + quarterly Observer cadence ratified · DEC-13 doc_id `MAK-GOV` permanent, not J-series (delegated naming ruling) · DEC-14 Governance Layer built to finish and held ready; commercial timing outside the register · DEC-01 C-01 relabel ratified; `ASSUME-REG-002` stays OPEN (C-17 dated divergence with REG-POSTURE v1.2 l.473) · DEC-23 accepted: owners named, RTO/RPO values open · §5 DEC-24..26 drafted, Open · §6 consequential files owed (sprint-2) · §8 self-audit with pasted outputs | Added — register delta; closures are owner facts, drafts are Proposed |
+
+**Census.** C-01..C-17 (17; +1 C-17) · DEC-01..DEC-26 (26 = 23 minted + 3 proposed; 9 closed by A-009: DEC-01, 02, 08, 09, 10, 11, 13, 14, 22; DEC-21 namespace component closed; DEC-23 names closed) · G-01..G-11 unchanged (G-09 narrowed in MET-4.1 when written). `A-001..009` = 9 amendments; `DEF-001..008` = 8 defect rows.
+
+**Placeholder effect (not yet applied — cells resolve only in the owed deltas).** DEC-09 → 98 repo-owner + 22 component-owner cells; DEC-10 → 41 MT2-operator cells; DEC-23 → 15 regulatory-owner cells; these 176 of the 557 `[NEEDS DEFINITION]` counted in A-008 now have a name and resolve in HARDEN-1.2 / HARDEN-3.2.
+
+**Not done by A-009.** No `ASSUME-*`, `GATE-*` or posture closed; no R29 row written; no pass launched; nothing under 03_ or 10_ edited (the MAK-GOV `naming_note` and the REG-POSTURE l.473 DEC-01 clause read as superseded on the point only, carried by their owners into next versions). DEC-03..07, 12, 15..17, 19, 20 keep their State.
+
+**Ledger debt.** MET-2.2 has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-005..A-008 debt owed by a HARDEN-1.2 / HARDEN-3.2 delta — which now also fills the 176 named cells above.
+
+**Process (requirement).** The PR carrying this amendment is opened by Kenny-bytes so that the Copilot review is auto-requested under ruleset 22326380; it is to be merged only after that review has posted and its findings have been addressed on the branch, per the A-007 process note.
