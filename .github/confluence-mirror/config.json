@@ -27,6 +27,10 @@
     "1212422"
   ],
   "excludePrefixes": [
-    "11_prompts/runs/"
+    ".claude/",
+    ".impeccable/",
+    "11_prompts/runs/",
+    "AGENTS.md",
+    "CLAUDE.md"
   ]
 }

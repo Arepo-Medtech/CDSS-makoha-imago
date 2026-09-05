@@ -1,0 +1,68 @@
+name: "Design Ecosystem Agentic Audit"
+
+# Enacts 'Directives for Agent Deployment' §2 for this repository. Three layers on every pull request:
+#  1. mechanical — append-only law, frontmatter schema, dead references, depth, JSON Schemas, mermaid parse (.github/audit/)
+#  2. Copilot code review — requested via the REST API (copilot-pull-request-reviewer[bot]); the repository ruleset
+#     "Automatically request Copilot code review" is the primary trigger; this step is the belt to that braces.
+#     Copilot reads .github/copilot-instructions.md, .github/instructions/*.instructions.md and AGENTS.md.
+#  3. Impeccable detector — deterministic design checks over any HTML page the PR changes (browser-borne assets only).
+# Note: github/copilot-review-action does not exist (verified 2026-09-05, HTTP 404); the API request is the real mechanism.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: design-audit-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  mechanical:
+    name: Mechanical audit (append-only · frontmatter · references · depth · schemas · mermaid)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet jsonschema pyyaml
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - name: Install mermaid parser (run-local)
+        run: cd .github/audit/mermaid && npm install --silent --no-audit --no-fund
+      - name: Run the audit
+        run: .github/audit/run_all.sh origin/${{ github.base_ref }}
+
+  copilot-review:
+    name: Request Copilot code review
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    continue-on-error: true   # needs a Copilot seat for the PR author (org plan: Business, seats unconfigured at 2026-09-05)
+    steps:
+      - name: Request review from copilot-pull-request-reviewer[bot]
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: |
+          gh api -X POST "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/requested_reviewers" \
+            -f 'reviewers[]=copilot-pull-request-reviewer[bot]' \
+            && echo "Copilot review requested" || echo "Copilot review request declined (no seat / not enabled) — see ruleset 'Automatically request Copilot code review'"
+
+  impeccable:
+    name: Impeccable detector (changed HTML pages)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - name: Detect on changed .html
+        run: |
+          FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD -- '*.html' | tr '\n' ' ')
+          { echo "# Impeccable detector"; echo; } >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "$FILES" ]; then echo "- no HTML pages changed in this PR" >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          for f in $FILES; do
+            { echo "## \`$f\`"; echo '```'; npx -y impeccable@latest detect "$f" 2>&1 | grep -v EBADENGINE || true; echo '```'; echo; } >> "$GITHUB_STEP_SUMMARY"
+          done
