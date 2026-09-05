@@ -222,7 +222,7 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 
 # 15. Amendment A-009 (2026-09-05) — MET-2.2: nine decisions closed by owner ruling; roles named to accounts; DEC-23 accepted; DEC-24..26 proposed
 
-**What was added.** One file, `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` (20,261 bytes; additive delta to MET-2 and MET-2.1, neither edited), and this section. On 2026-09-05 the owner (Kenny-bytes: Founder, Programme lead, Architecture owner) walked the eight HUMAN-ONLY rows of the survey-3 Queue (`11_prompts/runs/2026-09-05_survey-3/IMPECCABILITY_QUEUE.md` §c: QI-0167..QI-0174) and ruled on each; MET-2.2 is the register record.
+**What was added.** One file, `01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` (20,331 bytes; additive delta to MET-2 and MET-2.1, neither edited), and this section. On 2026-09-05 the owner (Kenny-bytes: Founder, Programme lead, Architecture owner) walked the eight HUMAN-ONLY rows of the survey-3 Queue (`11_prompts/runs/2026-09-05_survey-3/IMPECCABILITY_QUEUE.md` §c: QI-0167..QI-0174) and ruled on each; MET-2.2 is the register record.
 
 | Location | Contents added | Disposition |
 |---|---|---|
@@ -236,4 +236,4 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 
 **Ledger debt.** MET-2.2 has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-005..A-008 debt owed by a HARDEN-1.2 / HARDEN-3.2 delta — which now also fills the 176 named cells above.
 
-**Process.** PR opened by Kenny-bytes (Copilot review auto-requested under ruleset 22326380); merged only after the review posted, per the A-007 process note.
+**Process (requirement).** The PR carrying this amendment is opened by Kenny-bytes so that the Copilot review is auto-requested under ruleset 22326380; it is to be merged only after that review has posted and its findings have been addressed on the branch, per the A-007 process note.
