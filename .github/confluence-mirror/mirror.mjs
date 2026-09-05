@@ -3,15 +3,18 @@
 // Every tracked file (outside config.excludePrefixes, e.g. run directories) gets one page that embeds the file live through Git for Confluence;
 // every directory gets one page with a live folder listing. Existing pages are never edited
 // or deleted: this script only adds what is missing and reports what no longer exists.
+// Exception, opt-in only: --prune-excluded moves pages whose path is under config.excludePrefixes to the
+// Confluence trash (recoverable there; never purged). Nothing else is ever deleted.
 //
 // Environment: CONFLUENCE_EMAIL, CONFLUENCE_API_TOKEN (Atlassian API token for that user).
-// Usage: node mirror.mjs [--dry-run]
+// Usage: node mirror.mjs [--dry-run] [--prune-excluded]
 import { execSync } from 'node:child_process';
 import { readFileSync, appendFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 
 const cfg = JSON.parse(readFileSync(new URL('./config.json', import.meta.url), 'utf8'));
 const dryRun = process.argv.includes('--dry-run');
+const pruneExcluded = process.argv.includes('--prune-excluded');
 const { CONFLUENCE_EMAIL, CONFLUENCE_API_TOKEN } = process.env;
 if (!CONFLUENCE_EMAIL || !CONFLUENCE_API_TOKEN) { console.error('CONFLUENCE_EMAIL and CONFLUENCE_API_TOKEN are required'); process.exit(2); }
 const auth = 'Basic ' + Buffer.from(`${CONFLUENCE_EMAIL}:${CONFLUENCE_API_TOKEN}`).toString('base64');
@@ -115,5 +118,17 @@ const gone = [...filePage.keys()].filter(f => !files.includes(f) && !excluded(f)
   .concat([...dirPage.keys()].filter(d => !dirs.has(d) && !tops.has(d) && !excluded(d)).map(d => `folder ${d} -> page ${dirPage.get(d).id}`));
 for (const g of gone) note(`NO LONGER IN REPOSITORY (page left in place): ${g}`);
 
-note(`${dryRun ? 'DRY RUN: would create' : 'Created'} ${created} page(s); ${files.length} tracked files, ${dirs.size} sub-folders, ${pages.length} pages in space${gone.length ? `; ${gone.length} page(s) point at removed paths` : ''}.`);
+// Opt-in prune of pages under excluded prefixes: files first, then folders deepest-first, to the trash (no purge).
+let pruned = 0;
+if (pruneExcluded) {
+  const targets = [...filePage.entries()].filter(([f]) => excluded(f)).map(([f, p]) => ({ kind: 'file', path: f, id: p.id }))
+    .concat([...dirPage.entries()].filter(([d]) => excluded(d)).sort((a, b) => b[0].split('/').length - a[0].split('/').length).map(([d, p]) => ({ kind: 'folder', path: d, id: p.id })));
+  for (const t of targets) {
+    if (dryRun) { note(`DRY RUN: would move to trash ${t.kind} ${t.path} -> page ${t.id}`); pruned++; continue; }
+    try { await api('DELETE', `/api/v2/pages/${t.id}`); pruned++; note(`moved to trash ${t.kind} ${t.path} -> page ${t.id}`); }
+    catch (e) { note(`FAILED to trash ${t.kind} ${t.path} -> page ${t.id}: ${e.message}`); }
+  }
+}
+
+note(`${dryRun ? 'DRY RUN: would create' : 'Created'} ${created} page(s)${pruneExcluded ? `; ${dryRun ? 'would trash' : 'trashed'} ${pruned} excluded page(s)` : ''}; ${files.length} tracked files, ${dirs.size} sub-folders, ${pages.length} pages in space${gone.length ? `; ${gone.length} page(s) point at removed paths` : ''}.`);
 if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, `## Confluence mirror\n\n${summary.map(s => `- ${s}`).join('\n')}\n`);
