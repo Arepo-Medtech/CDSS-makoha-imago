@@ -171,3 +171,21 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Ledger debt.** `PROMPT-SURVEY-3.1` has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-005 debt owed by a HARDEN-1.2 / HARDEN-3.2 delta.
 
 **Honesty lines (extending §4.4, §10, §11).** deep-review was not run on this repository and is not part of its tree; it is a user-scope Claude Code plugin on one maintainer's machine · the plugin's confidence-scoring and re-prioritisation stages exist only in its headless script, not in its in-session skill, and were read as text, not executed · PROMPT-SURVEY-3 remains unrun; the fold changes what a run will record, not what has been recorded.
+
+# 13. Amendment A-007 (2026-09-05) — PROMPT-SURVEY-3.2: erratum over PROMPT-SURVEY-3.1; defect DEF-007
+
+**What was added.** Nothing pre-existing under `00_`–`11_` was edited except this manifest (appended). Outside the append-only law, the root governance file `AGENTS.md` read-order sentence now names both deltas. One file is added under `11_prompts/`.
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `11_prompts/PROMPT-SURVEY-3.2_confidence_erratum_delta.md` | Erratum over PROMPT-SURVEY-3.1 (retained; merged in PR #12 before its Copilot review posted): E-1 D-1 counts six properties and adds `scorer_failed`; E-2 law 16 keeps an unscored row with `scorer_failed: true` and no confidence number instead of the sentinel `confidence: 100`, routed to §j; E-3 consequential wording in §j and T-11; 3.1 §4 gains item 5 (sentinel not imported). Read PROMPT-SURVEY-3 through 3.1 and 3.1 through 3.2. | Proposed; not yet run |
+
+**Defect log (continuing §5, §10).**
+
+| ID | Found | Where | What | Disposition |
+|---|---|---|---|---|
+| DEF-007 | 2026-09-05, Copilot code review on PR #12 (posted 09:12:34Z, 73 s after merge) | `PROMPT-SURVEY-3.1` `:138` and `:175–177`; A-006 row text "four QI schema properties" | D-1 title said four properties, the snippet added five; law 16 recorded an unscored row as `confidence: 100`, a failure disguised as certainty | Corrected by PROMPT-SURVEY-3.2 (this amendment); 3.1 and A-006 retained as written |
+
+**Ledger debt.** `PROMPT-SURVEY-3.2` has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-005/A-006 debt owed by a HARDEN-1.2 / HARDEN-3.2 delta.
+
+**Honesty lines (extending §11, §12).** The Copilot review ruleset does not gate merging; PR #12 merged before its review posted, which is why this is an erratum file and not a branch fix · making the review or the mechanical audit a required status check is a candidate for a later amendment, not decided here.
