@@ -84,7 +84,13 @@ DEC-18 provisional + DEC-21 repo component + DEC-23 values. No decision minted.
 | R-06 | `.github/audit/frontmatter_census.py` line "doc_id repeats … need a supersedes: field" | DEC-24 law; §4 check 3 shows every superseding file carries `supersedes:` — the repeats are lawful | — |
 | R-07 | Primer A A10 / IMAGO-3 "property runs" (02_, 03_ retained) | alias of R25 | — (alias law; no edit) |
 
-## 4. Self-audit (run 2026-09-05 from the repository root; outputs quoted)
+## 4. What this file did not do
+
+Minted no decision; changed no State but DEC-24..26; edited nothing retained; respelled no schema
+enum; regenerated no diagram; wrote no R29 row. Ledger debt: this file has no HARDEN-1.x row or
+HARDEN-3.x task — owed by the next HARDEN-1.3 / HARDEN-3.3 delta together with the files §3 owes.
+
+## 5. Self-audit (run 2026-09-05 from the repository root; outputs quoted)
 
 ```
 1. grep -c '^| DEC-2[4-6]' 01_north-star-and-transformation/MET-2.3_architecture_rulings_delta.md        → 3
@@ -98,8 +104,3 @@ DEC-18 provisional + DEC-21 repo component + DEC-23 values. No decision minted.
 5. python3 .github/audit/refcheck.py 01_north-star-and-transformation/MET-2.3_architecture_rulings_delta.md → dead in-repo paths: 0; unresolved anchors: 0
 ```
 
-## 5. What this file did not do
-
-Minted no decision; changed no State but DEC-24..26; edited nothing retained; respelled no schema
-enum; regenerated no diagram; wrote no R29 row. Ledger debt: this file has no HARDEN-1.x row or
-HARDEN-3.x task — owed by the next HARDEN-1.3 / HARDEN-3.3 delta together with the files §3 owes.
