@@ -7,7 +7,10 @@ status: "Added. Additive delta to MET-2 and MET-2.1 per the MET-1.1 pattern; nei
 supersedes: "nothing — MET-2 v1.0 and MET-2.1 preserved verbatim beside this file"
 applies_to: "01_north-star-and-transformation/MET-2_conflict_and_decision_register.md; 01_north-star-and-transformation/MET-2.1_decision_register_delta.md; 01_north-star-and-transformation/MET-4_gap_analysis_and_roadmap.md (G-09 narrowed)"
 change_policy: "Additive delta. Closures recorded here were ruled by their owners on 2026-09-05 (§0); the delta author drafted the wording and made one delegated naming ruling (DEC-13). No ASSUME-*, gate or posture is closed by this file."
-ruled_by: "Kenny-Bytes (Founder; Programme lead; Architecture owner per §1) — rulings given 2026-09-05 in the Claude Code session that produced this file, in answer to the survey-3 Queue §c HUMAN-ONLY rows QI-0167..QI-0174"
+ruled_by: "Kenny-bytes (Founder; Programme lead; Architecture owner per §1) — rulings given 2026-09-05 in the Claude Code session that produced this file, in answer to the survey-3 Queue §c HUMAN-ONLY rows QI-0167..QI-0174"
+id_prefixes: [C, DEC, G]
+minted_here: "C-17; DEC-24, DEC-25, DEC-26 (proposed rows); DEC-23 accepted as a register row from the A-004 proposal — 5 new rows"
+req_count: 5
 id_families: "C: C-01..C-17 (17 rows, home MET-2 / MET-2.1 / this file) · DEC: DEC-01..DEC-26 (26 rows, 23 minted + 3 proposed, home MET-2 / MET-2.1 / this file; aliases DEC-G1..G4 = DEC-13..16, SD-01..05 = DEC-17..21) · G: G-01..G-11 (11 rows, home MET-4)"
 ---
 
@@ -29,11 +32,12 @@ only by their own owners and evidence (REG-POSTURE v1.2 §0.4; AGENTS.md law 4).
 ## 1. Named roles
 
 Roles in every MET-2 owner cell resolve to accounts as follows. All four accounts are members of the
-`Arepo-Medtech` GitHub organisation. The order is the owner's stated order of seniority.
+`Arepo-Medtech` GitHub organisation; logins are written in the casing GitHub returns (§8, check 5). The
+order is the owner's stated order of seniority.
 
 | Rank | Account | Roles held | Named by | Named on |
 |---|---|---|---|---|
-| 1 | Kenny-Bytes | Founder (programme) · Programme lead · Architecture owner · MT2 operator (DEC-10) · default repository owner (DEC-09) | Owner ruling (Rows 4 and 6; DEC-10 per §Assumptions) | 2026-09-05 |
+| 1 | Kenny-bytes | Founder (programme) · Programme lead · Architecture owner · MT2 operator (DEC-10) · default repository owner (DEC-09) | Owner ruling (Rows 4 and 6; DEC-10 per §Assumptions) | 2026-09-05 |
 | 2 | kendo-Jones | Regulatory owner (G-09 / DEC-23) | Owner ruling (Row 6, seniority order) | 2026-09-05 |
 | 3 | Ken-nough | Infrastructure owner (G-09 / DEC-23) | Owner ruling (Row 6, seniority order) | 2026-09-05 |
 | 4 | Ken-E-Gee | Security owner (G-09 / DEC-23) | Owner ruling (Row 6, seniority order) | 2026-09-05 |
@@ -55,8 +59,8 @@ State column governs. "Closes on" is the evidence that closes (or closed) the ro
 | DEC-06 | Ratify MAK-J3 from v0.9 / retirement (C-14 reframe) | Counsel + product | GPP first release | — | Open (MET-2 / MET-2.1) |
 | DEC-07 | Patient-surface scope | Counsel + product | GATE-000 | — | Open (MET-2) |
 | DEC-08 | IMPL rename ratification; Observer cadence | Architecture owner | Owner ratification (§3.6) | 2026-09-05 | **Closed — both ratified** (IMPL rename; quarterly Observer cadence from L4) |
-| DEC-09 | New repo owners + namespace prefixes {FAB, UIP, UIC, GPP} | Programme lead (Kenny-Bytes) | Owner ruling (§3.5) | 2026-09-05 | **Closed.** Owners named; prefixes ratified into Arch §13.3 (§14.4 Proposed → ratified) |
-| DEC-10 | Name the MT2 operator | Programme lead | Owner ruling (§3.2; §Assumptions) | 2026-09-05 | **Closed.** Operator = Kenny-Bytes |
+| DEC-09 | New repo owners + namespace prefixes {FAB, UIP, UIC, GPP} | Programme lead (Kenny-bytes) | Owner ruling (§3.5) | 2026-09-05 | **Closed.** Owners named; prefixes ratified into Arch §13.3 (§14.4 Proposed → ratified) |
+| DEC-10 | Name the MT2 operator | Programme lead | Owner ruling (§3.2; §Assumptions) | 2026-09-05 | **Closed.** Operator = Kenny-bytes |
 | DEC-11 | Accept C-11 row-zero reconciliation rule | MT2 operator | Operator acceptance (§3.3) | 2026-09-05 | **Closed — accepted** |
 | DEC-12 | HeyDoc corpus-seed intake; below-README inventory (G-08) | Corpus custodian | corpus seeding | — | Open (MET-2) |
 | DEC-13 (=DEC-G1) | MAK-GOV namespace & doc_id | Architecture owner (delegated to delta author: naming only) | Delegated ruling (§3.7) | 2026-09-05 | **Closed.** doc_id `MAK-GOV` permanent; G-family internal IDs stand; not J-series |
@@ -90,7 +94,7 @@ REG-TASK-OWNERS drafts (Queue §c.1) is filled from the run map as fact.
 
 ### 3.2 DEC-10 — MT2 operator named
 The MT2 operator, who receives the consolidated blocker report (MT2 directive §6, §7(2)), is
-Kenny-Bytes. Consequence: the 41 `[NEEDS DEFINITION]` cells that read "MT2 operator" in HARDEN-1.1 /
+Kenny-bytes. Consequence: the 41 `[NEEDS DEFINITION]` cells that read "MT2 operator" in HARDEN-1.1 /
 HARDEN-3.1 resolve to this name in the HARDEN-1.2 / HARDEN-3.2 delta; PROMPT-HARDEN may be launched
 once row zero (W0, T-000) is run by the operator. This file writes no R29 row (AGENTS.md law 5).
 
@@ -109,7 +113,7 @@ unedited; this ruling is recorded here and carried into the next Architecture su
 
 ### 3.5 DEC-09 — repository owners and namespace prefixes
 Owner of every repository in REPO-MAP v2 (14 existing; proposed `cdss-fabric`, `cdss-compiler`,
-`cdss-ui-clinician`, `cdss-ui-patient`, `cdss-integration`; the GPP channel) is Kenny-Bytes as
+`cdss-ui-clinician`, `cdss-ui-patient`, `cdss-integration`; the GPP channel) is Kenny-bytes as
 Programme lead. The eligible owner pool for any later per-repository delegation is the four accounts
 of §1. The PFX set of Arch §13.3 gains {FAB, UIP, UIC, GPP}: §14.4 moves from Proposed to ratified.
 Consequence: the 98 repo-owner and 22 component-owner placeholder cells resolve in HARDEN-1.2;
@@ -126,8 +130,8 @@ ratified position; a wording delta is owed where those files say "proposed".
 The owner delegated this ruling to the delta author as a naming-convention matter. Ruling: the
 doc_id `MAK-GOV` is permanent; "Addendum G" remains its display title; the internal families
 `NDG-n`, `GATE-Gn`, `T-Gnn`, `SG-V1-n` stand; `DEC-G1..G4` remain aliases of DEC-13..16 under the
-MET-2.1 alias law. MAK-GOV is not a J-series member. Grounds: (a) 36 tracked files outside run
-directories already cite `MAK-GOV` (`grep -rl`, 2026-09-05); (b) `MAK-<TLA>` is the corpus volume
+MET-2.1 alias law. MAK-GOV is not a J-series member. Grounds: (a) tracked files in nine folders outside run
+directories already cite `MAK-GOV` (command and pasted output in §8, check 4); (b) `MAK-<TLA>` is the corpus volume
 convention; (c) MAK-GOV's own `naming_note` states the J-series denotes regulatory fork branches and
 that it is not a J-1/J-2 alternative, and J-3 is under retirement (DEC-06). Consequence: the MAK-GOV
 integration delta (BSQ-0707) and the NDG verification cells are unblocked; the MAK-GOV frontmatter
@@ -202,8 +206,35 @@ under 00_–11_ other than by this new file and the appended manifest amendment 
 DEC-12, DEC-15..17, DEC-19, DEC-20 keep their MET-2 / MET-2.1 State. DEC-24..26 are proposed only.
 Ledger debt: this file has no HARDEN-1.1 row or HARDEN-3.1 task; it joins the A-005..A-008 debt.
 
+## 8. Self-audit (run 2026-09-05 on the PR branch; commands pasted, outputs quoted)
+
+1. **Append-only** — `python3 .github/audit/append_only.py origin/main` → `00_MANIFEST.md: appended … bytes; prefix preserved`; `0 violations` (CI job "Mechanical audit" on PR #15: pass).
+2. **References** — `python3 .github/audit/refcheck.py 00_MANIFEST.md 01_north-star-and-transformation/MET-2.2_decision_closures_delta.md` → `dead in-repo paths: 0; unresolved anchors: 0`. Owed future files in §6 are written without backticks so they are not read as references.
+3. **Census parity (§2)** — `grep -c '^| DEC-'` → 26 rows; `grep -o '^| DEC-[0-9]*' | sort -u | wc -l` → 26 distinct ids = DEC-01..26 · `grep -c '^| DEC-.*\*\*Closed'` → 9 closed rows (DEC-01, 02, 08, 09, 10, 11, 13, 14, 22) · `grep -c '^| C-17'` → 1. C census 12 + 4 + 1 = 17; DEC census 23 minted + 3 proposed = 26; both agree with the frontmatter `id_families`.
+4. **DEC-13 ground (a)** — `git ls-files | grep -v '^11_prompts/runs/' | xargs grep -l 'MAK-GOV' | wc -l` → 37 tracked files (this file and the manifest included); by top-level folder:
+```
+1 .github
+   1 00_MANIFEST.md
+   2 01_north-star-and-transformation
+   2 04_hardening
+   3 05_registers-and-contracts
+   1 07_deployment-and-operations
+   1 08_research
+   9 10_regulatory-execution
+  16 11_prompts
+   1 README.md
+```
+5. **Account logins (§1)** — `gh api orgs/Arepo-Medtech/members -q '.[].login'` →
+```
+Ken-E-Gee
+Ken-nough
+kendo-Jones
+Kenny-bytes
+```
+6. **Frontmatter** — `python3 .github/audit/frontmatter_census.py` → core-field gaps for this file: none; `files minting requirement blocks without req_prefix: 0`.
+
 ## Assumptions (one)
 
 - **DEC-10 name.** The owner ruled "closes as per the suggested responses" without naming the
-  operator. This file names Kenny-Bytes, the Programme lead who receives the consolidated blocker
+  operator. This file names Kenny-bytes, the Programme lead who receives the consolidated blocker
   report under MT2 §6. If a different account is intended, a one-row delta (MET-2.3) re-names it.
