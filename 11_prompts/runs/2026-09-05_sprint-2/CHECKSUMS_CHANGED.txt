@@ -1,10 +1,10 @@
 CHECKSUMS_BEFORE.txt: 630 files (main 21b9675, before any write)
-CHECKSUMS_AFTER.txt:  648 files
+CHECKSUMS_AFTER.txt:  1379 files
 pre-existing files whose hash changed: 3
 < c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6  ./00_MANIFEST.md
 < 7a84add8af59b962917535a231283ca3fd9bdaace9039d3f0b6fa25e1b6b2319  ./AGENTS.md
 < e772ec9e74ff5c560a1b05cb7e94ffa70267280facb997ca3fa78946eade614a  ./README.md
 pre-existing files removed: 0 []
-files added (outside this run directory): 18
+files added (outside this run directory): 749
 00_MANIFEST.md prefix check: head.startswith(main:00_MANIFEST.md) = True; appended 7796 bytes; sha256(main:00_MANIFEST.md) = c356fa706f01d5f0833bab9608953cca4607fa5b8c091109c6758e9671d0fde6
 README.md, AGENTS.md: root governance files outside the 00_–11_ law; README +1 table row, AGENTS.md one 'How work lands' sentence (H-12)
