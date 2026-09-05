@@ -125,7 +125,7 @@
 1454 .github/workflows/confluence-mirror.yml
 3320 .github/workflows/design-ecosystem-audit.yml
 375 .gitignore
-51655 00_MANIFEST.md
+52171 00_MANIFEST.md
 5049 00_inventory.txt
 24257 00_inventory_v1.3.txt
 2969 01_north-star-and-transformation/MET-1.1_metamorphosis_plan_delta.md
@@ -360,7 +360,7 @@
 1290 09_diagrams/register_topology_v2.mermaid
 1721 09_diagrams/register_topology_v3.mermaid
 1894 09_diagrams/register_topology_v4.mermaid
-2124 09_diagrams/tokens.css
+2231 09_diagrams/tokens.css
 11180 10_regulatory-execution/EXEC-1_execution_directive.md
 2799 10_regulatory-execution/FOLD-1_antennae_fold_worklist.md
 2075 10_regulatory-execution/INDEX-10.1_delta.md

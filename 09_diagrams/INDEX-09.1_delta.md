@@ -22,7 +22,7 @@ The DEC-01 regeneration run (PROC-09-REGEN, INDEX-09 §4): IMAGO-3 v4 draws R29/
 | `09_diagrams/INDEX-09.1_delta.md` | CC-8 | INDEX-09.1 | 1.0 | 2026-09-05 | Added (sprint-2). Additive delta over 09_diagrams/INDEX.md (not edited); indexes only. Every row is generated from disk by the sprint-2 generator; HARDEN row and task ids are those HARDEN-1.2 / HARDEN… | 4155 | Added (sprint-2) — Proposed | 408 | T-934 | §16 A-010 |
 | `09_diagrams/cdss_diagrams_v4.html` | CC-6 | — | — | — | <!DOCTYPE html> | 11671 | Added (sprint-2) — Proposed | 409 | T-935 | §16 A-010 |
 | `09_diagrams/register_topology_v4.mermaid` | CC-6 | — | — | — | %% IMAGO-3 v4 — Register topology. R1–R28 Existing/Ratified (Arch §12.2 + Ecosystem v2.0); R29–R30 RATIFIED by DEC-02 (MET-2.2 §3.4, 2026-09-05) and drawn solid | 1894 | Added (sprint-2) — Proposed | 410 | T-936 | §16 A-010 |
-| `09_diagrams/tokens.css` | CC-6 | — | — | — | /* tokens.css — Mākoha Imago design tokens for browser-borne pages (sprint-2, 2026-09-05). | 2124 | Added (sprint-2) — Proposed | 411 | T-937 | §16 A-010 |
+| `09_diagrams/tokens.css` | CC-6 | — | — | — | /* tokens.css — Mākoha Imago design tokens for browser-borne pages (sprint-2, 2026-09-05). | 2231 | Added (sprint-2) — Proposed | 411 | T-937 | §16 A-010 |
 
 ## §3 Recorded self-audit — headless parse of every source and inlined block (sprint-1 `tools/mermaid/parse.mjs`, run 2026-09-05)
 

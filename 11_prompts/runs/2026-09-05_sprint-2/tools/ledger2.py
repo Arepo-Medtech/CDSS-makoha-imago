@@ -4,11 +4,12 @@ INDEX-04.1/06.1/08.1/09.1/10.1 deltas (rows for the files this sprint adds), 00_
 Iterates until every output is byte-stable (byte counts of generated files appear in other generated files).
 Reads git ls-files (after `git add -A`), HARDEN-1/1.1, HARDEN-3.1. Writes only new files. No R29 row is written (states are PENDING placeholders)."""
 import re, os, subprocess, json, collections, datetime
-ROOT=os.getcwd(); DATE='2026-09-05'; SHA=subprocess.check_output(['git','rev-parse','--short','origin/main']).decode().strip()
+ROOT=os.getcwd(); DATE='2026-09-05'; SHA=subprocess.check_output(['git','rev-parse','--short','origin/main']).decode().strip()  # argument list, no shell
 H1=['04_hardening/HARDEN-1_coverage_ledger_seed.md','04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md']; H3='04_hardening/HARDEN-3.1_task_register_delta.md'
 OUT={'h12':'04_hardening/HARDEN-1.2_coverage_ledger_owner_delta.md','h32':'04_hardening/HARDEN-3.2_task_register_delta.md',
      'i04':'04_hardening/INDEX-04.1_delta.md','i06':'06_repositories/INDEX-06.1_delta.md','i08':'08_research/INDEX-08.1_delta.md','i09':'09_diagrams/INDEX-09.1_delta.md','i10':'10_regulatory-execution/INDEX-10.1_delta.md','inv':'00_inventory_v1.3.txt'}
-def sh(c): return subprocess.run(c,shell=True,capture_output=True,text=True).stdout
+import shlex
+def sh(c): return subprocess.run(shlex.split(c),capture_output=True,text=True).stdout
 # --- existing ledger rows
 rows11=[]; paths_with_row=set()
 for f in H1:
