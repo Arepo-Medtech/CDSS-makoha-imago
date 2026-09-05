@@ -74,7 +74,9 @@ this file; they change no corpus content. To point at a later state, name the la
 On merge, the **Confluence mirror** action (`.github/workflows/confluence-mirror.yml`) creates an
 Imago space page for every new file or folder. Existing pages already render the current file on
 every view, so edits to content need no action at all. Removed paths are reported in the job
-summary and left for a human to resolve.
+summary and left for a human to resolve. Run directories under `11_prompts/runs/` are
+excluded from the mirror (`excludePrefixes` in `.github/confluence-mirror/config.json`):
+they are evidence, not corpus, and are read from the repository.
 
 ## Provenance
 
