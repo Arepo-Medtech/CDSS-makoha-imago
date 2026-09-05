@@ -1,6 +1,6 @@
 # L4_style — Layer 4 census, browser-borne assets (Q-D-16) — `tools/style_census.py`
 
-Pages: **19**. Implied token set = values on ≥ 8 of 19 pages `[ASSESSOR-PROPOSED 40 %]`: **28 colours**, **38 px/rem values**, fonts ['Spectral', 'IBM Plex Mono', 'Source Sans 3'].
+Pages: **19**. Implied token set = values on ≥ 8 of 19 pages `[ASSESSOR-PROPOSED 40 %]`: **28 colours**, **38 px/rem values**, fonts ['IBM Plex Mono', 'Source Sans 3', 'Spectral'].
 
 | Page | bytes | hex colours | px/rem | fonts | media queries | ext. stylesheets | colours outside implied set |
 |---|---|---|---|---|---|---|---|

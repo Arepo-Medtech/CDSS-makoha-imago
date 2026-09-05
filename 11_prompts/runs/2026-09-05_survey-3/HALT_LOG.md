@@ -26,3 +26,5 @@ Temptations logged, not acted on (MT2 §4 / law "no silent shortcuts"); each nam
 | H-15 | 4 | Merge the run PR after opening it | README "main accepts changes only by PR"; the owner merges | PR opened as Kenny-bytes; not merged by the run |
 
 Twelve temptations in Phases 0–2 (H-1..H-10) and five in Phases 3–4; none acted on.
+
+| H-16 | 4 | Leave the cross-reference fix as pushed | law 6 (evidence or nothing); the run record must be self-consistent | Copilot review on PR #14 found `PROPOSED_AMENDMENTS.md` empty: the id-remap step opened the file for writing before reading it (Python argument-evaluation order). Rewritten with the corrected ids; `find -size 0` over the run directory now returns nothing; the same review's determinism point (unsorted `fonts` set) fixed with `sorted()` |

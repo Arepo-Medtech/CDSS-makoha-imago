@@ -355,9 +355,9 @@
    "800px"
   ],
   "fonts": [
+   "IBM Plex Mono",
    "Source Sans 3",
-   "Spectral",
-   "IBM Plex Mono"
+   "Spectral"
   ]
  }
 }
