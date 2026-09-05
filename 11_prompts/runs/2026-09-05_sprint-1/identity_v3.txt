@@ -1,0 +1,10 @@
+  block 1 ↔ imago_architecture.mermaid: IDENTICAL
+  block 2 ↔ merged_runtime_sequence.mermaid: IDENTICAL
+  block 3 ↔ register_topology_v3.mermaid: IDENTICAL
+  block 4 ↔ deployment_ladders_v2.mermaid: IDENTICAL
+  block 5 ↔ data_flow_v1.mermaid: IDENTICAL
+  v2 block 1 ↔ imago_architecture.mermaid: IDENTICAL
+  v2 block 2 ↔ merged_runtime_sequence.mermaid: IDENTICAL
+  v2 block 3 ↔ register_topology_v2.mermaid: IDENTICAL
+  v2 block 4 ↔ deployment_ladders.mermaid: IDENTICAL
+  v3 notation check: grep 'MT2 §7.4' in register_topology_v3.mermaid + cdss_diagrams_v3.html → 0 occurrences

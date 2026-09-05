@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdss-spine/contracts/contract-arg-1.schema.json",
+  "title": "CONTRACT-ARG-1 — GenericArgument / ActualArgument (Proposed, DEC-02; staged draft, MOVES to cdss-spine on DEC-02 + DEC-09)",
+  "$comment": "Companion to 05_registers-and-contracts/CONTRACT-ARG-1_argument_schema.md (the field list, unedited). Field set is MAK-FFC Part 2's canonical argument object; SPINE-2 (qualifier and rebuttal mandatory), SPINE-5 (pins), SPINE-9 (projections derived) are encoded as constraints, never relaxed. Thresholds and enums carry structure only; no clinical number is authored here. Breaking-change rule: Arch §10 — a change to this file is a spine PR that visibly breaks consumers. Built 2026-09-05 (sprint-1, survey-2 row BSQ-0205).",
+  "type": "object",
+  "oneOf": [
+    {"$ref": "#/$defs/GenericArgument"},
+    {"$ref": "#/$defs/ActualArgument"}
+  ],
+  "$defs": {
+    "GenericArgument": {
+      "type": "object",
+      "title": "GenericArgument — knowledge-plane, versioned, ratified",
+      "required": ["ga_id", "ga_version", "warrant_type", "warrant_content", "backing_refs", "release_thresholds", "profile", "lineage"],
+      "additionalProperties": false,
+      "properties": {
+        "object_type": {"const": "GenericArgument"},
+        "ga_id": {"type": "string", "minLength": 1, "description": "stable identifier of the generic argument"},
+        "ga_version": {"type": "string", "minLength": 1, "description": "version of this GenericArgument; every ActualArgument pins it (SPINE-5)"},
+        "warrant_type": {"enum": ["guideline-rule", "bayesian-likelihood", "ratified-local"]},
+        "warrant_content": {"type": "object", "description": "CQL/ELM reference or LR-structure reference — a pointer, never restated clinical content", "required": ["ref_kind", "ref"], "properties": {"ref_kind": {"enum": ["cql-elm-ref", "lr-structure-ref"]}, "ref": {"type": "string", "minLength": 1}}},
+        "backing_refs": {"type": "array", "description": "library row IDs with tier (Primer B E1/E2/E3 = BACKING)", "items": {"type": "object", "required": ["row_id", "tier"], "properties": {"row_id": {"type": "string", "minLength": 1}, "tier": {"enum": ["E1", "E2", "E3"]}}}},
+        "release_thresholds": {"type": "object", "description": "crisp, ratified thresholds (FZ-3 discipline even pre-ratification). Structure only: values are clinical numbers flagged for sign-off in their §-8 layers, never authored here", "required": ["threshold_set_ref", "ratified"], "properties": {"threshold_set_ref": {"type": "string", "minLength": 1}, "ratified": {"type": "boolean"}}},
+        "profile": {"enum": ["default", "GPP"], "description": "GPP builds accept warrant_type guideline-rule only (GPP-9)"},
+        "lineage": {"type": "object", "description": "jurisdiction / supersession for SPINE-6 pluralism", "required": ["jurisdiction"], "properties": {"jurisdiction": {"type": "string", "minLength": 1}, "supersedes": {"type": "array", "items": {"type": "string"}}, "guideline_system": {"type": "string"}}}
+      },
+      "allOf": [
+        {"if": {"properties": {"profile": {"const": "GPP"}}, "required": ["profile"]}, "then": {"properties": {"warrant_type": {"const": "guideline-rule"}}}}
+      ]
+    },
+    "ActualArgument": {
+      "type": "object",
+      "title": "ActualArgument — per encounter, append-only, hash-chained (SPINE-4), pinned (SPINE-5)",
+      "required": ["arg_id", "claim", "grounds", "warrant", "backing", "qualifier", "rebuttals", "evaluation", "pins", "render_projections"],
+      "additionalProperties": false,
+      "properties": {
+        "object_type": {"const": "ActualArgument"},
+        "arg_id": {"type": "string", "minLength": 1},
+        "claim": {"type": "object", "required": ["type", "content", "verbatim_fragment_refs"], "properties": {"type": {"type": "string", "minLength": 1, "description": "whitelisted per profile; the whitelist is registry configuration, not this schema"}, "content": {"type": "string", "minLength": 1}, "verbatim_fragment_refs": {"type": "array", "items": {"type": "string"}}}},
+        "grounds": {"type": "array", "items": {"type": "object", "required": ["coded_finding", "provenance", "capture_context"], "properties": {"coded_finding": {"type": "string", "minLength": 1}, "provenance": {"type": "string", "minLength": 1}, "capture_context": {"type": "string", "minLength": 1}}}},
+        "warrant": {"type": "object", "required": ["ga_id", "ga_version", "applicability"], "properties": {"ga_id": {"type": "string", "minLength": 1}, "ga_version": {"type": "string", "minLength": 1}, "applicability": {"type": "string", "minLength": 1}}},
+        "backing": {"type": "array", "items": {"type": "object", "required": ["tier", "source", "currency"], "properties": {"tier": {"enum": ["E1", "E2", "E3"]}, "source": {"type": "string", "minLength": 1}, "currency": {"type": "string", "minLength": 1}}}},
+        "qualifier": {"type": "object", "description": "REQUIRED (SPINE-2): an argument without a stated qualifier is invalid and MUST NOT be released", "required": ["posterior_set", "conformal_set", "coverage_stated"], "properties": {"posterior_set": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["hypothesis", "posterior"], "properties": {"hypothesis": {"type": "string"}, "posterior": {"type": "number", "minimum": 0, "maximum": 1}}}}, "conformal_set": {"type": "array", "items": {"type": "string"}}, "coverage_stated": {"type": "number", "minimum": 0, "maximum": 1}}},
+        "rebuttals": {"type": "array", "description": "REQUIRED non-empty when findings exist (SPINE-2) — enforced by the allOf rule below", "items": {"type": "object", "required": ["source", "content"], "properties": {"source": {"enum": ["corruption", "contraindication-prune", "DetectedIssue", "unresolved-conflict"]}, "content": {"type": "string", "minLength": 1}}}},
+        "evaluation": {"type": "object", "required": ["gate_results", "override_state", "contract_assertions", "evaluator_version"], "properties": {"gate_results": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "object", "required": ["gate", "result"], "properties": {"gate": {"type": "string"}, "result": {"enum": ["PASS", "FAIL", "REFUSE"]}}}}, "override_state": {"enum": ["none", "red-flag-override", "safety-class-override"]}, "contract_assertions": {"type": "array", "items": {"type": "string"}}, "evaluator_version": {"type": "string", "minLength": 1}}},
+        "pins": {"type": "object", "description": "lockfile pin-set = version_stamp (SPINE-5; register law §12.1(4))", "required": ["version_stamp"], "properties": {"version_stamp": {"type": "string", "minLength": 1}, "terminology_release": {"type": "string"}, "library_snapshot": {"type": "string"}, "engine_config_hash": {"type": "string"}}},
+        "render_projections": {"type": "array", "description": "SPINE-3 register renderers — derived, disposable, rebuildable (SPINE-9); they may compress or re-order, never add, remove or reweight", "items": {"type": "object", "required": ["face", "register"], "properties": {"face": {"enum": ["clinician", "patient", "auditor"]}, "register": {"enum": ["clinical", "plain-language", "compliance"]}}}}
+      },
+      "allOf": [
+        {"if": {"properties": {"grounds": {"minItems": 1}}}, "then": {"properties": {"rebuttals": {"minItems": 1}}}}
+      ]
+    }
+  }
+}

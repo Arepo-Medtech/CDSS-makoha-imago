@@ -1,0 +1,59 @@
+{"path_refs_checked": 605, "anchor_refs_checked": 348, "unresolved_paths": 38, "resolved_by_basename_only": 14, "unresolved_anchors": 3}
+== unresolved_paths
+  00_MANIFEST.md:48 validate_build_plan.py | **4.4 Honesty lines (what this repository does NOT claim):** the MT2 pass has **not** been executed (R29 rows 
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:24 11_prompts/runs/** | Scope rule: every tracked file except `.DS_Store`, `.git/**` and `11_prompts/runs/**`
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:148 04_hardening/INDEX.md | | 98 | `04_hardening/INDEX.md` | CC-8 | — | MT2 operator (DEC-10) [NEEDS DEFINITION] | PENDING | sprint-1 arti
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:154 05_registers-and-contracts/INDEX.md | | 104 | `05_registers-and-contracts/INDEX.md` | CC-8 | — | Architecture owner (DEC-02) / cdss-spine; R30 rows:
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:161 06_repositories/INDEX.md | | 111 | `06_repositories/INDEX.md` | CC-8 | — | Repo owner per REPO-MAP (DEC-09) [NEEDS DEFINITION] | PENDING 
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:261 07_deployment-and-operations/INDEX.md | | 211 | `07_deployment-and-operations/INDEX.md` | CC-8 | — | Operations / security / regulatory owner [NEEDS D
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:266 08_research/INDEX.md | | 216 | `08_research/INDEX.md` | CC-8 | — | Research author; RG owners per RESEARCH-1 §3 | PENDING | sprint-1 
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:269 09_diagrams/INDEX.md | | 219 | `09_diagrams/INDEX.md` | CC-8 | — | Architecture owner | PENDING | sprint-1 artifact (built 2026-09-05
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:280 10_regulatory-execution/INDEX.md | | 230 | `10_regulatory-execution/INDEX.md` | CC-8 | — | Regulatory owner [NEEDS DEFINITION — G-09 / REG-POSTUR
+  04_hardening/HARDEN-1_coverage_ledger_seed.md:32 06_repositories/** | **Amendment A-001 (2026-09-01, appended):** the 06_ skeleton set expanded to ~91 files (14 existing-repo skele
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:28 validate_build_plan.py | | `CC-1` Primers + execution layers | ten execution fields present and non-empty; §-8 numbers flagged; §-9 unt
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:38 references/definition-of-done.md | verbatim + `references/definition-of-done.md` (agent-skills pack — external path; resolves
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:60 references/definition-of-done.md | | 4 | Every mechanical check names a tool that exists in MT2 §2.3 or the tree | PASS-with-record — pack skills
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:60 validate_build_plan.py | | 4 | Every mechanical check names a tool that exists in MT2 §2.3 or the tree | PASS-with-record — pack skills
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:61 docs/agents.md | **All 4 agent personas** — `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` — c
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:61 references/orchestration-patterns.md | **All 4 agent personas** — `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` — c
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 definition-of-done.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 testing-patterns.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 security-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 performance-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 accessibility-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 observability-checklist.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:63 orchestration-patterns.md | **All 7 reference checklists** — `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `per
+  04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md:102 references/definition-of-done.md | - Clear the `references/definition-of-done.md` standing bar in addition to the artifact's own acceptance crite
+  04_hardening/HARDEN-2_hardening_spec.md:13 references/definition-of-done.md | An artifact is HARDENED only when, with captured evidence: (1) explicit triggers; (2) deterministic, ordered, 
+  04_hardening/HARDEN-2_hardening_spec.md:18 validate_build_plan.py | | CC-1 Primers + execution layers | Primer 0, A–L, variants, harness, annex, + their new §-10/§-11 annexes | t
+  04_hardening/HARDEN-3.1_task_register_delta.md:308 04_hardening/INDEX.md | | `T-711` | W10 | `04_hardening/INDEX.md` | 98 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; inte
+  04_hardening/HARDEN-3.1_task_register_delta.md:309 05_registers-and-contracts/INDEX.md | | `T-712` | W10 | `05_registers-and-contracts/INDEX.md` | 104 | CC-8 | as CC-1 + CC-2; plus planning-and-task-
+  04_hardening/HARDEN-3.1_task_register_delta.md:310 06_repositories/INDEX.md | | `T-713` | W10 | `06_repositories/INDEX.md` | 111 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; 
+  04_hardening/HARDEN-3.1_task_register_delta.md:311 07_deployment-and-operations/INDEX.md | | `T-714` | W10 | `07_deployment-and-operations/INDEX.md` | 211 | CC-8 | as CC-1 + CC-2; plus planning-and-tas
+  04_hardening/HARDEN-3.1_task_register_delta.md:312 08_research/INDEX.md | | `T-715` | W10 | `08_research/INDEX.md` | 216 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; inte
+  04_hardening/HARDEN-3.1_task_register_delta.md:313 09_diagrams/INDEX.md | | `T-716` | W10 | `09_diagrams/INDEX.md` | 219 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; inte
+  04_hardening/HARDEN-3.1_task_register_delta.md:314 10_regulatory-execution/INDEX.md | | `T-717` | W10 | `10_regulatory-execution/INDEX.md` | 230 | CC-8 | as CC-1 + CC-2; plus planning-and-task-bre
+  07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md:26 09_diagrams/INDEX.md | `09_diagrams/INDEX.md` §3). Reproduced here for the reader; the 09_ file governs.
+  07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md:63 validate_build_plan.py | - **Steps:** 1 dispatch from R26 `{timeout: n/a, retry: n/a, idempotent: by R26 row, on_fail: no dispatch with
+  10_regulatory-execution/FOLD-1_antennae_fold_worklist.md:17 antennae-corpus_v1.1.md | Produce `antennae-corpus_v1.1.md` as a new file: wrapper Parts 0–4 carried, Annex 1
+  10_regulatory-execution/REG-POSTURE_v1.2.md:714 observer_adjudication.md | evidence. Any clause added to `observer_adjudication.md` should be
+  10_regulatory-execution/REG-POSTURE_v1.1.md:572 observer_adjudication.md | evidence. Any clause added to `observer_adjudication.md` should be
+== resolved_by_basename
+  00_MANIFEST.md:55 merged_runtime_sequence.mermaid -> ['09_diagrams/merged_runtime_sequence.mermaid']
+  00_MANIFEST.md:55 cdss_diagrams_v2.html -> ['09_diagrams/cdss_diagrams_v2.html']
+  04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md:350 11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md -> ['03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md']
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:31 05_/REG-R30.schema.json -> ['05_registers-and-contracts/REG-R30.schema.json']
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:31 10_/validate_reg.py -> ['10_regulatory-execution/validate_reg.py']
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:49 05_/REG-R29.schema.json -> ['05_registers-and-contracts/REG-R29.schema.json']
+  04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md:53 11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md -> ['03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md']
+  05_registers-and-contracts/REG-R29.1_schema_twin_delta.md:16 r29_schema_check.txt -> ['11_prompts/runs/2026-09-02_survey-2/folders/05_registers-and-contracts/r29_schema_check.txt']
+  05_registers-and-contracts/REG-R29.1_schema_twin_delta.md:45 11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md -> ['03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md']
+  06_repositories/REPO-MAP_v2.md:30 GPP-CHANNEL.md -> ['06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md']
+  07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md:25 cdss_diagrams_v3.html -> ['09_diagrams/cdss_diagrams_v3.html']
+  07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md:153 mermaid_parse.json -> ['11_prompts/runs/2026-09-02_survey-2/mermaid_parse.json']
+  07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md:81 CHECKSUMS_BEFORE.txt -> ['11_prompts/runs/2026-09-02_survey-2/CHECKSUMS_BEFORE.txt']
+  10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md:124 11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md -> ['03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md']
+== unresolved_anchors
+  04_hardening/HARDEN-3.1_task_register_delta.md:117 MT2 §7.4 | | `T-075` | W6 | `09_diagrams/register_topology_v2.mermaid` | 226 | CC-6 | using-agent-skills; browser-testing
+  09_diagrams/register_topology_v2.mermaid:17 MT2 §7.4 | R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7.4)"]:::prop
+  09_diagrams/cdss_diagrams_v2.html:96 MT2 §7.4 | R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7.4)"]:::prop

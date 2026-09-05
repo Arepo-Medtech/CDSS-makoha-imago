@@ -1,0 +1,21 @@
+%% IMAGO-3 v3 — Register topology with proposed additions. R1–R28 Existing/Ratified (Arch §12.2 + Ecosystem v2.0); R29–R30 Proposed (DEC-02). Status: Proposed.
+%% v3 successor to register_topology_v2.mermaid (preserved unedited): fixes the MT2 citation notation `§7.4` → `§7(4)` (00_MANIFEST §5 DEF-002 item notation; survey-2 BSQ-0002/DEF-003). The R25 label is carried unchanged pending the architecture owner's ruling (survey-2 BSQ-0602: Arch §12.2 "Build Evidence & Assumptions Ledger" vs Primer A A10 "property runs").
+flowchart LR
+  subgraph BUILD["Build & governance"]
+    R1["R1 version registry"]; R4["R4 model census/cards"]; R7["R7 property registry"]; R19["R19 posture + triggers"]; R23["R23 dossier evidence"]
+    R25["R25 property runs<br/>(label under ruling — BSQ-0602)"]; R26["R26 build work"]; R27["R27 drift & adjudication"]
+    R29["R29 hardening coverage<br/>(MT2 ledger — append-only,<br/>written by the pass only)"]:::prop
+    R30["R30 regulatory posture<br/>(external attestations only)"]:::prop
+  end
+  subgraph RUNTIME["Runtime ledgers"]
+    R11["R11 gate decision log"]; R13["R13 telemetry"]; R18["R18 contract violations"]; R20["R20 incidents"]
+  end
+  subgraph CORPUS["Corpus side (own account)"]
+    R9["R9 coverage map<br/>(+HeyDoc seed provenance)"]; R21["R21 exposure ledger"]; R28["R28 aggregate mirror"]
+  end
+  FAB["Fabric ledger (DEC-04):<br/>one physical hash-chain;<br/>R11/R13/R18 become views"]:::prop
+  FAB -.-> R11 & R13 & R18
+  R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7(4))"]:::prop
+  R30 --> R19 & R23
+  R28 --> OBS["Observer (adjudicates from<br/>registers only, never corpus content)"]
+  classDef prop stroke-dasharray: 5 5

@@ -1,0 +1,30 @@
+%% IMAGO-4 v2 — Three ladders interleaved (DEPLOY-1) with the EXEC-1 RUN-0..4 overlay (DEPLOY-1.1 D-1). Status: Proposed; in force as calendar on DEC-22.
+%% v2 successor to deployment_ladders.mermaid (preserved unedited). Adds RUN rows, SG-V*/NZ-GATE exits; changes no gate content.
+flowchart TD
+  subgraph RUNS["EXEC-1 runs (one calendar — EX-5)"]
+    RUN0["RUN-0 · Decide (wk 1–4)<br/>exit: GATE-000 + SG-V1-0 + NZ-GATE-000"] --> RUN1["RUN-1 · Foundation (wk 4–12)<br/>exit: GATE-001 + SG-V1-2"]
+    RUN1 --> RUN2["RUN-2 · Controls & domain (mo 3–9)<br/>exit: GATE-002; month-4 SD-02 checkpoint"]
+    RUN2 --> RUN3["RUN-3 · File & notify (mo 6–14)<br/>exit: SG-V2-3a then SG-V2-3b"]
+    RUN3 --> RUN4["RUN-4 · Evidence & submission (mo 12+)<br/>exit: GATE-004"]
+  end
+  H0["MT2 row zero: install pack + inventory<br/>(BLOCKED — no evidence yet)"] --> HP["Hardening pass W0→W11<br/>100% ledger or escalated<br/>(parallel with RUN-0; W11 includes 10_)"]
+  G0["GATE-000: counsel opinion +<br/>intended-purpose + positioning + patient-surface<br/>(+ TASK-REG-021/022/023, T-G01)"] --> G1["GATE-001: Ketryx/Jira + ISO 14971 risk file<br/>+ substrate decision (DEC-03) + TASK-REG-024"]
+  G1 --> G2["GATE-002: identifiable-data line<br/>(controls before any non-synthetic input)"]
+  G2 --> G3["GATE-003: clinical evidence + pen-test<br/>+ post-market + tier decision"]
+  G3 --> G4["GATE-004: conformity route → ARTG inclusion<br/>= first lawful clinical supply"]
+  L1["L1 glass-box core (synthetic)<br/>+ fabric-v0 schema · V1-S1 from week 1 (D-1)"] --> L2["L2 signed content loop<br/>+ clinician face v0"]
+  L2 --> L3["L3 honest uncertainty + coded intake<br/>+ compiler v0 + auditor read model<br/>(fork evidence accrues)"]
+  L3 --> L4["L4 full lattices: posture decision<br/>(lower- vs higher-class included),<br/>first checkpoint, pilot, GPP if DEC-06"]
+  L4 --> L5["L5 target state + Lumos study<br/>+ negative audits scheduled"]
+  RUN0 -.-> G0
+  RUN1 -.-> G1
+  RUN2 -.-> G2
+  RUN3 -.-> L4
+  RUN4 -.-> G4
+  G0 -.parallel.- L1
+  G2 -.line before.- L3
+  G3 -.evidence from.- L4
+  G4 -.beside.- L5
+  HP -.standing ratchet.- L1 & L5
+  classDef prop stroke-dasharray: 5 5
+  class RUN0,RUN1,RUN2,RUN3,RUN4 prop

@@ -1,0 +1,373 @@
+{
+ "unresolved_paths": [
+  {
+   "file": "00_MANIFEST.md",
+   "line": 48,
+   "ref": "validate_build_plan.py",
+   "context": "**4.4 Honesty lines (what this repository does NOT claim):** the MT2 pass has **not** been executed (R29 rows 0\u201373 PENDING; row 0 BLOCKED on install evidence) \u00b7"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 24,
+   "ref": "11_prompts/runs/**",
+   "context": "Scope rule: every tracked file except `.DS_Store`, `.git/**` and `11_prompts/runs/**`"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 148,
+   "ref": "04_hardening/INDEX.md",
+   "context": "| 98 | `04_hardening/INDEX.md` | CC-8 | \u2014 | MT2 operator (DEC-10) [NEEDS DEFINITION] | PENDING | sprint-1 artifact (built 2026-09-05) |"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 154,
+   "ref": "05_registers-and-contracts/INDEX.md",
+   "context": "| 104 | `05_registers-and-contracts/INDEX.md` | CC-8 | \u2014 | Architecture owner (DEC-02) / cdss-spine; R30 rows: cdss-governance | PENDING | sprint-1 artifact (bu"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 161,
+   "ref": "06_repositories/INDEX.md",
+   "context": "| 111 | `06_repositories/INDEX.md` | CC-8 | \u2014 | Repo owner per REPO-MAP (DEC-09) [NEEDS DEFINITION] | PENDING | sprint-1 artifact (built 2026-09-05) |"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 261,
+   "ref": "07_deployment-and-operations/INDEX.md",
+   "context": "| 211 | `07_deployment-and-operations/INDEX.md` | CC-8 | \u2014 | Operations / security / regulatory owner [NEEDS DEFINITION \u2014 G-09] | PENDING | sprint-1 artifact (b"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 266,
+   "ref": "08_research/INDEX.md",
+   "context": "| 216 | `08_research/INDEX.md` | CC-8 | \u2014 | Research author; RG owners per RESEARCH-1 \u00a73 | PENDING | sprint-1 artifact (built 2026-09-05) |"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 269,
+   "ref": "09_diagrams/INDEX.md",
+   "context": "| 219 | `09_diagrams/INDEX.md` | CC-8 | \u2014 | Architecture owner | PENDING | sprint-1 artifact (built 2026-09-05) |"
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 280,
+   "ref": "10_regulatory-execution/INDEX.md",
+   "context": "| 230 | `10_regulatory-execution/INDEX.md` | CC-8 | \u2014 | Regulatory owner [NEEDS DEFINITION \u2014 G-09 / REG-POSTURE \u00a712.3] | PENDING | sprint-1 artifact (built 2026"
+  },
+  {
+   "file": "04_hardening/HARDEN-1_coverage_ledger_seed.md",
+   "line": 32,
+   "ref": "06_repositories/**",
+   "context": "**Amendment A-001 (2026-09-01, appended):** the 06_ skeleton set expanded to ~91 files (14 existing-repo skeletons + cdss-integration/GPP-CHANNEL + proposed-rep"
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 28,
+   "ref": "validate_build_plan.py",
+   "context": "| `CC-1` Primers + execution layers | ten execution fields present and non-empty; \u00a7-8 numbers flagged; \u00a7-9 untouched; annex additive | MT2 \u00a71 (eight properties)"
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 38,
+   "ref": "references/definition-of-done.md",
+   "context": "verbatim + `references/definition-of-done.md` (agent-skills pack \u2014 external path; resolves"
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 60,
+   "ref": "references/definition-of-done.md",
+   "context": "| 4 | Every mechanical check names a tool that exists in MT2 \u00a72.3 or the tree | PASS-with-record \u2014 pack skills (`browser-testing-with-devtools`, `/webperf`) and"
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 60,
+   "ref": "validate_build_plan.py",
+   "context": "| 4 | Every mechanical check names a tool that exists in MT2 \u00a72.3 or the tree | PASS-with-record \u2014 pack skills (`browser-testing-with-devtools`, `/webperf`) and"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 61,
+   "ref": "docs/agents.md",
+   "context": "**All 4 agent personas** \u2014 `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` \u2014 composed per `docs/agents.md` (decision matrix, orc"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 61,
+   "ref": "references/orchestration-patterns.md",
+   "context": "**All 4 agent personas** \u2014 `code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor` \u2014 composed per `docs/agents.md` (decision matrix, orc"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "definition-of-done.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "testing-patterns.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "security-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "performance-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "accessibility-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "observability-checklist.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 63,
+   "ref": "orchestration-patterns.md",
+   "context": "**All 7 reference checklists** \u2014 `definition-of-done.md`, `testing-patterns.md`, `security-checklist.md`, `performance-checklist.md`, `accessibility-checklist.m"
+  },
+  {
+   "file": "04_hardening/MAJOR_TASK_2_anti-laziness-hardening-directive.md",
+   "line": 102,
+   "ref": "references/definition-of-done.md",
+   "context": "- Clear the `references/definition-of-done.md` standing bar in addition to the artifact's own acceptance criteria."
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "line": 13,
+   "ref": "references/definition-of-done.md",
+   "context": "An artifact is HARDENED only when, with captured evidence: (1) explicit triggers; (2) deterministic, ordered, testable steps; (3) exit criteria with named evide"
+  },
+  {
+   "file": "04_hardening/HARDEN-2_hardening_spec.md",
+   "line": 18,
+   "ref": "validate_build_plan.py",
+   "context": "| CC-1 Primers + execution layers | Primer 0, A\u2013L, variants, harness, annex, + their new \u00a7-10/\u00a7-11 annexes | ten execution fields present and non-empty; \u00a7-8 num"
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 308,
+   "ref": "04_hardening/INDEX.md",
+   "context": "| `T-711` | W10 | `04_hardening/INDEX.md` | 98 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the artifact is a spec "
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 309,
+   "ref": "05_registers-and-contracts/INDEX.md",
+   "context": "| `T-712` | W10 | `05_registers-and-contracts/INDEX.md` | 104 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the arti"
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 310,
+   "ref": "06_repositories/INDEX.md",
+   "context": "| `T-713` | W10 | `06_repositories/INDEX.md` | 111 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the artifact is a s"
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 311,
+   "ref": "07_deployment-and-operations/INDEX.md",
+   "context": "| `T-714` | W10 | `07_deployment-and-operations/INDEX.md` | 211 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the ar"
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 312,
+   "ref": "08_research/INDEX.md",
+   "context": "| `T-715` | W10 | `08_research/INDEX.md` | 216 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the artifact is a spec "
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 313,
+   "ref": "09_diagrams/INDEX.md",
+   "context": "| `T-716` | W10 | `09_diagrams/INDEX.md` | 219 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the artifact is a spec "
+  },
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 314,
+   "ref": "10_regulatory-execution/INDEX.md",
+   "context": "| `T-717` | W10 | `10_regulatory-execution/INDEX.md` | 230 | CC-8 | as CC-1 + CC-2; plus planning-and-task-breakdown; interview-me/idea-refine where the artifac"
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "line": 26,
+   "ref": "09_diagrams/INDEX.md",
+   "context": "`09_diagrams/INDEX.md` \u00a73). Reproduced here for the reader; the 09_ file governs."
+  },
+  {
+   "file": "07_deployment-and-operations/OPS-1.1_procedures_cc5_delta.md",
+   "line": 63,
+   "ref": "validate_build_plan.py",
+   "context": "- **Steps:** 1 dispatch from R26 `{timeout: n/a, retry: n/a, idempotent: by R26 row, on_fail: no dispatch without a row}` \u2192 2 `validate_build_plan.py` on every "
+  },
+  {
+   "file": "10_regulatory-execution/FOLD-1_antennae_fold_worklist.md",
+   "line": 17,
+   "ref": "antennae-corpus_v1.1.md",
+   "context": "Produce `antennae-corpus_v1.1.md` as a new file: wrapper Parts 0\u20134 carried, Annex 1"
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2.md",
+   "line": 714,
+   "ref": "observer_adjudication.md",
+   "context": "evidence. Any clause added to `observer_adjudication.md` should be"
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.1.md",
+   "line": 572,
+   "ref": "observer_adjudication.md",
+   "context": "evidence. Any clause added to `observer_adjudication.md` should be"
+  }
+ ],
+ "resolved_by_basename": [
+  {
+   "file": "00_MANIFEST.md",
+   "line": 55,
+   "ref": "merged_runtime_sequence.mermaid",
+   "found": [
+    "09_diagrams/merged_runtime_sequence.mermaid"
+   ]
+  },
+  {
+   "file": "00_MANIFEST.md",
+   "line": 55,
+   "ref": "cdss_diagrams_v2.html",
+   "found": [
+    "09_diagrams/cdss_diagrams_v2.html"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-1.1_coverage_ledger_seed_delta.md",
+   "line": 350,
+   "ref": "11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md",
+   "found": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 31,
+   "ref": "05_/REG-R30.schema.json",
+   "found": [
+    "05_registers-and-contracts/REG-R30.schema.json"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 31,
+   "ref": "10_/validate_reg.py",
+   "found": [
+    "10_regulatory-execution/validate_reg.py"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 49,
+   "ref": "05_/REG-R29.schema.json",
+   "found": [
+    "05_registers-and-contracts/REG-R29.schema.json"
+   ]
+  },
+  {
+   "file": "04_hardening/HARDEN-2.1_spec_census_and_self-audit_delta.md",
+   "line": 53,
+   "ref": "11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md",
+   "found": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+   "line": 16,
+   "ref": "r29_schema_check.txt",
+   "found": [
+    "11_prompts/runs/2026-09-02_survey-2/folders/05_registers-and-contracts/r29_schema_check.txt"
+   ]
+  },
+  {
+   "file": "05_registers-and-contracts/REG-R29.1_schema_twin_delta.md",
+   "line": 45,
+   "ref": "11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md",
+   "found": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md"
+   ]
+  },
+  {
+   "file": "06_repositories/REPO-MAP_v2.md",
+   "line": 30,
+   "ref": "GPP-CHANNEL.md",
+   "found": [
+    "06_repositories/repo-skeletons/cdss-integration/GPP-CHANNEL.md"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "line": 25,
+   "ref": "cdss_diagrams_v3.html",
+   "found": [
+    "09_diagrams/cdss_diagrams_v3.html"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/SEC-2_threat-model_and_data-flow.md",
+   "line": 153,
+   "ref": "mermaid_parse.json",
+   "found": [
+    "11_prompts/runs/2026-09-02_survey-2/mermaid_parse.json"
+   ]
+  },
+  {
+   "file": "07_deployment-and-operations/DEPLOY-1.1_run-map_delta.md",
+   "line": 81,
+   "ref": "CHECKSUMS_BEFORE.txt",
+   "found": [
+    "11_prompts/runs/2026-09-02_survey-2/CHECKSUMS_BEFORE.txt"
+   ]
+  },
+  {
+   "file": "10_regulatory-execution/REG-POSTURE_v1.2_CONTENTS.md",
+   "line": 124,
+   "ref": "11_prompts/runs/2026-09-05_sprint-1/RUN-REPORT.md",
+   "found": [
+    "03_makoha-butterfly-corpus/butterfly-primers/RUN-REPORT.md"
+   ]
+  }
+ ],
+ "unresolved_anchors": [
+  {
+   "file": "04_hardening/HARDEN-3.1_task_register_delta.md",
+   "line": 117,
+   "ref": "MT2 \u00a77.4",
+   "context": "| `T-075` | W6 | `09_diagrams/register_topology_v2.mermaid` | 226 | CC-6 | using-agent-skills; browser-testing-with-devtools; frontend-ui-engineering; performan"
+  },
+  {
+   "file": "09_diagrams/register_topology_v2.mermaid",
+   "line": 17,
+   "ref": "MT2 \u00a77.4",
+   "context": "R29 --> CI[\"CI ratchet: row-completeness<br/>check on every merge (MT2 \u00a77.4)\"]:::prop"
+  },
+  {
+   "file": "09_diagrams/cdss_diagrams_v2.html",
+   "line": 96,
+   "ref": "MT2 \u00a77.4",
+   "context": "R29 --> CI[\"CI ratchet: row-completeness<br/>check on every merge (MT2 \u00a77.4)\"]:::prop"
+  }
+ ],
+ "stats": {
+  "path_refs_checked": 605,
+  "anchor_refs_checked": 348,
+  "unresolved_paths": 38,
+  "resolved_by_basename_only": 14,
+  "unresolved_anchors": 3
+ }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CDSS Diagrams v3 — Imago (successor to cdss_diagrams_v2.html)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<style>
+ body{font-family:Georgia,serif;max-width:1200px;margin:2rem auto;padding:0 1rem;color:#1a1a1a}
+ h1{border-bottom:3px solid #7c3aed}h2{color:#7c3aed;margin-top:3rem}
+ .status{background:#fef3c7;border-left:4px solid #d97706;padding:.5rem 1rem;font-size:.9rem}
+ .mermaid{background:#fafafa;border:1px solid #ddd;border-radius:8px;padding:1rem;margin:1rem 0}
+ footer{margin-top:4rem;font-size:.85rem;color:#666;border-top:1px solid #ddd;padding-top:1rem}
+</style>
+</head>
+<body>
+<h1>CDSS Diagrams v3 — the Imago</h1>
+<p class="status"><strong>Status: Proposed.</strong> Successor to <code>cdss_diagrams_v2.html</code> (preserved unedited beside this file, as v2 preserved <code>02_cdss-stack-augmented/cdss_diagrams.html</code>). What changed: IMAGO-3 → v3 source (notation fix), IMAGO-4 → v2 source (RUN overlay), IMAGO-5 added (data flow). IMAGO-1 and IMAGO-2 are re-inlined unchanged. Dashed = Proposed/awaiting a DEC row; solid = Existing/Retained mechanism. Editable sources live beside this file as <code>.mermaid</code>. Nothing in these pictures claims deployment. Regeneration procedure: <code>09_diagrams/INDEX.md</code> §4.</p>
+
+<h2>1. Merged architecture — the fabric wraps the release spine</h2>
+<p>IMAGO-1 (unchanged from v2). The Toulmin mapping of MET-1 §5.1; the one rule is unchanged: <em>ML proposes and tests; only arithmetic releases</em> (SPINE-7). Source: <code>imago_architecture.mermaid</code>.</p>
+<pre class="mermaid">
+flowchart TD
+  subgraph KNOW["Knowledge plane (versioned, ratified)"]
+    LIB["Evidence library B<br/>E1/E2/E3 = BACKING"]
+    REGY["Content registry D<br/>signed fragments"]
+    COMP["Guideline Compiler EN-3 (Proposed)<br/>CQL/FHIR-CPG/WHO-SMART → GenericArguments"]
+    GA["GenericArgument store<br/>warrants + thresholds + lineage"]
+    COMP --> GA
+  end
+  subgraph RUN["Runtime (per encounter)"]
+    CODE["Coder (fork lives here)<br/>findings = GROUNDS + provenance"]
+    ENG["Bayesian engine A<br/>LR chains = WARRANT instantiation"]
+    SAFE["Red-flag overrides<br/>safety-class claims"]
+    CONF["Conformal wrapper F<br/>= QUALIFIER (mandatory, SPINE-2)"]
+    GRAPH["Graph RAG E<br/>prunes = REBUTTALS; conflicts = DetectedIssue (SPINE-6)"]
+    EVAL["Deterministic evaluator<br/>five gates + argument-tree checks<br/>(SPINE-7: only arithmetic releases)"]
+    ARG["ActualArgument<br/>claim·grounds·warrant·backing·qualifier·rebuttal<br/>append-only, hash-chained (SPINE-4), pinned (SPINE-5)"]
+  end
+  subgraph FACES["Register renderers (SPINE-3: compress/reorder only)"]
+    HDC["Clinician face MAK-HDC<br/>+ Labial-Palps UI"]
+    TXC["Patient face MAK-TXC<br/>+ Proboscis UI (scope per DEC-07)"]
+    ABC["Auditor face MAK-ABC<br/>projections (SPINE-9)"]
+  end
+  CODE --> ENG --> SAFE --> CONF --> GRAPH --> EVAL --> ARG
+  LIB --> ENG
+  GA --> ENG
+  REGY --> EVAL
+  ARG --> HDC & TXC & ABC
+  DEV["Deviation objects (SPINE-8)<br/>structured, first-class"] --> ARG
+  SAB["Corruption engine G<br/>+ ARG-class suites<br/>findings published as REBUTTALS"] -.-> EVAL
+  CORPUS["Firewalled corpus C<br/>own account · checkpoints only"] -.-> ARG
+  GPP["GPP channel (J-3, Proposed)<br/>guideline prompts only — no differential"] -.-> REGY
+</pre>
+<h2>2. One consultation under the fabric</h2>
+<p>IMAGO-2 (unchanged from v2; DEF-001 grammar note applies). Source: <code>merged_runtime_sequence.mermaid</code>.</p>
+<pre class="mermaid">
+sequenceDiagram
+  participant P as Patient + Clinician
+  participant C as Coder
+  participant A as Engine A
+  participant F as Conformal F
+  participant E as Graph E
+  participant V as Evaluator + gates
+  participant G as Fabric ledger
+  participant U as Faces x3
+  P->>C: free text
+  C->>A: coded findings = grounds, with provenance
+  A->>A: priors + LR chain (warrant) + red-flag overrides
+  A->>F: posteriors + trace
+  F->>E: conformal set = qualifier (SPINE-2)
+  E->>V: fragment pointers + prune rebuttals + DetectedIssues
+  V->>V: hash, tier, currency, range, context + argument checks
+  Note over V: SPINE-2 refusals — no qualifier: refuse.<br/>Empty rebuttal slot while findings exist: refuse.
+  V->>G: ActualArgument appended — hash-chained (SPINE-4), pinned (SPINE-5)
+  G->>U: one argument, three registers (SPINE-3 invariance)
+  P->>G: accept or override — Deviation object (SPINE-8)
+</pre>
+<h2>3. Register topology v3 — R1–R28 + proposed R29/R30</h2>
+<p>IMAGO-3 <strong>v3</strong>: citation notation fixed to <code>MT2 §7(4)</code> (DEF-002 item notation; survey-2 BSQ-0002/0003 → DEF-003). R25 label carried unchanged pending the architecture owner's ruling (BSQ-0602). Source: <code>register_topology_v3.mermaid</code>.</p>
+<pre class="mermaid">
+flowchart LR
+  subgraph BUILD["Build & governance"]
+    R1["R1 version registry"]; R4["R4 model census/cards"]; R7["R7 property registry"]; R19["R19 posture + triggers"]; R23["R23 dossier evidence"]
+    R25["R25 property runs<br/>(label under ruling — BSQ-0602)"]; R26["R26 build work"]; R27["R27 drift & adjudication"]
+    R29["R29 hardening coverage<br/>(MT2 ledger — append-only,<br/>written by the pass only)"]:::prop
+    R30["R30 regulatory posture<br/>(external attestations only)"]:::prop
+  end
+  subgraph RUNTIME["Runtime ledgers"]
+    R11["R11 gate decision log"]; R13["R13 telemetry"]; R18["R18 contract violations"]; R20["R20 incidents"]
+  end
+  subgraph CORPUS["Corpus side (own account)"]
+    R9["R9 coverage map<br/>(+HeyDoc seed provenance)"]; R21["R21 exposure ledger"]; R28["R28 aggregate mirror"]
+  end
+  FAB["Fabric ledger (DEC-04):<br/>one physical hash-chain;<br/>R11/R13/R18 become views"]:::prop
+  FAB -.-> R11 & R13 & R18
+  R29 --> CI["CI ratchet: row-completeness<br/>check on every merge (MT2 §7(4))"]:::prop
+  R30 --> R19 & R23
+  R28 --> OBS["Observer (adjudicates from<br/>registers only, never corpus content)"]
+  classDef prop stroke-dasharray: 5 5
+</pre>
+<h2>4. The three ladders with the EXEC-1 run overlay</h2>
+<p>IMAGO-4 <strong>v2</strong>: RUN-0..4 rows and SG-V*/NZ-GATE exits added from DEPLOY-1.1 D-1 (in force as calendar on DEC-22); gate content unchanged. Source: <code>deployment_ladders_v2.mermaid</code>.</p>
+<pre class="mermaid">
+flowchart TD
+  subgraph RUNS["EXEC-1 runs (one calendar — EX-5)"]
+    RUN0["RUN-0 · Decide (wk 1–4)<br/>exit: GATE-000 + SG-V1-0 + NZ-GATE-000"] --> RUN1["RUN-1 · Foundation (wk 4–12)<br/>exit: GATE-001 + SG-V1-2"]
+    RUN1 --> RUN2["RUN-2 · Controls & domain (mo 3–9)<br/>exit: GATE-002; month-4 SD-02 checkpoint"]
+    RUN2 --> RUN3["RUN-3 · File & notify (mo 6–14)<br/>exit: SG-V2-3a then SG-V2-3b"]
+    RUN3 --> RUN4["RUN-4 · Evidence & submission (mo 12+)<br/>exit: GATE-004"]
+  end
+  H0["MT2 row zero: install pack + inventory<br/>(BLOCKED — no evidence yet)"] --> HP["Hardening pass W0→W11<br/>100% ledger or escalated<br/>(parallel with RUN-0; W11 includes 10_)"]
+  G0["GATE-000: counsel opinion +<br/>intended-purpose + positioning + patient-surface<br/>(+ TASK-REG-021/022/023, T-G01)"] --> G1["GATE-001: Ketryx/Jira + ISO 14971 risk file<br/>+ substrate decision (DEC-03) + TASK-REG-024"]
+  G1 --> G2["GATE-002: identifiable-data line<br/>(controls before any non-synthetic input)"]
+  G2 --> G3["GATE-003: clinical evidence + pen-test<br/>+ post-market + tier decision"]
+  G3 --> G4["GATE-004: conformity route → ARTG inclusion<br/>= first lawful clinical supply"]
+  L1["L1 glass-box core (synthetic)<br/>+ fabric-v0 schema · V1-S1 from week 1 (D-1)"] --> L2["L2 signed content loop<br/>+ clinician face v0"]
+  L2 --> L3["L3 honest uncertainty + coded intake<br/>+ compiler v0 + auditor read model<br/>(fork evidence accrues)"]
+  L3 --> L4["L4 full lattices: posture decision<br/>(lower- vs higher-class included),<br/>first checkpoint, pilot, GPP if DEC-06"]
+  L4 --> L5["L5 target state + Lumos study<br/>+ negative audits scheduled"]
+  RUN0 -.-> G0
+  RUN1 -.-> G1
+  RUN2 -.-> G2
+  RUN3 -.-> L4
+  RUN4 -.-> G4
+  G0 -.parallel.- L1
+  G2 -.line before.- L3
+  G3 -.evidence from.- L4
+  G4 -.beside.- L5
+  HP -.standing ratchet.- L1 & L5
+  classDef prop stroke-dasharray: 5 5
+  class RUN0,RUN1,RUN2,RUN3,RUN4 prop
+</pre>
+<h2>5. Data flow and trust boundaries (SEC-2 §1)</h2>
+<p>IMAGO-5 (new): the boundary map SEC-2's STRIDE table hangs from — per-environment accounts, corpus account firewall, signing enclave, substrate per DEC-03 (both drawn; Baseten pending). Source: <code>data_flow_v1.mermaid</code>.</p>
+<pre class="mermaid">
+flowchart LR
+  subgraph ORG["AWS Organizations — per-environment accounts (Arch §11.1 T3: no network path staging→production)"]
+    subgraph DEV["Dev / staging accounts (T1+2, T3)"]
+      CI["CodeBuild + CodePipeline<br/>Trivy · ECR sign · signed SBOM → R3"]
+      STG["Staging VPC (WAF-fronted)<br/>lockfile-driven assembly"]
+    end
+    subgraph PROD["Production account (T5)"]
+      SVC["Engine · Conformal · Coder<br/>ECS Fargate (stateless)"]
+      REGP["Registry artifacts<br/>S3 versioned + object-lock"]
+      LOGS["Decision logs / telemetry<br/>Kinesis → S3 (object-lock) → Athena"]
+      FAB["Fabric ledger (DEC-04)<br/>Aurora + hash-chain"]
+      SEC["GuardDuty · Security Hub · Config<br/>CloudTrail org trail (immutable audit spine)"]
+    end
+    subgraph SIGN["Signing enclave — cdss-registry"]
+      KMS["KMS keys + cosign<br/>keys never leave"]
+    end
+    subgraph CORPUS["Corpus account — firewall as an account boundary (Primer C)"]
+      CASES["Casebundle corpus<br/>dev CI holds NO credential"]
+      R28["R28 aggregate mirror<br/>checkpoint results only"]
+    end
+  end
+  subgraph EXT["External / substrate (DEC-03 open)"]
+    BR["Amazon Bedrock via PrivateLink<br/>no public egress (Arch §11.4)"]
+    BS["Baseten Sydney, dedicated<br/>(REG-POSTURE §5.1 — PENDING DEC-03 / ASSUME-REG-004)"]
+    CLIN["Clinician / pharmacist / patient surfaces<br/>(patient beyond J-3-safe subset: BLOCKED, DEC-07)"]
+  end
+  CI --> STG --> SVC
+  KMS -. "signs" .-> REGP
+  REGP --> SVC
+  SVC --> FAB --> LOGS
+  SVC -. "harness/K/L calls only" .-> BR
+  SVC -. "pending" .-> BS
+  CLIN --> SVC
+  CASES -. "checkpoints only" .-> R28
+  R28 -. "aggregates" .-> FAB
+  SEC -. "watches" .-> PROD
+  classDef pend stroke-dasharray: 5 5
+  class BS,FAB pend
+</pre>
+
+<footer>Sprint-1 pass, 2026-09-05 (survey-2 rows BSQ-0002, BSQ-0003, BSQ-0404, BSQ-0606). Sources: Arch §2/§10/§11/§12 (Existing), MAK-FFC Parts 2–6, MAK-ANT §7, MT2, DEPLOY-1 + DEPLOY-1.1, EXEC-1, SEC-2. Regeneration: edit the .mermaid sources, re-inline via the INDEX-09 §4 procedure, bump this page's date. This page carries an R29 row (CC-6) — PENDING, not HARDENED.</footer>
+<script>mermaid.initialize({startOnLoad:true,theme:'neutral'});</script>
+</body>
+</html>

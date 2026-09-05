@@ -1,0 +1,20 @@
+check_schema 05_registers-and-contracts/CONTRACT-ARG-1.schema.json → OK (Draft 2020-12)
+  line 1  GA-valid                                 → VALID   [agrees with _expect]
+  line 2  GA-GPP-violates-GPP-9                    → INVALID: {'object_type': 'GenericArgument', 'ga_id': 'GA-EXAMPLE-002', 'ga_version': '1.0.0', 'warrant_type':    [agrees with _expect]
+  line 3  AA-valid                                 → VALID   [agrees with _expect]
+  line 4  AA-missing-qualifier-SPINE-2             → INVALID: {'object_type': 'ActualArgument', 'arg_id': 'AA-EXAMPLE-002', 'claim': {'type': 'recommendation', 'co   [agrees with _expect]
+  line 5  AA-empty-rebuttals-with-grounds-SPINE-2  → INVALID: {'object_type': 'ActualArgument', 'arg_id': 'AA-EXAMPLE-003', 'claim': {'type': 'recommendation', 'co   [agrees with _expect]
+  expected/actual agreement: 5/5
+
+check_schema 05_registers-and-contracts/CONTRACT-DEV-1.schema.json → OK (Draft 2020-12)
+  line 1  DEV-valid                                → VALID   [agrees with _expect]
+  line 2  DEV-missing-author                       → INVALID: 'author_identity' is a required property   [agrees with _expect]
+  expected/actual agreement: 2/2
+
+check_schema 05_registers-and-contracts/REG-R29.schema.json → OK (Draft 2020-12)
+  line 1  HARDENED-row-shape                       → VALID   [agrees with _expect]
+  line 2  ESCALATED-row-0                          → VALID   [agrees with _expect]
+  line 3  INVALID-PENDING-placeholder              → INVALID: 'PENDING' is not one of ['HARDENED', 'ESCALATED']   [agrees with _expect]
+  expected/actual agreement: 3/3
+
+check_schema REG-R30.schema.json → OK (Draft 2020-12)

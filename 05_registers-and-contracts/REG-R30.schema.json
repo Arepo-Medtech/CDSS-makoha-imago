@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdss-spine/registers/r30-regulatory-posture-row.schema.json",
+  "title": "R30 Regulatory Posture Register row (Proposed, DEC-02; owner cdss-governance; mutability versioned; written by regulatory owner + external attestations only)",
+  "$comment": "Companion to REG-R30_regulatory_posture_register.schema+seed.md (field list, unedited) read through R30.1 and R30.2. Field set = the md field list (reg_id, statement, status, attesting_party, blocks, cadence, source, version_stamp) + owner (register law §12.1(1)) + blocker (HALT-TYPED crosswalk, REG-POSTURE §0.7) + jurisdiction (R30.2) + source_status_verbatim / mapping_pending (the status mapping for 'standing' obligations and WATCH cadences is the regulatory owner's call — survey-2 BSQ-0208; rows ship with the verbatim source wording preserved and status OPEN until ruled). No ASSUME status is changed by this schema or its seed (EX-7; MAK-ANT §8). Built 2026-09-05 (sprint-1, BSQ-0202).",
+  "type": "object",
+  "required": ["reg_id", "statement", "status", "source", "owner", "version_stamp", "jurisdiction", "source_status_verbatim"],
+  "additionalProperties": false,
+  "properties": {
+    "reg_id": {
+      "type": "string",
+      "pattern": "^((REG-FIND|REG-KEEP|ASSUME-REG|OBL|STD|FORK-REG|GATE|TASK-REG|KTX|WATCH-REG|Q-REG|SRC-REG)-[0-9]{3}|NZ-(FIND|OBL|STD|ASSUME|TASK|GATE|WATCH|Q|SRC)-[0-9]{3}|US-(FIND|OBL|STD|REG|ASSUME|TASK|GATE|WATCH|Q|SRC)-[0-9]{3}|EU-(FIND|OBL|STD|LAW|ASSUME|TASK|GATE|WATCH|Q|SRC)-[0-9]{3}|NDG-[0-9]{1,2}|SG-V[12]-[0-9][ab]?|SD-[0-9]{2}|V[123]-[SCE][0-9][ab]?|EX-[0-9]{1,2})$",
+      "description": "R30 base families (REG-POSTURE) + R30.1 extension (NDG, NZ-*, SD, SG, EX, REG-KEEP; V* sprint ids per REG-SPRINT-1.1 D-5) + R30.2 extension (US-*, EU-*, NZ-STD, NZ-GATE, STD)"
+    },
+    "statement": {"type": "string", "minLength": 1, "description": "verbatim from source (the defining table row's statement cell, or the first defining prose line for legacy-shape ids)"},
+    "status": {"enum": ["OPEN", "ATTESTED", "REFUTED", "CLOSED", "ARMED", "passed"], "description": "register-lifecycle enum per REG-R30 field list and REG-POSTURE §0.7 crosswalk"},
+    "source_status_verbatim": {"type": "string", "description": "the status word(s) used at source (e.g. 'standing', 'not started', 'quarterly', 'proposed-normative'); never altered, only mapped"},
+    "mapping_pending": {"type": "boolean", "description": "true where the crosswalk from source_status_verbatim to the enum is not defined by REG-POSTURE §0.7 and awaits the regulatory owner's ruling (BSQ-0208)"},
+    "attesting_party": {"type": "string"},
+    "attestation_date": {"type": "string", "format": "date"},
+    "blocks": {"type": "array", "items": {"type": "string"}},
+    "blocker": {"type": "string", "description": "HALT-TYPED crosswalk: the typed halt reason (REG-POSTURE §0.7)"},
+    "cadence": {"type": "string", "description": "WATCH rows only — review cadence verbatim"},
+    "source": {"type": "string", "minLength": 1, "description": "document and section that defines the row (MAK-ANT § / REG-POSTURE § / REG-NZ § / REG-US § / REG-EU § / MAK-GOV § / REG-SPRINT § / EXEC-1 §)"},
+    "definition_shape": {"enum": ["table-row", "prose", "heading"], "description": "how the source defines the id; 'prose' marks the twelve v1.1-era legacy-shape AU ids recorded in REG-POSTURE v1.2 §12.2 check 2"},
+    "owner": {"type": "string", "minLength": 1, "description": "register owner (cdss-governance) or the row's named owner role"},
+    "jurisdiction": {"enum": ["AU", "NZ", "US", "EU"], "description": "R30.2: rows seeded before R30.2 are AU unless their prefix is NZ-; programme-level families (NDG, SG, SD, V*, EX) inherit AU by that rule"},
+    "version_stamp": {"type": "string", "minLength": 1, "description": "lockfile pin-set — universal join key, register law §12.1(4); pre-L1 rows carry the Imago commit"}
+  },
+  "allOf": [
+    {"if": {"properties": {"status": {"enum": ["ATTESTED", "REFUTED"]}}}, "then": {"required": ["attesting_party", "attestation_date"]}},
+    {"if": {"properties": {"reg_id": {"pattern": "WATCH"}}}, "then": {"required": ["cadence"]}},
+    {"if": {"properties": {"reg_id": {"pattern": "^(ASSUME-REG|NZ-ASSUME|US-ASSUME|EU-ASSUME)-"}}}, "then": {"properties": {"status": {"enum": ["OPEN", "ATTESTED", "REFUTED", "CLOSED"]}}}}
+  ]
+}
