@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>CDSS Diagrams v4 — Imago (successor to cdss_diagrams_v3.html)</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.8/mermaid.min.js"></script>
 <link rel="stylesheet" href="tokens.css">
 <style>
  body{font-family:var(--diag-font,Georgia,serif);max-width:var(--diag-measure,1200px);margin:2rem auto;padding:0 1rem;color:var(--diag-ink,#1a1a1a)}
@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>CDSS Diagrams v4 — the Imago</h1>
-<p class="status"><strong>Status: Proposed.</strong> Successor to <code>cdss_diagrams_v3.html</code> (preserved unedited beside this file, as v3 preserved v2). This is the DEC-01 regeneration run (PROC-09-REGEN, INDEX-09 §4; MET-4.1 G-10). What changed: IMAGO-3 → v4 source — R29 and R30 drawn solid because DEC-02 ratified them (MET-2.2 §3.4); the CI ratchet and the fabric ledger stay dashed (not wired; DEC-04 Open); the R25 label is carried unchanged pending DEC-25. Styling now comes from <code>tokens.css</code> (survey-3 QI-0043/0044) with the v3 values as fallbacks — the page looks the same. IMAGO-1, IMAGO-2, IMAGO-4 v2 and IMAGO-5 are re-inlined unchanged. Dashed = Proposed/awaiting a DEC row; solid = Existing/Retained mechanism. Editable sources live beside this file as <code>.mermaid</code>. Nothing in these pictures claims deployment. Regeneration procedure: <code>09_diagrams/INDEX.md</code> §4.</p>
+<p class="status"><strong>Status: Proposed.</strong> Successor to <code>cdss_diagrams_v3.html</code> (preserved unedited beside this file, as v3 preserved v2). This is the DEC-01 regeneration run (PROC-09-REGEN, INDEX-09 §4; MET-4.1 G-10). What changed: IMAGO-3 → v4 source — R29 and R30 drawn solid because DEC-02 ratified them (MET-2.2 §3.4); the CI ratchet and the fabric ledger stay dashed (not wired; DEC-04 Open); the R25 label is carried unchanged pending DEC-25. Styling now comes from <code>tokens.css</code> (survey-3 QI-0043/0044) with the v3 values as fallbacks — the page looks the same. The page loads Mermaid 10.9.8, the same version the headless parse validated against (INDEX-09.1 §3); v2/v3 load 10.9.0 and are retained as they were. IMAGO-1, IMAGO-2, IMAGO-4 v2 and IMAGO-5 are re-inlined unchanged. Dashed = Proposed/awaiting a DEC row; solid = Existing/Retained mechanism. Editable sources live beside this file as <code>.mermaid</code>. Nothing in these pictures claims deployment. Regeneration procedure: <code>09_diagrams/INDEX.md</code> §4.</p>
 
 <h2>1. Merged architecture — the fabric wraps the release spine</h2>
 <p>IMAGO-1 (unchanged from v2). The Toulmin mapping of MET-1 §5.1; the one rule is unchanged: <em>ML proposes and tests; only arithmetic releases</em> (SPINE-7). Source: <code>imago_architecture.mermaid</code>.</p>

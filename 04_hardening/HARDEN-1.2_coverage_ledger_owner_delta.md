@@ -348,7 +348,7 @@ Scope rule as HARDEN-1.1: every tracked file except `.DS_Store`, `.git/**` and `
 | 406 | `08_research/INDEX-08.1_delta.md` | CC-8 | 1957 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 407 | `08_research/RESEARCH-1.2_alias_and_triggers_delta.md` | CC-8 | 4631 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 408 | `09_diagrams/INDEX-09.1_delta.md` | CC-8 | 4155 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
-| 409 | `09_diagrams/cdss_diagrams_v4.html` | CC-6 | 11756 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
+| 409 | `09_diagrams/cdss_diagrams_v4.html` | CC-6 | 11908 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 410 | `09_diagrams/register_topology_v4.mermaid` | CC-6 | 1894 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 411 | `09_diagrams/tokens.css` | CC-6 | 2334 | Architecture owner — Kenny-bytes (MET-2.2 §1) | PENDING | sprint-2 artifact (built 2026-09-05) |
 | 412 | `10_regulatory-execution/INDEX-10.1_delta.md` | CC-8 | 2075 | Regulatory owner — kendo-Jones (MET-2.2 §1; DEC-23) | PENDING | sprint-2 artifact (built 2026-09-05) |

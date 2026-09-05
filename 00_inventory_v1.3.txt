@@ -351,7 +351,7 @@
 10322 09_diagrams/INDEX.md
 7219 09_diagrams/cdss_diagrams_v2.html
 10917 09_diagrams/cdss_diagrams_v3.html
-11756 09_diagrams/cdss_diagrams_v4.html
+11908 09_diagrams/cdss_diagrams_v4.html
 2014 09_diagrams/data_flow_v1.mermaid
 1283 09_diagrams/deployment_ladders.mermaid
 2229 09_diagrams/deployment_ladders_v2.mermaid

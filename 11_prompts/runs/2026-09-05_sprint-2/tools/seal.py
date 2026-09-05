@@ -28,14 +28,14 @@ for root, dirs, fs in os.walk('.'):
         if f == '.DS_Store': continue
         p = os.path.join(root, f)
         out.append((p, hashlib.sha256(open(p, 'rb').read()).hexdigest()))
-out.sort(); open(R+'/CHECKSUMS_AFTER.txt','w').write(''.join(f'{h}  {p}\n' for p,h in out))
-b={l.split('  ',1)[1].strip():l.split('  ',1)[0] for l in open(R+'/CHECKSUMS_BEFORE.txt')}; a2=dict((p,h) for p,h in out)
+out.sort(); open(R+'/CHECKSUMS_AFTER.txt','w',encoding='utf-8').write(''.join(f'{h}  {p}\n' for p,h in out))
+b={l.split('  ',1)[1].strip():l.split('  ',1)[0] for l in open(R+'/CHECKSUMS_BEFORE.txt',encoding='utf-8')}; a2=dict((p,h) for p,h in out)
 changed=[p for p in b if p in a2 and a2[p]!=b[p]]; removed=[p for p in b if p not in a2]; added=[p for p in a2 if p not in b]
 basem=subprocess.run(['git','show','origin/main:00_MANIFEST.md'],capture_output=True,check=True).stdout; head=open('00_MANIFEST.md','rb').read()
 if not basem: raise SystemExit('manifest prefix proof aborted: origin/main:00_MANIFEST.md is empty')
 if not head.startswith(basem): raise SystemExit('APPEND-ONLY VIOLATION: main:00_MANIFEST.md is not a prefix of the working copy')
 proof=f"CHECKSUMS_BEFORE.txt: {len(b)} files (main 21b9675, before any write)\nCHECKSUMS_AFTER.txt:  {len(a2)} files\npre-existing files whose hash changed: {len(changed)}\n"+''.join(f"< {b[p]}  {p}\n" for p in changed)+f"pre-existing files removed: {len(removed)} {removed}\nfiles added (outside this run directory): {len(added)}\n00_MANIFEST.md prefix check: head.startswith(main:00_MANIFEST.md) = {head.startswith(basem)}; appended {len(head)-len(basem)} bytes; sha256(main:00_MANIFEST.md) = {hashlib.sha256(basem).hexdigest()}\nREADME.md, AGENTS.md: root governance files outside the 00_–11_ law; README +1 table row, AGENTS.md one 'How work lands' sentence (H-12)"
-open(R+'/CHECKSUMS_CHANGED.txt','w').write(proof)
+open(R+'/CHECKSUMS_CHANGED.txt','w',encoding='utf-8').write(proof)
 rep=re.sub(r'```\nCHECKSUMS_BEFORE\.txt:.*?\n```',lambda mm:'```\n'+proof+'\n```',rep,flags=re.S); open(R+'/RUN-REPORT.md','w',encoding='utf-8').write(rep)
 # HALT_LOG fixed-point line: regenerated from the sealed inventory every seal, so it can never lag an edit
 h=open(R+'/HALT_LOG.md',encoding='utf-8').read()

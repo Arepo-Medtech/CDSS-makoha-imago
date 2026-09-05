@@ -65,7 +65,7 @@ Survey-3 HUMAN-ONLY rows (QI-0167..0174) were closed by the owner in MET-2.2 (PR
 | `08_research/INDEX-08.1_delta.md` | 1,957 |
 | `08_research/RESEARCH-1.2_alias_and_triggers_delta.md` | 4,631 |
 | `09_diagrams/INDEX-09.1_delta.md` | 4,155 |
-| `09_diagrams/cdss_diagrams_v4.html` | 11,756 |
+| `09_diagrams/cdss_diagrams_v4.html` | 11,908 |
 | `09_diagrams/register_topology_v4.mermaid` | 1,894 |
 | `09_diagrams/tokens.css` | 2,334 |
 | `10_regulatory-execution/INDEX-10.1_delta.md` | 2,075 |
