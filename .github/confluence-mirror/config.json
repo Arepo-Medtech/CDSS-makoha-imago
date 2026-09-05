@@ -21,5 +21,12 @@
     "10_regulatory-execution": "1376395",
     "11_prompts": "1245427"
   },
-  "ignorePageIds": ["1376259", "1376284", "1212422"]
+  "ignorePageIds": [
+    "1376259",
+    "1376284",
+    "1212422"
+  ],
+  "excludePrefixes": [
+    "11_prompts/runs/"
+  ]
 }

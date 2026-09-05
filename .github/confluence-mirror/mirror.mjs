@@ -1,6 +1,6 @@
 // Mirror the repository tree into the Imago Confluence space.
 //
-// Every tracked file gets one page that embeds the file live through Git for Confluence;
+// Every tracked file (outside config.excludePrefixes, e.g. run directories) gets one page that embeds the file live through Git for Confluence;
 // every directory gets one page with a live folder listing. Existing pages are never edited
 // or deleted: this script only adds what is missing and reports what no longer exists.
 //
@@ -59,7 +59,8 @@ const topDoc = (path) => ({ version: 1, type: 'doc', content: [
   macro(EXT_FOLDER, 'Share Git folder', treePrefix + path, '{:hh false, :e "folder-downloadable", :rf nil}') ] });
 
 // ---------- Repository tree ----------
-const files = execSync('git ls-files', { encoding: 'utf8' }).split('\n').filter(Boolean).filter(f => !f.startsWith('.github/'));
+const excluded = (p) => (cfg.excludePrefixes ?? []).some(x => p.startsWith(x) || (p + '/').startsWith(x));
+const files = execSync('git ls-files', { encoding: 'utf8' }).split('\n').filter(Boolean).filter(f => !f.startsWith('.github/') && !excluded(f));
 const topOf = (p) => (p.includes('/') ? p.split('/')[0] : '.');
 const dirs = new Set();
 for (const f of files) { const parts = f.split('/'); for (let i = 2; i < parts.length; i++) dirs.add(parts.slice(0, i).join('/')); }
@@ -110,8 +111,8 @@ for (const f of files) {
   filePage.set(f, { id, title }); created++; note(`created file page "${title}" (${id}) for ${f}`);
 }
 // Files or folders that vanished from the repository: report, never delete.
-const gone = [...filePage.keys()].filter(f => !files.includes(f)).map(f => `file ${f} -> page ${filePage.get(f).id}`)
-  .concat([...dirPage.keys()].filter(d => !dirs.has(d) && !tops.has(d)).map(d => `folder ${d} -> page ${dirPage.get(d).id}`));
+const gone = [...filePage.keys()].filter(f => !files.includes(f) && !excluded(f)).map(f => `file ${f} -> page ${filePage.get(f).id}`)
+  .concat([...dirPage.keys()].filter(d => !dirs.has(d) && !tops.has(d) && !excluded(d)).map(d => `folder ${d} -> page ${dirPage.get(d).id}`));
 for (const g of gone) note(`NO LONGER IN REPOSITORY (page left in place): ${g}`);
 
 note(`${dryRun ? 'DRY RUN: would create' : 'Created'} ${created} page(s); ${files.length} tracked files, ${dirs.size} sub-folders, ${pages.length} pages in space${gone.length ? `; ${gone.length} page(s) point at removed paths` : ''}.`);
