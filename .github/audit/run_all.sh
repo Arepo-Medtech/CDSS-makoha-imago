@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Design Ecosystem audit — mechanical layer. Run from repo root. $1 = base ref (default origin/main). Writes ${GITHUB_STEP_SUMMARY:-/dev/stdout}.
 set -u
-BASE="${1:-origin/main}"; OUT="${GITHUB_STEP_SUMMARY:-/dev/stdout}"; rc=0
+BASE="${1:-origin/main}"; SUMMARY="${GITHUB_STEP_SUMMARY:-/dev/null}"; OUT="$(mktemp)"; rc=0
+trap 'cat "$OUT"; cat "$OUT" >> "$SUMMARY"' EXIT   # every check is printed to the log AND the step summary
 CHANGED=$(git diff --name-only "$BASE"...HEAD 2>/dev/null | tr '\n' ' ')
 { echo "# Design Ecosystem Agentic Audit — mechanical layer"; echo; echo "Base: \`$BASE\` · changed paths: $(echo $CHANGED | wc -w | tr -d ' ')"; echo; } >> "$OUT"
 run() { local name="$1"; shift; local o; o="$("$@" 2>&1)"; local r=$?; { echo "$o"; echo; echo "→ **$name: $([ $r -eq 0 ] && echo PASS || echo FAIL)**"; echo; } >> "$OUT"; [ $r -ne 0 ] && rc=1; }

@@ -37,5 +37,5 @@ for f in sorted(tracked):
 print(f"## Reference check\n\n- dead in-repo paths: {len(dead)}; unresolved anchors: {len(anchors_bad)} (the two carried v2 `MT2 §7.4` defects excluded — DEF-003); external refs: {ext}; globs/placeholders: {glob}; prompt-declared future outputs: {fut}; doc-id shorthand: {shorthand}")
 for f, n, c in dead: print(f"  - DEAD `{f}:{n}` → `{c}`")
 for f, n, c in anchors_bad: print(f"  - ANCHOR `{f}:{n}` → {c}")
-fail = [x for x in dead + anchors_bad if not changed or x[0] in changed]
+fail = [x for x in dead + anchors_bad if x[0] in changed]   # gate only on files this PR changed; the baseline is report-only
 sys.exit(1 if fail else 0)
