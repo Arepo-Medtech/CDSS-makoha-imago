@@ -375,7 +375,7 @@
 6141 10_regulatory-execution/REG-SPRINT-1.1_delta.md
 8986 10_regulatory-execution/REG-SPRINT-1.2_census_delta.md
 10741 10_regulatory-execution/REG-SPRINT_v1.0.md
-20841 10_regulatory-execution/REG-TASK-OWNERS_companion.md
+20906 10_regulatory-execution/REG-TASK-OWNERS_companion.md
 47772 10_regulatory-execution/REG-US_v1.0.md
 3904 10_regulatory-execution/validate_reg.py
 14790 11_prompts/PROMPT-A_bayesian_engine_launch.md

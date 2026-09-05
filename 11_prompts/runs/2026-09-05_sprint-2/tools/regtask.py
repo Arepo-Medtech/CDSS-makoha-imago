@@ -113,7 +113,7 @@ REG-EU are ADVISORY jurisdiction postures) and say so rather than inventing a ru
 body='\n'.join(rows)
 foot=f'''
 
-## §3 Census and self-audit (generated {subprocess.check_output(['date','-u','+%Y-%m-%dT%H:%M:%SZ']).decode().strip()}; `tools/regtask.py`)
+## §3 Census and self-audit (sprint-2, 2026-09-05; `tools/regtask.py` — deterministic: no timestamp, regeneration yields byte-identical output)
 
 ```
 tasks parsed per family: {json.dumps(census)}  total {len(rows)}

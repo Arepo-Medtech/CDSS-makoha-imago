@@ -69,7 +69,7 @@ Survey-3 HUMAN-ONLY rows (QI-0167..0174) were closed by the owner in MET-2.2 (PR
 | `09_diagrams/register_topology_v4.mermaid` | 1,894 |
 | `09_diagrams/tokens.css` | 2,334 |
 | `10_regulatory-execution/INDEX-10.1_delta.md` | 2,075 |
-| `10_regulatory-execution/REG-TASK-OWNERS_companion.md` | 20,841 |
+| `10_regulatory-execution/REG-TASK-OWNERS_companion.md` | 20,906 |
 | `GLOSSARY.md` | 12,137 |
 
 ## 4. Halts and open questions

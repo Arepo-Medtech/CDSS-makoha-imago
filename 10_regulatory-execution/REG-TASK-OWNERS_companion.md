@@ -86,7 +86,7 @@ REG-EU are ADVISORY jurisdiction postures) and say so rather than inventing a ru
 | `EU-TASK-012` | `EU-GATE-002` | — (no DR step: US/EU are ADVISORY jurisdictions outside the EXEC-1 run map; REG-SPRINT V3 at the earliest) | not in EXEC-1 RUN-0..4 (V3 / later) | Regulatory owner | kendo-Jones | UDI assignment; EU Declaration of Conformity; CE marking record; EUDAMED device registration; launch-market IFUs | PRESENT | `REG-EU_v1.0.md:345` |
 | `EU-TASK-013` | `EU-GATE-003` | — (no DR step: US/EU are ADVISORY jurisdictions outside the EXEC-1 run map; REG-SPRINT V3 at the earliest) | not in EXEC-1 RUN-0..4 (V3 / later) | Regulatory owner | kendo-Jones | vigilance procedures with 15/10/2-day clocks; trend reporting; PSUR cadence; PMCF running; significant-change SOP (EU-OBL-011); liability evidence retention | PRESENT | `REG-EU_v1.0.md:346` |
 
-## §3 Census and self-audit (generated 2026-09-05T13:27:28Z; `tools/regtask.py`)
+## §3 Census and self-audit (sprint-2, 2026-09-05; `tools/regtask.py` — deterministic: no timestamp, regeneration yields byte-identical output)
 
 ```
 tasks parsed per family: {"TASK-REG": 24, "NZ-TASK": 10, "US-TASK": 13, "EU-TASK": 13}  total 60
