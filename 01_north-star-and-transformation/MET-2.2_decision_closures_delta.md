@@ -51,7 +51,7 @@ State column governs. "Closes on" is the evidence that closes (or closed) the ro
 
 | DEC | Decision (short) | Owner (§1) | Closes on | Closed on | State |
 |---|---|---|---|---|---|
-| DEC-01 | Ratify C-01 relabel portfolio-wide; regenerate derived artifacts once | Regulatory + Architecture owners | Owner ratification (this file §3.9). `ASSUME-REG-002` (counsel) is a separate item and stays OPEN in REG-POSTURE until the owner records the attestation date | 2026-09-05 | **Closed — ratified.** Regeneration of derived artifacts is EXECUTABLE-NOW (IMAGO-3 v4; `cdss_diagrams_v4`) |
+| DEC-01 | Ratify C-01 relabel portfolio-wide; regenerate derived artifacts once | Regulatory + Architecture owners | Owner ratification (this file §3.9). `ASSUME-REG-002` (counsel) is a separate item and stays OPEN in REG-POSTURE until the owner records the attestation date | 2026-09-05 | **Closed — ratified.** Regeneration of derived artifacts is EXECUTABLE-NOW (IMAGO-3 v4: 09_diagrams/register_topology_v4.mermaid and 09_diagrams/cdss_diagrams_v4.html, owed) |
 | DEC-02 | Ratify R29 + R30 into Arch §12.2; schemas in 05_ | Architecture owner | Owner ratification (§3.4) | 2026-09-05 | **Closed — ratified.** R29 and R30 are real registers |
 | DEC-03 | Rule C-03 substrate (Bedrock ⟷ Baseten) | Infrastructure + Regulatory owners | GATE-001 / TASK-REG-009 | — | Open (MET-2) |
 | DEC-04 | Rule C-05 ledger substrate; registers-as-views | Architecture owner | fabric v0 design | — | Open (MET-2) |
@@ -148,8 +148,9 @@ regulatory attestation the commercial step would need; it is not a build gate.
 ### 3.9 DEC-01 — C-01 relabel ratified
 The C-01 relabel (exempt-CDSS posture replaced by the classified posture, applied through the
 deprecation notices listed in MET-2 C-01) is ratified portfolio-wide by the Regulatory and
-Architecture owners. Derived artifacts are to be regenerated once: IMAGO-3 v4 and
-`cdss_diagrams_v4` (EXECUTABLE-NOW). `ASSUME-REG-002` (counsel attestation that the CDSS exemption
+Architecture owners. Derived artifacts are to be regenerated once: IMAGO-3 v4, as
+09_diagrams/register_topology_v4.mermaid and 09_diagrams/cdss_diagrams_v4.html (successors to the v3
+files; EXECUTABLE-NOW; owed). `ASSUME-REG-002` (counsel attestation that the CDSS exemption
 is unavailable) is a separate register item owned by AU regulatory counsel; it stays OPEN in
 REG-POSTURE v1.2 until the owner records the attestation date. The owner has stated they will record
 it when it arrives. See C-17.
@@ -196,7 +197,7 @@ law only by the Architecture owner's ruling recorded in a later delta.
 | REPO-MAP v3 under 06_repositories/ (owed) | owner column | DEC-09 |
 | REG-TASK-OWNERS companion under 10_regulatory-execution/ (owed) | task · owner · evidence · R30.3 row | Queue QI-0020; DEC-22, DEC-23 |
 | DEPLOY-1.2 delta under 07_deployment-and-operations/ (owed) | RTO/RPO; L5 DR drill protocol | DEC-23 values (Ken-nough) |
-| register_topology v4 mermaid and cdss_diagrams v4 page under 09_diagrams/ (IMAGO-3 v4; owed) | regenerated derived artifacts; R29/R30 ratified; R25 label once DEC-25 rules | DEC-01, DEC-02 |
+| 09_diagrams/register_topology_v4.mermaid and 09_diagrams/cdss_diagrams_v4.html (IMAGO-3 v4 successors to the v3 files; owed, written without backticks) | regenerated derived artifacts; R29/R30 ratified; R25 label once DEC-25 rules | DEC-01, DEC-02 |
 | Wording deltas: Arch §13.7 / GOV-1 / OPS-1 cadence; Arch §12.2 R29/R30 and §14.4 status | "proposed" → ratified | DEC-02, DEC-08, DEC-09 |
 
 ## 7. What this file did not do
