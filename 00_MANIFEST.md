@@ -283,3 +283,21 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Ledger debt.** MET-2.3 has no HARDEN-1.x row or HARDEN-3.x task — owed by HARDEN-1.3 / HARDEN-3.3 with the files MET-2.3 §3 owes.
 
 **Process (requirement).** PR opened by Kenny-bytes (Copilot auto-requested under ruleset 22326380); at most two Copilot passes — fix the first pass on the branch, one confirming pass, then the owner's merge decision.
+
+# 18. Amendment A-012 (2026-09-09) — INTENDED-PURPOSE v0.1-draft: TASK-REG-001 Phase 0 intended purpose statement
+
+**What was added.** One new file, `10_regulatory-execution/INTENDED-PURPOSE_v0.1-draft.md` (15,748 bytes), and this section. No pre-existing file under `00_`–`11_` was edited except this manifest (appended).
+
+This file is the intended purpose statement called for by `TASK-REG-001` (REG-POSTURE v1.2 §7 Phase 0). It states what Mākoha is for, who uses it, in what setting, what it claims, what it does not claim, and what each of the three surfaces (Clinician / Patient / Auditor) does. It carries a DRAFT banner and lists `ASSUME-REG-001`, `ASSUME-REG-002`, `ASSUME-REG-003`, `Q-REG-008`, and `DEC-07` as explicitly OPEN. It cites all sources by Imago ID and link only; no controlled wording is invented or restated. `TASK-REG-002` (counsel attestation), `TASK-REG-003` (claims inventory), and `TASK-REG-004` (patient-surface decision) are recorded as not in scope. The file closes only when Ken Lee reviews in Confluence, edits in place, and marks `TASK-REG-001` DONE-WITH-EVIDENCE.
+
+**Provenance.** Drafted by Claude (Fable 5.1) in session e789cd7e on 3 Sep 2026; human owner Ken Lee; Jira work item MAK-1.
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `10_regulatory-execution/INTENDED-PURPOSE_v0.1-draft.md` | Intended purpose statement v0.1-draft: §1 what Mākoha is · §2 who uses it and setting · §3 regulatory posture · §4 what it claims · §5 what it does not claim · §6 the three surfaces (clinician/patient/auditor) · §7 open items · §8 what this page is and is not · §9 provenance | Added — ADVISORY_ONLY; DRAFT pending Ken Lee review |
+
+**Ledger debt.** `INTENDED-PURPOSE_v0.1-draft.md` has no HARDEN-1.x row or HARDEN-3.x task; owed by HARDEN-1.3 / HARDEN-3.3 with the files MET-2.3 §3 and this amendment owe.
+
+**ID census (this amendment).** No new ID family minted. `A-001..012` = 12 amendments; `DEF-001..008` = 8 defect rows (unchanged).
+
+**Not done by A-012.** No `ASSUME-REG-*`, `DEC-*`, gate, or posture closed. No R29 row written. No existing file edited.
