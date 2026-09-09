@@ -283,3 +283,43 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Ledger debt.** MET-2.3 has no HARDEN-1.x row or HARDEN-3.x task — owed by HARDEN-1.3 / HARDEN-3.3 with the files MET-2.3 §3 owes.
 
 **Process (requirement).** PR opened by Kenny-bytes (Copilot auto-requested under ruleset 22326380); at most two Copilot passes — fix the first pass on the branch, one confirming pass, then the owner's merge decision.
+
+# 18. Amendment A-012 (2026-09-09) — sprint-mak66: CONTRACT-ACT-1 and face-acts design spec (TASK-HDC-002 / MAK-66)
+
+**What was added.** Nothing pre-existing under `00_`–`11_` was edited except this manifest
+(appended). Four new files in `05_registers-and-contracts/` and one in the
+`cdss-ui-clinician/face/` skeleton. Sprint run record and bookends under
+`11_prompts/runs/2026-09-09_sprint-mak66/` (excluded from the Confluence mirror).
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `05_registers-and-contracts/CONTRACT-ACT-1_act_schema.md` | 12 ACT-n MUST requirements covering the discriminated-union schema, actor attribution, idempotency, fabric binding, fail-closed sign-off, all six act kinds, projection context for replay, and team-mode stances; test plan; HDC8 properties 6/8/10; gap register; self-audit | Added — Proposed |
+| `05_registers-and-contracts/CONTRACT-ACT-1.schema.json` | JSON Schema 2020-12: discriminated union on `kind`; six act kind variants (SignoffAct, DeviationAct, GapReportAct, FitJudgmentAct, ConflictNavigationAct, BoundaryWorkAct); FabricEntryRef, ActorIdentity, ProjectionContext, GapLocus, FitJudgmentBasis, AuthorStance, BoundaryContext `$defs` | Added — Proposed |
+| `05_registers-and-contracts/CONTRACT-ACT-1.examples.jsonl` | One valid example per act kind (7 including both-acts fixture variant); 7 invalid examples for key constraints; fault-injection scenario comment; 14/14 PASS on annotation-stripped validation | Added — Proposed |
+| `06_repositories/repo-skeletons/cdss-ui-clinician/face/FACE-ACTS.md` | Face-acts component spec: six act writers with source IDs; HALT triggers (HDC9 §7); HDC8 property table with test status; observability; open items | Added — Proposed (skeleton) |
+| `11_prompts/runs/2026-09-09_sprint-mak66/` | RUN-REPORT.md · CHECKSUMS_BEFORE.txt · CHECKSUMS_AFTER.txt | Evidence run record |
+
+**Source task.** TASK-HDC-002 (MAK-66) — "Six act writers with fail-closed sign-off
+(CONTRACT-ACT-1)." Primary source: `03_makoha-butterfly-corpus/butterfly-primers/primer_HDC_clinician_face.md`.
+Reconciliation read-through applied from `docs/CLINICIAN_REQUIREMENT_RECONCILIATION_2026-09-08.md`
+(pinned commit `a8db2b0`): discriminated-union schema correction, actor authority-class
+distinction, idempotency key, projection-context replay requirement.
+
+**RECON addressed.** RECON-HDC-007 — CONTRACT-ACT-1 path taken (not Deviation schema extension);
+staged as Proposed pending cdss-spine ratification on DEC-02 + DEC-09.
+
+**DoD status.** HDC8 properties 6 and 10 EXECUTABLE against stub; property 8 stub portion
+EXECUTABLE (14/14 schema validation PASS), replay round-trip UNVERIFIED (RECON-HDC-001/002;
+GAP-ACT-002). UNVERIFIED items named and not claimed as passed. Friction audit (GAP-ACT-004)
+UNVERIFIED.
+
+**Honesty lines.** No R29 row written; no pass launched; no decision closed; no ASSUME or gate
+changed; no corpus file written; `severity_tier` vocabulary remains [NEEDS DEFINITION — DEC-02]
+(GAP-ACT-001); no clinical content authored.
+
+**Ledger debt.** CONTRACT-ACT-1_act_schema.md, CONTRACT-ACT-1.schema.json,
+CONTRACT-ACT-1.examples.jsonl, and FACE-ACTS.md have no HARDEN-1.x row or HARDEN-3.x task;
+owed by a HARDEN-1.3 / HARDEN-3.3 delta.
+
+**ID census (this amendment).** GAP-ACT-001..004 = 4 new gap IDs. `A-001..012` = 12 amendments;
+`DEF-001..008` = 8 defect rows (unchanged).

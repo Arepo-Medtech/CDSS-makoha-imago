@@ -1,0 +1,448 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdss-spine/contracts/contract-act-1.schema.json",
+  "title": "CONTRACT-ACT-1 — ClinicalAct discriminated union (Proposed; for cdss-spine ratification on DEC-02 + DEC-09)",
+  "$comment": "Companion to 05_registers-and-contracts/CONTRACT-ACT-1_act_schema.md. Six act kinds: signoff (HA-1), deviation (HA-2), gap_report (HA-3), fit_judgment (HA-4), conflict_navigation (HA-5), boundary_work (HA-6). Each produces exactly one append-only fabric entry (SPINE-4). Discriminated on 'kind'. CONTRACT-DEV-1 (the standalone Deviation object, SPINE-8) is retained; this contract is the six-act envelope. severity_tier vocabulary is [NEEDS DEFINITION — DEC-02]; pattern only. Breaking-change rule: Arch §10 — a change to this file is a spine PR that visibly breaks consumers. Built 2026-09-09 (sprint-mak66, TASK-HDC-002 / MAK-66).",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/$defs/SignoffAct" },
+    { "$ref": "#/$defs/DeviationAct" },
+    { "$ref": "#/$defs/GapReportAct" },
+    { "$ref": "#/$defs/FitJudgmentAct" },
+    { "$ref": "#/$defs/ConflictNavigationAct" },
+    { "$ref": "#/$defs/BoundaryWorkAct" }
+  ],
+  "$defs": {
+    "ActorIdentity": {
+      "type": "object",
+      "title": "ActorIdentity — attributed actor with authority class (ACT-2)",
+      "required": ["actor_id", "authority_class"],
+      "additionalProperties": false,
+      "properties": {
+        "actor_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Attributed identity of the acting clinician. Not an authentication token; endpoint enforces authority."
+        },
+        "authority_class": {
+          "enum": ["recording", "clinical-release"],
+          "description": "'recording' suffices for deviation, gap_report, fit_judgment, conflict_navigation, boundary_work. 'clinical-release' required for signoff only."
+        }
+      }
+    },
+    "FabricEntryRef": {
+      "type": "object",
+      "title": "FabricEntryRef — reference to the append-only fabric entry (SPINE-4)",
+      "$comment": "Full chain protocol owned by cdss-fabric; GAP-ACT-003.",
+      "required": ["entry_id", "entry_hash"],
+      "additionalProperties": false,
+      "properties": {
+        "entry_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable identifier of the fabric entry (SPINE-4)"
+        },
+        "entry_hash": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Hash of the entry content for chain verification (SPINE-4)"
+        }
+      }
+    },
+    "ProjectionContext": {
+      "type": "object",
+      "title": "ProjectionContext — artifact versions determining the rendered state at sign-off (ACT-11; SPINE-5)",
+      "$comment": "An argument version pin alone does not constitute sufficient replay evidence. All version fields are required except codebook_version.",
+      "required": ["projection_version", "renderer_version", "identity_sheet_version", "layout_config_hash"],
+      "additionalProperties": false,
+      "properties": {
+        "projection_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "R1 pin for the SPINE-9 clinical projection the actor saw"
+        },
+        "renderer_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "UI renderer build version"
+        },
+        "identity_sheet_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "MAK-LBP CV-1 identity sheet version"
+        },
+        "codebook_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Codebook version — present when codebook vocabulary was in use at sign-off"
+        },
+        "layout_config_hash": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Hash of the layout/configuration in effect at sign-off"
+        }
+      }
+    },
+    "GapLocus": {
+      "type": "object",
+      "title": "GapLocus — discriminated locus for gap_report (ACT-7)",
+      "$comment": "Exactly one locus_kind applies. arg_id locus: released argument contextualizes the gap. template locus: GenericArgument template. encounter locus: encounter + screen. element locus: specific UI element.",
+      "oneOf": [
+        {
+          "required": ["locus_kind", "arg_id"],
+          "additionalProperties": false,
+          "properties": {
+            "locus_kind": { "const": "arg" },
+            "arg_id": { "type": "string", "minLength": 1, "description": "Released ActualArgument that contextualizes the gap" }
+          }
+        },
+        {
+          "required": ["locus_kind", "template_id"],
+          "additionalProperties": false,
+          "properties": {
+            "locus_kind": { "const": "template" },
+            "template_id": { "type": "string", "minLength": 1, "description": "GenericArgument template ID" }
+          }
+        },
+        {
+          "required": ["locus_kind", "encounter_context"],
+          "additionalProperties": false,
+          "properties": {
+            "locus_kind": { "const": "encounter" },
+            "encounter_context": { "type": "string", "minLength": 1, "description": "Encounter and screen identifier" }
+          }
+        },
+        {
+          "required": ["locus_kind", "element_ref"],
+          "additionalProperties": false,
+          "properties": {
+            "locus_kind": { "const": "element" },
+            "element_ref": { "type": "string", "minLength": 1, "description": "Specific UI element reference" }
+          }
+        }
+      ]
+    },
+    "FitJudgmentBasis": {
+      "type": "object",
+      "title": "FitJudgmentBasis — structured basis for fit_judgment (ACT-8; MS-7)",
+      "required": ["mismatch_description", "clinical_grounds", "decision"],
+      "additionalProperties": false,
+      "properties": {
+        "mismatch_description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Description of the out-of-envelope mismatch that triggered the flagged verdict"
+        },
+        "clinical_grounds": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Clinician's stated clinical grounds for the judgment"
+        },
+        "decision": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The judgment decision — whether to proceed past the flagged verdict"
+        }
+      }
+    },
+    "AuthorStance": {
+      "type": "object",
+      "title": "AuthorStance — per-author position in conflict_navigation (ACT-12; HT-3)",
+      "required": ["author_id", "position", "reasoning"],
+      "additionalProperties": false,
+      "properties": {
+        "author_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identity of the author holding this position"
+        },
+        "position": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The author's stated position on the conflict"
+        },
+        "reasoning": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The author's reasoning supporting their position"
+        }
+      }
+    },
+    "BoundaryContext": {
+      "type": "object",
+      "title": "BoundaryContext — threshold reference and distance (HA-2; FC-2)",
+      "required": ["threshold_ref", "distance"],
+      "additionalProperties": false,
+      "properties": {
+        "threshold_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reference to the ratified threshold relevant to this boundary"
+        },
+        "distance": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Distance to the threshold — a string to avoid encoding clinical numbers in this schema"
+        }
+      }
+    },
+    "SignoffAct": {
+      "type": "object",
+      "title": "SignoffAct — fail-closed human sign-off attributed to argument version (HA-1; REG-KEEP-003)",
+      "$comment": "Invariant: absent a SignoffAct, no release-class action exists for the encounter, regardless of elapsed time, inactivity, focus loss, or navigation (HDC8 property 6). actor.authority_class MUST be clinical-release.",
+      "required": [
+        "act_id", "kind", "actor", "encounter_id", "timestamp", "fabric_entry",
+        "arg_id", "arg_version", "verdict_ref", "projection_context"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "act_id":          { "type": "string", "minLength": 1 },
+        "kind":            { "const": "signoff" },
+        "actor":           { "$ref": "#/$defs/ActorIdentity" },
+        "encounter_id":    { "type": "string", "minLength": 1 },
+        "timestamp":       { "type": "string", "format": "date-time" },
+        "idempotency_key": { "type": "string", "minLength": 1 },
+        "fabric_entry":    { "$ref": "#/$defs/FabricEntryRef" },
+        "arg_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The ActualArgument signed (CONTRACT-ARG-1)"
+        },
+        "arg_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Version of the argument at sign-off (SPINE-5 pin)"
+        },
+        "verdict_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The verdict record this sign-off acts on (RG-2)"
+        },
+        "projection_context": { "$ref": "#/$defs/ProjectionContext" }
+      },
+      "allOf": [
+        {
+          "if": { "required": ["actor"] },
+          "then": {
+            "properties": {
+              "actor": { "properties": { "authority_class": { "const": "clinical-release" } } }
+            }
+          }
+        }
+      ]
+    },
+    "DeviationAct": {
+      "type": "object",
+      "title": "DeviationAct — structured departure from a recommendation (HA-2; SPINE-8)",
+      "$comment": "free_text is never blocked. severity_tier vocabulary is [NEEDS DEFINITION — DEC-02]; pattern only. boundary_context auto-attached on borderline flag (FC-2). Coexists with GapReportAct on the same encounter (HA-3).",
+      "required": [
+        "act_id", "kind", "actor", "encounter_id", "timestamp", "fabric_entry",
+        "arg_id", "arg_version", "reason_taxonomy_code", "severity_tier", "free_text"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "act_id":              { "type": "string", "minLength": 1 },
+        "kind":                { "const": "deviation" },
+        "actor":               { "$ref": "#/$defs/ActorIdentity" },
+        "encounter_id":        { "type": "string", "minLength": 1 },
+        "timestamp":           { "type": "string", "format": "date-time" },
+        "idempotency_key":     { "type": "string", "minLength": 1 },
+        "fabric_entry":        { "$ref": "#/$defs/FabricEntryRef" },
+        "arg_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The ActualArgument being deviated from (CONTRACT-ARG-1)"
+        },
+        "arg_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Version of the argument at the time of deviation (SPINE-5)"
+        },
+        "verdict_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The verdict record this deviation applies to (RG-2; optional)"
+        },
+        "reason_taxonomy_code": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Structured reason code from the ratified deviation taxonomy (OPS-1 change class: deviation-taxonomy; lives in the registry)"
+        },
+        "severity_tier": {
+          "type": "string",
+          "pattern": "^[A-Z0-9][A-Z0-9-]*$",
+          "description": "[NEEDS DEFINITION — architecture owner, DEC-02] tier vocabulary not yet ratified; pattern only (carried from CONTRACT-DEV-1)"
+        },
+        "free_text": {
+          "type": "string",
+          "description": "Clinician's stated reason in their own words — never blocked or validated away (HA-2)"
+        },
+        "boundary_context": { "$ref": "#/$defs/BoundaryContext" }
+      }
+    },
+    "GapReportAct": {
+      "type": "object",
+      "title": "GapReportAct — missing recommendation, available from any screen (HA-3; MS-2)",
+      "$comment": "No released ActualArgument required. locus is required; arg_id/arg_version are optional (present when a released argument contextualizes the gap). Coexists with DeviationAct on the same encounter (HA-3).",
+      "required": [
+        "act_id", "kind", "actor", "encounter_id", "timestamp", "fabric_entry",
+        "locus"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "act_id":          { "type": "string", "minLength": 1 },
+        "kind":            { "const": "gap_report" },
+        "actor":           { "$ref": "#/$defs/ActorIdentity" },
+        "encounter_id":    { "type": "string", "minLength": 1 },
+        "timestamp":       { "type": "string", "format": "date-time" },
+        "idempotency_key": { "type": "string", "minLength": 1 },
+        "fabric_entry":    { "$ref": "#/$defs/FabricEntryRef" },
+        "locus": {
+          "$ref": "#/$defs/GapLocus",
+          "description": "Discriminated locus — where on the screen or argument this gap was observed"
+        },
+        "arg_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional: released ActualArgument contextualizing the gap, when available"
+        },
+        "arg_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Required when arg_id is present (SPINE-5)"
+        },
+        "free_text": {
+          "type": "string",
+          "description": "Clinician's description of the gap (optional)"
+        }
+      },
+      "if": { "required": ["arg_id"] },
+      "then": { "required": ["arg_version"] }
+    },
+    "FitJudgmentAct": {
+      "type": "object",
+      "title": "FitJudgmentAct — human judgment on a flagged out-of-envelope verdict (HA-4; MS-7)",
+      "$comment": "Only path through which a flagged verdict may proceed (HDC8 property 3). verdict_ref must reference a flagged verdict (RG-2 flagged class); the schema cannot enforce this at the JSON level — runtime enforcement is the implementation's responsibility.",
+      "required": [
+        "act_id", "kind", "actor", "encounter_id", "timestamp", "fabric_entry",
+        "arg_id", "arg_version", "verdict_ref", "basis"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "act_id":          { "type": "string", "minLength": 1 },
+        "kind":            { "const": "fit_judgment" },
+        "actor":           { "$ref": "#/$defs/ActorIdentity" },
+        "encounter_id":    { "type": "string", "minLength": 1 },
+        "timestamp":       { "type": "string", "format": "date-time" },
+        "idempotency_key": { "type": "string", "minLength": 1 },
+        "fabric_entry":    { "$ref": "#/$defs/FabricEntryRef" },
+        "arg_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The ActualArgument whose verdict is flagged (CONTRACT-ARG-1)"
+        },
+        "arg_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Version of the argument at fit-judgment time (SPINE-5)"
+        },
+        "verdict_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The flagged verdict this fit-judgment acts on (RG-2 flagged class)"
+        },
+        "basis": {
+          "$ref": "#/$defs/FitJudgmentBasis",
+          "description": "Structured basis for the judgment (ACT-8; MS-7)"
+        },
+        "free_text": {
+          "type": "string",
+          "description": "Optional supplementary clinician text"
+        }
+      }
+    },
+    "ConflictNavigationAct": {
+      "type": "object",
+      "title": "ConflictNavigationAct — recorded meta-rational navigation of co-applicable conflicts (HA-5; MS-7)",
+      "$comment": "choice + reasons + residue required. author_stances carry per-author positions in team mode; dissent is preserved, not averaged (ACT-12; HDC8 property 10). arg_ids order carries no preference semantics.",
+      "required": [
+        "act_id", "kind", "actor", "encounter_id", "timestamp", "fabric_entry",
+        "conflict_record_ref", "choice", "reasons", "residue"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "act_id":               { "type": "string", "minLength": 1 },
+        "kind":                 { "const": "conflict_navigation" },
+        "actor":                { "$ref": "#/$defs/ActorIdentity" },
+        "encounter_id":         { "type": "string", "minLength": 1 },
+        "timestamp":            { "type": "string", "format": "date-time" },
+        "idempotency_key":      { "type": "string", "minLength": 1 },
+        "fabric_entry":         { "$ref": "#/$defs/FabricEntryRef" },
+        "conflict_record_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reference to the ConflictRecord materialized at stage 4 (MAK-CEC RG-2; SPINE-6/MS-5)"
+        },
+        "choice": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Which path was chosen in navigating the conflict"
+        },
+        "reasons": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Clinician's stated reasons for the choice"
+        },
+        "residue": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unresolved aspects of the conflict preserved verbatim — never discarded"
+        },
+        "arg_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1,
+          "description": "Co-applicable argument IDs in conflict — order carries no preference semantics"
+        },
+        "author_stances": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/AuthorStance" },
+          "minItems": 1,
+          "description": "Per-author stances in team mode (ACT-12; HT-3). Required when multi-author context applies."
+        }
+      }
+    },
+    "BoundaryWorkAct": {
+      "type": "object",
+      "title": "BoundaryWorkAct — verbatim clinician text preserved without validation gate (HA-6; MS-3)",
+      "$comment": "verbatim_text is never blocked, truncated, or silently rewritten. Display escaping is applied at the rendering layer, not here. display_safe_text is optional; its absence does not suppress verbatim_text.",
+      "required": [
+        "act_id", "kind", "actor", "encounter_id", "timestamp", "fabric_entry",
+        "verbatim_text"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "act_id":           { "type": "string", "minLength": 1 },
+        "kind":             { "const": "boundary_work" },
+        "actor":            { "$ref": "#/$defs/ActorIdentity" },
+        "encounter_id":     { "type": "string", "minLength": 1 },
+        "timestamp":        { "type": "string", "format": "date-time" },
+        "idempotency_key":  { "type": "string", "minLength": 1 },
+        "fabric_entry":     { "$ref": "#/$defs/FabricEntryRef" },
+        "verbatim_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Clinician's authored text preserved exactly as written — no validation gate (HA-6; MS-3)"
+        },
+        "boundary_context": {
+          "$ref": "#/$defs/BoundaryContext",
+          "description": "Optional: threshold and distance context if relevant"
+        },
+        "display_safe_text": {
+          "type": "string",
+          "description": "Optional: safely escaped version for rendering — absence does not suppress verbatim_text"
+        }
+      }
+    }
+  }
+}
