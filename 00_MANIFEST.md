@@ -310,7 +310,7 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 
 # 20. Amendment A-014 (2026-09-10) — Ways of Working page drafted (MAK-5)
 
-**What was added.** One root-level file: `WAYS_OF_WORKING.md` (9,467 B). No retained file under `00_`–`11_` was edited; this manifest entry is appended at EOF per the A-013 remediation rule.
+**What was added.** One root-level file: `WAYS_OF_WORKING.md` (9,467 B). No retained file under `00_`–`11_` was edited except for this permitted EOF append to `00_MANIFEST.md`, per the A-013 remediation rule.
 
 **Content.** `WAYS_OF_WORKING.md` is a Confluence-mirror candidate (root-level `.md`, not excluded by `.github/confluence-mirror/config.json`). It is a **transient** narrative page, not a design output. It states: the five systems and what each owns; authority order (seven levels, sourced from REG-POSTURE v1.2 §6.6, AGENTS.md and OPS-1); source labels (canonical / controlled / derived / transient, sourced from CDSS\_AI\_SDLC\_KNOWLEDGE\_CORPUS.md and the mapping-by-reference doctrine MAK-ANT AN-5); agent risk tiers A0–A5 with human gate owner per tier (sourced from CDSS\_AI\_AGENT\_CUSTOM\_INSTRUCTIONS.md, CDSS\_Makoha PR template and CODEOWNERS); the cardinal rule that nothing on a Confluence page is a design output; and the short working loop (Task → branch → human decides the governed landing path → review → close Task).
 
