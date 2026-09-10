@@ -102,11 +102,11 @@ Jira MAK space
   Agent drafts in a branch (CDSS_Makoha or Imago)
   ├─ Branch name includes the MAK key: claude/MAK-nnn/short-slug
   ├─ PR opened as draft; tier declared; MAK key in title
-  └─ For Confluence narrative: agent commits PAGENAME.md to Imago
+  └─ For a transient Confluence narrative: agent adds a new mirror-eligible markdown file to Imago, without editing retained files
        │
        ▼
   GitHub → Confluence connector (confluence-mirror.yml)
-  └─ Creates / updates one Confluence page per committed .md file
+  └─ Mirrors each eligible committed .md file to its Confluence page
        │
        ▼
   Human reviews in Confluence (for narrative) or GitHub (for code)
@@ -119,7 +119,9 @@ Jira MAK space
   └─ Evidence artefact named (DONE-WITH-EVIDENCE, REG-POSTURE §0.4)
 ```
 
-**Short form:** open a Task → agent drafts → connector mirrors → review in Confluence, edit in place → close the Task.
+**Short form:** open a Task → agent drafts a new transient page file → connector mirrors → review in Confluence, edit in place → close the Task.
+
+*This loop describes transient mirror pages like this one. Retained Imago artefacts still land only by the repository's append-only rules: new file, delta, companion, successor, and any required `00_MANIFEST.md` append.*
 
 ---
 
@@ -129,7 +131,7 @@ Jira MAK space
 |---|---|
 | An orientation guide for anyone joining the programme. | A design document or controlled record. |
 | A pointer to the five systems and their authority order. | A requirement, obligation, or regulatory commitment. |
-| A quick reference for the tier table and working loop. | Authoritative on the tier definitions — those live in the Codex output CDSS_AI_AGENT_CUSTOM_INSTRUCTIONS.md. |
+| A quick reference for the tier table and working loop. | The canonical tier definitions; this table is a draft derived from the cited programme sources and awaits Ken Lee's review. |
 | Editable directly in Confluence by Ken Lee (or any team member). | Subject to the Imago append-only law — this page is transient. |
 
 ---
