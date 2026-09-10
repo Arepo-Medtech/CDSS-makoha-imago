@@ -283,3 +283,17 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Ledger debt.** MET-2.3 has no HARDEN-1.x row or HARDEN-3.x task — owed by HARDEN-1.3 / HARDEN-3.3 with the files MET-2.3 §3 owes.
 
 **Process (requirement).** PR opened by Kenny-bytes (Copilot auto-requested under ruleset 22326380); at most two Copilot passes — fix the first pass on the branch, one confirming pass, then the owner's merge decision.
+
+# 18. Amendment A-012 (2026-09-10) — CORPUS_MAP.md: Imago corpus map page for Confluence (MAK-2)
+
+**What was added.** One root-level file, `CORPUS_MAP.md`, and this section. Nothing pre-existing was edited. The file is a Confluence navigation page drafted in response to Jira work item MAK-2 ("Write the Imago corpus map page"); it is mirrored to Confluence by `.github/workflows/confluence-mirror.yml` on merge.
+
+| Location | Contents added | Disposition |
+|---|---|---|
+| `CORPUS_MAP.md` (root) | Twelve-row table — one row per top-level folder or file (00_MANIFEST.md through 11_prompts) — each with a link to the GitHub rendering at the sealed baseline (`73460b3`) and one line each for purpose and governing document. Rule: cites Imago; is not a copy of it. Source: `00_MANIFEST.md` §1 table at `73460b3`. | Proposed; pending Ken Lee's review and edit in Confluence (MAK-2 acceptance criterion). |
+
+**Note on row count.** The §1 table at `73460b3` formally indexed eleven entries (00–10); `11_prompts` existed in the repository at that commit but was not formally indexed in §1 until A-004. The corpus map includes all twelve top-level items (00–11) for completeness; Ken Lee may remove the `11_prompts` row in his Confluence edit if he judges it outside the MAK-2 acceptance scope.
+
+**Ledger debt.** `CORPUS_MAP.md` has no HARDEN-1.x row or HARDEN-3.x task; owed by a future HARDEN-1.3 / HARDEN-3.3 delta.
+
+**Honesty lines.** The descriptions are one-line summaries authored by the agent; no text was copied from corpus volumes beyond folder titles. No decision, assumption, gate or posture was touched. The page is ADVISORY_ONLY pending Ken Lee's review.
