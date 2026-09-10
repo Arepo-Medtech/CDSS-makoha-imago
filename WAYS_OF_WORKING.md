@@ -137,6 +137,6 @@ Jira MAK space
 
 ---
 
-*Sources: CDSS_AI_AGENT_CUSTOM_INSTRUCTIONS.md and CDSS_AI_SDLC_KNOWLEDGE_CORPUS.md (Codex outputs, 3 Sep 2026); `REG-POSTURE v1.2 §6.6` ecosystem boundary ([Imago `73460b3`](https://github.com/Arepo-Medtech/CDSS-makoha-imago/blob/73460b3/10_regulatory-execution/REG-POSTURE_v1.2.md#66-ecosystem-boundary)); MAK-ANT AN-5 mapping-by-reference doctrine; `CDSS_Makoha` [README](https://github.com/Arepo-Medtech/CDSS_Makoha/blob/main/README.md), [PR template](https://github.com/Arepo-Medtech/CDSS_Makoha/blob/main/.github/pull_request_template.md), [CODEOWNERS](https://github.com/Arepo-Medtech/CDSS_Makoha/blob/main/.github/CODEOWNERS).*
+*Sources: CDSS_AI_AGENT_CUSTOM_INSTRUCTIONS.md and CDSS_AI_SDLC_KNOWLEDGE_CORPUS.md (Codex outputs, 3 Sep 2026); `REG-POSTURE v1.2 §6.6` ecosystem boundary ([Imago `73460b3`](https://github.com/Arepo-Medtech/CDSS-makoha-imago/blob/73460b3/10_regulatory-execution/REG-POSTURE_v1.2.md#66-ecosystem-boundary)); MAK-ANT AN-5 — mapping-by-reference doctrine; `CDSS_Makoha` [README](https://github.com/Arepo-Medtech/CDSS_Makoha/blob/main/README.md), [PR template](https://github.com/Arepo-Medtech/CDSS_Makoha/blob/main/.github/pull_request_template.md), [CODEOWNERS](https://github.com/Arepo-Medtech/CDSS_Makoha/blob/main/.github/CODEOWNERS).*
 
 *Agent contribution: drafted by Claude (Fable 5.1); human owner Ken Lee.*
