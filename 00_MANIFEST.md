@@ -316,6 +316,6 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 
 **Ledger debt.** `WAYS_OF_WORKING.md` has no HARDEN-1.x row or HARDEN-3.x task; owed by a future HARDEN-1.3 / HARDEN-3.3 delta (same pattern as A-012 `CORPUS_MAP.md`).
 
-**Honesty lines.** The tier definitions for A0–A5 are inferred from CDSS\_Makoha `.github/pull_request_template.md`, `.github/CODEOWNERS` and programme context; they are to be verified against `CDSS_AI_AGENT_CUSTOM_INSTRUCTIONS.md` (Codex output, 3 Sep 2026) before Ken Lee closes MAK-5. The page is pending Ken Lee's review and edit in Confluence; the Jira Task (MAK-5) closes only after that review.
+**Honesty lines.** The tier definitions for A0–A5 are inferred from CDSS\_Makoha `.github/pull_request_template.md`, `.github/CODEOWNERS` and programme context; they are to be verified against the Codex output CDSS_AI_AGENT_CUSTOM_INSTRUCTIONS.md (3 Sep 2026) before Ken Lee closes MAK-5. The page is pending Ken Lee's review and edit in Confluence; the Jira Task (MAK-5) closes only after that review.
 
 **ID census.** No new IDs minted. `A-001..014` = 14 amendments; `DEF-001..008` = 8 defect rows (unchanged).
