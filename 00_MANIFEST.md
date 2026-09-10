@@ -307,3 +307,15 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Remediation rule (enforced going forward).** `00_MANIFEST.md` entries must land as append-only amendments at EOF (`A-nnn` increasing), never as rewrites of an earlier amendment block. If content needs correction, append a new amendment (or defect row) instead of editing an existing one.
 
 **Not done by A-013.** No decision, assumption, gate, posture, register row, schema, or retained corpus file was changed.
+
+# 20. Amendment A-014 (2026-09-10) — Ways of Working page drafted (MAK-5)
+
+**What was added.** One root-level file: `WAYS_OF_WORKING.md`. No retained file under `00_`–`11_` was edited except for this permitted EOF append to `00_MANIFEST.md`, per the A-013 remediation rule.
+
+**Content.** `WAYS_OF_WORKING.md` is a Confluence-mirror candidate (root-level `.md`, not excluded by `.github/confluence-mirror/config.json`). It is a **transient** narrative page, not a design output. It states: the five systems and what each owns; authority order (seven levels, sourced from REG-POSTURE v1.2 §6.6, AGENTS.md and OPS-1); source labels (canonical / controlled / derived / transient, sourced from CDSS\_AI\_SDLC\_KNOWLEDGE\_CORPUS.md and the mapping-by-reference doctrine MAK-ANT AN-5); agent risk tiers A0–A5 with human gate owner per tier (sourced from CDSS\_AI\_AGENT\_CUSTOM\_INSTRUCTIONS.md, CDSS\_Makoha PR template and CODEOWNERS); the cardinal rule that nothing on a Confluence page is a design output; and the short working loop (Task → branch → human decides the governed landing path → review → close Task).
+
+**Ledger debt.** `WAYS_OF_WORKING.md` has no HARDEN-1.x row or HARDEN-3.x task; owed by a future HARDEN-1.3 / HARDEN-3.3 delta (same pattern as A-012 `CORPUS_MAP.md`).
+
+**Honesty lines.** The tier definitions for A0–A5 are inferred from CDSS\_Makoha `.github/pull_request_template.md`, `.github/CODEOWNERS` and programme context; they are to be verified against the Codex output CDSS_AI_AGENT_CUSTOM_INSTRUCTIONS.md (3 Sep 2026) before Ken Lee closes MAK-5. The page is pending Ken Lee's review and edit in Confluence; the Jira Task (MAK-5) closes only after that review.
+
+**ID census.** No new IDs minted. `A-001..014` = 14 amendments; `DEF-001..008` = 8 defect rows (unchanged).
