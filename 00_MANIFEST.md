@@ -297,3 +297,13 @@ status: "Added. This manifest indexes the complete artifact repository; it does 
 **Ledger debt.** `CORPUS_MAP.md` has no HARDEN-1.x row or HARDEN-3.x task; owed by a future HARDEN-1.3 / HARDEN-3.3 delta.
 
 **Honesty lines.** The descriptions are one-line summaries authored by the agent; no text was copied from corpus volumes beyond folder titles. No decision, assumption, gate or posture was touched. The page is ADVISORY_ONLY pending Ken Lee's review.
+
+# 19. Amendment A-013 (2026-09-10) — Mechanical audit remediation note (append-only gate)
+
+**What was added.** This amendment section only. No retained file under `00_`–`11_` was edited.
+
+**Root cause (check run 102709760925).** The mechanical audit failed at `append-only` because `00_MANIFEST.md` had an in-place replacement above EOF on that branch (`base content is NOT a prefix of the head content`). The failing job was: `Mechanical audit (append-only · frontmatter · references · depth · schemas · mermaid)`.
+
+**Remediation rule (enforced going forward).** `00_MANIFEST.md` entries must land as append-only amendments at EOF (`A-nnn` increasing), never as rewrites of an earlier amendment block. If content needs correction, append a new amendment (or defect row) instead of editing an existing one.
+
+**Not done by A-013.** No decision, assumption, gate, posture, register row, schema, or retained corpus file was changed.
