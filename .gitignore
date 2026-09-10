@@ -6,6 +6,9 @@
 .impeccable/*.log
 # local browser profile
 .playwright-mcp/
+# audit mermaid parser deps (restored by .cursor/install.sh / CI npm install)
+.github/audit/mermaid/node_modules/
+.github/audit/mermaid/package-lock.json
 # Impeccable engine binaries are platform-specific; restore with `npx impeccable install` (skill text is tracked)
 .claude/skills/impeccable/scripts/bin/
 .github/skills/impeccable/scripts/bin/
