@@ -73,10 +73,11 @@ Every artefact in the ecosystem carries an implicit label. Use these labels to r
 
 ## 4. Agent risk tiers (A0–A5)
 
-Every agent contribution to CDSS\_Makoha carries a tier declared in the PR template.
-The tier determines which human gate must be passed before the PR may be merged.
+This section is **draft working guidance**, derived from the cited programme sources
+and pending Ken Lee's review. It is a quick orientation aid, not the canonical
+gate policy.
 
-| Tier | Scope | Human gate | Gate owner |
+| Tier | Draft working scope | Draft review gate | Draft gate owner |
 |---|---|---|---|
 | **A0** | Non-clinical tooling only — documentation, CI scaffolding, repository structure, test fixtures with no clinical logic. No path to a clinical output. | Owner review of PR description. | Kenny-bytes (Architecture owner) |
 | **A1** | Non-clinical engineering — build infrastructure, data-pipeline plumbing, synthetic-only test datasets. Indirect relationship to clinical outputs. | Owner review + passing CI. | Kenny-bytes |
@@ -102,26 +103,26 @@ Jira MAK space
   Agent drafts in a branch (CDSS_Makoha or Imago)
   ├─ Branch name includes the MAK key: claude/MAK-nnn/short-slug
   ├─ PR opened as draft; tier declared; MAK key in title
-  └─ For a transient Confluence narrative: agent adds a new mirror-eligible markdown file to Imago, without editing retained files
+  └─ Evidence and narrative stay attached to the task and PR until a human decides the governed landing path
        │
        ▼
-  GitHub → Confluence connector (confluence-mirror.yml)
-  └─ Mirrors each eligible committed .md file to its Confluence page
+  Human review
+  └─ Decides whether the outcome lands in code, in a governed Imago artefact, or as transient Confluence narrative
        │
        ▼
   Human reviews in Confluence (for narrative) or GitHub (for code)
-  ├─ Edit in place in Confluence — the page is transient; edit freely
-  ├─ Comment or request changes in GitHub PR for code changes
-  └─ Merge PR once gate requirements are satisfied for the tier
+  ├─ Edit transient Confluence narrative in place if needed
+  ├─ Comment or request changes in GitHub PR for governed repository changes
+  └─ Merge PR once the applicable human gate is satisfied
        │
        ▼
   Close the Jira Task (MAK-nnn)
   └─ Evidence artefact named (DONE-WITH-EVIDENCE, REG-POSTURE §0.4)
 ```
 
-**Short form:** open a Task → agent drafts a new transient page file → connector mirrors → review in Confluence, edit in place → close the Task.
+**Short form:** open a Task → agent drafts in a branch → human decides the governed landing path → review → close the Task.
 
-*This loop describes transient mirror pages like this one. Retained Imago artefacts still land only by the repository's append-only rules: new file, delta, companion, successor, and any required `00_MANIFEST.md` append.*
+*This page itself was mirrored to Confluence from GitHub. That implementation detail is not a standing rule for agent work. Retained Imago artefacts still land only by the repository's append-only rules: new file, delta, companion, successor, and any required `00_MANIFEST.md` append.*
 
 ---
 
